@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2026.1.6)  6 JAN 2026 17:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2026.1.6)  9 MAR 2026 19:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -362,7 +362,62 @@ Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
 \@quotelevel=\count407
 \@quotereset=\count408
- (./main.aux)
+ (./main.aux
+
+LaTeX Warning: Label `tab:abc' multiply defined.
+
+
+LaTeX Warning: Label `tab:week1' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:week1' multiply defined.
+
+
+LaTeX Warning: Label `tab:week2' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:week2' multiply defined.
+
+
+LaTeX Warning: Label `tab:temps' multiply defined.
+
+
+LaTeX Warning: Label `tab:abc' multiply defined.
+
+
+LaTeX Warning: Label `tab:week1' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:week1' multiply defined.
+
+
+LaTeX Warning: Label `tab:week2' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:week2' multiply defined.
+
+
+LaTeX Warning: Label `tab:temps' multiply defined.
+
+
+LaTeX Warning: Label `tab:abc' multiply defined.
+
+
+LaTeX Warning: Label `tab:week1' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:week1' multiply defined.
+
+
+LaTeX Warning: Label `tab:week2' multiply defined.
+
+
+LaTeX Warning: Label `sub@tab:week2' multiply defined.
+
+
+LaTeX Warning: Label `tab:temps' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -448,15 +503,16 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl)
+Package biblatex Info: ... file 'main.bbl' not found.
+
+No file main.bbl.
 Package biblatex Info: Reference section=0 on input line 24.
 Package biblatex Info: Reference segment=0 on input line 24.
- (./titlepage.tex
+(./titlepage/titlepage.tex
 
 [1
 
-{/Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]) (./abstract.tex)
+{/Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]) (./abstract/abstract.tex)
 
 [1]
 
@@ -503,7 +559,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Chapter 1.
-(./chapters/introduction.tex
+(./chapter01/introduction.tex
 
 [1
 
@@ -511,59 +567,41 @@ Chapter 1.
 
 [2]
 Chapter 2.
-(./chapters/chapter02.tex
+(./chapter02/chapter02.tex
 
 [3
 
 ]
-<images/graph_a.png, id=42, 464.73625pt x 445.665pt>
-File: images/graph_a.png Graphic file (type png)
-<use images/graph_a.png>
-Package pdftex.def Info: images/graph_a.png  used on input line 16.
-(pdftex.def)             Requested size: 232.36755pt x 222.83195pt.
+
+LaTeX Warning: Reference `fig:x cubed graph' on page 4 undefined on input line 13.
+
 
 
 [4]
 
-[5 <./images/graph_a.png>]
+[5]
 
 [6]
 
-[7]
+[7])
 
-[8])
+[8]
 
 [9]
 Chapter 3.
-(./chapters/chapter03.tex
-<images/graph1.png, id=64, 256.96pt x 248.93pt>
-File: images/graph1.png Graphic file (type png)
-<use images/graph1.png>
-Package pdftex.def Info: images/graph1.png  used on input line 8.
-(pdftex.def)             Requested size: 128.0387pt x 124.03926pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 9.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 9.
-<images/graph2.png, id=65, 258.9675pt x 248.93pt>
-File: images/graph2.png Graphic file (type png)
-<use images/graph2.png>
-Package pdftex.def Info: images/graph2.png  used on input line 14.
-(pdftex.def)             Requested size: 128.0387pt x 123.08208pt.
-<images/graph3.png, id=66, 255.95625pt x 245.91875pt>
-File: images/graph3.png Graphic file (type png)
-<use images/graph3.png>
-Package pdftex.def Info: images/graph3.png  used on input line 20.
-(pdftex.def)             Requested size: 128.0387pt x 123.01535pt.
+(./chapter03/chapter03.tex
+
+LaTeX Warning: Reference `fig:five over x' on page 10 undefined on input line 29.
+
 
 
 [10
 
- <./images/graph1.png> <./images/graph2.png> <./images/graph3.png>])
+])
 
 [11]
 Chapter 4.
-(./chapters/chapter04.tex
+(./chapter04/chapter04.tex
 
 [12
 
@@ -577,44 +615,108 @@ Chapter 4.
 
 [16]
 Chapter 5.
-(./chapters/conclusion.tex)
+(./chapter05/chapter05.tex
 
 [17
 
 ]
 
 [18]
-Appendix A.
-(./chapters/appendix.tex)
 
-[19
+[19]
+
+[20])
+
+[21]
+Chapter 6.
+(./chapter06/chapter06.tex
+
+[22
 
 ]
 
-[20
+[23]
+
+[24]
+
+[25])
+
+[26]
+Chapter 7.
+(./chapter07/chapter07.tex
+
+[27
+
+]
+
+[28]
+
+[29]
+
+[30])
+
+[31]
+Chapter 8.
+(./conclusion/conclusion.tex
+
+LaTeX Warning: Citation 'latexcompanion' on page 32 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'knuthwebsite' on page 32 undefined on input line 5.
+
+
+LaTeX Warning: Citation 'einstein' on page 32 undefined on input line 7.
+
+)
+
+[32
+
+]
+
+[33]
+Appendix A.
+(./appendix/appendix.tex)
+
+LaTeX Warning: Empty bibliography on input line 84.
+
+
+
+[34
 
 ] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 12192 strings out of 473190
- 236295 string characters out of 5699647
- 1055117 words of memory out of 5000000
- 35330 multiletter control sequences out of 15000+600000
- 566079 words of font info for 60 fonts, out of 8000000 for 9000
+ 12102 strings out of 473190
+ 234576 string characters out of 5699647
+ 1054754 words of memory out of 5000000
+ 35227 multiletter control sequences out of 15000+600000
+ 564912 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,12n,81p,772b,1469s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (28 pages, 193788 bytes).
+ 66i,12n,81p,772b,1161s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/txn009/homebrew/Cellar/texlive/20250308_2/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
+Output written on main.pdf (42 pages, 118380 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 166 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

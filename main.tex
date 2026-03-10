@@ -24,13 +24,13 @@
 \begin{document}
 \pagenumbering{roman} 
 
-\input{titlepage}
+\input{titlepage/titlepage}
 
-\input{abstract}
+\input{abstract/abstract}
 
 \chapter*{Dedication}
 
-To mum and dad
+To mom and dad
 
 \chapter*{Declaration}
 
@@ -44,7 +44,6 @@ Supported by grant numbers\...
 
 \tableofcontents
 
-
 \listoffigures
 
 
@@ -54,23 +53,32 @@ Supported by grant numbers\...
 
 \chapter{Introduction}
 \pagenumbering{arabic} 
-\input{chapters/introduction}
 
+\input{chapter01/introduction}
 \chapter{Chapter Two Title}
-\input{chapters/chapter02}
+\input{chapter02/chapter02}
 
 \chapter{Chapter Three Title}
-\input{chapters/chapter03}
+\input{chapter03/chapter03}
 
 \chapter{Chapter Four Title}
-\input{chapters/chapter04}
+\input{chapter04/chapter04}
+
+\chapter{Chapter Five Title}
+\input{chapter05/chapter05}
+
+\chapter{Chapter Six Title}
+\input{chapter06/chapter06}
+
+\chapter{Chapter Seven Title}
+\input{chapter07/chapter07}
 
 \chapter{Conclusion}
-\input{chapters/conclusion}
+\input{conclusion/conclusion}
 
 \appendix
 \chapter{Appendix Title}
-\input{chapters/appendix}
+\input{appendix/appendix}
 \singlespacing{}
 
 \printbibliography[]
