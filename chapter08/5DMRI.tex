@@ -1,0 +1,130 @@
+\section{Introduction}
+Radiation therapy is a widely used technique for both palliative and curative cancer treatment; however, it can also damage healthy tissue outside of the treatment region\cite{baskarCancerRadiationTherapy2012}. For thoracic cancers, the heart is a vital organ at risk for inadvertent radiation exposure that can result in complications such as congestive heart failure, pericardial effusion, and coronary artery disease\cite{hullValvularDysfunctionCarotid2003,nabialek-trojanowskaCardiovascularComplicationsRadiotherapy2020,belzile-dugasRadiationInducedCardiovascularDisease2021}. Lung and esophageal cancer patients have shown high rates of radiation-induced cardiotoxicities (RICTs)\cite{millerCharacterizingSensitiveCardiac2021}. Yet current radiation therapy practices do not account for the heart's complex anatomy when developing treatment plans. Current dose limits, such as QUANTEC recommendations that <10\% of the heart receive >25 Gy\cite{bentzenQuantitativeAnalysesNormal2010,poitevin-chaconDosimetryLeftAnterior2018}, are based on single-organ metrics and do not account for local dose distributions among cardiac substructures and their specific radiosensitivities\cite{millerCharacterizingSensitiveCardiac2021}; Recent evidence has emerged that links dose to cardiac substructures to RICTs and the development of future coronary events\cite{millerCharacterizingSensitiveCardiac2021,morrisIncorporatingSensitiveCardiac2020,siaravasRadiationTreatmentMechanisms2023}. Additionally, intra-fraction motion due to respiration has been shown to be substructure-specific and anisotropic\cite{millerCharacterizingSensitiveCardiac2021,el-sherifAssessmentIntrafractionBreathing2016}, yet it is currently not incorporated into standard treatment planning procedures. The incorporation of appropriate substructure-specific margins into radiation treatment planning would improve sparing of radiosensitive cardiac substructures and enable cardiorespiratory motion-robust planning. However, this is currently challenged by the limitations of radiation therapy imaging techniques in managing complex cardio-respiratory motion.
+
+MRI is considered the gold standard for cardiac imaging due to its 3D capabilities and superior soft-tissue contrast to other modalities and is routinely used for evaluation of cardiac function and diagnosis of pathologies such as congenital heart disease and cardiomyopathy\cite{zhuFreeBreathing3DImaging2015,rajiahCardiacMRIState2023}.  While MRI enables comprehensive anatomical and functional imaging, standard exam times can be long, and volumetric coverage is typically achieved through serial 2D acquisitions performed over multiple breath-holds. However, recent advances in MR hardware, computational power, sequence design, and reconstruction techniques have enabled higher-dimensional cardiac imaging, progressing from 2D to 3D and to 4D (cardiac-resolved) and 5D (cardiac and respiratory-resolved) imaging\cite{subashiViewsharing4DMagnetic2023,tryggestadRespirationbasedSortingDynamic2013,curtisPrimerHistoricalReview2022,feng5DWholeheartSparse2018, ogierFreerunning5DWholeheart2025}. Prior work in this field includes the development of frameworks such as XD-GRASP, which enables motion-resolved imaging across multiple dimensions and has been applied to 5D whole-heart cardiac functional imaging\cite{fengXDGRASPGoldenangleRadial2016}. In this study, we implement and test a non-contrast-enhanced, flexible, retrospective cardiac MRI acquisition and XD-GRASP-style reconstruction framework to isolate and quantify cardiac substructure motion from the cardiac and respiratory cycles to facilitate development of improved cardiac substructure-sparing margins in radiation therapy treatment planning. Additionally, we explore the limits of accelerating the acquisition to reduce the scan time without compromising image quality. 
+
+
+\section{Materials and Methods}
+\subsection{MR Imaging Protocol}
+The central building block of our 5D MRI framework is a highly undersampled 3D radial balanced Steady State Free Precession (bSSFP) acquisition. BSSFP sequences are widely used in cardiac imaging due to their high SNR and superior blood-pool-to-myocardium contrast\cite{bieriFundamentalsBalancedSteady2013}. Additionally, radial sampling offers advantages for 5D acquisitions including: (1) motion robustness\cite{fengXDGRASPGoldenangleRadial2016, fengGoldenAngleRadialMRI2022}, (2) flexible retrospective reconstructions\cite{fengGoldenAngleRadialMRI2022,iiiAdvantagesRetrospectivelyGated}, and (3) strong support for constrained reconstruction\cite{fengGoldenAngleRadialMRI2022,lustigSparseMRIApplication2007,chanInfluenceRadialUndersampling2012}. Radial projections were acquired with a 2D bit-reversed view ordering, a pseudo-random method derived from the reversal of the binary representation of natural view ordering, to improve acquisition sparsity\cite{chanInfluenceRadialUndersampling2012,koaySparseOptimalAcquisition2012}. Fractional echoes were used to acquire only 80\% of each projection, shortening the TE and TR\cite{bydderMinimizingEchoRepetition2021}. Healthy volunteers were recruited for this study under an IRB approved protocol (\#2016\-1346) and provided written informed consent. Subjects were scanned using a 40-channel chest coil on a 1.5 T clinical MRI simulator (SIGNA Artist, GE Healthcare, WI). Scan parameters were optimized in feasibility experiments in human volunteers to maximize image contrast and spatial resolution while maintaining a large field of view and staying within allowable Specific Absorption Rate (SAR) limitations. The optimized parameters are as follows: TR = 3.4 ms, TE = 0.9 ms, flip angle = 35°, image volume = 40 cm x 40 cm x 40 cm, spatial resolution = 1.56 mm isotropic. For each study subject, an acquisition with 250,000 radial projections was acquired over a 14.8-minute scan time. Cardiac and respiratory signals were recorded simultaneously during the acquisition using photoplethysmogram (PPG) and respiratory bellows, respectively, to enable dual gating.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{5D_framework.png}
+
+    \caption[5D reconstruction framework]{The retrospective 5D dual-gating process used to separate 10 cardiac and 4 respiratory motion states producing 40 volumes. Cardiac binning was performed by determining the mean RR interval of the PPG signal and dividing it into 10 evenly spaced bins. Respiratory gating used a 5s sliding window to apply a threshold and classified the top and bottom 10\% of the respiratory signal into End Inhale and End Exhale. The remaining 80\% of projections were classified as Active Inhale or Active Exhale based on the slope of the waveform (positive and negative respectively).}\label{fig:5D_framework}
+    \vspace{0.25cm}
+\end{figure}
+
+\subsection{Reconstruction Framework}
+A custom C++ reconstruction framework for radial reconstructions (code available at: \url{https://github.com/uwmri/mri_recon}) was used for retrospective dual-gated binning (Figure 1). During scanning, each acquired radial projection was timestamped and matched with the respective points in the cardiac and respiratory waveforms (Figure 2). From the collected PPG signal, the mean RR interval was calculated, and projections were divided into 10 cardiac bins of equal duration. The cardiac waveform was shifted by 300 ms to account for the transit-time delay introduced by measuring the cardiac signal at the left index finger instead of at the heart, resulting in a standard representation that starts shortly after the R-wave, just before end-systole. Respiratory binning was performed using a 5-second sliding-window threshold (to account for respiratory drift), classifying the bellows waveform into 4 respiratory phases: active-exhale (AEx), end-exhale (EEx), active-inhale (AIn), and end-inhale (EIn). EIn and EEx are determined by taking the top and bottom 10\% of the bellows waveform, while AIn and AEx utilize the middle 80\% of the bellows waveform, differentiated by positive and negative slope, respectively. All reconstructions were performed on a computing cluster with a 64-core Intel Xeon (Skylake) CPU\@.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{projections.png}
+
+    \caption[3D radial projection binning]{Data were acquired radially in a pseudo-random 2D bit-reverse view ordering to increase the incoherence of undersampling artifacts for constrained reconstruction. Projections were timestamped and matched with physiological waveforms (cardiac and respiratory) to bin accordingly. Here projections are colored to symbolize different respiratory phases and numbered according to cardiac phase.}\label{fig:projections}
+    \vspace{0.25cm}
+\end{figure}
+
+\subsection{Analysis}
+The acquired 250,000-projection dataset was retrospectively subsampled to 120,000, 80,000, and 40,000 projections to simulate scan durations of approximately 7, 5, and 2.5 minutes, respectively, to determine the tradeoff between scan duration and image quality for substructure segmentation. 
+
+Three reconstructions were performed: (1)  standard 3D radial reconstruction utilizing parallel imaging\cite{griswoldPartiallyParallelImaging2000} and iterative constrained reconstructions with either (2) compressed sensing (CS)\cite{lustigSparseMRIApplication2007} or (3) local low rank (LLR)\cite{haldarLowrankApproximationsDynamic2011, trzaskoExploitingLocalLowrank2013} for each simulated scan duration. The CS regularization parameter was increased with increasing undersampling factor to mitigate overfitting, while the LLR regularization parameter remained constant. Iterative reconstructions utilized the Fast Iterative Shrinkage-Thresholding Algorithm (FISTA)\cite{beckFastIterativeShrinkageThresholding2009} and were run for a maximum of 100 iterations with an early stopping condition if the standard deviation of the data consistency error term fell below 0.01\% for 5 iterations. To identify the optimal reconstruction schema for motion analysis to use for all subjects in the study, the segmentation quality of each permutation of undersampling factor and reconstruction type was evaluated for a subset of the study population. Segmentation of the left ventricle (LV) at end-systole in EEx was performed by a single observer in 3 subjects for 8 different reconstruction permutations. The Dice Similarity Coefficient (DSC) was calculated between LV segmentations across reconstructions, with the 250,000-projection LLR reconstruction serving as the baseline. Scan time and DSC performance were used to determine the final reconstruction schema, which was applied to all subsequent motion analyses for all study subjects. 
+
+For quantitative motion estimates, the LV was segmented at end-systole (ESys) and end-diastole (EDia) in all 4 respiratory phases for all subjects using the previously determined reconstruction type. Segmentations were performed by a single second observer and verified by a trained radiologist with 10+ years of experience. LV centroid displacements were calculated using EEx at EDia as the reference point and plotted. Averages and standard deviations of displacements across the cardiac and respiratory cycles in each spatial direction were calculated. 
+
+
+\section{Results}
+5D-MRI data for 10 healthy volunteers (9M/1F, 23\-65 years old) were acquired. One subject had an MR-conditional stent (Medtronic Resolute Onyx) in their left anterior descending artery (LADA) and was scanned in a reduced SAR mode. For each reconstruction, 10 cardiac phases and 4 respiratory phases were reconstructed for a total of 40 distinct motion states. Figure 3 illustrates the simulated shortened scan times and compares the effects of the two types of constrained reconstruction employed. Quantitative comparisons via DSC between the 250k projection LLR reconstruction and all other reconstructions are shown in Supplementary Table 1. Due to a decrease in average DSC of only 1\% with a 5-minute scan time, the 80,000 LLR projection was chosen to be the final reconstruction scheme. Average reconstruction time for the cohort was 6.2 $\pm$ 0.7 hours. 
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{scan_time.png}
+
+    \caption[Retrospective scan subsampling comparisons]{Representative images for a healthy volunteer reconstructed with decreasing numbers of radial projections simulating decreased scan time. Standard reconstruction with only parallel imaging (top row) leads to substantial undersampling artifacts in form of streaks, while compressed sensing (center row) leads to excess smoothing. The local low rank reconstruction provided the cleanest images, remaining robust even at 1/8th of the scan time. The red border indicates the reconstruction utilized for quantitative substructure motion analysis based on evaluation of segmentation quality.}\label{fig:scan_time}
+    \vspace{0.25cm}
+\end{figure}
+
+Figure 4 shows representative images of EEx and EIn at ESys and EDia, as well as difference images between each state, highlighting the changes in cardiac position in the chosen reconstruction. Similarly, Figure 5 tracks pixel intensities along a line profile through the intraventricular septum, illustrating its movement across the respiratory (B) and cardiac cycles (C).
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{motion_difference.png}
+
+    \caption[Cardiac and respiratory motion differences]{(Dark images) Representative images (central coronal slice) reconstructed with the 5D-MRI framework. Each image belongs to a unique cardiac and respiratory phase: End-Exhale (EEx), End-Inhale (EIn), End-Systole (ESys), End-Diastole (EDia). Colored arrows are difference operations that result in the bright difference images between two images on the same row, column or diagonal, e.g., (EEx-EIn, EDia) shows the difference map between (EEx, EDia) and (EIn, EDia). Black arrows indicate prominent cardiac and respiratory motion differences between phases.}\label{fig:motino_difference}
+    \vspace{0.25cm}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \caption[Cardiac and respiratory motion measurements per subject.]{Average left ventricle centroid displacements for 10 subjects for cardiac and respiratory motion in R-L, A-P, S-I directions plus the magnitude of the overall displacement vector. Most significant displacements were seen in the superior-inferior direction, followed by the anterior-posterior direction, and the right-left direction for both cardiac and respiratory motion.}
+    \small
+    \begin{tabular}{ccccccccc}
+    \toprule
+    & \multicolumn{4}{c}{Cardiac Motion (EE, ED -- EE, ES)} 
+    & \multicolumn{4}{c}{Respiratory Motion (EE, ED -- EI, ED)} \\
+    \cmidrule(lr){2-5} \cmidrule(lr){6-9}
+    Subject 
+    & R-L (mm) & A-P (mm) & S-I (mm) & Magnitude (mm) 
+    & R-L (mm) & A-P (mm) & S-I (mm) & Magnitude (mm) \\
+    \midrule
+    1  & -0.3 & -0.2 & 1.1 & 1.1 & 0.3 & 0.9 & -5.0 & 5.1 \\
+    2  & 0.0  & 0.2  & -0.6 & 0.6 & 0.3 & 0.6 & -7.5 & 7.5 \\
+    3  & -0.5 & 0.4  & -0.8 & 1.0 & 3.5 & 2.7 & -4.8 & 6.5 \\
+    4  & 0.1  & -0.1 & 0.1  & 0.2 & 3.3 & 3.7 & -7.4 & 8.9 \\
+    5  & -0.2 & -0.2 & -0.3 & 0.4 & 1.6 & 1.4 & -5.7 & 6.1 \\
+    6  & 0.1  & 0.6  & -1.0 & 1.1 & 1.2 & 2.0 & -7.0 & 7.4 \\
+    7  & -0.5 & 0.0  & -1.1 & 1.2 & 0.4 & 0.6 & -4.0 & 4.1 \\
+    8  & 0.6  & 0.0  & -0.6 & 0.8 & 0.8 & 1.5 & -4.2 & 4.5 \\
+    9  & 0.4  & 0.4  & -0.9 & 1.0 & 0.6 & 1.5 & -6.3 & 6.5 \\
+    10 & 0.1  & 0.9  & -1.1 & 1.4 & 0.9 & 1.0 & -5.3 & 5.4 \\
+    \midrule
+    Average 
+    & $0.0 \pm 0.3$ & $0.2 \pm 0.4$ & $-0.5 \pm 0.7$ & $0.9 \pm 0.4$
+    & $1.3 \pm 1.2$ & $1.6 \pm 1.0$ & $-5.7 \pm 1.3$ & $6.2 \pm 1.5$ \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\section{Discussion}
+In this study, we demonstrated a flexible 5D cardiac MRI framework combining dual cardiac and respiratory gating with highly undersampled 3D radial bSSFP acquisitions to isolate cardiac and respiratory motion of the heart. By leveraging a radial trajectory, retrospective binning, and iterative constrained reconstructions, we decoupled cardiac and respiratory motion and produced 40 distinct motion states per subject within approximately 5 minutes of scan time.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{motion_profiles.png}
+
+    \caption[Cardiac pixel intensity motion profiles]{A. Pixel intensities were measured along a line segment (yellow) through the intraventricular (IV) septum to analyze motion across the respiratory and cardiac cycles for a representative subject. Pixel intensity curves were smoothed with a Gaussian filter. The dip in the plateau of the pixel intensity corresponds to the reduction in signal intensity at the location of the IV septum. B. Motion profiles of the heart through the respiratory cycle. Black arrows indicate bulk motion of the left and right sides of the heart across the cardiac cycle. C. Motion profiles of the heart throughout the cardiac cycle. A reduction in intensity amplitude can be distinguished in cardiac frames 4 and 5 indicating end-systole. }\label{fig:motion_profiles}
+    \vspace{0.25cm}
+\end{figure}
+
+The most challenging aspect of high-dimensional imaging is overcoming data starvation. With an increasing number of motion states to be resolved, the lessening amount of data per motion state results in substantial reductions in image quality. As seen in Figure 3, a traditional reconstruction, even with a clinically infeasible 15-minute scan time, is unviable due to the prominent streaking artifacts caused by undersampling. However, constrained reconstructions can generate clinically acceptable images with much fewer samples than indicated by the Nyquist criterion by taking advantage of the inherent data redundancy in capturing multiple motion states. Both the CS and LLR reconstructions produced a substantially improved image using all 250,000 acquired projections. Yet the CS reconstruction exhibited notably more spatial smoothing as the undersampling factor increased, despite increasing the regularization parameter. The LLR reconstruction proved much more robust across all undersampling factors. This is likely due to the dynamic nature of the LLR reconstruction, which optimizes multiple small patches of the dataset across both space and time whereas the CS approach considers the whole volume for each time frame independently. As there is considerable information redundancy across time frames, it is straightforward to find a sufficiently low-rank basis to represent all the data. With an 80,000-projection acquisition, the LLR reconstruction provided sufficient image quality for segmentation of the four chambers and served as the baseline for substructure motion estimates.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{motion_trajectories.png}
+
+    \caption[Left Ventricle Motion Trajectories]{Centroid trajectories illustrating the motion of the left ventricle over the 4 respiratory phases. A. and B. show the trajectories for all subjects normalized to End-Exhale, End-Diastole for Diastole and Systole respectively while C. shows all trajectories for an example subject. Respiratory trajectories vary considerably between subjects.}\label{fig:motion_trajectories}
+    \vspace{0.25cm}
+\end{figure}
+
+Figure 4 demonstrates qualitative motion assessments at the four chosen motion states for an example subject: End-Exhale, End-Systole (EEx, ESys); End-Exhale, End-Diastole (EEx, EDia); End-Inhale, End-Systole (EIn, ESys); and End-Inhale, End-Diastole (EIn, EDia). Difference images between ESys and EDia at EEx show intensity differences in the shape of the left ventricle, indicating differentiation in cardiac phase. The differences between EEx and EIn are also apparent from the changes in the intensities of the diaphragm and the bottom edge of the right ventricle. Figure 5 illustrates motion profiles via pixel intensity measurements for another example subject through the (B) respiratory and (C) cardiac cycles. In the respiratory cycle, motion is most apparent during the AIn and AEx periods, compared to EEx and EIn, during which the septum moves most in the superior-inferior direction. AEx shows bulk motion in both the left and right sides of the heart, while AIn, EEx, and EIn show motion mainly in the left side of the heart. During the cardiac cycle, the widening dip in intensity around cardiac phase 4 corresponds to end-systole when the left ventricle contracts and then narrows from phases 7\-9 during diastole as the left ventricle expands to fill with blood. Additionally, the left side of the heart shows contraction between respiratory phases that is not apparent on the right side, indicating anisotropic motion of different substructures.
+
+The quantitative motion analysis revealed prominent displacement patterns across subjects, with the largest LV displacements occurring in the superior-inferior direction (cardiac: -0.5 $\pm$ 0.7 mm, respiratory: -5.7 $\pm$ 1.3 mm), followed by the anterior-posterior (cardiac: 0.0 $\pm$ 0.3, respiratory: 1.3 $\pm$ 1.2), and right-left (cardiac: 0.2 $\pm$ 0.4 mm, respiratory: 1.6 $\pm$1.0 mm) directions. These trends align with previous studies on cardiac and respiratory motion in the left ventricle\cite{omidiEffectsRespiratoryCardiac2023,mcleishStudyMotionDeformation2002}; however, there is considerable variability within the cohort, with respiratory motion in particular demonstrating patient-specific motion. Figure 6 visualizes these displacement trajectories, with respiratory displacements varying considerably in magnitude and direction across volunteers. 
+
+\subsection{Limitations}
+While our 5D datasets were sufficient for preliminary motion analysis and left ventricular segmentation, multiple complicating factors affected image contrast in this study. For one, these scans were acquired with a large volumetric FOV, which can precipitate washout effects leading to reduced signal from the saturated spins flowing out of the excited volume before readout\cite{axelBloodFlowEffects1984}. While a large imaging FOV was desired to capture diaphragm and lung motion as needed for radiotherapy planning, reducing the excitation volume may improve blood-myocardium contrast through increased flow-related enhancement. A larger flip angle would also improve SNR and CNR\@; however, the short TR and frequent RF pulses in this bSSFP sequence limits the maximum allowable flip angle due to SAR limits. Lastly, bSSFP sequences are known to have bright fat signal, which can lead to it dominating the image contrast19. Fat saturation pulses are often used to combat this issue, however deploying fat-sat pulses necessitates repeatedly interrupting the steady state and then restoring it, which can substantially increase the acquisition time, especially in large acquisition volumes16. However, alternative radial trajectories, such as spiral phyllotaxis, could also improve acquisition efficiency by reducing eddy currents as well as enabling self-navigation, thereby eliminating the need for physical gating devices\cite{picciniSpiralPhyllotaxisNatural2011}. 
+
+The 5D datasets were reconstructed with 10 cardiac and 4 respiratory phases. This is below the number of motion bins typically utilized in radiology for cine cardiac imaging (20 cardiac phases) and radiation oncology (up to 10 respiratory phases) for characterizing cardiac and respiratory motion respectively\cite{kramerStandardizedCardiovascularMagnetic2020,americansocietyofradiationoncologyGuideRadiationOncology2010}. While increasing the number of cardiac and respiratory phases would increase the temporal resolution in both dimensions and provide more detailed motion information, it would also increase the amount of acquired data, the computational demands of the reconstruction, and the time required for post-processing and analysis. In our setup, the 5D image reconstructions were computationally intensive, requiring approximately 6\-8 hours in total. Additionally, memory constraints necessitated separate reconstructions of each respiratory phase per subject. A higher-performance compute system or GPU acceleration could improve reconstruction times and memory efficiency, but was beyond the scope of this study. Additionally, reduced reconstruction times could enable a more systematic investigation of optimal regularization parameters for the constrained reconstructions, which were determined empirically.
+
+Lastly, this study was performed with a small cohort of 10 subjects that were predominantly young and healthy males. Only two subjects were over 50, and only one presented a complication in the form of a LADA stent. Patients with cancer in the thoracic region are likely to have more advanced age with potential complications such as arrhythmias or irregular breathing patterns, which could further affect image quality. Further studies will include expansion to a representative cohort for future applications to radiotherapy.
+
+
+\section{Conclusion}
+In conclusion, we presented a 5D MRI method that resolves patient-specific cardiac and respiratory motion with a single 5-minute acquisition. The retrospective nature of the framework allows for flexible subsampling and reconstruction strategies, and constrained reconstructions improve image quality even at accelerated acquisition times. Image quality was sufficient for preliminary motion analysis and left ventricular segmentation. Future work will explore implementing fat saturation methods to improve image quality, as well as implement GPU acceleration to reduce the computational burden of image reconstruction. 

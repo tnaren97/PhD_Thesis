@@ -1,21 +1,37 @@
 \documentclass[11pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\graphicspath{ {images/} }
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{float}
-\usepackage[width=150mm,top=35mm,bottom=25mm,bindingoffset=6mm]{geometry}
+
 \usepackage{fancyhdr}
 \usepackage{setspace}
+\usepackage{siunitx}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[margin=1in]{geometry}
+\usepackage[backend=biber, style=ieee, sorting=none,citestyle=numeric-comp, giveninits=true]{biblatex}
+
 \pagestyle{fancyplain}% <- use fancyplain instead fancy
 \fancyhf{}
 \fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{14pt}
 
-\usepackage[style=authoryear,sorting=none]{biblatex}
-\addbibresource{references.bib}
+\graphicspath{ {./chapter02/images/}{./chapter03/images/}{./chapter04/images/}{./chapter05/images/}{./chapter06/images/}{./chapter07/images/}{./chapter08/images/}}
+
+\titleformat{\chapter}[block]
+{\normalfont\Large\bfseries}
+{Chapter \thechapter:}
+{1em}
+{}
+\titlespacing*{\chapter}{0pt}{0pt}{30pt}
+
+\addbibresource{references/references.biblatex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title{Embracing Respiratory Motion in Cardiovascular MRI}
 \author{Tarun Naren}
@@ -24,28 +40,16 @@
 \begin{document}
 \pagenumbering{roman} 
 
-\input{titlepage/titlepage}
+\input{frontmatter/titlepage}
 
-\input{abstract/abstract}
-
-\chapter*{Dedication}
-
-To mom and dad
-
-\chapter*{Declaration}
-
-I declare that..
+\input{frontmatter/abstract}
 
 \chapter*{Acknowledgements}
-
-I want to thank\...
-
-Supported by grant numbers\...
+\input{frontmatter/acknowledgements}
 
 \tableofcontents
 
 \listoffigures
-
 
 \listoftables
 
@@ -53,25 +57,29 @@ Supported by grant numbers\...
 
 \chapter{Introduction}
 \pagenumbering{arabic} 
-
 \input{chapter01/introduction}
-\chapter{Chapter Two Title}
-\input{chapter02/chapter02}
 
-\chapter{Chapter Three Title}
-\input{chapter03/chapter03}
+\chapter{Background}
+\pagenumbering{arabic} 
+\input{chapter02/background}
 
-\chapter{Chapter Four Title}
-\input{chapter04/chapter04}
+\chapter{Feasibility of Free-Breathing Radial 2D Phase Contrast MRI for Aortic Pulse Wave Velocity Measurements}
+\input{chapter03/LIFE_study.tex}
 
-\chapter{Chapter Five Title}
-\input{chapter05/chapter05}
+\chapter{Validation of Free-Breathing Radial 2D Phase Contrast MRI Measured Pulse Wave Velocity with an Aortic Flow Phantom}
+\input{chapter04/PWV_phantom.tex}
 
-\chapter{Chapter Six Title}
-\input{chapter06/chapter06}
+\chapter{Effects of Respiration on Aortic Pulse Wave Velocity Measurements with a Radial Simultaneous-Multi Slice 2D Phase Contrast Acqusiition}
+\input{chapter05/PWV_respiration.tex}
 
-\chapter{Chapter Seven Title}
-\input{chapter07/chapter07}
+\chapter{Optimizing VENC in Radial Free-Breathing 4D Flow MRI for the Portal Venous System}
+\input{chapter06/GEVenc.tex}
+
+\chapter{Iterative Motion Correction for Improved Efficiency of Radial Free-Breathing 4D Flow MRI}
+\input{chapter07/iMoCo.tex}
+
+\chapter{Implementation of a Flexible 5D Cardiac MRI Reconstruction Framework for Motion Characterization in Radiation Therapy}
+\input{chapter08/5DMRI.tex}
 
 \chapter{Conclusion}
 \input{conclusion/conclusion}

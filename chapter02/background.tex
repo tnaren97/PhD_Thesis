@@ -1,0 +1,41 @@
+\section{Background}
+
+\section{Magnetic Resonance Imaging}
+
+\subsection{Radial Acquisitions}
+
+\section{Phase Contrast MRI}
+
+\subsection{2D Cine Imaging}
+
+\subsection{4D Flow Imaging}
+
+\section{Physiological Motion}
+
+In common MR acquisitions, intrinsic motion of the heart due to both cardiac and respiratory motion results in blurring and/or ghosting of the heart in the phase encode directions\cite{fengGoldenAngleRadialMRI2022}. Cardiac motion is routinely compensated for with physiological gating, which utilizes a physiological waveform such as an electrocardiogram (ECG) or photoplethysmogram (PPG) to prospectively or retrospectively segment the acquired data into distinct cardiac phases\cite{jangDesignECGPPG2007}. Cardiac gating can be performed either prospectively, where the acquisition depends on triggers from the physiological waveform, or retrospectively, where data is acquired continuously and properly sorted during image reconstruction\cite{heijmanComparisonProspectiveRetrospective2007}. Respiratory motion is most commonly managed via breath holding. Multiple sequential breath holds are used for longer multi-slice 2D scans with increased volumetric coverage, but breath hold inconsistencies can result in slice misalignment\cite{chandlerCorrectionMisalignedSlices2008}. Similar to cardiac gating, respiratory motion can also be compensated for using a physiological gating signal, such as navigators or abdominal bellows\cite{santelliRespiratoryBellowsRevisited2011}. Usually, reconstructed data is limited to a single respiratory phase (typically end-exhale)\cite{hollandDiaphragmaticCardiacMotion1998}, but if comprehensive respiratory information is desired, specific acquisition schemes enable the reconstruction of multiple respiratory phases alongside multiple cardiac phases, leading to a 5D acquisition\cite{fengXDGRASPGoldenangleRadial2016,schraubenRespiratoryinducedVenousBlood2015}. 
+
+\section{Constrained Reconstruction}
+Three-dimensional radial imaging results in motion artifacts spreading across multiple dimensions\cite{fengGoldenAngleRadialMRI2022,iiiAdvantagesRetrospectivelyGated} rather than prominent ghosting artifacts in the phase-encoding directions seen in Cartesian imaging. Every radial projection passes through the center of k-space, so the low-frequency components of the image are sampled more often than the high-frequency components at the edges of k-space, which has an averaging effect on motion artifacts. Essentially, motion artifacts in a 3D radial acquisition appear as blurring and diffuse streaking artifacts, rather than visually distinct replicas. 
+Radial sampling also allows for greater flexibility in how data are sorted during reconstruction compared to Cartesian imaging. If projections are acquired in pseudo-random order, as with a golden angle or bit-reversed view ordering\cite{fengGoldenAngleRadialMRI2022,chanInfluenceRadialUndersampling2012} projections can be arbitrarily grouped into dynamic frames with reasonable coverage of k-space and reconstructed as images. This allows arbitrary gating based on physiological signals, as well as retrospective subsampling of full datasets to simulate shorter scan times or to remove projections compromised by bulk motion.
+Lastly, the inherent variable-density sampling of radial acquisitions allows for high undersampling factors while preserving image content {fengGoldenAngleRadialMRI2022,chanInfluenceRadialUndersampling2012}. In a radial acquisition, undersampling artifacts appear as incoherent pseudo-noise rather than coherent replica artifacts as in Cartesian imaging. This is important for constrained reconstruction techniques, such as compressed sensing\cite{lustigSparseMRIApplication2007} and low-rank approximations\cite{haldarLowrankApproximationsDynamic2011, trzaskoExploitingLocalLowrank2013}, which exploit sparse datasets to recover high-quality images. 
+More explicitly, a constrained reconstruction takes the form of the inverse problem 
+
+\begin{equation}
+    \min_{m} \; \left\| F \cdot S \cdot m - d \right\|_2^2 + \lambda \, R(m)
+    \label{eq:constrained_recon}
+\end{equation}
+
+where $F$ is the nonuniform Fourier transform, $S$ are coil sensitivity maps, $m$ is the image, $d$ is the acquired k-space data, $\lambda$ is a regularization parameter, and $R$ is the enforced constraint\cite{haldarChapter5Early2022}. The form of $R$ in Equation 1 varies depending on the type of constraint being enforced. In the case of compressed sensing, the constraint is that the data is sparse in some transformed domain and redundancies can be exploited to recover the original image, i.e., $R(m)=\|\Psi m\|_1$ where $\Psi$ is a sparsifying transform (e.g., wavelets)\cite{lustigSparseMRIApplication2007}. For a local low-rank approximation, the assumption is that there are spatial and temporal redundancies across local patches of the dataset, which can be approximated as the product of lower-rank matrices, thereby reducing the complexity of the original matrix and approximating a solution, i.e., $R(m)=\sum_p \|\mathrm{Mat}(m_p)\|_*$ where $\mathrm{Mat}$ is a tensor unfolding operation along either a spatial or temporal dimension and $*$ is the nuclear norm\cite{haldarLowrankApproximationsDynamic2011,leeLLORMALocalLowRank}. With either method, an iterative reconstruction can be utilized to solve Eq \ref{eq:constrained_recon} and recover a higher-quality image from an undersampled dataset well below the Nyquist criterion, reducing the amount of data needed to be acquired and the time taken to acquire it\cite{haldarChapter5Early2022}. 
+
+
+
+
+
+
+
+
+
+
+
+
+
