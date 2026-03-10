@@ -42,6 +42,7 @@
 *.xdy
 *.xml
 *blx.bib
+*.bcf*
 .bak 
 .mtc
 build/
