@@ -851,6 +851,7 @@
   urldate = {2024-08-19},
   abstract = {Background: Pulse wave velocity (PWV) is a biomarker for arterial stiffness, clinically assessed by applanation tonometry (AT). Increased use of phase-contrast cardiac magnetic resonance (CMR) imaging allows for PWV assessment with minor routine protocol additions. The aims were to investigate the acquired temporal resolution needed for accurate and precise measurements of CMR-PWV, and develop a tool for CMR-PWV measurements. Methods: Computer phantoms were generated for PWV = 2–20 m/s based on human CMR-PWV data. The PWV measurements were performed in 13 healthy young subjects and 13 patients at risk for cardiovascular disease. The CMR-PWV was measured by through-plane phase-contrast CMR in the ascending aorta and at the diaphragm level. Centre-line aortic distance was determined between flow planes. The AT-PWV was assessed within 2 h after CMR. Three observers (CMR experience: 15, 4, and {$<$}1 year) determined CMR-PWV. The developed tool was based on the flow-curve foot transit time for PWV quantification. Results: Computer phantoms showed bias 0.27 ± 0.32 m/s for a temporal resolution of at least 30 ms. Intraobserver variability for CMR-PWV were: 0 ± 0.03 m/s (15 years), -0.04 ± 0.33 m/s (4 years), and -0.02 ± 0.30 m/s ({$<$}1 year). Interobserver variability for CMR-PWV was below 0.02 ± 0.38 m/s. The AT-PWV overestimated CMR-PWV by 1.1 ± 0. 7 m/s in healthy young subjects and 1.6 ± 2.7 m/s in patients. Conclusions: An acquired temporal resolution of at least 30 ms should be used to obtain accurate and precise thoracic aortic phase-contrast CMR-PWV. A new freely available research tool was used to measure PWV in healthy young subjects and in patients, showing low intra- and interobserver variability also for less experienced CMR observers.},
   langid = {english},
+  keywords = {Aorta,Applanation tonometry,Magnetic resonance imaging,Phase contrast,Pulse wave velocity,Temporal resolution},
   file = {/Users/txn009/Zotero/storage/JDCJUTBK/Dorniak et al. - 2016 - Required temporal resolution for accurate thoracic aortic pulse wave velocity measurements by phase-.pdf}
 }
 
@@ -1616,9 +1617,9 @@
 
 @article{iiiAdvantagesRetrospectivelyGated,
   title = {On the {{Advantages}} of {{Retrospectively Gated Radial Acquisitions}} for {{Cine Phase Contrast Flow Imaging}}},
-  author = {Anderson III, A G  and Wentland, A L and Johnson, K M and Wieben, O},
+  author = {Anderson III, Anderson and Wentland, A L and Johnson, K M and Wieben, O},
   langid = {english},
-  file = {/Users/txn009/Zotero/storage/GCD92ZY2/Iii et al. - On the Advantages of Retrospectively Gated Radial Acquisitions for Cine Phase Contrast Flow Imaging.pdf}
+  file = {/Users/txn009/Zotero/storage/GCD92ZY2/Anderson III et al. - On the Advantages of Retrospectively Gated Radial Acquisitions for Cine Phase Contrast Flow Imaging.pdf}
 }
 
 @online{ISMRM2020Feasibility,
@@ -2127,6 +2128,27 @@
   file = {/Users/txn009/Zotero/storage/2MHFIEDB/Leszek et al. - 2021 - The Links between Cardiovascular Diseases and Alzheimer's Disease.pdf}
 }
 
+@article{liuInfluenceBloodPressure2024,
+  title = {Influence of {{Blood Pressure}} and {{Heart Rate}} on {{PWV Measurement}}: {{Assessment Under Real-Time Blood Pressure Monitoring}}},
+  shorttitle = {Influence of {{Blood Pressure}} and {{Heart Rate}} on {{PWV Measurement}}},
+  author = {Liu, J. and An, B. and Shi, B. and Li, X. and Qian, L.},
+  date = {2024-12-31},
+  journaltitle = {Physiological Research},
+  shortjournal = {Physiol Res},
+  volume = {73},
+  number = {6},
+  eprint = {39903887},
+  eprinttype = {pubmed},
+  pages = {963--971},
+  issn = {1802-9973},
+  doi = {10.33549/physiolres.935372},
+  abstract = {Pulse Wave Velocity (PWV) is widely used to assess arterial elasticity and is an independent risk factor for cardiovascular disease, but it is influenced by multiple factors. Objective is to assess the impact of blood pressure and heart rate on PWV. Twenty healthy young individuals were enlisted as subjects. Real-time blood pressure monitoring was performed by non-invasive continuous blood pressure measuring instrument during the detection of subjects' carotid PWV. During real-time blood pressure monitoring, exercise load caused fluctuations in blood pressure and heart rate, and PWV changes of each subject under different blood pressure and heart rate conditions were recorded simultaneously. Among the 20 subjects, PWV was associated with blood pressure in four subjects and heart rate in one subject. PWV increased with rising blood pressure when the systolic pressure fluctuation range was {$>$}=30mmHg, diastolic pressure fluctuation range was {$>$}=18mmHg, and mean arterial pressure fluctuation range was {$>$}=20mmHg. PWV increased with rising heart rate, when the heart rate fluctuation range was {$>$}30 beats/min. Blood pressure and heart rate have some influence on PWV. However, the fluctuation range of blood pressure and heart rate should reach a certain value, the impact is significant. Keywords: Pulse wave velocity, Blood pressure, Heart rate.},
+  langid = {english},
+  pmcid = {PMC11835220},
+  keywords = {Adult,Blood Pressure,Blood Pressure Determination,Female,Heart Rate,Humans,Male,Pulse Wave Analysis,Vascular Stiffness,Young Adult},
+  file = {/Users/txn009/Zotero/storage/XH5F8JYH/Liu et al. - 2024 - Influence of Blood Pressure and Heart Rate on PWV Measurement Assessment Under Real-Time Blood Pres.pdf}
+}
+
 @article{loecherPhaseUnwrapping4D2016,
   title = {Phase Unwrapping in {{4D MR}} Flow with a {{4D}} Single-Step Laplacian Algorithm},
   author = {Loecher, Michael and Schrauben, Eric and Johnson, Kevin M. and Wieben, Oliver},
@@ -2424,6 +2446,23 @@
   abstract = {We have used magnetic resonance imaging with cine velocity mapping to measure flow wave velocity in the thoracic aorta of 20 healthy volunteers of different ages. We have also studied the relationship between propagation of flow wave velocity and regional aortic compliance. Aortic flow velocity increased linearly with age (r = 0.87), and there was a significant difference between the youngest decade [age 10–19, mean velocity 4.3 +/- 0.7 (SD) m/s] and the oldest decade studied (age 50–59, mean velocity 7.2 +/- 0.2 m/s). Flow wave velocity (m/s) was negatively correlated with ascending aortic compliance (microliter/mmHg) (r = -0.75). Magnetic resonance imaging is a noninvasive method for measurement of aortic flow wave velocity that is an important parameter in assessing arterial wall mechanics and blood flow dynamic.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/IS92TEX8/Mohiaddin et al. - 1993 - Age-related changes of human aortic flow wave velocity measured noninvasively by magnetic resonance.pdf}
+}
+
+@article{moraviaVitroFlowStudy2022,
+  title = {\mkbibemph{In Vitro} Flow Study in a Compliant Abdominal Aorta Phantom with a Non-{{Newtonian}} Blood-Mimicking Fluid},
+  author = {Moravia, Anaïs and Simoëns, Serge and El Hajem, Mahmoud and Bou-Saïd, Benyebka and Kulisa, Pascale and Della-Schiava, Nellie and Lermusiaux, Patrick},
+  date = {2022-01-01},
+  journaltitle = {Journal of Biomechanics},
+  shortjournal = {Journal of Biomechanics},
+  volume = {130},
+  pages = {110899},
+  issn = {0021-9290},
+  doi = {10.1016/j.jbiomech.2021.110899},
+  url = {https://www.sciencedirect.com/science/article/pii/S0021929021006539},
+  urldate = {2026-03-17},
+  abstract = {In vitro aortic flow simulators allow studying hemodynamics with a wider range of flow visualization techniques compared to in vivo medical imaging and without the limitations of invasive examinations. This work aims to develop an experimental bench to emulate the pulsatile circulation in a realistic aortic phantom. To mimic the blood shear thinning behavior, a non-Newtonian aqueous solution is prepared with glycerin and xanthan gum polymer. The flow is compared to a reference flow of Newtonian fluid. Particle image velocimetry is carried out to visualize 2D velocity fields in a phantom section. The experimental loop accurately recreates flowrates and pressure conditions and preserves the shear-thinning properties of the non-Newtonian fluid. Velocity profiles, shear rate, and shear stress distribution maps show that the Newtonian fluid tends to dampen the observed velocities. Preferential asymmetrical flow paths are observed in a diameter narrowing region and amplified in the non-Newtonian case. Wall shear stresses are about twice higher in the non-Newtonian case. This study shows new insights on flow patterns, velocity and shear stress distributions compared to rigid and simplified geometry aorta phantom with Newtonian fluid flows studies. The use of a non-Newtonian blood analog shows clear differences in flows compared to the Newtonian one in this compliant patient-specific geometry. The development of this aortic simulator is a promising tool to better analyze and understand aortic hemodynamics and to aid in clinical decision-making.},
+  keywords = {Aorta,Blood-mimicking fluid,Circulatory mock loop,Non-Newtonian,PIV},
+  file = {/Users/txn009/Zotero/storage/K4M4CLK9/Moravia et al. - 2022 - In vitro flow study in a compliant abdominal aorta phantom with a non-Newtonian blood-mimicki.pdf;/Users/txn009/Zotero/storage/N5AJZPKT/S0021929021006539.html}
 }
 
 @article{morrisIncorporatingSensitiveCardiac2020,
@@ -3127,6 +3166,22 @@
   urldate = {2025-06-23},
   abstract = {Cardiac MRI plays an important role in the evaluation of cardiovascular diseases (CVDs), including ischemic heart disease, cardiomyopathy, valvular disease, congenital disease, pericardial disease, and masses. Large multicenter trials have shown the positive impact of MRI-based management on outcomes in several CVDs. These results have made MRI an indispensable technique in the evaluation of these diseases, and cardiac MRI has an important role in multisociety guidelines. MRI is the reference standard for quantification of ventricular volumes and function. Flow imaging enables accurate quantification of flow and velocities through valves, shunts, and surgical conduits or baffles. Late gadolinium enhancement and parametric mapping techniques enable tissue characterization and yield prognostic information. In the past decade, cardiac MRI technology has seen rapid advances in both hardware and sequences. Multiple novel sequences, such as parametric mapping and four-dimensional flow, are increasingly being incorporated into routine clinical practice. Acceleration strategies have matured, allowing faster acquisition of cardiac MRI sequences in patients with arrhythmia and poor breath holding. Challenges of cardiac MRI at high-field-strength magnets and in patients with indwelling cardiac devices or severe renal dysfunction have been mitigated. Artificial intelligence techniques are decreasing the complexity of MRI acquisition and postprocessing. This article reviews the current state of the art and emerging techniques in cardiac MRI. © RSNA, 2023 Supplemental material is available for this article. See also the review “Evolving Developments in Cardiac CT” by Dodd and Leipsic in this issue.},
   file = {/Users/txn009/Zotero/storage/C7ER9TRC/Rajiah et al. - 2023 - Cardiac MRI State of the Art.pdf}
+}
+
+@article{ramasawmyIsotropic3DCardiac2026,
+  title = {Isotropic {{3D}} Cardiac Cine Imaging at 0.55 {{T}} Using Stack-of-Spiral Sampling and Four-Dimensional Iterative Motion Compensation ({{4D iMoCo}})},
+  author = {Ramasawmy, Rajiv and Javed, Ahsan and Herzka, Daniel A. and Kumar, Prakash and Nayak, Krishna S. and Lederman, Robert J. and Campbell-Washburn, Adrienne E.},
+  date = {2026-01-23},
+  journaltitle = {Journal of Cardiovascular Magnetic Resonance},
+  shortjournal = {Journal of Cardiovascular Magnetic Resonance},
+  pages = {102698},
+  issn = {1097-6647},
+  doi = {10.1016/j.jocmr.2026.102698},
+  url = {https://www.sciencedirect.com/science/article/pii/S1097664726000165},
+  urldate = {2026-03-10},
+  abstract = {Background Isotropic three-dimensional (3D) cine imaging is an attractive one-stop-shop acquisition for cardiac MRI, as it can be arbitrarily resliced for the assessment of cardiac function and simplifies imaging workflows. Current free-breathing 3D cine approaches are hampered by long reconstruction times, and at lower field strengths, by relatively long acquisition times. Here, we aim to maximize acquisition efficiency at 0.55T pairing two techniques; using a spiral acquisition with an optimized sampling distribution and a reconstruction incorporating data from all respiratory phases. Methods We implemented a 2mm isotropic 3D cine approach on a prototype 0.55T scanner, using a 6minute stack-of-spiral balanced steady-state free precession (bSSFP) acquisition modified to use tiny-golden-angle in-plane rotations and distribute the kz partition samples to a variable-density. The data were reconstructed with a modified iterative motion compensation reconstruction which resolved cardiac motion (denoted 4D iMoCo) and combined respiratory states using a navigator signal extracted from the acquired data. The proposed technique was compared to reference 2D free-breathing Cartesian volumetry of the left ventricle in 11 human subjects. Results The 4D iMoCo reconstruction required 20minutes. The proposed variable-density sampling distribution reduced image artifacts, compared to a common linear sampling approach, and improved apparent signal-to-noise with relative increase of 221±99\%. Measurements had good agreement with the 2D Cartesian reference data with a left ventricular volume bias of -2.5±6.2\% and 2.6±10.4\% in diastole and systole, respectively, and an ejection fraction bias of -3.5±8.8\%. Conclusion We demonstrate an efficient free-breathing technique to produce 2mm isotropic 3D cardiac images within a 6minute acquisition time and 20minute reconstruction time at 0.55T. Such a method could be a valuable clinical tool for cardiac imaging.},
+  keywords = {0.55T MRI,free-breathing,isotropic,motion-compensated reconstruction,stack-of-spiral,Three-dimensional cine},
+  file = {/Users/txn009/Zotero/storage/IPPHDQBE/Ramasawmy et al. - 2026 - Isotropic 3D cardiac cine imaging at 0.55 T using stack-of-spiral sampling and four-dimensional iter.pdf;/Users/txn009/Zotero/storage/9QJK5ABF/S1097664726000165.html}
 }
 
 @article{redheuilReducedAscendingAortic2010,
@@ -3874,23 +3929,6 @@
   file = {/Users/txn009/Zotero/storage/F6Z7YW4P/Tian et al. - 2019 - Feasibility of multiple-view myocardial perfusion MRI using radial simultaneous multi-slice acquisit.pdf}
 }
 
-@inproceedings{trzaskoExploitingLocalLowrank2013,
-  title = {Exploiting Local Low-Rank Structure in Higher-Dimensional {{MRI}} Applications},
-  booktitle = {Wavelets and {{Sparsity XV}}},
-  author = {Trzasko, Joshua D.},
-  date = {2013-09-26},
-  volume = {8858},
-  pages = {551--558},
-  publisher = {SPIE},
-  doi = {10.1117/12.2027059},
-  url = {https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8858/885821/Exploiting-local-low-rank-structure-in-higher-dimensional-MRI-applications/10.1117/12.2027059.full},
-  urldate = {2026-03-10},
-  abstract = {In many clinical MRI applications, not one but a series of images is acquired. Techniques that promote intra- and inter-image sparsity have recently emerged as powerful strategies for accelerating MRI applications; however, sparsity alone cannot always describe the complex relationships that exist between images in these series. In this paper, we will discuss the modeling of higher-dimensional MRI signals as matrices and tensors, and why promoting these signals to be low-rank (and, specifically, locally low-rank) can effectively identify and exploit these complex relationships. Example applications including training-free dynamic and calibrationless parallel MRI will be demonstrated.},
-  eventtitle = {Wavelets and {{Sparsity XV}}},
-  file = {/Users/txn009/Zotero/storage/QRESSPEX/Trzasko - 2013 - Exploiting local low-rank structure in higher-dimensional MRI applications.pdf}
-}
-
-
 @article{tryggestadRespirationbasedSortingDynamic2013,
   title = {Respiration-Based Sorting of Dynamic {{MRI}} to Derive Representative {{4D-MRI}} for Radiotherapy Planning},
   author = {Tryggestad, Erik and Flammang, Aaron and Han-Oh, Sarah and Hales, Russell and Herman, Joseph and McNutt, Todd and Roland, Teboh and Shea, Steven M. and Wong, John},
@@ -3907,6 +3945,22 @@
   langid = {english},
   keywords = {4D-MRI,Analysis of motion,Anatomy,biomedical MRI,Cancer,Digital computing or data processing equipment or methods,Dosimetry,e.g. from bit-mapped to bit-mapped creating a similar image,e.g. magnetic resonance imaging,Functional imaging,Image data processing or generation,Image enhancement or restoration,Image reconstruction,image restoration,in general,Involving electronic emr or nuclear nmr magnetic resonance,Liver,lung,Lungs,Magnetic resonance imaging,medical image processing,Medical image quality,Medical imaging,motion compensation,pneumodynamics,radiation therapy,Radiation therapy,retrospective slice stacking,specially adapted for specific applications,Treatment planning},
   file = {/Users/txn009/Zotero/storage/QZ7639VH/Tryggestad et al. - 2013 - Respiration-based sorting of dynamic MRI to derive representative 4D-MRI for radiotherapy planning.pdf;/Users/txn009/Zotero/storage/CK64Q9FT/1.html}
+}
+
+@inproceedings{trzaskoExploitingLocalLowrank2013,
+  title = {Exploiting Local Low-Rank Structure in Higher-Dimensional {{MRI}} Applications},
+  booktitle = {Wavelets and {{Sparsity XV}}},
+  author = {Trzasko, Joshua D.},
+  date = {2013-09-26},
+  volume = {8858},
+  pages = {551--558},
+  publisher = {SPIE},
+  doi = {10.1117/12.2027059},
+  url = {https://www.spiedigitallibrary.org/conference-proceedings-of-spie/8858/885821/Exploiting-local-low-rank-structure-in-higher-dimensional-MRI-applications/10.1117/12.2027059.full},
+  urldate = {2026-03-10},
+  abstract = {In many clinical MRI applications, not one but a series of images is acquired. Techniques that promote intra- and inter-image sparsity have recently emerged as powerful strategies for accelerating MRI applications; however, sparsity alone cannot always describe the complex relationships that exist between images in these series. In this paper, we will discuss the modeling of higher-dimensional MRI signals as matrices and tensors, and why promoting these signals to be low-rank (and, specifically, locally low-rank) can effectively identify and exploit these complex relationships. Example applications including training-free dynamic and calibrationless parallel MRI will be demonstrated.},
+  eventtitle = {Wavelets and {{Sparsity XV}}},
+  file = {/Users/txn009/Zotero/storage/QRESSPEX/Trzasko - 2013 - Exploiting local low-rank structure in higher-dimensional MRI applications.pdf}
 }
 
 @article{ueckerESPIRiTEigenvalueApproach2014,
