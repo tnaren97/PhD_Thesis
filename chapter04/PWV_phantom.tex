@@ -1,0 +1,180 @@
+In this chapter, I build off the work done previously by Grant Roberts in his doctoral thesis developing novel, free-breathing radial single slice and simultaneous multi-slice sequence 2D phase contrast (2DPC) sequences for measuring aortic pulse wave velocity (PWV) for evaluating cardiovascular fitness and validating it in a realistic flow phantom~\cite{robertsAdvancingFunctionalAssessment2023}. Here, I aim to update the construction of the phantom to better reflect flow dynamics in the aorta and perform more accurate ground truth measurements to better validate the two radial 2DPC sequences.
+
+\section{Introduction}
+One of the most clinically relevant biomarkers for assessing cardiovascular fitness is arterial stiffness as it is a significant early predictor of cardiovascular disease~\cite{cavalcanteAorticStiffness2011}. In the early stages of cardiovascular diseases, vessel wall thicknesses increase without necessarily altering vessel diameters via the Glagov phenomenon leading to increased blood pulse wave velocity (PWV)~\cite{wentlandReviewMRIbasedMeasurements2014}. This relationship is described by the Moens-Korteweg equation 
+\begin{equation}
+    PWV={\sqrt{\frac{E h}{2r\rho }}}=\sqrt{\frac{1}{\rho D}}
+    \label{eq:moens-korteweg}
+\end{equation}
+where $E$ is the elastic modulus of the vessel wall for a given wall thickness $h$, vessel radius $r$, and fluid density $\rho$ and $D$ is the distensibility coefficient of the vessel~\cite{newmanValidityMoensKortewegEquation1978}. As vessel distensibility is difficult to measure directly, it can be inferred from the inverse relationship with pulse wave velocity which is more easily measured. The clinical standards for measuring PWV are through the application of arterial pressure wires or applanation tonometry, but the former is an invasive procedure and hence rarely used while the latter is prone to measurement errors~\cite{avolioArterialBloodPressure2009,kimPulseWaveVelocity2019}. 
+
+In recent years, MRI has emerged as a promising avenue for measuring aortic PWV\@. MR-based PWV measurement methods typically rely on time-shift calculations where flow curves are measured at different points along the vessel and the PWV is found by utilizing Equation~\ref{eq:time_shift} 
+\begin{equation}
+    PWV=\frac{\Delta d}{\Delta t}
+    \label{eq:time_shift}
+\end{equation} 
+where $\Delta d$ is the path length along the aortic centerline between two points and $\Delta t$ is the temporal difference between the flow curves~\cite{wentlandReviewMRIbasedMeasurements2014}. Various approaches for MR-based PWV measurements have been proposed, most notably 1D Fourier velocity-encoded M-mode measurements and 4D flow MRI~\cite{tavianiAccuracyRepeatabilityFourier2010,wentlandAorticPulseWave2013}\@. However, there are trade-offs with both approaches. 1D Fourier methods have very high temporal resolutions but require matched angiograms for vessel length calculations and can't handle tortuous vessels. 4D flow provides inherent anatomical information but has poor temporal resolution and long scan times. One commonly used research approach is the use of 2D phase contrast (2DPC) imaging~\cite{wentlandCineFlowMeasurements2006,tavianiAccuracyRepeatabilityFourier2010}. However, there are challenges associated with 2DPC PWV measurements, such as limited temporal resolution due to the need for breath-hold acquisitions. This challenge is particularly amplified in elderly, senile, or health compromised patients, such as those with Alzheimer's, who may be incapable of holding their breath or following breathing directions\cite{dorniakRequiredTemporalResolution2016}. Additionally, 2DPC based PWV measurements typically require the acquisition of 2 or more planes along the vessel path and are sensitive to physiological inconsistencies between sequential acquisitions. The UW MRI group recently introduced novel radial free-breathing 2DPC and simultaneous multi-slice (SMS) 2DPC sequences to address these issues\cite{robertsAdvancingFunctionalAssessment2023}. The radial, retrospectively-gated acquisitions enable acquiring flow information without breath holds and the simultaneous multi-slice acquisition allows for multiple slices to be acquired with identical physiological conditions. However, while these sequences have been used to acquire data in human subjects, thorough validation of these methods is still needed~\cite{roberts2DPhaseContrast,narenEffectTemporalResolution}.
+
+The primary motivation of this work is to validate the developed retrospectively-gated radial, 2D phase contrast single slice and simultaneous multi-slice acquisitions in a physiologically realistic aortic flow phantom. This is done by acquiring multiple standard Cartesian 2DPC images along with multiple single slice radial images and an SMS radial acquisition and comparing PWVs calculated with a custom analysis framework to ground truth measurements acquired with an ultrasound flow probe.
+
+\section{Materials \& Methods}
+\subsection{Phantom Construction}
+The anatomical basis for the phantom model came from a contrast-enhanced angiogram of a 27-year-old male volunteer. The angiogram was segmented in Mimics (Materialise Inc., Leuven, Belgium) from the ascending aorta to the renal arteries using a manual intensity threshold. In the original version of this phantom, all arterial branches originating from the aorta were removed to simplify model construction, however, in this updated model, the arterial branches were re-added to simulate a more physiologically realistic splitting of the flow and reduce the effect of wave reflections. The resulting isosurface was manually smoothed before being imported into 3\-Matic software (Materialise Inc., Leuven, Belgium), where it was meshed and wrapped to further smooth the surface. Additionally, the thickness of the phantom wall was increased to 2.75 mm from the original 2 mm to improve the optical properties of the material and allow for direct ultrasound flow measurements at the regions of interest (ROIs) which was not possible on the original model. The length of the aortic root and abdominal aorta were also extended to allow for the width of the ultrasound probe (45 mm). Figure~\ref{fig:phantom_model} shows a comparison between the original phantom and the updated model.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{phantom_model.png}
+
+    \caption[Phantom model comparison]{A. Segmentation of a volunteer aorta used for phantom construction. B. The original phantom model. B. The updated phantom model with re-added arterial branches and extended aortic root and abdominal aorta. Yellow Lines indicate the locations of MRI scan prescriptions. Numbers indicate locations of flow measurements (* indicates a location where MRI measurement was taken, but no ultrasound measurement could be taken). Updated model construction allowed for direct ultrasound measurement on the phantom}\label{fig:phantom_model}
+    \vspace{0.25cm}
+\end{figure}
+
+The resulting model was fabricated using stereolithography on a Formlabs Form 4 3D printer with Elastic 50A V2 Resin as the base material (Formlabs, Utrecht, Netherlands). The phantom was cured under ultraviolet light at 70 °C for 30 minutes to enhance mechanical stability. The model was then connected to the rest of the flow circuit using plastic connectors at the inlet (40 mm length), outlet (60 mm length), and at the arterial branches (30 mm), all of which were sealed with Dowsil 732 silicone (Dow Inc, Midland MI, USA). Segments of distensible Tygon tubing were attached to the inlet and outlet connectors (S3 E-3603, 0.75-inch diameter) which served as locations for reference flow measurement into and out of the model. In the original model, these segments were the only locations where the ultrasound flow probes could be placed which compromised the validation effort.
+
+A pulsatile displacement pump (Model PD-1100 BDC Laboratories, Wheat Ridge, CO, USA) was connected to the model using 30 ft of 0.75-inch PVC tubing (MSC Industrial Supply, MO, USA). Additionally, compliance chambers were added downstream of both the arterial branches and abdominal outlet to modulate flow wave amplitudes. Resistors were added in sequence with the compliance chambers to further adjust the properties of the flow waves. A full diagram of the flow circuit set up can be seen in Figure X. Approximately 10 liters of tap water doped with 7 mL of gadobenate dimeglumine (Bracco Diagnostics, Milan, Italy) were added to the flow circuit.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{flow_circuit.png}
+
+    \caption[Phantom flow circuit]{Diagram of the flow circuit used with the developed phantom. Flow pump and compliance head were placed in the MRI control room while the tubing was fed through the waveguide and connected to the phantom on the scanner table. Red hourglasses indicate locations of resistors to manage flow waveform.}\label{fig:flow_circuit}
+    \vspace{0.25cm}
+\end{figure}
+
+Ground truth testing of the flow phantom was performed in the MRI control room before being moved into the MRI bore. Ultrasound measurements were taken with a clamp-on 16-PXL ultrasound flow probe and TS410 acquisition module (Transonic Systems Inc., Ithaca, NY, USA) that samples at a rate of 5000 Hz. This flow probe was connected directly to the flow pump allowing for simultaneous measurement and recording of the flow data and motor signal. Using the flow probe to confirm reference flow output and input, the pump was set to produce a 30\% systolic waveform with a flow rate of approximately 3 L/min and ensuring a roughly 60/40 flow split between the main aorta and the arterial branches, respectively. For ground truth flow measurements, 3 different heart rates were simulated with the flow pump: 60 bpm. 75 bpm, and 90 bpm. Flow measurements were taken sequentially with a single ultrasound probe at 5 ROIs around the phantom where ROI 0 is the phantom inlet, ROI 1 is the ascending aorta (AAo), ROI 2 is the descending aorta (DAo), ROI 3 is the abdominal aorta (AbdAo), and ROI 4 is the outlet of the phantom (Figure~\ref{fig:phantom_model}C). Data was recorded for 10 seconds at each ROI\@.
+
+\subsection{MR Imaging Protocol}
+After ground truth measurements were performed with the ultrasound flow probe, the phantom was moved onto the MRI table along with the auxiliary compliance chambers and resistors. All scans were acquired on a 3T Signa Premier system with a 30-channel chest coil plus a 40-channel table coil. Saline bags were arranged around the phantom to allow for background phase correction. The cardiac gating signal for the acquisition was simulated via a custom device built to translate the pump motor signal into electrical pulses that could be read by the scanner's ECG leads. A series of ungated anatomical balanced steady state free precession (bSSFP) product sequences (axial, coronal, sagittal) were acquired to aid with aortic centerline tracing and vessel path length calculation. Next, a series of Cartesian 2DPC product sequences, radial 2DPC research sequences, and an SMS 2DPC sequence were acquired. For the Cartesian and radial sequences, 3 slices were prescribed to match the locations of the ultrasound measurements with the superior slice capturing ROIs 1 and 2, the intermediate slice capturing ROIs 0 and 3, and the inferior slice capturing ROI 4 (Figure~\ref{fig:phantom_model}). For the SMS sequence, a single acquisition with 3 slices was acquired with the spacing between slices calculated to match the locations of the prescribed Cartesian and single slice radial sequences. Additionally, the number of projections acquired was increased to reduce the effect of slice aliasing that occurs with high undersampling. These set of scans were repeated three times with simulated heart rates of 60 bpm, 75 bpm, and 90 bpm. Scan parameters for each acquisition type are listed in Table~\ref{tab:scan_params}
+
+\begin{table}[ht]
+    \centering
+    \caption[2D phase contrast can parameters]{Acquisition and reconstruction parameters for Cartesian, radial, and SMS 2D phase contrast (2DPC) scans.}\label{tab:scan_params}
+    \begin{tabular}{lccc}
+    \toprule
+    Parameter & Cartesian 2DPC & Radial 2DPC & SMS 2DPC \\
+    \midrule
+    TR / TE (ms) & 5.1 / 3.1 & 7.5 / 4.3 & 8.4 / 5.0 \\
+    Flip angle & 25$^\circ$ & 25$^\circ$ & 10$^\circ$ \\
+    Views per segment & 4 & N/A & N/A \\
+    Sampling & Cartesian & Golden-angle & Golden-angle \\
+    Acquired FOV (cm) & 36 & 32 & 32 \\
+    Reconstructed matrix & $256 \times 256$ & $256 \times 256$ & $256 \times 256$ \\
+    Spatial resolution (\qty{}{\mm^2}) & $1.41 \times 1.41$ & $1.40 \times 1.40$ & $1.40 \times 1.40$ \\
+    Slice thickness (mm) & 6 & 5 & 5 \\
+    Reconstructed cardiac frames & 40 & 40 & 40 \\
+    VENC (cm/s) & 150 & 150 & 150 \\
+    Velocity encoding & 2-point & 2-point & 2-point \\
+    Number of projections & N/A & 2,000 & 5,000 \\
+    Scan time & 12--20 s & 30 s & 75 s \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+Cartesian acquisitions were reconstructed online at the scanner while the radial 2DPC and SMS 2DPC scans were reconstructed offline with custom reconstruction frameworks built in C++ and Python respectively. Both offline reconstructions were doing using a Parallel Imaging with Localized Sensitivities (PILS) method to reduce undersampling artifacts~\cite{griswoldPartiallyParallelImaging2000} and included Maxwell term phase offset corrections~\cite{bernsteinConcomitantGradientTerms1998} and gradient calibration to correct trajectory errors~\cite{johnsonImproved3DPhase2008}. Time-resolved and time-averaged velocity and magnitude datasets were obtained for both reconstructions.
+
+\subsection{Pulse Wave Velocity Analysis}
+Acquired ultrasound and MRI data were analyzed in MATLAB (Mathowrks, Natick, MA) to compare ultrasound-derived vs MRI-derived PWVs. MRI data was analyzed using a custom-built analysis program developed by Grant Roberts and myself in MATLAB and is available publicly at \url{www.github.com/tnaren97/PWV_2DPC}. This tool consists of two different Graphical User Interfaces (GUIs), one for aortic centerline tracing to calculate $\Delta d$ and the second for time-shift calculations between velocity waveforms for $\Delta t$.
+
+For the centerline tracing GUI, axial and sagittal balanced steady-state free precession (bSSFP) images were first loaded into the software. Fiducial markers were then manually placed along the aorta across all slices for each image set. Subsequently, 2D phase-contrast (2DPC) images of the aortic arch and abdominal aorta were imported, and additional markers were placed at the centers of the ascending, descending, and abdominal aorta corresponding to the flow measurement ROIs. All marker coordinates were transformed from image space into a physical coordinate system referenced to the scanner isocenter using DICOM header information. Sagittal and coronal projections of these coordinates were then generated, and the user traced an aortic centerline passing through the fiducial points. The resulting centerline was interpolated to 150 evenly spaced points using modified Akima interpolation, after which distances between the flow measurement ROIs were automatically calculated.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{centerline_tracing.png}
+
+    \caption[PWV Centerline Tracing]{Example of aortic centerline tracing with the custom-built MATLAB GUI for pulse wave velocity analysis}\label{fig:centerline_tracing}
+    \vspace{0.25cm}
+\end{figure}
+
+For the time-shift calculation GUI, the previously generated centerline data were first loaded into the tool. Phase contrast images corresponding to the regions of interest (ROIs) could then be imported users place circular ROIs around the ascending, descending, and abdominal aorta. Each ROI was propagated across all cardiac time frames, and velocity waveforms were generated by computing the mean velocity within the ROI at each time point. The raw waveforms were shifted by a user-defined number of frames so that systole occurred near the beginning of the cardiac cycle. The waveforms were then temporally upsampled to 1000 points and smoothed using a Gaussian-weighted moving-average filter to reduce velocity noise. Several commonly used transit-time algorithms (Figure~\ref{fig:tt_algos}) were implemented to automatically determine temporal offsets between velocity waveforms, including time-to-point (TTP)~\cite{groeninkBiophysicalPropertiesNormalsized2001,doguiMeasurementAorticArch2011}, time-to-foot (TTF) with baseline offset correction~\cite{lundstromPulseWaveVelocity2022}, time-to-upstroke (TTU)~\cite{doguiMeasurementAorticArch2011}, and cross-correlation (XCOR)~\cite{fieldenNewMethodDetermination2008}. For each method, the measured transit times were plotted against the corresponding centerline distances along the aorta. A simple linear regression was then performed using the three measurement locations to estimate the relationship between propagation distance and temporal delay. The inverse of the fitted slope was taken as the estimated pulse wave velocity (PWV) across the measured segment of the aorta~\cite{wentlandReviewMRIbasedMeasurements2014}.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{tt_algos.png}
+    \caption[Time-shift algorithms for PWV calculation]{The four commonly used time-shift algorithms in literature for calculating PWV\@. All four algorithms were included in the custom-built MATLAB GUI for pulse wave velocity analysis}\label{fig:tt_algos}
+    \vspace{0.25cm}
+\end{figure}
+
+For ultrasound data, as only one ultrasound probe was available, each set of sequential recordings were aligned together using the motor signal to determine temporal shifts relative to the first ROI (location 1 in Figure~\ref{fig:phantom_model}C) in a method based off an ECG alignment procedure~\cite{ruesinkINVITROVALIDATION4D2018}. Once aligned, 3 RR intervals were extracted from the 10-second acquisition and averaged together to form a composite ultrasound waveform to match the MRI acquisition. Centerline distances between ROIs were taken from the same centerline created from the anatomical MRI data with an additional 45 mm added due to the width of the ultrasound probe. PWVs were calculated using the same 4 transit time-algorithms used for the MRI analysis. 
+
+\section{Results}
+
+\begin{table}[ht]
+    \centering
+    \caption[Phantom Pulse Wave Velocities]{Pulse Wave Velocities at multiple heart rates (HR) for four modalities}
+    \small
+    \begin{tabularx}{\textwidth}{llXXX}
+    \toprule
+    Acquisition & Parameter & HR=60 bpm & HR=75 bpm & HR=90 bpm \\
+    
+    \midrule
+    \multicolumn{5}{l}{\textbf{Anatomical}} \\
+    & Aortic Path Length (mm) & 
+    $245.8$ & 
+    $245.8$ & 
+    $245.8$ \\
+
+    \midrule
+    \multicolumn{5}{l}{\textbf{Cartesian}} \\
+
+    & TTP (m/s)  & 8.7 & 8.3 & 11.9 \\
+    & TTF (m/s)  & 9.7 & 11.2 & 16.5 \\
+    & TTU (m/s)  & 11.0 & 11.9 & 11.9 \\
+    & XCOR (m/s) & 6.2 & 7.2 & 10.0 \\
+
+    \midrule
+    \multicolumn{5}{l}{\textbf{Radial}} \\
+
+    & TTP (m/s)  & 10.6 & 10.6 & 13.3 \\
+    & TTF (m/s)  & 10.8 & 12.2 & 15.4 \\
+    & TTU (m/s)  & 11.2 & 9.7 & 9.6 \\
+    & XCOR (m/s) & 9.2 & 9.6 & 8.3 \\
+
+    \midrule
+    \multicolumn{5}{l}{\textbf{SMS}} \\
+
+    & TTP (m/s)  & 9.6 & 10.6 & 11.6 \\
+    & TTF (m/s)  & 9.0 & 9.2 & 11.0 \\
+    & TTU (m/s)  & 10.7 & 9.9 & 12.2 \\
+    & XCOR (m/s) & 7.0 & 8.7 & 11.1 \\
+
+    \midrule
+    \multicolumn{5}{l}{\textbf{Ultrasound}} \\
+
+    & TTP (m/s)  & 10.4 & 12.3 & 11.6 \\
+    & TTF (m/s)  & 9.1 & 10.2 & 12.6 \\
+    & TTU (m/s)  & 11.0 & 11.2 & 8.5 \\
+    & XCOR (m/s) & 8.2 & 10.5 & 11.2 \\
+
+    \bottomrule
+    \end{tabularx}
+    \begin{flushleft}
+        \footnotesize
+        TTP = time-to-point; TTF = time-to-foot; TTU = time-to-upstroke; XCOR = cross correlation.
+    \end{flushleft}
+\end{table}
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{phantom_images.png}
+
+    \caption[Reconstructed phantom MR images]{Magnitude images from  the Cartesian, radial, and simultaneous multi-slice (SMS) 2D phase contrast acquisitions of the aortic flow phantom. Red numbers correspond to locations of flow measurements.}\label{fig:phantom_images}
+    \vspace{0.25cm}
+\end{figure}
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[width=\textwidth]{inlet_outlet_flow.png}
+
+    \caption[Phantom Inlet \& Outlet flow]{Flow curves for the inlet and outlet of the phantom from Cartesian, radial, simultaneous multi-slice (SMS), and ultrasound (US) modalities. Roughly 60\-70\% of flow is shunted to the arterial branches.}\label{fig:inlet_outlet}
+    \vspace{0.25cm}
+\end{figure}
+
+\section{Discussion}
+
+\section{Conclusion}
