@@ -4,7 +4,7 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{float}
-
+\usepackage{amsmath}
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{siunitx}
@@ -23,11 +23,11 @@
 \graphicspath{ {./chapter02/images/}{./chapter03/images/}{./chapter04/images/}{./chapter05/images/}{./chapter06/images/}{./chapter07/images/}{./chapter08/images/}}
 
 \titleformat{\chapter}[block]
-{\normalfont\Large\bfseries}
+{\normalfont\LARGE\bfseries}
 {Chapter \thechapter:}
 {1em}
 {}
-\titlespacing*{\chapter}{0pt}{0pt}{30pt}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
 
 \addbibresource{references/references.biblatex}
 
@@ -59,18 +59,21 @@
 % \pagenumbering{arabic} 
 % \input{chapter01/introduction}
 
-% \chapter{Background}
-% \pagenumbering{arabic} 
-% \input{chapter02/background}
+\chapter{Background}
+\pagenumbering{arabic} 
+\input{chapter02/background}
 
-\chapter{Validation of Free-Breathing Radial 2D Phase Contrast MRI Measured Pulse Wave Velocity with an Aortic Flow Phantom}
+\chapter{Validation of Free-Breathing Radial 2D \\ Phase Contrast MRI Measured Pulse Wave Velocity with an Aortic Flow Phantom}
 \input{chapter04/PWV_phantom.tex}
 
-% \chapter{Feasibility of Free-Breathing Radial 2D Phase Contrast MRI for Aortic Pulse Wave Velocity Measurements}
-% \input{chapter03/LIFE_study.tex}
+\chapter{Effects of Respiration on Aortic Pulse Wave Velocity Measurements with a Radial Simultaneous \\
+Multi-Slice 2D Phase Contrast Acquisition}
+\input{chapter05/PWV_respiration.tex}
 
-% \chapter{Effects of Respiration on Aortic Pulse Wave Velocity Measurements with a Radial Simultaneous-Multi Slice 2D Phase Contrast Acqusiition}
-% \input{chapter05/PWV_respiration.tex}
+\chapter{Feasibility of Free-Breathing Radial 2D \\
+Phase Contrast MRI for Aortic Pulse Wave Velocity Measurements}
+\input{chapter03/LIFE_study.tex}
+
 
 % \chapter{Optimizing VENC in Radial Free-Breathing 4D Flow MRI for the Portal Venous System}
 % \input{chapter06/GEVenc.tex}

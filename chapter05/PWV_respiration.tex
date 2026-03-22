@@ -1,13 +1,65 @@
-\section{Introduction}
+In this chapter, I apply the radial simultaneous multi-slice 2D phase contrast acquisition described previously and apply it to an analysis of the effects of free-breathing and controlled respiration on pulse wave velocity in a cohort of healthy volunteers. 
 
-\section{Materials \& Methods}
+\section{Introduction}\label{sec:sms_intro}
+Pulse wave velocity (PWV) is a well-established biomarker of arterial stiffness and an important predictor of cardiovascular morbidity and mortality. Increased PWV reflects reduced vascular compliance and has been associated with conditions such as hypertension, atherosclerosis, and aging. Consequently, accurate and reproducible measurement of PWV is of substantial clinical and research interest. Among available modalities, cardiovascular magnetic resonance (CMR) imaging—particularly 2D phase-contrast (PC) MRI—has emerged as a non-invasive reference standard for assessing blood flow dynamics and deriving PWV through time-resolved velocity measurements along the aorta.%~\ref{sec:phantom_intro}%
 
-A small group of healthy volunteers (n=10) will be scanned with the chest protocol established in the LIFE study with a repeatability approach. For each sequence type (Cartesian, radial, SMS), each subject will undergo multiple types of respiration to explore the potentially clinically significant differences in PWV from different types of respiration. This includes free-breathing, breath-holds at inspiration and expiration, and the Valsalva maneuver, which has significant physiological effects on intrathoracic pressure and heart rate37. In the case of the Cartesian sequences, only the breath-holds will be performed as motion artifacts will make the images unusable. For the research sequences, the free-breathing acquisitions will be reconstructed at both expiration and inspiration, while the breath-hold acquisitions will be reconstructed using approximately half of the acquired projections (in order to match the number of projections used for the free-breathing acquisitions with 50\% thresholds). All other reconstruction parameters will match the standard LIFE reconstructions. PWV will be calculated for each type of breathing and sequence and for both sessions using the GUI described previously using just one PWV method (TTF) for simplicity.
-PWVs will be compared between each type of respiration to analyze the differences between each. Differences in expiration and inspiration for the free-breathing and breath-hold sequences will be compared to see if the difference is consistent or if breath-holds have an effect. Results will be compared between the test and retest portions to analyze the reproducibility.
+Conventional PC-MRI approaches for PWV estimation typically rely on sequential acquisitions at multiple anatomical locations, requiring breath-holding to minimize respiratory motion artifacts. However, breath-hold techniques introduce several limitations, including dependence on patient compliance, restricted scan duration, and potential alteration of physiological hemodynamics. These constraints are particularly relevant in populations with limited breath-hold capacity, such as elderly individuals or patients with cardiopulmonary disease. Furthermore, breath-holding itself represents a non-physiological condition, often associated with transient changes in intrathoracic pressure, autonomic tone, and vascular loading conditions, which may confound PWV estimation.
 
-\section{Results}
+Respiration plays a fundamental role in modulating cardiovascular dynamics through complex mechanical and neurohumoral interactions. During inspiration, the decrease in intrathoracic pressure enhances venous return to the right heart, leading to increased right ventricular preload and a transient reduction in left ventricular stroke volume due to interventricular dependence. Concurrently, the expansion of the thoracic cavity reduces aortic transmural pressure, potentially altering arterial compliance and wave propagation characteristics. In contrast, expiration is associated with increased intrathoracic pressure, reduced venous return, and relatively increased left ventricular stroke volume, which may result in higher systolic pressures and altered pulse wave transmission. These cyclical changes suggest that PWV is not a static parameter but may vary dynamically across the respiratory cycle.
+
+In addition to normal respiratory variation, controlled alterations in breathing patterns can further influence cardiovascular function. Tachypnea, characterized by an increased respiratory rate, modifies the frequency and amplitude of intrathoracic pressure oscillations, potentially affecting ventricular filling, arterial pressure waveforms, and vascular tone. Metronome-paced tachypnea provides a controlled framework to systematically investigate these effects, enabling reproducible modulation of respiratory mechanics. Such conditions may exaggerate cardiopulmonary interactions and reveal subtle dependencies of PWV on respiratory dynamics that are not apparent under resting free-breathing conditions.
+
+Despite these known physiological interactions, the majority of PWV measurements obtained using CMR have been performed under breath-hold or uncontrolled free-breathing conditions without explicit consideration of respiratory phase. This represents a critical gap, as averaging across respiratory states may obscure meaningful variability and limit the sensitivity of PWV as a biomarker. Phase-resolved assessment of PWV during inspiration and expiration, as well as under altered breathing patterns such as tachypnea, may provide additional insight into vascular function and its coupling with cardiopulmonary physiology.
+
+Recent advances in accelerated MRI acquisition techniques, including simultaneous multi-slice (SMS) imaging, enable the acquisition of multiple spatial locations within a single cardiac cycle. When combined with 2D phase-contrast sequences, SMS facilitates the simultaneous measurement of flow waveforms at different aortic segments, thereby improving temporal alignment and reducing total scan time. Importantly, these developments allow for free-breathing acquisitions with sufficient temporal resolution to resolve both cardiac and respiratory influences, enabling retrospective or prospective stratification of data according to respiratory phase.
+
+In this study, we propose the use of a free-breathing, simultaneous multi-slice 2D phase-contrast MRI sequence to quantify PWV under varying respiratory conditions. Specifically, we compare PWV measurements obtained during normal free-breathing, respiratory phase-resolved states (inspiration and expiration), and metronome-paced tachypnea. By leveraging the temporal efficiency and spatial coverage of SMS imaging, this approach aims to provide a robust framework for assessing the variability of PWV under physiologically relevant breathing conditions. We hypothesize that respiratory state and breathing pattern significantly influence PWV measurements and that free-breathing SMS PC-MRI enables sensitive detection of these variations, thereby improving the physiological interpretability and clinical utility of PWV assessment.
+
+
+\section{Materials \& Methods}\label{sec:sms_methods}
+\subsubsection{Simultaneous Multi-Slice Sequence}
+The radial simultaneous multi-slice sequence was implemented in the EPIC pulse sequence programming environment (GE Healthcare, Waukesha, WI) on top of an existing 2D radial spoiled gradient echo sequence which included support for golden-angle sampling and bipolar gradients for a phase contrast acquisition with 2-point velocity encoding. In the preliminary version of this sequence, the number of acquired slices, $N_s$, and slice separation distance, $d_s$, were hard coded to values of 2 and 158 mm, respectively, to simplify acquisition and reconstruction. However, this was infeasible for more complex studies, so the sequence was updated to allow for acquiring an arbitrary $N_s$ and $d_s$, defined through the use of research control variables. The location of excited slices were arranged evenly around isocenter parallel to the direction of the $B_0$ (the z-axis) according to Equation~\ref{eq:slice_position} 
+\begin{equation}
+    \begin{split}
+        Z(n) = n\cdot d_s - \frac{d_s}{2(N_s - 1)} \\
+        \text{for} \quad  n \in \{0,1, \dots, N_s - 1\} \\
+    \end{split}
+    \label{eq:slice_position}
+\end{equation}
+where $Z(n)$ is the location of slice $n$ in mm relative to isocenter. Radial CAIPI phase blipping as described by Setsompop et al.~\cite{setsompopBlippedControlledAliasingParallel2012a} was implemented with the phase blip $\phi_n$ as described by Equation~\ref{eq:caipi_blips} 
+\begin{equation}
+    \phi_n = \frac{2n-N_s+1}{N_s}\pi
+    \label{eq:caipi_blips}
+\end{equation}
+applied to every $n$th projection to induce the desired phase cycling patterns. A multi-band radiofrequency excitation (RF) pulse was constructed by summing $N_s$ complex-valued excitation bands with the slice-specific phase blips $\phi_n$ as described by Equation~\ref{eq:multiband_ex} 
+\begin{equation}
+    RF(t) = A(t) \sum_{n=0}^{N_s} e^{i(\Delta \omega_n + \phi_n)} 
+    \label{eq:multiband_ex}
+\end{equation}
+where $\Delta \omega_n$ is the frequency of excited slice $n$. 
+The maximum number of acquirable slices was constrained by the maximum $B_1$ amplitude of the composite RF pulse, which increases linearly with $N_s$ and is limited by the specific absorption rate (SAR). For high SMS acceleration factors, peak amplitude scaling and reduction methods are typically needed to remain within SAR limits, however, the SMS acceleration factor utilized for this study was limited to 3, thus RF amplitude reduction methods were not required and standard summation was utilized.
+
+To reconstruct SMS images, a custom Python-based reconstruction framework based on the SigPy package was developed (available at \url{www.github.com/uwmri/flow_recon}). This package included support for GPU-accelerated reconstructions with the CuPy and CUDA Toolkit libraries. The original reconstruction framework used for this SMS sequence utilized a standard parallel imaging based reconstruction (PILS) with slices solved for independently by applying the conjugate of the CAIPI phase blip pattern during reconstruction~\cite{griswoldPartiallyParallelImaging2000}. To improve upon this and enable constrained reconstructions for highly undersampled acquisitions, an iterative conjugate-gradient SENSE (CG-SENSE) recon with support for compressed sensing was implemented~\cite{pruessmann2001}. This reconstruction framework was modified according to Yutzy et al\@. to simultaneously solve for all slices~\cite{yutzyImprovementsMultisliceParallel2011a}. Equation~\ref{eq:cg-sense_cs} describes the inverse problem to be solved where  
+\begin{equation}
+    \min_x = \frac{1}{2} \lVert DCFSx - y \rVert_2^2 + \frac{\lambda}{2} \lVert Wx \rVert_1
+    \label{eq:cg-sense_cs}
+\end{equation}
+where $D$ is the density compensation factor, $C$ are the conjugate phase blips for each slice, $F$ is the nonuniform Fourier transform, $S$ are coil sensitivity maps, $x$ is the estimated image and $y$ is the acquired k-space data. For compressed sensing, an L1 norm is performed with a sparsifying wavelet transform $W$ and regularization parameter $\lambda$~\cite{lustigSparseMRIApplication2007}. 
+
+\subsubsection{MR Imaging Protocol}
+A cohort of 9 healthy volunteers (all male, 22--36 years old) were scanned on 3T Signa Premier system (MR750, GE Healthcare, Waukesha, WI) with a 30-channel chest coil and 40-channel posterior coil. For physiological gating, cardiac waveforms were recorded with an eletrocardiogram (ECG) system while respiratory motion was recorded using respiratory bellows attached around the diaphragm. Ungated anatomical balanced steady state free precession (bSSFP) product sequences (axial, coronal, sagittal) were acquired for aortic centerline tracing and vessel path length calculation. Two radial SMS acquisitions were acquired per subject:
+
+
+
+
+For both Cartesian and radial 2DPC sequences, two axial planes were placed in the aorta. The first slice was prescribed in the aortic arch, transecting both the ascending and proximal descending aorta. The second slice was prescribed just above the kidneys, transecting the proximal abdominal aorta (Figure 1A). This allowed for a total of 3 flow measurements in the aorta. Cartesian 2DPC scans (product sequence) were acquired with PPG gating during breath-hold on expiration with the following parameters: TR/TE = 5.1/3.1 ms; flip angle = 25$^\circ$; VENC = 150 cm/s; velocity encoding scheme = 2-point through-plane; views per segment (VPS) = 4; acquired FOV = 36 cm (60\% phase FOV); acquired matrix size = 192 $\times$ 160; acquired temporal resolution = 40.7 ms (defined as 2*TR*VPS); reconstructed matrix size = 256 $\times$ 256; reconstructed spatial resolution = 1.41 $\times$ \qty{1.41}{\mm^2}; slice thickness = 6 mm; reconstructed cardiac frames = 40; scan time = 10--20 s (depending on heart rate). The acquired and standard reconstructed number of cardiac time frames were selected based on the publication from Dorniak et al.~\cite{dorniakRequiredTemporalResolution2016} on the required temporal resolution for 2DPC MRI\@. 
+
+
+
+
+\section{Results}\label{sec:sms_results}
 Global aortic PWV values were calculated for radial 2D PC data in 90 subjects from the LIFE study reconstructed at inspiration and expiration. The mean aortic PWV at inspiration (7.22m/s, SD=3.30m/s) was 13.7\% lower (p=0.007, CI=[0.29, 1.84]) than the mean aortic PWV at expiration (8.28m/s, SD=4.10) (Figure 4). Under free-breathing conditions, MRI-based PWV measurements show a significant decrease in aortic PWV between expiration and inspiration. This is consistent with results from a pressure tonometry study in the carotid-radial artery which also found a significant decrease in PWV from expiration to inspiration38.
 
-\section{Discussion}
+\section{Discussion}\label{sec:sms_discussion}
 
-\section{Conclusion}
+\section{Conclusion}\label{sec:sms_conclusion}
