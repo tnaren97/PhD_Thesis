@@ -1,0 +1,257 @@
+In this chapter, I again build off the initial work done by Grant Roberts in his doctoral thesis in analyzing pulse wave velocities in a cohort of middle-to-late age subjects with a free-breathing radial 2D phase contrast sequence and comparing it to the standard Cartesian acquisitions~\cite{robertsAdvancingFunctionalAssessment2023}. I update the data, methods, and analysis to provide more reliable comparisons between acquisition types and discuss the challenges of these acquisitions. Special thanks again to Grant Roberts for his initial work on this. Thank you also to Ozioma Okonkwo, Bri Breidenbach, and all the undergraduate students associated with the Okonkwo lab for facilitating this study and processing the data.
+
+\section{Introduction}\label{sec:life_intro}
+Arterial stiffness is a well-established early predictor for cardiovascular risk. In particular, increased aortic stiffness has been linked with numerous cardiovascular diseases such as stroke, hypertension, and coronary artery disease~\cite{sutton-tyrrellElevatedAorticPulse2005}. Aging is strong contributor to arterial stiffening, largely due to biochemical and structural alterations that thicken the vessel wall and reduce the aorta's ability to buffer pulsatile blood flows~\cite{vatnerVascularStiffnessAging2021,cavalcanteAorticStiffness2011}. Recent studies have indicated that increased aortic stiffness may also be linked to cranial pathologies such as vascular dementia and Alzheimer's disease~\cite{deroosMagneticResonanceImaging2017,batemanPulseWaveEncephalopathy2004}. Many of the risk factors associated with neurodegeneration such as smoking, hypertension, and the apolipoprotein E4 (APOE4) gene are also associated with cardiovascular disease~\cite{hughesReviewPotentialRole2015,nordestgaardSharedRiskFactors2022,angoffAorticStiffnessEpidemiology2021}. As such, there is high clinical interest in accurately assessing arterial stiffness. 
+
+Direct measurement of arterial stiffness is challenging; however, pulse wave velocity (PWV) provides a feasible alternative for assessing arterial stiffness through its relationship with arterial stiffness via the Moens-Korteweg equation (see Equation~\ref{eq:moens-korteweg})~\cite{newmanValidityMoensKortewegEquation1978, callaghanRelationshipPulsewaveVelocity1986}. PWV measurement approaches typically utilize time-shift algorithms to determine regional PWV, where flow or pressure waveforms are measured at multiple locations along a vessel to calculate vascular path lengths and the time shifts between them (see Equation~\ref{eq:time_shift})~\cite{wentlandReviewMRIbasedMeasurements2014}. Multiple algorithms exist to calculate these time-shifts, some of which are described in Section~\ref{sec:phantom_methods}, yet there is no consensus on which method is optimal for PWV calculation.
+
+As discussed in Chapter~\ref{ch:phantom}, MRI has emerged as a promising avenue for non-invasively measuring time-shifts through 2D phase contrast (2DPC) imaging which enables quantification of blood velocity and flow through a plane~\cite{wentlandReviewMRIbasedMeasurements2014}. These can be combined with standard anatomical images for accurate vessel path lengths leading to more robust PWV calculations. Standard cine 2DPC cardiac imaging is acquired with Cartesian sequences which require breath holds to avoid respiratory motion artifacts. However, many elderly, senile, or health-compromised patients such as those with Alzheimer's, are incapable of holding their breath or following breathing directions which can result in severely compromised image quality. The radial free-breathing 2D phase contrast sequence introduced in Chapter~\ref{ch:phantom} provides a promising alternative that can enable PWV measurements in these patient populations. In addition to breath-holds, temporal resolution is also a limitation of MRI-based PWV\@. Higher temporal resolutions may be necessary for capturing faster transit times that may result from age- or disease-related aortic stiffening. 
+
+The motivation of this chapter is to assess the feasibility of a free-breathing, radially undersampled 2DPC sequence for aortic PWV measurements by comparing to a standard, Cartesian 2DPC breath-hold sequence. Additionally, constrained reconstruction techniques are utilized to increase the temporal resolution of the acquired radial data to investigate the effects of temporal resolution on PWV\@. Aortic PWV measurements are obtained in a cohort of middle-aged, cognitively unimpaired adults (N=83) with all three 2DPC methods (Cartesian, standard radial, and high temporal resolution radial) to assess the relationship between aortic PWV and age and compare the impact of 4 different transit time algorithms on calculated PWVs.
+
+\section{Materials \& Methods}\label{sec:life_methods}
+Data for this study comes from the Longitudinal Impact of Fitness and Exercise (LIFE) study, which consists of a subset of the greater Wisconsin Alzheimer's Disease Research Center (ADRC) Clinical Core and the Wisconsin Registry for Alzheimer's Prevention (WRAP) longitudinal observation cohorts. These cohorts include cognitively healthy middle-aged adults as well as older individuals at elevated risk for Alzheimer's disease (AD), characterized in part by a higher prevalence of the APOE4 genotype and a parental history of AD\@. Eligibility criteria for the LIFE study required participants to be at least 45 years of age and free from cognitive impairment or deficits in decision-making capacity at enrollment, as determined by standardized neuropsychological assessments~\cite{jackNIAAAResearchFramework2018,langhoughkoscikValidityEvidenceResearch2021}. Exclusion criteria included current use of antipsychotic medications and general contraindications to magnetic resonance imaging (MRI), such as pregnancy or the presence of magnetically activated implants. Written informed consent was obtained from all participants and investigations were conducted in compliance with HIPAA regulations and the University of Wisconsin-Madison Health Sciences Institutional Review Board. All data in this study were collected during follow-up visits conducted between January 2023 and December 2024.
+
+\subsubsection{MR Imaging Protocol}
+Data were acquired on a 3T Signa Premier system with a 30-channel chest coil (MR750, GE Healthcare, Waukesha, WI) and 40-channel posterior table coil. For physiological gating, photoplethysmography (PPG) data was recorded during the scan using a peripheral pulse oximeter attached to the index finger and respiratory motion was recorded using respiratory bellows attached to the chest. 
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=1, width=\textwidth]{PWV_figures.pdf}
+
+    \caption[PWV Analysis tool]{A. Two axial planes were acquired for each PC scan, one bisecting the aortic arch and the other in the abdomen, for a total of three aortic ROIs. B. A custom software platform was developed to segment the aorta ROIs, trace aortic centerlines, analyze flow curves, and calculate pulse wave velocity. Figure courtesy of Grant Roberts.}\label{fig:pwv_tool}
+    \vspace{0.25cm}
+\end{figure}
+
+Ungated anatomical balanced steady state free precession (bSSFP) product sequences (axial, coronal, sagittal) were acquired to aid with aortic centerline tracing and vessel path length calculation. Parameters for the scans are identical to the ones acquired in Section~\ref{sec:phantom_methods}. For the Cartesian and radial 2D PC sequences, two axial planes were placed in the aorta. The superior slice was prescribed in the aortic arch at the level of the pulmonary bifurcation while the inferior slice was prescribed just above the radial arteries. This resulted in the acquisition of 3 total regions of interest (ROIs) in the aorta: the ascending and descending aortas in the superior slice and the abdominal aorta in the inferior slice (Figure 1A). Table~\ref{tab:LIFE_scan_params} lists the scan parameters for both types of acquisitions.
+
+\begin{table}[ht]
+    \centering
+    \caption[LIFE study scan parameters]{Acquisition parameters for 2D Cartesian and radial 2D phase contrast scans.}\label{tab:LIFE_scan_params}
+    \begin{tabular}{lccc}
+    \toprule
+    Parameter & Cartesian 2DPC & Radial 2DPC \\
+    \midrule
+    TR / TE (ms) & 5.1 / 3.1 & 7.5 / 4.3 \\
+    Flip angle & 25$^\circ$ & 25$^\circ$ \\
+    Views per segment & 4 & N/A \\
+    Sampling & Cartesian & Golden-angle \\
+    Acquired FOV (cm) & 36 & 32 \\
+    Acquired spatial resolution (\qty{}{\mm^2}) & $1.41 \times 1.41$ & $1.40 \times 1.40$ \\
+    Slice thickness (mm) & 6 & 5 \\
+    VENC (cm/s) & 150 & 150 \\
+    Velocity encoding & 2-point & 2-point \\
+    Number of projections & N/A & 10,000 \\
+    Scan time & 12--20s & 150 s \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+Cartesian acquisitions were reconstructed automatically after acquisition. For the radial acquisition, two different types of reconstructions were employed: a standard reconstruction designed to match the Cartesian acquisition using Parallel Imaging with Localized Sensitivities (PILS) (standard radial) and a constrained reconstruction using a local low rank (LLR) algorithm to increase spatial and temporal resolution (hi-res radial)~\cite{griswoldPartiallyParallelImaging2000, jimenezFeasibilityHighSpatiotemporal2018,haldarLowrankApproximationsDynamic2011}. Both reconstructions utilized ESPIRiT coil sensitivity estimation for parallel imaging and included Maxwell term phase offset corrections, and gradient calibration to correct trajectory errors~\cite{ueckerESPIRiTEigenvalueApproach2014, bernsteinConcomitantGradientTerms1998, johnsonImproved3DPhase2008}. The iterative LLR reconstruction was performed with nuclear norm regularization using a local block size of 4 $\times$ 4 $\times$ 4 and a regularization parameter of $\lambda$ = 0.003 for 55 iterations. All data were reconstructed in end-exhalation using a 50\% threshold of the respiratory waveform. Table~\ref{tab:recon_params} lists the reconstructed parameters for all image types.
+
+\begin{table}[ht]
+    \centering
+    \caption[2DPC reconstructed parameters]{Reconstruction parameters for Cartesian, radial low-res, and radial hi-res 2D phase contrast scans.}\label{tab:recon_params}
+    \begin{tabular}{lccc}
+    \toprule
+    Parameter & Cartesian 2DPC & Standard Radial & Hi-Res Radial \\
+    \midrule
+    Reconstruction type & Default & PILS & LLR \\
+    Reconstructed matrix & $256 \times 256$ & $256 \times 256$ & $320 \times 320$ \\
+    Reconstructed spatial resolution & $1.41 \times 1.41$ & $1.40 \times 1.40$ & $1.00 \times 1.00$ \\
+    Reconstructed cardiac frames & 40 & 40 & 80 \\ 
+    Temporal resolution* (ms) & 26.2 $\pm$ 3.6 & 25.2 $\pm$ 3.6 & 12.5 $\pm$ 1.8  \\ 
+    \bottomrule
+    \end{tabular}
+    \begin{flushleft}
+        \footnotesize
+        PILS = Parallel Imaging with Localized Sensitivities \\
+        LLR = Local Low Rank constrained reconstruction \\
+        *Temporal resolutions are dependent on heart rate and are reported as mean $\pm$ standard deviation for the cohort \\
+
+    \end{flushleft}
+\end{table}
+
+
+\subsubsection{Analysis}
+PWV analysis was performed in MATLAB (version 2020b, Mathworks, Natick, MA) using the GUI tool described in detail in Section~\ref{sec:phantom_methods}. Images were assessed prior to analysis for general image quality, proper plane placement, and velocity aliasing. Datasets that failed to meet standards for any of those reasons were rejected. The 4 time-shift methods utilized in Section~\ref{sec:phantom_methods} --- time-to-point (TTP)~\cite{groeninkBiophysicalPropertiesNormalsized2001,doguiMeasurementAorticArch2011}, time-to-foot (TTF)~\cite{lundstromPulseWaveVelocity2022}, time-to-upstroke (TTU)~\cite{doguiMeasurementAorticArch2011}, and cross-correlation (XCOR)~\cite{fieldenNewMethodDetermination2008} --- were used to calculate PWVs for each subject with each acquisition type (Cartesian, standard radial, hi-res radial).
+
+Aortic centerline distances and pulse wave velocities (PWVs) were summarized for the full cohort according to age groups (50--59, 60--69, and 70--79 years) and sex. For each variable, the mean, standard deviation, and sample size (N) were reported. Differences in PWV across acquisitions for each time-shift method were evaluated using the Skillings-Mack test, a nonparametric repeated-measures analysis of variance that accounts for missing data and is analogous to the Friedman test. PWV distributions are visualized with box plots, highlighting medians, variability, and outliers, with paired measurements connected by line segments.
+
+Associations between acquisition and time-shift method pairs were assessed using Pearson correlation coefficients ($r$) and visualized with a correlation matrix. To evaluate the relationship between age and aortic PWV, simple linear regression models were constructed for each acquisition and time-shift method. Regression coefficients ($\beta$), coefficients of determination ($R^2$), and corresponding p-values were reported, with statistical significance defined as $p < 0.05$.
+
+\section{Results}\label{sec:life_results}
+Demographics for the analyzed study population are shown in Table~\ref{tab:life_demo}. 
+Of the 83 subjects analyzed, 38 were excluded due to: poor plane prescription (N=8), insufficient image quality or velocity aliasing (N=11), or poor cardiac or respiratory gating (N=19) in one or more of the acquisition types, arriving at a final total of 45 cases. 
+
+\begin{table}[H]
+    \centering
+    \caption[Patient Demographics]{Patient Demographics}\label{tab:life_demo}
+    \begin{tabular}{ll}
+    \toprule
+    Variable & Value \\
+    \midrule
+    Age (years) & $63.1 \pm 7.41$ (50--77) \\
+
+    Sex & \\
+    \quad Female & 34 (76\%) \\
+    \quad Male & 11 (24\%) \\
+
+    Race* & \\
+    \quad White & 44 (97.8\%) \\
+    \quad Unknown & 1 (2.2\%) \\
+
+    Education (years) & $16.8 \pm 1.98$ (12--20) \\
+
+    Parental history of dementia & \\
+    \quad Yes & 36 (80.0\%) \\
+    \quad No & 9 (20.0\%) \\
+
+    Parental history of AD & \\
+    \quad Yes & 23 (51.1\%) \\
+    \quad No & 9 (20.0\%) \\
+    \quad Unknown & 13 (28.9\%) \\
+
+    APOE4 carrier** & \\
+    \quad Yes & 30 (66.7\%) \\
+    \quad No & 14 (31.1\%) \\
+    \quad Unknown & 1 (2.2\%) \\
+    \bottomrule
+    \end{tabular}
+    \begin{flushleft}
+        \footnotesize
+        For continuous data, values are expressed as mean ± SD and data ranges are in parentheses. For categorical data, values are expressed as numerators with percentage in parentheses. 
+        *Race was self-reported and obtained as required by federal funding agencies.
+        **APOE4 = apolipoprotein E4
+
+    \end{flushleft}
+\end{table}
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=4, width=\textwidth]{PWV_figures.pdf}
+
+    \caption[Radial image examples]{Examples of time-averaged and time-resolved phase contrast images in the ascending aorta (AAo) and abdominal aorta (AbdAo) across a Cartesian product scan, a standard radial reconstruction, and a high-res (Locally Low Rank) radial reconstruction.}\label{fig:rad_images}
+    \vspace{0.25cm}
+\end{figure}
+
+Average $\pm$ standard deviation temporal resolution for the Cartesian, standard radial, high-res radial reconstructions was 26.2 $\pm$ 3.6 ms, 25.2 $\pm$ 3.6 ms, and 12.5 $\pm$ 1.8 ms, respectively. Plane distances (in the superior-inferior direction) between the aortic arch and abdominal aorta 2D slices were 131 $\pm$ 18.3 mm. Representative images from each of the 3 acquisition methods are shown in Figure~\ref{fig:rad_images}. Table~\ref{tab:life_pwvs} provides aortic lengths between each of the 3 measurement locations and PWV values for each acquisition and time shift method by the whole group, age category, and by sex. Average PWV across the entire cohort ranged from 7.1--7.7 m/s for each time-shift method.
+
+\begin{table}[ht]
+    \centering
+    \caption[Aortic Distances and Pulse Wave Velocities]{Aortic Distances and Pulse Wave Velocities stratified by age group and sex for three different 2D phase contrast image types: Cartesian, standard radial (spatio-temporally matched to the Cartesian), and hi-res radial (increased spatio-temporal resolution)}\label{tab:life_pwvs}
+    \small
+    \begin{tabularx}{\textwidth}{llXXXXXX}
+    \toprule
+    Acquisition & Parameter & Overall & 50--59 & 60--69 & 70--79 & Female & Male \\
+    \midrule
+
+    Anatomical & Aortic Length & 
+    $258.0 \pm 23.6$ (45) & 
+    $252.1 \pm 21.1$ (13) & 
+    $257.5 \pm 24.6$ (17) & 
+    $263.6 \pm 24.7$ (15) & 
+    $252.1 \pm 7.5$ (3) & 
+    $264.3 \pm 23.1$ (13) \\
+
+    \midrule
+    \multicolumn{8}{l}{\textbf{Cartesian}} \\
+
+    & TTP  & $7.2 \pm 2.3$ (45) & $6.5 \pm 1.2$ (13) & $6.6 \pm 2.0$ (17) & $8.4 \pm 2.7$ (15) & $7.5 \pm 1.2$ (3) & $6.9 \pm 2.2$ (13) \\
+    & TTF  & $7.1 \pm 2.9$ (45) & $6.0 \pm 0.9$ (13) & $6.3 \pm 2.4$ (17) & $9.1 \pm 3.6$ (15) & $7.3 \pm 3.1$ (3) & $6.4 \pm 1.5$ (13) \\
+    & TTU  & $7.3 \pm 2.8$ (45) & $6.2 \pm 1.0$ (13) & $6.5 \pm 2.4$ (17) & $9.1 \pm 3.4$ (15) & $7.5 \pm 2.2$ (3) & $6.6 \pm 1.7$ (13) \\
+    & XCOR & $7.3 \pm 1.8$ (45) & $7.4 \pm 1.6$ (13) & $6.8 \pm 2.2$ (17) & $7.8 \pm 1.7$ (15) & $7.9 \pm 1.7$ (3) & $7.2 \pm 2.3$ (13) \\
+
+    \midrule
+    \multicolumn{8}{l}{\textbf{Standard Radial}} \\
+
+    & TTP  & $7.1 \pm 1.4$ (44) & $6.5 \pm 1.1$ (13) & $6.8 \pm 1.3$ (16) & $8.0 \pm 1.3$ (15) & $9.0 \pm 1.4$ (2) & $7.0 \pm 1.3$ (13) \\
+    & TTF  & $7.0 \pm 2.0$ (44) & $6.2 \pm 1.2$ (13) & $6.2 \pm 1.4$ (16) & $8.6 \pm 2.1$ (15) & $10.5 \pm 3.5$ (2) & $6.8 \pm 1.0$ (13) \\
+    & TTU  & $7.0 \pm 1.8$ (44) & $6.2 \pm 2.1$ (13) & $6.6 \pm 1.5$ (16) & $8.1 \pm 1.4$ (15) & $9.0 \pm 1.4$ (2) & $6.9 \pm 2.2$ (13) \\
+    & XCOR & $7.2 \pm 2.1$ (44) & $7.2 \pm 2.0$ (13) & $6.9 \pm 2.1$ (16) & $7.4 \pm 2.2$ (15) & $10.5 \pm 2.1$ (2) & $7.2 \pm 2.3$ (13) \\
+
+    \midrule
+    \multicolumn{8}{l}{\textbf{Hi-Res Radial}} \\
+
+    & TTP  & $7.5 \pm 1.3$ (45) & $7.1 \pm 1.2$ (13) & $7.1 \pm 1.2$ (17) & $8.2 \pm 1.0$ (15) & $9.2 \pm 0.5$ (3) & $7.3 \pm 1.1$ (13) \\
+    & TTF  & $7.3 \pm 1.6$ (45) & $6.6 \pm 1.2$ (13) & $6.9 \pm 1.5$ (17) & $8.4 \pm 1.5$ (15) & $9.4 \pm 1.1$ (3) & $7.0 \pm 0.9$ (13) \\
+    & TTU  & $7.3 \pm 1.7$ (45) & $6.4 \pm 2.0$ (13) & $7.1 \pm 1.4$ (17) & $8.3 \pm 1.1$ (15) & $9.0 \pm 0.1$ (3) & $7.3 \pm 1.2$ (13) \\
+    & XCOR & $7.6 \pm 2.0$ (45) & $7.5 \pm 2.1$ (13) & $7.4 \pm 2.1$ (17) & $7.8 \pm 1.9$ (15) & $9.7 \pm 3.3$ (3) & $7.8 \pm 1.9$ (13) \\
+
+    \bottomrule
+    \end{tabularx}
+    \begin{flushleft}
+        \footnotesize
+        All values expressed as: mean $\pm$ standard deviation (number of samples) \\
+
+        PWV = pulse wave velocity; TTP = time-to-point; TTF = time-to-foot; TTU = time-to-upstroke; XCOR = cross correlation.
+
+    \end{flushleft}
+\end{table}
+
+Application of the Skillings-Mack test demonstrated a significant difference in PWV across acquisition methods for the TTP algorithm ($\chi^2$ = 8.62, $p$ = 0.01) and the XCOR algorithm ($\chi^2$ = 7.20, $p$ = 0.03), whereas no significant differences were observed for the TTF and TTU algorithms. Box plots illustrating PWV distributions by MRI acquisition method (Figure~\ref{fig:boxplots}) indicate that Cartesian-derived PWV values frequently deviate from those obtained using radial acquisitions, particularly at higher PWV ranges.
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=5, width=\textwidth]{PWV_figures.pdf}
+
+    \caption[PWV distributions across methods]{Distributions of pulse wave velocities calculated using four different transit time methods across a Cartesian product scan, a standard radial reconstruction, and a high-res (Locally Low Rank) radial reconstruction. Connecting lines between paired data points highlight the individual correlations on a participant level.}\label{fig:boxplots}
+    \vspace{0.25cm}
+\end{figure}
+
+Pearson correlation coefficients for each combination of time-shift method and acquisition are presented as a correlation matrix in Figure~\ref{fig:correlation}A, with all pairwise correlations reaching statistical significance. Mean correlations averaged across acquisitions (i.e., within each transit time method) are shown in Figure~\ref{fig:correlation}B. The highest mean correlations were observed for TTF (mean $r$ = 0.73) and XCOR (mean $r$ = 0.72) when compared across acquisitions, whereas comparisons between different transit time methods yielded lower correlations. Mean correlations averaged across transit time methods are displayed in Figure~\ref{fig:correlation}C. The Cartesian acquisition demonstrated the highest mean inter-method correlation (mean $r$ = 0.80), although strong correlations were also observed for the standard radial (mean $r$ = 0.73) and high temporal resolution radial (mean $r$ = 0.72) acquisitions. While transit times between the two radial acquisitions were strongly correlated (mean $r$ = 0.67), correlations between Cartesian and radial acquisitions were comparatively weak (mean $r$ < 0.28).
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=6, width=\textwidth]{PWV_figures.pdf}
+
+    \caption[PWV correlations]{A. Correlation matrix of Pearson correlation coefficients between individual pairs of transit time methods and acquisitions. The transit time methods include Time-To-Point (TTP), Time-To-Foot (TTF), Time-To-Upstroke (TTU), and Cross Correlation (XCOR) while the acquisitions include a Cartesian product sequence, a standard radial reconstruction, and a high temporal resolution (Locally Low Rank) radial reconstruction. B. Mean correlations averaged across acquisitions C. Mean correlations averaged across transit time methods}\label{fig:correlation}
+    \vspace{0.25cm}
+\end{figure}
+
+Simple linear regression analysis revealed a significant association between aortic PWV and age for the TTP, TTF, and TTU methods in both standard and high-res radial acquisitions, whereas no significant relationship was observed for the XCOR method. In contrast, the Cartesian acquisition demonstrated a significant relationship between PWV and age for the TTF and TTU methods only, with no significant associations for TTP or XCOR\@. Representative regression plots for the TTF method across all three acquisitions are provided in Figure~\ref{fig:linear_regression}. For the TTF method, regression coefficients for age ($\beta_{age}$) ranged from 0.06 to 0.11 m/s, with corresponding $R^2$ values between 0.16 and 0.22 and standard errors between 0.03 and 0.04. Among all approaches, the high temporal resolution radial acquisition exhibited the strongest relationship with age, with $R^2$ values ranging from 0.02 to 0.20 across methods.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=7, width=\textwidth]{PWV_figures.pdf}
+
+    \caption[PWV linear regression with age]{Linear regression models showcasing the positive relationship between age and pulse wave velocity calculated via the Time-to-Foot method in three different acquisitions: a Cartesian product sequence, a standard radial reconstruction, and a high-res (Locally Low Rank) radial reconstruction.}\label{fig:linear_regression}
+    \vspace{0.25cm}
+\end{figure}
+
+\section{Discussion}\label{sec:life_discussion}
+In this study, we demonstrated the feasibility of a free-breathing radial two-dimensional phase-contrast (2DPC) MRI sequence for estimating aortic pulse wave velocity (PWV). The radial free-breathing approach was evaluated against a standard clinical breath-hold Cartesian acquisition. From the radial data, two separate datasets were reconstructed: one with spatial and temporal resolution matched to the Cartesian acquisition, and a second with enhanced spatial and temporal resolution achieved with an advanced local low-rank reconstruction method. Four transit time estimation techniques were assessed for each of the three acquisitions to examine their influence on PWV measurements.
+
+In the prior analysis performed by Grant Roberts in his doctoral work, there were considerable methodological complications that compromised the reliability of the PWV analysis~\cite{robertsAdvancingFunctionalAssessment2023}. For one, the 150 subjects analyzed were scanned in a location which was not well-equipped for cardiac imaging due to the cardiac scans being added on to a cranial study. This resulted in a considerable number of scans having poor plane prescriptions and improperly set up cardiac gating which necessitated being rejected from the full analysis. Additionally, 
+
+a significant number of subjects had to be excluded due to unphysiological PWVs, e.g., PWVs > 20 m/s or < 1 m/s. Additionally, 
+
+Mean PWV values were generally consistent across all three acquisition strategies and the four transit time methods. Non-parametric analysis revealed significant differences between acquisition types when using the TTP and XCOR algorithms, whereas no significant differences were observed for the TTF and TTU methods. Furthermore, PWV estimates derived from the TTF and TTU methods exhibited strong associations with age across all acquisition types, while the radial acquisitions additionally demonstrated a significant relationship when using the TTP method.
+
+The local low-rank reconstruction applied in this study enabled a twofold increase in temporal resolution. Despite substantial undersampling (approximately 62 projections per frame with respiratory gating), image quality was maintained and, in some cases, improved relative to the standard 40-frame radial reconstruction. Although it was hypothesized that higher temporal resolution would enhance the accuracy of PWV estimation, the results indicate that PWV values derived from the two reconstruction approaches were largely comparable. Notably, the high temporal resolution dataset demonstrated the strongest association with age. Streaking artifacts were observed in a subset of datasets, manifesting as noise within the derived flow waveforms. While waveform smoothing reduced the visual impact of these artifacts, residual velocity noise may still influence waveform morphology and, consequently, the calculated PWV values.
+
+
+
+
+
+While PWV measures were comparable between the Cartesian, standard radial, and high temporal resolution radial datasets, there was a significant degree of pairwise variability. This is evident from the correlation matrices (Figure 6) and in the paired line segments in the box plots (Figure 5). It is still unclear what is causing this inconsistency. There are several potential contributors, including potential gating timing issues resulting from separate acquisitions, differences in heart rate between aortic arch and abdominal aorta scans, intra-acquisition heart rates (which may blur the waveforms), differences in flow waveform noise, respiratory effects, or underlying post-processing in the automatically-reconstructed Cartesian images (e.g., phase unwrapping, temporal interpolation, etc.). All acquisitions and transit time methods (aside from cross correlation) showed significant relationships with age, as expected. Specifically, we found that aortic PWV increases by around 1.1--1.4 m/s each decade of life. This agrees closely with a large study (N=397) performed by van Hout et al., in which they assessed aortic PWV in older adults (mean age 55 ± 6 [SD] years) using 2DPC MRI~\cite{vanhoutNormalReferenceValues2021}. Using linear regression, they observed an average PWV increase of 0.9 m/s over 10 years. Similar results have been demonstrated in other 2DPC MRI studies~\cite{dyverfeldtQuantificationIntravoxelVelocity2006,parikhMeasurementPulseWave2016}. Furthermore, the study by van Hout reported a mean PWV value of 6.8 m/s using the TTF method for the age range 60--65 years, which is similar to the results obtained here (mean PWV = 6.5 ± 2.4 m/s). Additionally, a large normative study (N=777, age ranges 21--85 years) by Nethononda et al.\ reported a mean aortic PWV of around 9 m/s in the 60--69 year age range~\cite{nethonondaGenderSpecificPatterns2015}. 
+
+With regard to transit time algorithms, TTF was associated with low standard deviation, high correlation with other transit time algorithms, a significant correlation with age, and robustness (i.e., not prone to algorithm failure). While the time-to-point relies on a single point in the cardiac cycle and is thus susceptible to sampling errors and velocity noise, it was observed that the systolic upslope portion of the flow waveforms was often preserved even in noisier datasets. Cross correlation is beneficial in that the entire flow waveform is utilized to estimate time shifts, which theoretically reduces sampling errors. However, it was noted that XCOR algorithm tended to produce erroneous results if the systolic peak of the waveform was near the edge of the cardiac cycle. While TTF and XCOR showed promise in this study, many other studies utilized the TTP and TTU methods, including applanation tonometry~\cite{doupisPulseWaveAnalysis2016}. Thus, it may be beneficial to acquire all time shifts (which take relatively little time to compute) in order to allow for comparisons with other studies and to provide backup measures in the event one of the algorithms fails. Wentland et al.\ suggest that averaging multiple time-shift results together may provide the most robust PWV values~\cite{wentlandAorticPulseWave2013}.
+
+
+\subsubsection{Limitations}
+There were several significant limitations to this study. While temporal resolutions were similar between the aortic arch and abdominal aorta scans, there were slight changes in heart between scans, resulting in abdominal aorta waveforms with different length (R-R interval) and temporal resolution to varying degrees since the scans were not interleaved and were obtained separately. Additionally, because PPG gating was used, the systolic portion of the flow waveform was located in the last frames of the cine reconstructed 2DPC images. If there was a greater difference in nominal R-R intervals (and thus temporal resolution), then accumulated time differences at the end of the waveform led to “shifting” of the part of the flow waveform used for transit time calculations. In order account for this effect, one set of time-stamps (from the aortic arch scan) were used for all waveforms such that the length of all waveforms were matched. This effect should be further studied using acquisition methods that obtain flow measurements simultaneously (e.g., simultaneous multi-slice, interleaved acquisitions, 4D flow MRI, etc.). It is also important to note that ECG gating may have different intrinsic and physiological time delays compared to PPG gating. This may be an important consideration for the prospectively-gated Cartesian acquisition, in which trigger window or trigger delays may affect waveform shape as discussed earlier. 
+
+Additionally, due to retrospective gating, the radial acquisitions required longer scan times than for the Cartesian acquisitions. This may have allowed for greater changes in heart rate during the scan, which may lead to waveform blurring. Differences in respiratory phase may also cause slices to shift vertically even though an identical plane prescription location was used for both radial and Cartesian scans. Furthermore, even though radial data is respiratory-gated during a specific phase, motion may still exist within the acceptance window which may introduce slight image blurring. The physiological effects of respiratory phase (e.g., forced breath-hold compared to free-breathing state) may also introduce subtle biases between acquisitions. 
+
+\subsubsection{Future Directions}
+Elongation and increased tortuosity of the aorta has been observed to change with age and has been hypothesized to be a result of weakened vessel wall structure~\cite{sugawaraAgeassociatedElongationAscending2008}. Future studies could quantitatively measure these morphological characteristics and assess their correlations with age and PWV measures. Additionally, differences in stiffness along the aorta have been reported in the literature; specifically, the proximal aorta tends to be the most elastic and stiffens distally. Because time shifts and distance measures are calculated at three points along the aorta, measures of proximal aorta and abdominal aorta stiffness could be separately calculated at the expense of measurement noise. This may be of particular relevance to a relatively new biomarker, termed PWV ratio, which calculates a stiffness gradient along the arterial tree and may help elucidate the degree of impedance mismatching that can result in higher pulse pressure transmission to the microcirculation~\cite{covicPulseWaveVelocity2015}. Other areas of investigation may include evaluating the effect of pre- and post-menopausal changes within our cohort. Studies have suggested a potential hormonal effect that may differentially affect vessel wall stiffness in women after menopause which could be assessed with the present cohort, consisting of 34 females~\cite{nethonondaGenderSpecificPatterns2015}. A recent study using 4D flow MRI cranial scans obtained internal carotid PWV measures using local low rank reconstructions in the WRAP and ADRC cohorts~\cite{rivera-riveraAssessmentVascularStiffness2021}. This same methodology could be applied here, as cranial 4D flow MRI is included in the LIFE MRI protocol. An interesting future direction would be to assess the relationship between aortic and internal carotid artery PWV\@. 
+
+Future technical improvements could include the application of machine learning in segmenting and skeletonizing the aorta for automatically generated aortic centerlines for distance measurements. Automatic segmentation of the aorta in the 2DPC images should also be explored to decrease processing time, increase accuracy of vessel area measurements, and increase repeatability. This would also allow for an additional measure of local PWV (“QA” method), that requires accurate flow and area quantification~\cite{vulliemozEstimationLocalAortic2002}. 
+
+\section{Conclusion}\label{sec:life_conclusion}
+In conclusion, the radial, free-breathing 2DPC MRI sequence offers an alternative imaging technique for assessing aortic stiffness which may be particularly beneficial for subjects with breath-hold difficulty. The radial sequence offers a great deal of flexibility for physiological gating and for image reconstruction, which allowed us to generate a high temporal resolution dataset using local low rank reconstruction. Mean pulse wave velocities were comparable between the radial and Cartesian acquisitions and agree are externally consistent with other studies, however, the correlation between paired measures is relatively poor. Pulse wave velocities were tabulated in our cohort of 83 cognitively unimpaired older adults and showed strong associations with age. Future studies should seek to study intracranial hemodynamics alongside the obtained aortic pulse wave velocity data.

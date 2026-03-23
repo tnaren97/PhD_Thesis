@@ -40,6 +40,25 @@
   file = {/Users/txn009/Zotero/storage/R72B28LN/AWFJKMS3AJYMFW9C.html}
 }
 
+@article{agustiDynamicHyperinflationPulmonary2007,
+  title = {Dynamic Hyperinflation and Pulmonary Inflammation: A Potentially Relevant Relationship?},
+  shorttitle = {Dynamic Hyperinflation and Pulmonary Inflammation},
+  author = {Agusti, A. and Soriano, J. B.},
+  date = {2007-03-22},
+  journaltitle = {European Respiratory Review},
+  volume = {15},
+  number = {100},
+  pages = {68--71},
+  publisher = {European Respiratory Society},
+  issn = {0905-9180, 1600-0617},
+  doi = {10.1183/09059180.00010003},
+  url = {https://publications.ersnet.org/content/errev/15/100/68},
+  urldate = {2026-03-23},
+  abstract = {{$<$}p{$>$}In patients with moderate-to-severe chronic obstructive pulmonary disease (COPD), end-expiratory lung volume increases under conditions of greater minute ventilation ({$<$}italic{$>$}e.g.{$<$}/italic{$>$} exercise). This abnormal response is termed dynamic hyperinflation (DH) and has now been recognised as a key determinant of symptomatology and exercise intolerance in COPD. Reduced elastic recoil, loss of alveolar attachments and increased airway resistance are the mechanical factors traditionally invoked to explain the occurrence of DH in COPD. An abnormal inflammatory response to, most frequently, tobacco smoking is a key pathophysiological component of COPD, but its potential relationship with DH has not been directly investigated and is poorly understood. The present article discusses, first, the mechanisms by which DH can enhance inflammation in COPD (including cellular stretching, tissue damage and danger signals, hyperventilation and hypoxia). It then reviews how the abnormal inflammatory response that characterises the disease can augment DH (oedema and increased airway resistance, increased mucus production and alveolar destruction). Finally, it speculates that if these relationships eventually prove to be real, then the use of long-acting bronchodilators may help reduce the inflammatory load of these patients and, conversely, the use of anti-inflammatory therapy can contribute to the reduction of DH.{$<$}/p{$>$}},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/2ENY993Q/Agusti and Soriano - 2007 - Dynamic hyperinflation and pulmonary inflammation a potentially relevant relationship.pdf}
+}
+
 @book{americansocietyofradiationoncologyGuideRadiationOncology2010,
   title = {Guide to {{Radiation Oncology Coding}}},
   author = {American Society of Radiation Oncology and American College of Radiology},
@@ -289,6 +308,36 @@
   keywords = {Artifacts,Feasibility Studies,Humans,Image Processing Computer-Assisted,Magnetic Resonance Angiography,Phantoms Imaging}
 }
 
+@article{bhandariRhythmicBreathHolding2020,
+  title = {Rhythmic {{Breath Holding}} and {{Its Effect}} on {{Arterial Blood Pressure}} and {{Its Correlation With Blood Gases}}},
+  author = {Bhandari, Bharti and Mavai, Manisha and Singh, Yogendra Raj and Mehta, Bharati and Bhagat, Omlata},
+  date = {2020-02-22},
+  journaltitle = {ACTA MEDICA IRANICA},
+  shortjournal = {ACTA},
+  issn = {1735-9694, 0044-6025},
+  doi = {10.18502/acta.v57i8.2425},
+  url = {https://publish.kne-publishing.com/index.php/ACTA/article/view/2425},
+  urldate = {2026-03-22},
+  abstract = {A single episode of breath-holding (BH) is known to elevate the blood pressure, and regular breathing exercise lowers the blood pressure. This prompted us to investigate how a series of BH epochs would affect the cardiovascular system. To observe arterial blood pressure (ABP) and heart rate (HR) changes associated with a series of “BH epochs” following maximum inspiration and maximum expiration and find the underlying mechanisms for the change by autonomic activity. Thirty-five healthy young adults were instructed to hold their breath repetitively, for 5 minutes, in two patterns, one following maximum inspiration and other following maximum expiration. ABP and ECG (for Heart Rate Variability) were continuously recorded at rest and during both the maneuvers. Capillary blood gases (BG) were zanalyzed at baseline and at the breakpoint of the last epoch of BH. ABP rose significantly at the breakpoint during both the maneuvers. No change in HR was observed. There was significant fall in PO2 from 94.7 (4.1) mmHg at baseline to 79.1 (9.0) mmHg during inspiratory and 76.90 (12.1) mmHg during expiratory BH. Similarly, SPO2 decreased from 96.3 (1.9) \% at baseline to 95.4 (1.5) \% and 94.5 (2.7) \% during inspiratory and expiratory BH, respectively. Rise in PCO2 from 39.5(3.1) mmHg at baseline to 42.9 (2.7) mmHg and 42.1 (2.8) mmHg during inspiratory and expiratory BH respectively was observed. There was no significant correlation between blood gases and arterial blood pressure. Among HRV parameters, a significant decrease in SDNN, RMSSD, HFnu, total power and SD1/SD2 and the significant increase in LFnu, LF/HF and SD2 were observed during both BH patterns. Rhythmic BH patterns affect the cardiovascular system in similar way as a single episode of BH. Sympathetic overactivity could be the postulated mechanism for the same.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/QLH2U98P/Bhandari et al. - 2020 - Rhythmic Breath Holding and Its Effect on Arterial Blood Pressure and Its Correlation With Blood Gas.pdf}
+}
+
+@article{bhandariRhythmicBreathHolding2020a,
+  title = {Rhythmic {{Breath Holding}} and {{Its Effect}} on {{Arterial Blood Pressure}} and {{Its Correlation With Blood Gases}}},
+  author = {Bhandari, Bharti and Mavai, Manisha and Singh, Yogendra Raj and Mehta, Bharati and Bhagat, Omlata},
+  date = {2020-02-22},
+  journaltitle = {ACTA MEDICA IRANICA},
+  shortjournal = {ACTA},
+  issn = {1735-9694, 0044-6025},
+  doi = {10.18502/acta.v57i8.2425},
+  url = {https://publish.kne-publishing.com/index.php/ACTA/article/view/2425},
+  urldate = {2026-03-22},
+  abstract = {A single episode of breath-holding (BH) is known to elevate the blood pressure, and regular breathing exercise lowers the blood pressure. This prompted us to investigate how a series of BH epochs would affect the cardiovascular system. To observe arterial blood pressure (ABP) and heart rate (HR) changes associated with a series of “BH epochs” following maximum inspiration and maximum expiration and find the underlying mechanisms for the change by autonomic activity. Thirty-five healthy young adults were instructed to hold their breath repetitively, for 5 minutes, in two patterns, one following maximum inspiration and other following maximum expiration. ABP and ECG (for Heart Rate Variability) were continuously recorded at rest and during both the maneuvers. Capillary blood gases (BG) were zanalyzed at baseline and at the breakpoint of the last epoch of BH. ABP rose significantly at the breakpoint during both the maneuvers. No change in HR was observed. There was significant fall in PO2 from 94.7 (4.1) mmHg at baseline to 79.1 (9.0) mmHg during inspiratory and 76.90 (12.1) mmHg during expiratory BH. Similarly, SPO2 decreased from 96.3 (1.9) \% at baseline to 95.4 (1.5) \% and 94.5 (2.7) \% during inspiratory and expiratory BH, respectively. Rise in PCO2 from 39.5(3.1) mmHg at baseline to 42.9 (2.7) mmHg and 42.1 (2.8) mmHg during inspiratory and expiratory BH respectively was observed. There was no significant correlation between blood gases and arterial blood pressure. Among HRV parameters, a significant decrease in SDNN, RMSSD, HFnu, total power and SD1/SD2 and the significant increase in LFnu, LF/HF and SD2 were observed during both BH patterns. Rhythmic BH patterns affect the cardiovascular system in similar way as a single episode of BH. Sympathetic overactivity could be the postulated mechanism for the same.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/B7JK27S4/Bhandari et al. - 2020 - Rhythmic Breath Holding and Its Effect on Arterial Blood Pressure and Its Correlation With Blood Gas.pdf}
+}
+
 @article{bieriFundamentalsBalancedSteady2013,
   title = {Fundamentals of Balanced Steady State Free Precession {{MRI}}},
   author = {Bieri, Oliver and Scheffler, Klaus},
@@ -305,6 +354,17 @@
   langid = {english},
   keywords = {contrast,preparation,steady state,transient phase},
   file = {/Users/txn009/Zotero/storage/7E4LLYK7/Bieri and Scheffler - 2013 - Fundamentals of balanced steady state free precession MRI.pdf;/Users/txn009/Zotero/storage/DLQK9EWV/jmri.html}
+}
+
+@article{bloomfieldComparisonSpontaneousVsa,
+  title = {Comparison of Spontaneous vs. Metronome-Guided Breathing on Assessment of Vagal Modulation Using {{RR}} Variability | {{American Journal}} of {{Physiology-Heart}} and {{Circulatory Physiology}} | {{American Physiological Society}}},
+  author = {Bloomfield, Daniel},
+  journaltitle = {American Journal of Physiology-Heart and Circulatory Physiology},
+  url = {https://journals.physiology.org/doi/10.1152/ajpheart.2001.280.3.H1145},
+  urldate = {2026-03-23},
+  abstract = {R-R interval variability (RR variability) is increasingly being used as an index of autonomic activity. High-frequency (HF) power reflects vagal modulation of the sinus node. Since vagal modulation occurs at the respiratory frequency, some investigators have suggested that HF power cannot be interpreted unless the breathing rate is controlled. We hypothesized that HF power during spontaneous breathing would not differ significantly from HF power during metronome-guided breathing. We measured HF power during spontaneous breathing in 20 healthy subjects and 19 patients with heart disease. Each subject's spontaneous breathing rate was determined, and the calculation of HF power was repeated with a metronome set to his or her average spontaneous breathing rate. There was no significant difference between the logarithm of HF power measured during spontaneous and metronome-guided breathing [4.88 ± 0.29 vs. 5.29 ± 0.30 ln(ms2), P = 0.32] in the group as a whole and when patients and healthy subjects were examined separately. We did observe a small (9.9\%) decrease in HF power with increasing metronome-guided breathing rates (from 9 to 20 breaths/min). These data indicate that HF power during spontaneous and metronome-guided breathing differs at most by very small amounts. This variability is several logarithmic units less than the wide discrepancies observed between healthy subjects and cardiac patients with a heterogeneous group of cardiovascular disorders. In addition, HF power is relatively constant across the range of typical breathing rates. These data indicate that there is no need to control breathing rate to interpret HF power when RR variability (and specifically HF power) is used to identify high-risk cardiac patients.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/4LVUVXHX/ajpheart.2001.280.3.html}
 }
 
 @article{bochnakovaHepaticVenousPressure2021,
@@ -382,6 +442,24 @@
   file = {/Users/txn009/Zotero/storage/7SYNAAJJ/Bray et al. - 2024 - Global cancer statistics 2022 GLOBOCAN estimates of incidence and mortality worldwide for 36 cancer.pdf;/Users/txn009/Zotero/storage/3LYY75C5/caac.html}
 }
 
+@article{breuerControlledAliasingParallel2005,
+  title = {Controlled Aliasing in Parallel Imaging Results in Higher Acceleration ({{CAIPIRINHA}}) for Multi-Slice Imaging},
+  author = {Breuer, Felix A. and Blaimer, Martin and Heidemann, Robin M. and Mueller, Matthias F. and Griswold, Mark A. and Jakob, Peter M.},
+  date = {2005},
+  journaltitle = {Magnetic Resonance in Medicine},
+  volume = {53},
+  number = {3},
+  pages = {684--691},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.20401},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.20401},
+  urldate = {2026-03-22},
+  abstract = {In all current parallel imaging techniques, aliasing artifacts resulting from an undersampled acquisition are removed by means of a specialized image reconstruction algorithm. In this study a new approach termed “controlled aliasing in parallel imaging results in higher acceleration” (CAIPIRINHA) is presented. This technique modifies the appearance of aliasing artifacts during the acquisition to improve the subsequent parallel image reconstruction procedure. This new parallel multi-slice technique is more efficient compared to other multi-slice parallel imaging concepts that use only a pure postprocessing approach. In this new approach, multiple slices of arbitrary thickness and distance are excited simultaneously with the use of multi-band radiofrequency (RF) pulses similar to Hadamard pulses. These data are then undersampled, yielding superimposed slices that appear shifted with respect to each other. The shift of the aliased slices is controlled by modulating the phase of the individual slices in the multi-band excitation pulse from echo to echo. We show that the reconstruction quality of the aliased slices is better using this shift. This may potentially allow one to use higher acceleration factors than are used in techniques without this excitation scheme. Additionally, slices that have essentially the same coil sensitivity profiles can be separated with this technique. Magn Reson Med 53:684–691, 2005. © 2005 Wiley-Liss, Inc.},
+  langid = {english},
+  keywords = {controlled aliasing,GRAPPA,multi-slice,parallel imaging,SENSE},
+  file = {/Users/txn009/Zotero/storage/8UY9SVPK/Breuer et al. - 2005 - Controlled aliasing in parallel imaging results in higher acceleration (CAIPIRINHA) for multi-slice.pdf;/Users/txn009/Zotero/storage/HDBMY7B2/mrm.html}
+}
+
 @article{butlinP131DETERMININGPULSE2008,
   title = {P1.31 {{DETERMINING PULSE WAVE VELOCITY USING MRI}}: {{A COMPARISON AND REPEATABILITY OF RESULTS USING SEVEN TRANSIT TIME ALGORITHMS}}},
   shorttitle = {P1.31 {{DETERMINING PULSE WAVE VELOCITY USING MRI}}},
@@ -454,6 +532,38 @@
   langid = {english},
   keywords = {Arterial elasticity,Pulse-wave velocity},
   file = {/Users/txn009/Zotero/storage/CYFPXQTE/Callaghan et al. - 1986 - Relationship between pulse-wave velocity and arterial elasticity.pdf}
+}
+
+@article{caoCalculationPredictionEffect2009,
+  title = {Calculation and {{Prediction}} of the {{Effect}} of {{Respiratory Motion}} on {{Whole Breast Radiation Therapy Dose Distributions}}},
+  author = {Cao, Junsheng and Roeske, John C. and Chmura, Steve J. and Salama, Joseph K. and Shoushtari, Asal N. and Boyer, Arthur L. and Martel, Mary K.},
+  date = {2009-06-01},
+  journaltitle = {Medical Dosimetry},
+  shortjournal = {Medical Dosimetry},
+  volume = {34},
+  number = {2},
+  pages = {126--132},
+  issn = {0958-3947},
+  doi = {10.1016/j.meddos.2008.07.002},
+  url = {https://www.sciencedirect.com/science/article/pii/S0958394708001246},
+  urldate = {2026-03-18},
+  abstract = {The standard treatment technique used for whole-breast irradiation can result in undesirable dose distributions in the treatment site, leading to skin reaction/fibrosis and pulmonary and cardiac toxicities. Hence, the technique has evolved from conventional wedged technique (CWT) to segment intensity-modulated radiation therapy (SIMRT) and beamlet IMRT (IMRT). However, these newer techniques feature more highly modulated dose distributions that may be affected by respiration. The purpose of this work was to conduct a simple study of the clinical impact of respiratory motion on breast radiotherapy dose distributions for the three treatment planning techniques. The ultimate goal was to determine which patients would benefit most from the use of motion management. Eight patients with early-stage breast cancer underwent a free-breathing (FB) computed tomography (CT) simulation, with medial and lateral markers placed on the skin. Two additional CT scans were obtained at the end of inspiration (EI) and the end of expiration (EE). The FB–CT scan was used to develop treatment plans using each technique. Each plan was then applied to EI and EE-CT scans. Compared with the FB CT scan, the medial markers moved up to 1.8 cm in the anterior–superior direction at the end of inspiration (EI-scan), and on average 8 mm. The CWT and SIMRT techniques were not “sensitive” to respiratory motion, because the \% clinical target volume (CTV) receiving 95\% of the prescription dose (V95\%) remained constant for both techniques. For patients that had large respiratory motion indicated by marker movement {$>$}0.6 cm, differences in coverage of the CTV at the V100\% between FB and EI for beamlet IMRT plans were on the order of {$>$}10\% and up to 18\%. A linear model was developed to relate the dosimetric coverage difference introduced by respiration with the motion information. With this model, the dosimetric coverage difference introduced by respiratory motion could be evaluated during patient CT simulation. An appropriate treatment method can be chosen after the simulation.},
+  keywords = {Breast cancer,Intensity-modulated radiation therapy (IMRT),Radiation therapy,Respiratory motion},
+  file = {/Users/txn009/Zotero/storage/52V7P3J6/S0958394708001246.html}
+}
+
+@online{CardiorespiratoryFitnessModifies,
+  title = {Cardiorespiratory Fitness Modifies the Relationship between Arterial Stiffness and Cerebral Blood Flow Independent of Physical Activity - {{Breidenbach}} - 2025 - {{Alzheimer}}'s \& {{Dementia}}: {{Translational Research}} \& {{Clinical Interventions}} - {{Wiley Online Library}}},
+  url = {https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/trc2.70130},
+  urldate = {2026-03-23},
+  file = {/Users/txn009/Zotero/storage/EW368JLA/trc2.html}
+}
+
+@online{CardiovascularMagneticResonance,
+  title = {Cardiovascular Magnetic Resonance Phase Contrast Imaging - {{ClinicalKey}}},
+  url = {https://www.clinicalkey.com/#!/content/playContent/1-s2.0-S1097664723008967?returnurl=https:%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1097664723008967%3Fshowall%3Dtrue&referrer=https:%2F%2Fpubmed.ncbi.nlm.nih.gov%2F},
+  urldate = {2026-03-23},
+  file = {/Users/txn009/Zotero/storage/NSX3ZIJ8/www.clinicalkey.com.html}
 }
 
 @article{carreirasMultifactorialNatureAlzheimers2013,
@@ -647,6 +757,16 @@
   file = {/Users/txn009/Zotero/storage/J7G49JIK/Christian et al. - 2014 - Upper endoscopy in liver disease.pdf}
 }
 
+@article{ComparisonSpontaneousVs,
+  title = {Comparison of Spontaneous vs. Metronome-Guided Breathing on Assessment of Vagal Modulation Using {{RR}} Variability | {{American Journal}} of {{Physiology-Heart}} and {{Circulatory Physiology}} | {{American Physiological Society}}},
+  journaltitle = {American Journal of Physiology-Heart and Circulatory Physiology},
+  url = {https://journals.physiology.org/doi/10.1152/ajpheart.2001.280.3.H1145},
+  urldate = {2026-03-20},
+  abstract = {R-R interval variability (RR variability) is increasingly being used as an index of autonomic activity. High-frequency (HF) power reflects vagal modulation of the sinus node. Since vagal modulation occurs at the respiratory frequency, some investigators have suggested that HF power cannot be interpreted unless the breathing rate is controlled. We hypothesized that HF power during spontaneous breathing would not differ significantly from HF power during metronome-guided breathing. We measured HF power during spontaneous breathing in 20 healthy subjects and 19 patients with heart disease. Each subject's spontaneous breathing rate was determined, and the calculation of HF power was repeated with a metronome set to his or her average spontaneous breathing rate. There was no significant difference between the logarithm of HF power measured during spontaneous and metronome-guided breathing [4.88 ± 0.29 vs. 5.29 ± 0.30 ln(ms2), P = 0.32] in the group as a whole and when patients and healthy subjects were examined separately. We did observe a small (9.9\%) decrease in HF power with increasing metronome-guided breathing rates (from 9 to 20 breaths/min). These data indicate that HF power during spontaneous and metronome-guided breathing differs at most by very small amounts. This variability is several logarithmic units less than the wide discrepancies observed between healthy subjects and cardiac patients with a heterogeneous group of cardiovascular disorders. In addition, HF power is relatively constant across the range of typical breathing rates. These data indicate that there is no need to control breathing rate to interpret HF power when RR variability (and specifically HF power) is used to identify high-risk cardiac patients.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/2YHNAXS3/ajpheart.2001.280.3.html}
+}
+
 @article{conollyVariablerateSelectiveExcitation1988,
   title = {Variable-Rate Selective Excitation},
   author = {Conolly, Steven and Nishimura, Dwight and Macovski, Albert and Glover, Gary},
@@ -662,6 +782,23 @@
   urldate = {2024-08-19},
   abstract = {A procedure is introduced for refabricating any spatially selective excitation pulse to reduce its SAR while preserving its duration and slice profile. Called variable-rate selective excitation, the procedure allows for a variable trade-off of RF amplitude for duration at each sample of the pulse. SAR reduction of 50\% is possible with only a mild smearing of the off resonance slice profile. Experimental slice profiles verify the principle.},
   file = {/Users/txn009/Zotero/storage/UUMBIYJB/002223648890131X.html}
+}
+
+@article{cooperDeterminantsDynamicHyperinflation2014,
+  title = {Determinants of Dynamic Hyperinflation during Metronome-Paced Tachypnea in {{COPD}} and Normal Subjects},
+  author = {Cooper, C. B. and Calligaro, G. L. and Quinn, M. M. and Eshaghian, P. and Coskun, F. and Abrazado, M. and Bateman, E. D. and Raine, R. I.},
+  date = {2014-01-01},
+  journaltitle = {Respiratory Physiology \& Neurobiology},
+  shortjournal = {Respiratory Physiology \& Neurobiology},
+  volume = {190},
+  pages = {76--80},
+  issn = {1569-9048},
+  doi = {10.1016/j.resp.2013.08.002},
+  url = {https://www.sciencedirect.com/science/article/pii/S1569904813002735},
+  urldate = {2026-03-23},
+  abstract = {In COPD, dynamic hyperinflation (DH) occurs during exercise and during metronome-paced tachypnea (MPT). We investigated the relationship of DH with breathing pattern and ventilation (V˙E) in COPD and normal subjects (NS). In 35 subjects with moderate COPD and 17 younger healthy volunteers we measured inspiratory capacity (IC), breathing frequency (fR), expiratory time (TE), ventilation (V˙E) and end-tidal carbon dioxide tension (PETCO2) at baseline and after 30s of MPT at 40breaths/min with metronome-defined I:E ratios of 1:1 and 1:2. A reduction in IC (ΔIC) was taken to indicate DH. In COPD subjects, DH correlated with TE but not with V˙E or PETCO2, and was best predicted by total lung capacity. NS also showed DH (although less than in COPD), which correlated with PETCO2 but not with fR, TE or V˙E. We conclude that MPT evokes DH in both NS and patients with COPD. TE is the most important determinant of DH during MPT in patients with COPD.},
+  keywords = {Breathing pattern,COPD,Dynamic hyperinflation},
+  file = {/Users/txn009/Zotero/storage/XU7KFVUM/Cooper et al. - 2014 - Determinants of dynamic hyperinflation during metronome-paced tachypnea in COPD and normal subjects.pdf;/Users/txn009/Zotero/storage/6RL8ZD24/S1569904813002735.html}
 }
 
 @article{cooperMetronomePacedTachypneaSimple2024,
@@ -761,6 +898,17 @@
   file = {/Users/txn009/Zotero/storage/8SFVHHJI/Davies and Struthers - Pulse wave analysis and pulse wave velocity a critical review of their strengths and weaknesses.pdf}
 }
 
+@online{DecouplingCardiorespiratoryMotion,
+  title = {Decoupling {{Cardiorespiratory Motion}} of {{Cardiac}}... : {{Medical Physics}}},
+  shorttitle = {Decoupling {{Cardiorespiratory Motion}} of {{Cardiac}}...},
+  url = {https://www.ovid.com/journals/medph/fulltext/00005706-202510000-01539~decoupling-cardiorespiratory-motion-of-cardiac-substructures},
+  urldate = {2026-03-23},
+  abstract = {Abstract was not provided for this article.},
+  langid = {english},
+  organization = {Ovid},
+  file = {/Users/txn009/Zotero/storage/2TDHNQ5A/00005706-202510000-01539~decoupling-cardiorespiratory-motion-of-cardiac-substructures.html}
+}
+
 @article{deroosMagneticResonanceImaging2017,
   title = {Magnetic {{Resonance Imaging}} of {{Cardiovascular Function}} and the {{Brain}}: {{Is Dementia}} a {{Cardiovascular-Driven Disease}}?},
   shorttitle = {Magnetic {{Resonance Imaging}} of {{Cardiovascular Function}} and the {{Brain}}},
@@ -778,6 +926,25 @@
   abstract = {The proximal aorta acts as a coupling device between heart and brain perfusion, modulating the amount of pressure and flow pulsatility transmitted into the cerebral microcirculation. Stiffening of the proximal aorta is strongly associated with age and hypertension. The detrimental effects of aortic stiffening may result in brain damage as well as heart failure. The resulting cerebral small vessel disease and heart failure may contribute to early cognitive decline and (vascular) dementia. This pathophysiological sequence of events underscores the role of cardiovascular disease as a contributory mechanism in causing cognitive decline and dementia and potentially may provide a starting point for prevention and treatment. Magnetic resonance imaging is well suited to assess the function of the proximal aorta and the left ventricle (eg, aortic arch pulse wave velocity and distensibility) as well as the various early and late manifestations of cerebral small vessel disease (eg, microbleeds and white matter hyperintensities in strategically important regions of the brain). Specialized magnetic resonance imaging techniques are explored for diagnosing preclinical changes in white matter integrity or brain microvascular pulsatility.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/CYI8JUXQ/de Roos et al. - 2017 - Magnetic Resonance Imaging of Cardiovascular Function and the Brain—Is dementia a cardiovascular-dri.pdf;/Users/txn009/Zotero/storage/SE3N5HE2/De Roos et al. - 2017 - Magnetic Resonance Imaging of Cardiovascular Function and the Brain Is Dementia a Cardiovascular-Dr.pdf}
+}
+
+@article{diazReferenceValuesPulse2014,
+  title = {Reference {{Values}} of {{Pulse Wave Velocity}} in {{Healthy People}} from an {{Urban}} and {{Rural Argentinean Population}}},
+  author = {Díaz, Alejandro and Galli, Cintia and Tringler, Matías and Ramírez, Agustín and Cabrera Fischer, Edmundo Ignacio},
+  date = {2014},
+  journaltitle = {International Journal of Hypertension},
+  shortjournal = {Int J Hypertens},
+  volume = {2014},
+  eprint = {25215227},
+  eprinttype = {pubmed},
+  pages = {653239},
+  issn = {2090-0384},
+  doi = {10.1155/2014/653239},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC4158305/},
+  urldate = {2026-03-23},
+  abstract = {In medical practice the reference values of arterial stiffness came from multicenter registries obtained in Asia, USA, Australia and Europe. Pulse wave velocity (PWV) is the gold standard method for arterial stiffness quantification; however, in South America, there are few population-based studies. In this research PWV was measured in healthy asymptomatic and normotensive subjects without history of hypertension in first-degree relatives. Normal PWV and the 95\% confidence intervals values were obtained in 780 subjects (39.8 ± 18.5 years) divided into 7 age groups (10–98 years). The mean PWV found was 6.84\,m/s ± 1.65. PWV increases linearly with aging with a high degree of correlation (r 2 = 0.61; P {$<$} 0.05) with low dispersion in younger subjects. PWV progressively increases 6–8\% with each decade of life; this tendency is more pronounced after 50 years. A significant increase of PWV over 50 years was demonstrated. This is the first population-based study from urban and rural people of Argentina that provides normal values of the PWV in healthy, normotensive subjects without family history of hypertension. Moreover, the age dependence of PWV values was confirmed.},
+  pmcid = {PMC4158305},
+  file = {/Users/txn009/Zotero/storage/STY3E8JD/Díaz et al. - 2014 - Reference Values of Pulse Wave Velocity in Healthy People from an Urban and Rural Argentinean Popula.pdf}
 }
 
 @article{dobrinMechanicalPropertiesArteries1978,
@@ -1138,6 +1305,27 @@
   file = {/Users/txn009/Zotero/storage/5Y2YDBIL/Gaddum et al. - 2014 - Beat-to-beat variation in pulse wave velocity during breathing maneuvers.pdf;/Users/txn009/Zotero/storage/7Z6X3QNH/Gaddum et al. - 2014 - Beat-to-beat variation in pulse wave velocity during breathing maneuvers.pdf;/Users/txn009/Zotero/storage/RR6XHTZ5/mrm.html}
 }
 
+@article{galeAorticPulseWave2019,
+  title = {Aortic {{Pulse Wave Velocity}} as a {{Measure}} of {{Cardiovascular Risk}} in {{Chronic Obstructive Pulmonary Disease}}: {{Two-Year Follow-Up Data}} from the {{ARCADE Study}}},
+  shorttitle = {Aortic {{Pulse Wave Velocity}} as a {{Measure}} of {{Cardiovascular Risk}} in {{Chronic Obstructive Pulmonary Disease}}},
+  author = {Gale, Nichola S. and Albarrati, Ali M. and Munnery, Margaret M. and Mcdonnell, Barry J. and Benson, Victoria S. and Tal-Singer, Ruth M. and Cockcroft, John R. and Shale, Dennis J.},
+  date = {2019-04-02},
+  journaltitle = {Medicina},
+  shortjournal = {Medicina (Kaunas)},
+  volume = {55},
+  number = {4},
+  eprint = {30987061},
+  eprinttype = {pubmed},
+  pages = {89},
+  issn = {1010-660X},
+  doi = {10.3390/medicina55040089},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC6524022/},
+  urldate = {2026-03-23},
+  abstract = {Background and objectives: Cardiovascular (CV) disease is a major cause of morbidity and mortality in chronic obstructive pulmonary disease (COPD). Patients with COPD have increased arterial stiffness, which may predict future CV risk. However, the development of arterial stiffness in COPD has not yet been studied prospectively. The Assessment of Risk in Chronic Airways Disease Evaluation (ARCADE) is a longitudinal study of CV risk and other comorbidities in COPD. The aims of this analysis were to explore factors associated with aortic pulse wave velocity (aPWV) at baseline and to describe the progression of aPWV in patients with COPD and comparators over two years. Materials and methods: At baseline, 520 patients with COPD (confirmed by spirometry) and 150 comparators free from respiratory disease were assessed for body composition, blood pressure, aPWV, noninvasive measures of cardiac output, inflammatory biomarkers, and exercise capacity. This was repeated after two years, and mortality cases and causes were also recorded. Results: At baseline, aPWV was greater in COPD patients 9.8 (95\% confidence interval (CI) 9.7–10) versus comparators 8.7 (8.5–9.1) m/s (p {$<$} 0.01) after adjustments for age, mean arterial pressure (MAP), and heart rate. Mean blood pressure was 98 ± 11 in COPD patients and 95 ± 10 mmHg in comparators at baseline (p = 0.004). After two years, 301 patients and 105 comparators were fully reassessed. The mean (95\% CI) aPWV increased similarly in patients 0.44 (0.25–0.63) and comparators 0.46 (0.23–0.69) m/s, without a change in blood pressure. At the two-year follow-up, there were 29 (6\%) deaths in COPD patients, with the majority due to respiratory causes, with an overall dropout of 43\% of patients with COPD and 30\% of comparators. Conclusions: This was the first large longitudinal study of CV risk in COPD patients, and we confirmed greater aPWV in COPD patients than comparators after adjustments for confounding factors. After two years, patients and comparators had a similar increase of almost 0.5 m/s aPWV.},
+  pmcid = {PMC6524022},
+  file = {/Users/txn009/Zotero/storage/D7HBERFN/Gale et al. - 2019 - Aortic Pulse Wave Velocity as a Measure of Cardiovascular Risk in Chronic Obstructive Pulmonary Dise.pdf}
+}
+
 @article{garcia-tsaoPortalHypertensiveBleeding2017,
   title = {Portal Hypertensive Bleeding in Cirrhosis: {{Risk}} Stratification, Diagnosis, and Management: 2016 Practice Guidance by the {{American Association}} for the Study of Liver Diseases},
   shorttitle = {Portal Hypertensive Bleeding in Cirrhosis},
@@ -1209,6 +1397,25 @@
   abstract = {Background. Aortic stiffness is one of the earliest signs of cardiovascular disease (CVD) in patients with chronic kidney disease and an independent predictor of mortality. It is thought to drive left ventricular (LV) remodelling, an established biomarker for mortality. The relationship between direct and indirect measures of aortic stiffness and LV remodelling is not defined in dialysis patients, nor are the reproducibility of methods used to assess aortic stiffness using cardiac magnetic resonance (CMR) imaging.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/FJLJNWM9/Graham-Brown et al. - 2018 - The reproducibility of cardiac magnetic resonance imaging measures of aortic stiffness and their rel.pdf}
+}
+
+@article{griswoldGeneralizedAutocalibratingPartially2002,
+  title = {Generalized Autocalibrating Partially Parallel Acquisitions ({{GRAPPA}})},
+  author = {Griswold, Mark A. and Jakob, Peter M. and Heidemann, Robin M. and Nittka, Mathias and Jellus, Vladimir and Wang, Jianmin and Kiefer, Berthold and Haase, Axel},
+  date = {2002-06},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {47},
+  number = {6},
+  eprint = {12111967},
+  eprinttype = {pubmed},
+  pages = {1202--1210},
+  issn = {0740-3194},
+  doi = {10.1002/mrm.10171},
+  abstract = {In this study, a novel partially parallel acquisition (PPA) method is presented which can be used to accelerate image acquisition using an RF coil array for spatial encoding. This technique, GeneRalized Autocalibrating Partially Parallel Acquisitions (GRAPPA) is an extension of both the PILS and VD-AUTO-SMASH reconstruction techniques. As in those previous methods, a detailed, highly accurate RF field map is not needed prior to reconstruction in GRAPPA. This information is obtained from several k-space lines which are acquired in addition to the normal image acquisition. As in PILS, the GRAPPA reconstruction algorithm provides unaliased images from each component coil prior to image combination. This results in even higher SNR and better image quality since the steps of image reconstruction and image combination are performed in separate steps. After introducing the GRAPPA technique, primary focus is given to issues related to the practical implementation of GRAPPA, including the reconstruction algorithm as well as analysis of SNR in the resulting images. Finally, in vivo GRAPPA images are shown which demonstrate the utility of the technique.},
+  langid = {english},
+  keywords = {Algorithms,Calibration,Computer Simulation,Humans,Image Processing Computer-Assisted,Magnetic Resonance Imaging,Models Theoretical},
+  file = {/Users/txn009/Zotero/storage/STFXCK9Y/Griswold et al. - 2002 - Generalized autocalibrating partially parallel acquisitions (GRAPPA).pdf}
 }
 
 @article{griswoldPartiallyParallelImaging2000,
@@ -1629,6 +1836,40 @@
   file = {/Users/txn009/Zotero/storage/7VRPJ9YH/2262.html}
 }
 
+@online{ISMRM2022Effect,
+  title = {({{ISMRM}} 2022) {{Effect}} of {{Temporal Resolution}} on {{Flow-Area Aortic Pulse Wave Velocity Measures Using Phase Contrast}} and {{Balanced SSFP MRI}}: {{A Preliminary Study}}},
+  url = {https://archive.ismrm.org/2022/0796.html},
+  urldate = {2026-03-23},
+  file = {/Users/txn009/Zotero/storage/V4LPDSDN/0796.html}
+}
+
+@online{ISMRM2023Denoising,
+  title = {({{ISMRM}} 2023) {{Denoising Vastly Undersampled Radial Portal Venous 4D Flow Data}} via {{Deep Learning}}},
+  url = {https://archive.ismrm.org/2023/3648.html},
+  urldate = {2026-03-23},
+  file = {/Users/txn009/Zotero/storage/5HTFQ92J/3648.html}
+}
+
+@online{ISMRM20245D,
+  title = {({{ISMRM}} 2024) {{A 5D MRI Framework}} for {{Cardiac Motion Characterization}} in {{Radiation Therapy}}},
+  url = {https://archive.ismrm.org/2024/3526_5RcTChQpL.html},
+  urldate = {2026-03-23}
+}
+
+@online{ISMRM2024Feasibility,
+  title = {({{ISMRM}} 2024) {{Feasibility}} of a {{2D Radial Simultaneous Multi-Slice Phase Contrast MRI}} Sequence for {{Aortic Pulse Wave Velocity Measurements}}},
+  url = {https://archive.ismrm.org/2024/3381_4lRsviQZb.html},
+  urldate = {2026-03-23},
+  file = {/Users/txn009/Zotero/storage/HQ8CZPCA/3381_4lRsviQZb.html}
+}
+
+@online{ISMRM2025How,
+  title = {({{ISMRM}} 2025) {{How Low}} Is {{Too Low}}? {{Optimizing VENC}} in {{4D Flow MRI}} for the {{Portal Venous System}}},
+  url = {https://archive.ismrm.org/2025/3668_Hhill8QMI.html},
+  urldate = {2026-03-23},
+  file = {/Users/txn009/Zotero/storage/W4L792VL/3668_Hhill8QMI.html}
+}
+
 @article{iwakiriPathophysiologyPortalHypertension2014,
   title = {Pathophysiology of {{Portal Hypertension}}},
   author = {Iwakiri, Yasuko},
@@ -1689,6 +1930,24 @@
   abstract = {Biomarkers have become an essential component of Alzheimer disease (AD) research and because of the pervasiveness of AD pathology in the elderly, the same biomarkers are used in cognitive aging research. A number of current issues suggest that an unbiased descriptive classification scheme for these biomarkers would be useful. We propose the “A/T/N” system in which 7 major AD biomarkers are divided into 3 binary categories based on the nature of the pathophysiology that each measures. “A” refers to the value of a β-amyloid biomarker (amyloid PET or CSF Aβ42); “T,” the value of a tau biomarker (CSF phospho tau, or tau PET); and “N,” biomarkers of neurodegeneration or neuronal injury ([18F]-fluorodeoxyglucose–PET, structural MRI, or CSF total tau). Each biomarker category is rated as positive or negative. An individual score might appear as A+/T+/N−, or A+/T−/N−, etc. The A/T/N system includes the new modality tau PET. It is agnostic to the temporal ordering of mechanisms underlying AD pathogenesis. It includes all individuals in any population regardless of the mix of biomarker findings and therefore is suited to population studies of cognitive aging. It does not specify disease labels and thus is not a diagnostic classification system. It is a descriptive system for categorizing multidomain biomarker findings at the individual person level in a format that is easy to understand and use. Given the present lack of consensus among AD specialists on terminology across the clinically normal to dementia spectrum, a biomarker classification scheme will have broadest acceptance if it is independent from any one clinically defined diagnostic scheme.},
   pmcid = {PMC4970664},
   file = {/Users/txn009/Zotero/storage/FBU5NSVZ/Jack et al. - 2016 - ATN An unbiased descriptive classification scheme for Alzheimer disease biomarkers.pdf}
+}
+
+@article{jagsiRespiratoryMotionHeart2007,
+  title = {Respiratory {{Motion}} of {{The Heart}} and {{Positional Reproducibility Under Active Breathing Control}}},
+  author = {Jagsi, Reshma and Moran, Jean M. and Kessler, Marc L. and Marsh, Robin B. and Balter, James M. and Pierce, Lori J.},
+  date = {2007-05-01},
+  journaltitle = {International Journal of Radiation Oncology*Biology*Physics},
+  shortjournal = {International Journal of Radiation Oncology*Biology*Physics},
+  volume = {68},
+  number = {1},
+  pages = {253--258},
+  issn = {0360-3016},
+  doi = {10.1016/j.ijrobp.2006.12.058},
+  url = {https://www.sciencedirect.com/science/article/pii/S0360301606036716},
+  urldate = {2026-03-18},
+  abstract = {Purpose: To reduce cardiotoxicity from breast radiotherapy (RT), innovative techniques are under investigation. Information about cardiac motion with respiration and positional reproducibility under active breathing control (ABC) is necessary to evaluate these techniques. Methods and Materials: Patients requiring loco-regional RT for breast cancer were scanned by computed tomography using an ABC device at various breath-hold states, before and during treatment. Ten patients were studied. For each patient, 12 datasets were analyzed. Mutual information-based regional rigid alignment was used to determine the magnitude and reproducibility of cardiac motion as a function of breathing state. For each scan session, motion was quantified by evaluating the displacement of a point along the left anterior descending artery (LAD) with respect to its position at end expiration. Long-term positional reproducibility was also assessed. Results: Displacement of the LAD was greatest in the inferior direction, moderate in the anterior direction, and lowest in the left–right direction. At shallow breathing states, the average displacement of LAD position was up to 6 mm in the inferior direction. The maximum displacement in any patient was 2.8 cm in the inferior direction, between expiration and deep-inspiration breath hold. At end expiration, the long-term reproducibility (SD) of the LAD position was 3 mm in the A-P, 6 mm in the S-I, and 4 mm in the L-R directions. At deep-inspiration breath hold, long-term reproducibility was 3 mm in the A-P, 7 mm in the S-I, and 3 mm in the L-R directions. Conclusions: These data demonstrate the extent of LAD displacement that occurs with shallow breathing and with deep-inspiration breath hold. This information may guide optimization studies considering the effects of respiratory motion and reproducibility of cardiac position on cardiac dose, both with and without ABC.},
+  keywords = {Active breathing control,Breast cancer,Heart,Radiation planning,Respiratory motion},
+  file = {/Users/txn009/Zotero/storage/UA7D66NJ/Jagsi et al. - 2007 - Respiratory Motion of The Heart and Positional Reproducibility Under Active Breathing Control.pdf;/Users/txn009/Zotero/storage/FHGFITEG/S0360301606036716.html}
 }
 
 @article{jangDesignECGPPG2007,
@@ -2100,12 +2359,36 @@
   file = {/Users/txn009/Zotero/storage/IVYM38ZK/Laurent et al. - 2006 - Expert consensus document on arterial stiffness methodological issues and clinical applications.pdf}
 }
 
+@article{lauterburImageFormationInduced1973,
+  title = {Image {{Formation}} by {{Induced Local Interactions}}: {{Examples Employing Nuclear Magnetic Resonance}}},
+  shorttitle = {Image {{Formation}} by {{Induced Local Interactions}}},
+  author = {Lauterbur, P. C.},
+  date = {1973-03},
+  journaltitle = {Nature},
+  volume = {242},
+  number = {5394},
+  pages = {190--191},
+  publisher = {Nature Publishing Group},
+  issn = {1476-4687},
+  doi = {10.1038/242190a0},
+  url = {https://www.nature.com/articles/242190a0},
+  urldate = {2026-03-21},
+  abstract = {AN image of an object may be defined as a graphical representation of the spatial distribution of one or more of its properties. Image formation usually requires that the object interact with a matter or radiation field characterized by a wavelength comparable to or smaller than the smallest features to be distinguished, so that the region of interaction may be restricted and a resolved image generated.},
+  langid = {english},
+  keywords = {Humanities and Social Sciences,multidisciplinary,Science},
+  file = {/Users/txn009/Zotero/storage/S9E3RGHF/Lauterbur - 1973 - Image Formation by Induced Local Interactions Examples Employing Nuclear Magnetic Resonance.pdf}
+}
+
 @article{leeLLORMALocalLowRank,
   title = {{{LLORMA}}: {{Local Low-Rank Matrix Approximation}}},
   author = {Lee, Joonseok and Kim, Seungyeon},
+  date = {2016},
+  volume = {17},
+  number = {15},
+  publisher = {Journal of Machine Learning Research},
   abstract = {Matrix approximation is a common tool in recommendation systems, text mining, and computer vision. A prevalent assumption in constructing matrix approximations is that the partially observed matrix is low-rank. In this paper, we propose, analyze, and experiment with two procedures, one parallel and the other global, for constructing local matrix approximations. The two approaches approximate the observed matrix as a weighted sum of low-rank matrices. These matrices are limited to a local region of the observed matrix. We analyze the accuracy of the proposed local low-rank modeling. Our experiments show improvements in prediction accuracy over classical approaches for recommendation tasks.},
   langid = {english},
-  file = {/Users/txn009/Zotero/storage/F9E4F2EL/Lee and Kim - LLORMA Local Low-Rank Matrix Approximation.pdf}
+  file = {/Users/txn009/Zotero/storage/F9E4F2EL/Lee and Kim - 2016 - LLORMA Local Low-Rank Matrix Approximation.pdf}
 }
 
 @article{leszekLinksCardiovascularDiseases2021,
@@ -2259,6 +2542,27 @@
   abstract = {Background: While primarily a right heart disease, pulmonary arterial hypertension (PAH) can impact left heart function and aortic flow through a shifted interventricular septum from right ventricular pressure overload and reduced left ventricular preload, among other mechanisms. In this study, we used phase contrast (PC) MRI and a modest exercise challenge to examine the effects of PAH on systemic circulation. While exercise challenges are typically performed with ultrasound in the clinic, MRI exercise studies allow for more reproducible image alignment, more accurate flow quantification, and improved tissue contrast. Methods: Six PAH patients and fifteen healthy controls (8 older age-matched, 7 younger) exercised in the magnet bore with an MRI-compatible exercise device that allowed for scanning immediately following cessation of exercise. PC scans were performed in the ascending aorta during a breath hold immediately after modest exercise to non-invasively measure stroke volume (SV), cardiac output (CO), aortic peak systolic flow (PSF), and aortic wall stiffness via relative area change (RAC). Results: Images following exercise showed mild blurring, but were high enough quality to allow for segmentation of the aorta. While SV was approximately 30\% lower in PAH patients (SVPAH,rest = 67 ± 16 mL; SVPAH,stress = 90 ± 42 mL) than age-matched controls (SV,older,rest = 93 ± 16 mL; SVolder,stress = 133 ± 40 mL) at both rest and following exercise, CO was similar for both groups following exercise (COPAH,stress = 10.8 ± 5.7 L/min; COolder,stress = 11.8 ± 5.0 L/min). This was achieved through a compensatory increase in heart rate in the PAH subjects (74\% increase as compared to 29\% in age-matched controls). The PAH subjects also demonstrated reduced aortic peak systolic flow relative to the healthy controls (PSFPAH,rest = 309 ± 52 mL/s; PSFolder,rest = 416 ± 114 mL/s; PSFPAH,stress = 388 ± 113 mL/s; PSFolder,stress = 462 ± 176 mL/s). PAH patients and older controls demonstrated stiffer aortic walls when compared to younger controls (RACPAH,rest = 0.15 ± 0.05; RAColder,rest = 0.17 ± 0.05; RACyoung,rest = 0.28 ± 0.08). Conclusions: PC MRI following a modest exercise challenge was capable of detecting differences in left heart dynamics likely induced from PAH. These results demonstrated that PAH can have a significant influence on systemic flow, even when the patient has no prior left heart disease. Image quantification following exercise could likely be improved in future studies through the implementation of free-breathing or real-time MRI acquisitions. Trial registration: Retrospectively registered on 02/26/2018 (TRN:NCT03523910).},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/Q6JE5LRK/Macdonald et al. - 2018 - MRI assessment of aortic flow in patients with pulmonary arterial hypertension in response to exerci.pdf}
+}
+
+@article{mahmoodHeartlungInteractionsMechanical2018,
+  title = {Heart-Lung Interactions during Mechanical Ventilation: The Basics},
+  shorttitle = {Heart-Lung Interactions during Mechanical Ventilation},
+  author = {Mahmood, Syed S. and Pinsky, Michael R.},
+  date = {2018-09},
+  journaltitle = {Annals of Translational Medicine},
+  shortjournal = {Ann Transl Med},
+  volume = {6},
+  number = {18},
+  eprint = {30370276},
+  eprinttype = {pubmed},
+  pages = {349},
+  issn = {2305-5839},
+  doi = {10.21037/atm.2018.04.29},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC6186561/},
+  urldate = {2026-03-23},
+  abstract = {The hemodynamic effects of mechanical ventilation can be grouped into three clinically relevant concepts. First, since spontaneous ventilation is exercise. In patients increased work of breathing, initiation of mechanical ventilatory support may improve O2 delivery because the work of breathing is reduced. Second, changes in lung volume alter autonomic tone, pulmonary vascular resistance, and at high lung volumes compress the heart in the cardiac fossa similarly to cardiac tamponade. As lung volume increases so does the pressure difference between airway and pleural pressure. When this pressure difference exceeds pulmonary artery pressure, pulmonary vessels collapse as they pass form the pulmonary arteries into the alveolar space increasing pulmonary vascular resistance. Hyperinflation increases pulmonary vascular resistance impeding right ventricular ejection. Anything that over distends lung units will increase their vascular resistance, and if occurring globally throughout the lung, increase pulmonary vascular resistance. Decreases in end-expiratory lung volume cause alveolar collapse increases pulmonary vasomotor tone by the process of hypoxic pulmonary vasoconstriction. Recruitment maneuvers that restore alveolar oxygenation without over distention will reduce pulmonary artery pressure. Third, positive-pressure ventilation increases intrathoracic pressure. Since diaphragmatic descent increases intra-abdominal pressure, the decrease in the pressure gradient for venous return is less than would otherwise occur if the only change were an increase in right atrial pressure. However, in hypovolemic states, it can induce profound decreases in venous return. Increases in intrathoracic pressure decreases left ventricular afterload and will augment left ventricular ejection. In patients with hypervolemic heart failure, this afterload reducing effect can result in improved left ventricular ejection, increased cardiac output and reduced myocardial O2 demand. This brief review will focus primarily on mechanical ventilation and intrathoracic pressure as they affect right and left ventricular function and cardiac output.},
+  pmcid = {PMC6186561},
+  file = {/Users/txn009/Zotero/storage/I39HXRQA/Mahmood and Pinsky - 2018 - Heart-lung interactions during mechanical ventilation the basics.pdf}
 }
 
 @article{markl4DFlowMRI2012,
@@ -2503,6 +2807,44 @@
   file = {/Users/txn009/Zotero/storage/4WZ6PFED/Motosugi et al. - 2019 - Four-dimensional Flow MRI as a Marker for Risk Stratification of Gastroesophageal Varices in Patient.pdf}
 }
 
+@article{moussaviCorrectionGradientinducedPhase2014,
+  title = {Correction of Gradient-Induced Phase Errors in Radial {{MRI}}},
+  author = {Moussavi, Amir and Untenberger, Markus and Uecker, Martin and Frahm, Jens},
+  date = {2014-01-01},
+  journaltitle = {Magnetic Resonance in Medicine},
+  volume = {71},
+  number = {1},
+  pages = {308--312},
+  publisher = {John Wiley \& Sons, Ltd},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.24643},
+  url = {https://onlinelibrary.wiley.com/doi/10.1002/mrm.24643},
+  urldate = {2026-03-17},
+  abstract = {Purpose To correct gradient-induced phase errors in radial MRI.   Methods Gradient-induced eddy currents affect the MRI data acquisition by gradient delays and phase errors that may lead to severe i...},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/LRC686UR/Moussavi et al. - 2014 - Correction of gradient-induced phase errors in radial MRI.pdf}
+}
+
+@article{mullerPhaseResolvedFunctionalLung2025,
+  title = {Phase-{{Resolved Functional Lung MRI Evaluation}} of {{Dynamic Hyperinflation Induced}} by {{Metronome-Paced Tachypnea}} in {{Patients}} with {{Chronic Obstructive Pulmonary Disease}}},
+  author = {Müller, R. A. and Klimeš, F. and Voskrebenzev, A. and Behrendt, L. and Kaireit, T. F. and Wernz, M. and Zubke, M. and Kern, A. L. and Prince, M. R. and Shen, W. and Cooper, C. B. and Barr, R. G. and Hohlfeld, J. M. and Vogel-Claussen, J.},
+  date = {2025-12-31},
+  journaltitle = {COPD: Journal of Chronic Obstructive Pulmonary Disease},
+  volume = {22},
+  number = {1},
+  eprint = {40512448},
+  eprinttype = {pubmed},
+  pages = {2502671},
+  publisher = {Taylor \& Francis},
+  issn = {1541-2555},
+  doi = {10.1080/15412555.2025.2502671},
+  url = {https://doi.org/10.1080/15412555.2025.2502671},
+  urldate = {2026-03-23},
+  abstract = {Hyperinflation in chronic obstructive pulmonary disease (COPD) patients worsens on exertion/exercise when breathing frequency increases. Fast breathing, paced at 40 breaths per minute using a metronome (metronome-paced tachypnea, MPT), induces dynamic hyperinflation (DH) and can be performed during MRI. MPT in combination with phase-resolved functional lung (PREFUL) MRI can be used to assess stress-driven ventilation dynamics globally and regionally. A 90 s time series of one coronal slice centered to the trachea was acquired for PREFUL MRI during 60 s of resting tidal breathing (RTB) and 30 s of MPT at 40 breaths per minute in COPD patients and healthy volunteers. MPT detected DH in 12 out of 15 COPD patients and in 1 out of 15 healthy controls. During MPT, the global fractional ventilation decreased by 20\% in healthy subjects (p = 0.01) and by 48\% in COPD patients (p {$<$} 0.001). The end-expiratory lung area remained stable in healthy subjects and increased significantly by 7\% in COPD patients over the course of MPT (p = 0.004). Younger, healthy volunteers adapted to increase breathing frequency by reducing tidal volume (global fractional ventilation), while older healthy volunteers showed less tidal volume reduction (p = 0.036). The MPT-induced change of regional ventilation homogeneity (flow volume loop cross-correlation, FVL-CCMPT/RTB) increased with age in healthy volunteers (p = 0.039) likely due to the development of compensatory dystelectasis in younger volunteers leading to reduced homogeneity during MPT. In the future, the MPT test during MR imaging may be used for COPD treatment analysis and disease monitoring.},
+  keywords = {Chronic obstructive pulmonary disease,hyperinflation,MRI,tachypnea},
+  file = {/Users/txn009/Zotero/storage/4A53JD9N/Müller et al. - 2025 - Phase-Resolved Functional Lung MRI Evaluation of Dynamic Hyperinflation Induced by Metronome-Paced T.pdf}
+}
+
 @article{murphyEFFECTRESPIRATIONPULSE2010,
   title = {{{EFFECT OF RESPIRATION ON PULSE WAVE VELOCITY MEASUREMENTS IN THE ARM}}: {{PP}}.8.314},
   shorttitle = {{{EFFECT OF RESPIRATION ON PULSE WAVE VELOCITY MEASUREMENTS IN THE ARM}}},
@@ -2577,6 +2919,22 @@
   abstract = {All cardiac magnetic resonance (CMR) techniques aim to create still depictions of a dynamic and ever-adapting organ. Most CMR methods rely on cardiac gating to capture information during fleeting periods of relative cardiac quiescence, at end diastole or end systole, or to acquire partial images throughout the cardiac cycle and average these signals over several heart beats. Since the inception of clinical CMR in the early 1980s, priority has been given to improving methods for image gating. The aim of this work is to provide a basic understanding of the ECG acquisition, demonstrate common ECG-related artifacts and to provide practical methods for overcoming these issues. Meticulous ECG preparation is essential for optimal CMR acquisition and these techniques must be adaptable to the individual patient.},
   pmcid = {PMC3476721},
   file = {/Users/txn009/Zotero/storage/HAPMVZ4M/Nacif et al. - 2012 - Cardiac magnetic resonance imaging and its electrocardiographs (ECG) tips and tricks.pdf}
+}
+
+@article{narenComparingRobustnessRespiratoryresolved2024,
+  title = {Comparing the {{Robustness}} of {{Respiratory-resolved Aortic Pulse Wave Velocity Calculation Methods}} in {{2D Phase Contrast MRI}}},
+  author = {Naren, Tarun and Roberts, Grant and Breidenbach, Bri and Bernhardt, Zach and Fondakowski, Jennifer and Jarchow, Mackenzie and Lose, Sarah and Pandos, Alyssa and Johnson, Kevin and Okonkwo, Ozioma and Wieben, Oliver},
+  date = {2024-03-01},
+  journaltitle = {Journal of Cardiovascular Magnetic Resonance},
+  shortjournal = {Journal of Cardiovascular Magnetic Resonance},
+  volume = {26},
+  publisher = {Elsevier},
+  issn = {1097-6647, 1532-429X},
+  doi = {10.1016/j.jocmr.2024.100601},
+  url = {https://www.journalofcmr.com/article/S1097-6647(24)00592-1/fulltext},
+  urldate = {2026-03-23},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/FHNFJF64/Naren et al. - 2024 - Comparing the Robustness of Respiratory-resolved Aortic Pulse Wave Velocity Calculation Methods in 2.pdf}
 }
 
 @inproceedings{narenEffectTemporalResolution,
@@ -2889,6 +3247,14 @@
   file = {/Users/txn009/Zotero/storage/R77MQ8CK/Omidi et al. - 2023 - Effects of respiratory and cardiac motion on estimating radiation dose to the left ventricle during.pdf;/Users/txn009/Zotero/storage/UQTY8258/acm2.html}
 }
 
+@online{ongSigpy,
+  title = {{{SigPy}}: {{A Python Package}} for {{High Performance Iterative Reconstruction}}},
+  author = {Ong, Frank and Lustig, Michael},
+  url = {https://cds.ismrm.org/protected/19MProceedings/PDFfiles/4819.html},
+  urldate = {2026-03-20},
+  file = {/Users/txn009/Zotero/storage/8QMC2QHS/4819.html}
+}
+
 @article{ouAngularGothicAortic2008,
   title = {Angular ({{Gothic}}) Aortic Arch Leads to Enhanced Systolic Wave Reflection, Central Aortic Stiffness, and Increased Left Ventricular Mass Late after Aortic Coarctation Repair: {{Evaluation}} with Magnetic Resonance Flow Mapping},
   shorttitle = {Angular ({{Gothic}}) Aortic Arch Leads to Enhanced Systolic Wave Reflection, Central Aortic Stiffness, and Increased Left Ventricular Mass Late after Aortic Coarctation Repair},
@@ -2906,6 +3272,26 @@
   abstract = {Objective: We sought to investigate the mechanism whereby a particular deformity of the aortic arch, an angulated Gothic shape, might lead to hypertension late after anatomically successful repair of aortic coarctation. Methods: Fifty-five normotensive patients with anatomically successful repair of aortic coarctation and either a Gothic (angulated) or a Romanesque (smooth and rounded) arch were studied with magnetic resonance angiography and flow mapping in both the ascending and descending aortas. Systolic waveforms, central aortic stiffness, and pulse velocity were measured. We hypothesized that arch angulation would result in enhanced systolic wave reflection with loss of energy across the aortic arch, as well as increased central aortic stiffness. Results: Twenty patients were found to have a Gothic, and 35 a Romanesque, arch. Patients with a Gothic arch showed markedly augmented systolic wave reflection (12   6 vs 5   0.3 mL, P   .001) and greater loss of systolic wave height in the distal aorta (30\%   16\% vs 22\%   12\%, P   .01) compared with that of subjects with a Romanesque arch. Pulse wave velocity was also increased with a Gothic arch (5.6   1.1 vs 4.1   1 m/s, P   .0001), as well as left ventricular mass index (85   15 vs 77   20 g/m2). Patients with a Romanesque arch had increased aortic stiffness compared with that of control subjects (stiffness  -index, 3.9   0.9 vs 2.9   1; P   .03). Conclusions: Angulated Gothic aortic arch is associated with increased systolic wave reflection, as well as increased central aortic stiffness and left ventricular mass index. These findings explain (at least in part) the association between this pattern of arch geometry and late hypertension at rest and on exercise in subjects after coarctation repair.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/BSRGGM2A/Ou et al. - 2008 - Angular (Gothic) aortic arch leads to enhanced systolic wave reflection, central aortic stiffness, a.pdf}
+}
+
+@article{ouyangAnalysisCardiacMotion2020,
+  title = {Analysis of Cardiac Motion without Respiratory Motion for Cardiac Stereotactic Body Radiation Therapy},
+  author = {Ouyang, Zi and Schoenhagen, Paul and Wazni, Oussama and Tchou, Patrick and Saliba, Walid I. and Suh, John H. and Xia, Ping},
+  date = {2020-09-12},
+  journaltitle = {Journal of Applied Clinical Medical Physics},
+  shortjournal = {J Appl Clin Med Phys},
+  volume = {21},
+  number = {10},
+  eprint = {32918386},
+  eprinttype = {pubmed},
+  pages = {48--55},
+  issn = {1526-9914},
+  doi = {10.1002/acm2.13002},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC7592981/},
+  urldate = {2026-03-18},
+  abstract = {Purpose/objective(s) To study the heart motion using cardiac gated computed tomographies (CGCT) to provide guidance on treatment planning margins during cardiac stereotactic body radiation therapy (SBRT). Materials/methods Ten patients were selected for this study, who received CGCT scans that were acquired with intravenous contrast under a voluntary breath‐hold using a dual source CT scanner. For each patient, CGCT images were reconstructed in multiple phases (10\%–90\%) of the cardiac cycle and the left ventricle (LV), right ventricle (RV), ascending aorta (AAo), ostia of the right coronary artery (O‐RCA), left coronary artery (O‐LCA), and left anterior descending artery (LAD) were contoured at each phase. For these contours, the centroid displacements from their corresponding average positions were measured at each phase in the superior–inferior (SI), medial–lateral (ML), and anterior–posterior (AP). The average volumes as well as the maximum to minimum ratios were analyzed for the LV and RV. Results For the six contoured substructures, more than 90\% of the measured displacements were {$<$}5~mm. For these patients, the average volumes ranged from 191.25 to 429.51~cc for LV and from 91.76 to 286.88~cc for RV. For each patient, the ratios of maximum to minimum volumes within a cardiac cycle ranged from 1.15 to 1.54 for LV and from 1.34 to 1.84 for RV. Conclusion Based on this study, cardiac motion is variable depending on the specific substructure of the heart but is mostly within 5~mm. Depending on the location (central or peripheral) of the treatment target and treatment purposes, the treatment planning margins for targets and risk volumes should be adjusted accordingly. In the future, we will further assess heart motion and its dosimetric impact.},
+  pmcid = {PMC7592981},
+  file = {/Users/txn009/Zotero/storage/YTNGT43R/Ouyang et al. - 2020 - Analysis of cardiac motion without respiratory motion for cardiac stereotactic body radiation therap.pdf}
 }
 
 @article{parikhMeasurementPulseWave2016,
@@ -3222,6 +3608,22 @@
   file = {/Users/txn009/Zotero/storage/44WCH7GE/Reitz and Mayeux - 2014 - Alzheimer disease Epidemiology, diagnostic criteria, risk factors and biomarkers.pdf}
 }
 
+@article{reuszReferenceValuesPulse2010,
+  title = {Reference {{Values}} of {{Pulse Wave Velocity}} in {{Healthy Children}} and {{Teenagers}}},
+  author = {Reusz, George S. and Cseprekal, Orsolya and Temmar, Mohamed and Kis, Éva and Cherif, Abdelghani Bachir and Thaleb, Abddelhalim and Fekete, Andrea and Szabó, Attila J. and Benetos, Athanase and Salvi, Paolo},
+  date = {2010-08},
+  journaltitle = {Hypertension},
+  volume = {56},
+  number = {2},
+  pages = {217--224},
+  publisher = {American Heart Association},
+  doi = {10.1161/HYPERTENSIONAHA.110.152686},
+  url = {https://www.ahajournals.org/doi/10.1161/hypertensionaha.110.152686},
+  urldate = {2026-03-23},
+  abstract = {Carotid-femoral pulse wave velocity is an established method for characterizing aortic stiffness, an individual predictor of cardiovascular mortality in adults. Normal pulse wave velocity values for the pediatric population derived from a large data collection have yet to be available. The aim of this study was to create a reference database and to characterize the factors determining pulse wave velocity in children and teenagers. Carotid-femoral pulse wave velocity was measured by applanation tonometry. Reference tables from pulse wave velocities obtained in 1008 healthy subjects (aged between 6 and 20 years; 495 males) were generated using a maximum-likelihood curve-fitting technique for calculating SD scores in accordance with the skewed distribution of the raw data. Effects of sex, age, height, weight, blood pressure, and heart rate on pulse wave velocity were assessed. Sex-specific reference tables and curves for age and height are presented. Pulse wave velocity correlated positively (P{$<$}0.001) with age, height, weight, and blood pressure while correlating negatively with heart rate. After multiple regression analysis, age, height, and blood pressure remained major predictors of pulse wave velocity. This study, involving {$>$}1000 children, is the first to provide reference values for pulse wave velocity in children and teenagers, thereby constituting a suitable tool for longitudinal clinical studies assessing subgroups of children who are at long-term risk of cardiovascular disease.},
+  file = {/Users/txn009/Zotero/storage/VKU3CB4W/Reusz et al. - 2010 - Reference Values of Pulse Wave Velocity in Healthy Children and Teenagers.pdf}
+}
+
 @article{rivera-riveraAssessmentVascularStiffness2021,
   title = {Assessment of Vascular Stiffness in the Internal Carotid Artery Proximal to the Carotid Canal in {{Alzheimer}}'s Disease Using Pulse Wave Velocity from Low Rank Reconstructed {{4D}} Flow {{MRI}}},
   author = {Rivera-Rivera, Leonardo A. and Cody, Karly A. and Eisenmenger, Laura and Cary, Paul and Rowley, Howard A. and Carlsson, Cynthia M. and Johnson, Sterling C. and Johnson, Kevin M.},
@@ -3426,6 +3828,18 @@
   file = {/Users/txn009/Zotero/storage/FM8VLZBA/Ruff et al. - 2025 - Deducing Cardiorespiratory Motion of Cardiac Substructures Using a Novel 5D-MRI Workflow for Radioth.pdf;/Users/txn009/Zotero/storage/WPR6QXBV/2503.html}
 }
 
+@inproceedings{ruffDeducingRespiratoryCardiac2023,
+  title = {Deducing {{Respiratory}} and {{Cardiac Motion Using}} a {{Novel 5D MRI Workflow}}},
+  author = {Ruff, Chase and Naren, Tarun and Johnson, Kevin M. and Wieben, Oliver and Glide-Hurst, Carri K.},
+  date = {2023-07-24},
+  publisher = {AAPM},
+  url = {https://aapm.confex.com/aapm/2023am/meetingapp.cgi/Paper/4705},
+  urldate = {2026-03-23},
+  abstract = {Purpose:  Cardiotoxicity is a devastating complication of thoracic cancer treat...},
+  eventtitle = {{{AAPM}} 65th {{Annual Meeting}} \& {{Exhibition}}},
+  file = {/Users/txn009/Zotero/storage/L7GY3F7U/4705.html}
+}
+
 @article{santelliRespiratoryBellowsRevisited2011,
   title = {Respiratory Bellows Revisited for Motion Compensation: Preliminary Experience for Cardiovascular {{MR}}},
   shorttitle = {Respiratory Bellows Revisited for Motion Compensation},
@@ -3602,6 +4016,14 @@
   file = {/Users/txn009/Zotero/storage/5FEM8NUF/Siaravas et al. - 2023 - Radiation Treatment Mechanisms of Cardiotoxicity A Systematic Review.pdf}
 }
 
+@article{siFreebreathing3DHighresolution,
+  title = {Free-Breathing {{3D}} High-Resolution Simultaneous Grey-Blood Late Gadolinium Enhancement and {{MR}} Angiography at {{3T}}},
+  author = {Si, Dongyue and Littlewood, Simon J and Crabb, Michael G and Kunze, Karl P and Prieto, Claudia and Botnar, René M},
+  abstract = {Introduction: Ferumoxytol enhanced MRI allows fractional myocardial blood volume (fMBV) estimation using a multi-dose, slice-by-slice 2D cardiac-triggered T1 mapping protocol [1]. A dynamic contrast enhancement (DCE) single-dose protocol that is both 3D and cardiac-resolved may support fMBV by simplifying the workflow, improving spatial coverage, and potentially allowing for additional measurements such as cardiac function (from cine MRI) and blood flow (from DCE). In this work, we demonstrate the feasibility of a continuous-acquisition 3D whole ventricle cardiac phase-resolved dynamic ferumoxytol-enhanced MRI technique using the multitasking framework [2], which may provide the groundwork for a comprehensive assessment of myocardial perfusion in a single acquisition. Methods: We used the multitasking framework to reconstruct a 5-way image tensor 𝐼(𝑥, 𝑡!, 𝑡", 𝑡\#, 𝑡\$) where 𝑥 represents 3D spatial coordinates, and 𝑡!, 𝑡", 𝑡\#, 𝑡\$ represent: 1) cardiac motion, 2) respiration, 3) T1 recovery, and 4) DCE time dimensions, respectively. Dynamics along each dimension can be disentangled to enable motion resolved dynamic T1 mapping. We performed in vivo experiments on 3 healthy subjects and 2 patients with ischemic heart disease at 3 T at rest. A patient with scar also had late gadolinium enhancement (LGE) and MOLLI scans. 3D multitasking images were acquired in the short-axis orientation with in-plane resolution = 1.7mm, slice thickness = 8 mm, and number of slices = 16–22, TR/TE=3ms/1.4ms, IR spacing=2160ms. Ferumoxytol 2 mg/kg was slowly infused starting 5 sec into the scan. Total acquisition time was 3 min. Results and Discussion: Fig.1 shows a healthy subject’s long-axis reformat image (Fig.1a) and the end of systole and diastole images at two different DCE phases for one short-axis slice (Fig.1b), and average signal intensity curves in two ROIs drawn in the left ventricle (LV) and myocardium along the T1 recovery (1c) and DCE dimensions (Fig.1d respectively. Fig.2 shows the LGE, MOLLI T1w and T1map, and 3D multitasking T1w and T1map of a patient. The abnormally high T1 in multitasking T1 map, also seen to a lesser extent on the MOLLI images, correlates with scars shown in LGE, where lack of ferumoxytol-induced T1 shortening may indicate no blood supply. Conclusion: We proposed a dynamic ferumoxytol-enhanced cardiac MRI technique which has 3D whole ventricle coverage and is non-ECG gated and free-breathing. Preliminary results also show potential for detecting scar.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/R94XJEVP/Si et al. - Free-breathing 3D high-resolution simultaneous grey-blood late gadolinium enhancement and MR angiogr.pdf}
+}
+
 @article{singerArterialStiffnessBrain2014,
   title = {Arterial Stiffness, the Brain and Cognition: {{A}} Systematic Review},
   shorttitle = {Arterial Stiffness, the Brain and Cognition},
@@ -3618,6 +4040,25 @@
   abstract = {Background: Arterial stiffness is a known predictor of cardiovascular disease, and has also been associated with markers of cerebral small vessel disease as well as poor cognitive function and cognitive decline. The consistency of these associations and their relationship to each other are unclear. Method: We conducted a systematic review of the evidence associating arterial stiffness with cognitive function and cognitive decline, and with makers of cerebral small vessel disease, specifically lacunar infarcts and white matter hyperintensities. Results: Thirteen cross-sectional studies examining arterial stiffness and white matter hyperintensities or lacunar infarctions reported a positive association between increased arterial stiffness and radiological findings of cerebral small vessel disease. Two longitudinal studies examining the relationship between arterial stiffness and white matter hyperintensities found increased pulse wave velocity to be an independent predictor of white matter hyperintensity volume. Fifteen cross-sectional and seven longitudinal studies examining arterial stiffness and cognition were identified. Fourteen of the fifteen cross-sectional studies associated increased arterial stiffness with lower cognitive function, and six of the seven longitudinal studies found arterial stiffness to be predictive of cognitive decline. Conclusion: Arterial stiffness is associated with cerebral small vessel disease and decreased cognitive function. However methodological limitations such as differing covariates between studies and an overreliance on the MMSE to measure cognition are a concern across much of the literature.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/DH3A2395/Singer et al. - 2014 - Arterial stiffness, the brain and cognition A systematic review.pdf}
+}
+
+@article{sobolEffectShortTermBreath2019,
+  title = {The {{Effect}} of {{Short-Term Breath Holding}} on {{Pulse Wave Velocity}} and {{Vascular Stiffness}}},
+  author = {Sobol, K. V. and Burdygin, A. I. and Nesterov, V. P.},
+  date = {2019-11-01},
+  journaltitle = {Biophysics},
+  shortjournal = {BIOPHYSICS},
+  volume = {64},
+  number = {6},
+  pages = {978--983},
+  issn = {1555-6654},
+  doi = {10.1134/S0006350919060204},
+  url = {https://doi.org/10.1134/S0006350919060204},
+  urldate = {2026-03-22},
+  abstract = {Using noninvasive piezopulsometry, the dynamic structure of the arterial pressure waveform was studied upon exposure of the human cardiovascular system to short-term hypoxia. A strained breath-hold (SBH) after deep inspiration  was used to induce short-term hypoxia. The pulse wave velocity (PWV) was reduced by 8\% during a SBH. The arterial stiffness was observed to significantly decrease during a SBH.},
+  langid = {english},
+  keywords = {arterial stiffness,breath holding,cardiac hemodynamics,cardiovascular system,diagnosis,hypoxia,pulse wave velocity},
+  file = {/Users/txn009/Zotero/storage/VZHBYY36/Sobol et al. - 2019 - The Effect of Short-Term Breath Holding on Pulse Wave Velocity and Vascular Stiffness.pdf}
 }
 
 @article{solomonFreebreathingRadialImaging2021,
@@ -3853,6 +4294,32 @@
   keywords = {general,Geriatrics/Gerontology,Health Promotion and Disease Prevention,Internal Medicine,Medicine/Public Health,Obstetrics/Perinatology/Midwifery,Public Health}
 }
 
+@article{tanEstimationDisplacementCardiac2013,
+  title = {Estimation of the Displacement of Cardiac Substructures and the Motion of the Coronary Arteries Using Electrocardiographic Gating},
+  author = {Tan, Wenyong and Xu, Liying and Wang, Xiaohong and Qiu, Dasheng and Han, Guang and Hu, Desheng},
+  date = {2013-09-20},
+  journaltitle = {OncoTargets and therapy},
+  shortjournal = {Onco Targets Ther},
+  volume = {6},
+  eprint = {24098082},
+  eprinttype = {pubmed},
+  pages = {1325--1332},
+  issn = {1178-6930},
+  doi = {10.2147/OTT.S52101},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC3789650/},
+  urldate = {2026-03-18},
+  abstract = {Purpose The aim of this study was to quantify the displacement of cardiac substructures, including the anterior myocardial territory (AMT), left ventricle, and coronary arteries during a normal cardiac cycle. Materials and methods Computed tomography (CT) images with retrospective electrocardiographic gating of 17 eligible patients were obtained. All images were reconstructed automatically for the end-diastolic and end-systolic phases. CT scanning without contrast at a random phase and a selected vertebral body were used as references to measure three-dimensionaldisplacements of the cardiac substructures. Results The displacement between the end-diastolic and end-systolic phases (Dd-s) was greater than that between the end-systolic and random phases and between the end-diastolic and random cardiac phases. The largest displacements for the heart were in the left, posterior, and inferior directions with an average Dd-s of approximately 4–6 mm. The average Dd-s for the AMT and left ventricle was 1.2–2.7 mm in the anterior and right directions, 4.3–7.8 mm in left and posterior directions, and 4.9–6.3 mm in superior and inferior directions. For the coronary arteries, the average Dd-s was 2.8–5.9 mm in the anterior-posterior direction, 3.5–6.6 mm in left-right direction, and 3.8–5.3 mm in the superior-inferior direction. Inter-observer agreement was excellent for the heart, AMT, and left ventricle (kappa coefficient, {$>$}0.75 for all) and good for most coronary arteries in three dimensions (kappa coefficient, 0.511–0.687). The Dd-s did not differ significantly between men and women. Conclusion Most average displacements of the cardiac substructures and coronary arteries were 3–8 mm in three dimensions. These findings will be useful to accurately estimate the radiation dose to cardiac substructures during thoracic radiation and to evaluate the risk of radiation-related heart disease.},
+  pmcid = {PMC3789650},
+  file = {/Users/txn009/Zotero/storage/9M5JDFMQ/Tan et al. - 2013 - Estimation of the displacement of cardiac substructures and the motion of the coronary arteries usin.pdf}
+}
+
+@online{TarunNarenSmra,
+  title = {Tarun Naren Smra 2023 - {{Google Search}}},
+  url = {https://www.google.com/search?q=tarun+naren+smra+2023&client=firefox-b-1-d&hs=XLuU&sca_esv=e2250487dc351849&ei=7lXBaZuBIJO7p84PjJ_ViA4&ved=0ahUKEwibsNuLpbaTAxWT3ckDHYxPFeEQ4dUDCBE&uact=5&oq=tarun+naren+smra+2023&gs_lp=Egxnd3Mtd2l6LXNlcnAiFXRhcnVuIG5hcmVuIHNtcmEgMjAyMzIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFItRZQvQNYzRRwAXgAkAEAmAGhAaABlgaqAQMxLjW4AQPIAQD4AQGYAgagAuwFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICBRAhGKsCmAMAiAYBkAYFkgcDMS41oAfhHrIHAzAuNbgH5AXCBwUwLjEuNcgHFIAIAA&sclient=gws-wiz-serp},
+  urldate = {2026-03-23},
+  file = {/Users/txn009/Zotero/storage/2ZZCGX76/search.html}
+}
+
 @article{tavianiAccuracyRepeatabilityFourier2010,
   title = {Accuracy and Repeatability of Fourier Velocity Encoded {{M}}‐mode and Two‐dimensional Cine Phase Contrast for Pulse Wave Velocity Measurement in the Descending Aorta},
   author = {Taviani, Valentina and Patterson, Andrew J. and Graves, Martin J. and Hardy, Christopher J. and Worters, Pauline and Sutcliffe, Michael P.F. and Gillard, Jonathan H.},
@@ -3887,6 +4354,24 @@
   abstract = {Abstract                            Aortic pulse wave velocity (PWV) is an independent determinant of cardiovascular risk. Although aortic stiffening with age is well documented, the interaction between aging and regional aortic PWV is still a debated question. We measured global and regional PWV in the descending aorta of 56 healthy subjects aged 25–76 years using a one‐dimensional, interleaved, Fourier velocity encoded pulse sequence with cylindrical excitation. Repeatability across two magnetic resonance examinations (               n               = 19) and accuracy against intravascular pressure measurements (               n               = 4) were assessed. The global PWV was found to increase nonlinearly with age. The thoracic aorta was found to stiffen the most with age (PWV [thoracic, 20–40 years] = 4.7 ± 1.1 m/s; PWV [thoracic, 60–80 years] = 7.9 ± 1.5 m/s), followed by the mid‐ (PWV [mid‐abdominal, 20–40 years] = 4.9 ± 1.3 m/s; PWV [mid‐abdominal, 60–80 years] = 7.4 ± 1.9 m/s) and distal abdominal aorta (PWV [distal abdominal, 20–40 years] = 4.8 ± 1.4 m/s; PWV [distal abdominal, 60–80 years] = 5.7 ± 1.4 m/s). Good agreement was found between repeated magnetic resonance measurements and between magnetic resonance PWVs and the gold‐standard. Fourier velocity encoded M‐mode allowed to measure global and regional PWV in the descending aorta. There was a preferential stiffening of the thoracic aorta with age, which may be due to progressive fragmentation of elastin fibers in this region. Magn Reson Med, 2010. © 2010 Wiley‐Liss, Inc.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/HIK86FLW/Taviani et al. - 2011 - Age‐related changes of regional pulse wave velocity in the descending aorta using Fourier velocity e.pdf}
+}
+
+@article{taylorEffectsRespiratoryCardiac2023,
+  title = {Effects of {{Respiratory}} and {{Cardiac Motion}} on {{Dose}} to the {{Left Anterior Descending Artery}} in {{Patients Undergoing Radiation Therapy}} for {{Locally Advanced Lung Cancer}}},
+  author = {Taylor, R. J. and Omidi, A. and Rosu, M. and Maggioncalda, E. and Weiss, E.},
+  date = {2023-10-01},
+  journaltitle = {International Journal of Radiation Oncology, Biology, Physics},
+  shortjournal = {International Journal of Radiation Oncology, Biology, Physics},
+  volume = {117},
+  number = {2},
+  pages = {e64-e65},
+  publisher = {Elsevier},
+  issn = {0360-3016},
+  doi = {10.1016/j.ijrobp.2023.06.788},
+  url = {https://www.redjournal.org/article/S0360-3016(23)05222-7/fulltext},
+  urldate = {2026-03-18},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/EY4CCI7X/Taylor et al. - 2023 - Effects of Respiratory and Cardiac Motion on Dose to the Left Anterior Descending Artery in Patients.pdf}
 }
 
 @article{thompsonCardiorespiratoryResolvedMagneticResonance2006,
@@ -3963,6 +4448,46 @@
   file = {/Users/txn009/Zotero/storage/QRESSPEX/Trzasko - 2013 - Exploiting local low-rank structure in higher-dimensional MRI applications.pdf}
 }
 
+@article{tzaniDynamicHyperinflationAssociated2011,
+  title = {Dynamic Hyperinflation Is Associated with a Poor Cardiovascular Response to Exercise in {{COPD}} Patients},
+  author = {Tzani, Panagiota and Aiello, Marina and Elia, Davide and Boracchia, Luca and Marangio, Emilio and Olivieri, Dario and Clini, Enrico and Chetta, Alfredo},
+  date = {2011},
+  journaltitle = {Respiratory Research},
+  shortjournal = {Respir Res},
+  volume = {12},
+  number = {1},
+  eprint = {22074289},
+  eprinttype = {pubmed},
+  pages = {150},
+  issn = {1465-9921},
+  doi = {10.1186/1465-9921-12-150},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC3225311/},
+  urldate = {2026-03-23},
+  abstract = {Background Pulmonary hyperinflation has the potential for significant adverse effects on cardiovascular function in COPD. The aim of this study was to investigate the relationship between dynamic hyperinflation and cardiovascular response to maximal exercise in COPD patients. Methods We studied 48 patients (16F; age 68 yrs ± 8; BMI 26 ± 4) with COPD. All patients performed spirometry, plethysmography, lung diffusion capacity for carbon monoxide (TLco) measurement, and symptom-limited cardiopulmonary exercise test (CPET). The end-expiratory lung volume (EELV) was evaluated during the CPET. Cardiovascular response was assessed by change during exercise in oxygen pulse (ΔO2Pulse) and double product, i.e. the product of systolic blood pressure and heart rate (DP reserve), and by the oxygen uptake efficiency slope (OUES), i.e. the relation between oxygen uptake and ventilation. Results Patients with a peak exercise EELV (\%TLC) ≥ 75\% had a significantly lower resting FEV1/VC, FEF50/FIF50 ratio and IC/TLC ratio, when compared to patients with a peak exercise EELV (\%TLC) {$<$} 75\%. Dynamic hyperinflation was strictly associated to a poor cardiovascular response to exercise: EELV (\%TLC) showed a negative correlation with ΔO2Pulse (r = - 0.476, p = 0.001), OUES (r = - 0.452, p = 0.001) and DP reserve (r = - 0.425, p = 0.004). Furthermore, according to the ROC curve method, ΔO2Pulse and DP reserve cut-off points which maximized sensitivity and specificity, with respect to a EELV (\% TLC) value ≥ 75\% as a threshold value, were ≤ 5.5 mL/bpm (0.640 sensitivity and 0.696 specificity) and ≤ 10,000 Hg · bpm (0.720 sensitivity and 0.783 specificity), respectively. Conclusion The present study shows that COPD patients with dynamic hyperinflation have a poor cardiovascular response to exercise. This finding supports the view that in COPD patients, dynamic hyperinflation may affect exercise performance not only by affecting ventilation, but also cardiac function.},
+  pmcid = {PMC3225311},
+  file = {/Users/txn009/Zotero/storage/WBDPT2WX/Tzani et al. - 2011 - Dynamic hyperinflation is associated with a poor cardiovascular response to exercise in COPD patient.pdf}
+}
+
+@article{tzaniDynamicHyperinflationAssociated2011a,
+  title = {Dynamic Hyperinflation Is Associated with a Poor Cardiovascular Response to Exercise in {{COPD}} Patients},
+  author = {Tzani, Panagiota and Aiello, Marina and Elia, Davide and Boracchia, Luca and Marangio, Emilio and Olivieri, Dario and Clini, Enrico and Chetta, Alfredo},
+  date = {2011},
+  journaltitle = {Respiratory Research},
+  shortjournal = {Respir Res},
+  volume = {12},
+  number = {1},
+  eprint = {22074289},
+  eprinttype = {pubmed},
+  pages = {150},
+  issn = {1465-9921},
+  doi = {10.1186/1465-9921-12-150},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC3225311/},
+  urldate = {2026-03-23},
+  abstract = {Background Pulmonary hyperinflation has the potential for significant adverse effects on cardiovascular function in COPD. The aim of this study was to investigate the relationship between dynamic hyperinflation and cardiovascular response to maximal exercise in COPD patients. Methods We studied 48 patients (16F; age 68 yrs ± 8; BMI 26 ± 4) with COPD. All patients performed spirometry, plethysmography, lung diffusion capacity for carbon monoxide (TLco) measurement, and symptom-limited cardiopulmonary exercise test (CPET). The end-expiratory lung volume (EELV) was evaluated during the CPET. Cardiovascular response was assessed by change during exercise in oxygen pulse (ΔO2Pulse) and double product, i.e. the product of systolic blood pressure and heart rate (DP reserve), and by the oxygen uptake efficiency slope (OUES), i.e. the relation between oxygen uptake and ventilation. Results Patients with a peak exercise EELV (\%TLC) ≥ 75\% had a significantly lower resting FEV1/VC, FEF50/FIF50 ratio and IC/TLC ratio, when compared to patients with a peak exercise EELV (\%TLC) {$<$} 75\%. Dynamic hyperinflation was strictly associated to a poor cardiovascular response to exercise: EELV (\%TLC) showed a negative correlation with ΔO2Pulse (r = - 0.476, p = 0.001), OUES (r = - 0.452, p = 0.001) and DP reserve (r = - 0.425, p = 0.004). Furthermore, according to the ROC curve method, ΔO2Pulse and DP reserve cut-off points which maximized sensitivity and specificity, with respect to a EELV (\% TLC) value ≥ 75\% as a threshold value, were ≤ 5.5 mL/bpm (0.640 sensitivity and 0.696 specificity) and ≤ 10,000 Hg · bpm (0.720 sensitivity and 0.783 specificity), respectively. Conclusion The present study shows that COPD patients with dynamic hyperinflation have a poor cardiovascular response to exercise. This finding supports the view that in COPD patients, dynamic hyperinflation may affect exercise performance not only by affecting ventilation, but also cardiac function.},
+  pmcid = {PMC3225311},
+  file = {/Users/txn009/Zotero/storage/XP7A3IIU/Tzani et al. - 2011 - Dynamic hyperinflation is associated with a poor cardiovascular response to exercise in COPD patient.pdf}
+}
+
 @article{ueckerESPIRiTEigenvalueApproach2014,
   title = {{{ESPIRiT}}—an Eigenvalue Approach to Autocalibrating Parallel {{MRI}}: {{Where SENSE}} Meets {{GRAPPA}}},
   shorttitle = {{{ESPIRiT}}—an Eigenvalue Approach to Autocalibrating Parallel {{MRI}}},
@@ -4000,6 +4525,24 @@
   abstract = {Objective. Pulse wave velocity (PWV) is a key diagnostic parameter of the cardiovascular system’s state. However, approaches aimed at PWV characterization often suffer from inevitable drawbacks. Statistical results demonstrating how closely PWV in the radial artery (RA) and the respiration phase correlate, as well as RA PWV evolution during breath-holding (BH), have not yet been presented in the literature. The aims of this study are (a) to propose a simple robust technique for measuring RA PWV, (b) to reveal the phase relation between the RA PWV and spontaneous breathing, and (c) to disclose the influence of BH on the RA PWV. Approach. The high-resolution remote breathing monitoring method Sorption-Enhanced Infrared Thermography (SEIRT) and the new technique aimed at measuring RA PWV described in this paper were used synchronously, and their measurement data were processed simultaneously. Main results. Spontaneous breathing leaves a synchronous ‘trace’ on the RA PWV. The close linear correlation of the respiration phase and the phase of concomitant RA PWV changes is statistically confirmed in five tested people (Pearson’s r is of the order of 0.5–0.8, P {$<$} 0.05). The BH appreciably affects the RA PWV. A phenomenon showing that the RA PWV is not indifferent to hypoxia is observed for the first time. Significance. The proposed technique for RA PWV characterization has high prospects in biomedical diagnostics. The presented pilot study deserves attention in the context of the mutual interplay between respiratory and cardiovascular systems. It may also be useful in cases where peripheral pulse wave propagation helps assess respiratory function.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/XIMACUCT/Vainer - 2023 - Radial artery pulse wave velocity a new characterization technique and the instabilities associated.pdf}
+}
+
+@article{vainerRadialArteryPulse2023a,
+  title = {Radial Artery Pulse Wave Velocity: A New Characterization Technique and the Instabilities Associated with the Respiratory Phase and Breath-Holding},
+  shorttitle = {Radial Artery Pulse Wave Velocity},
+  author = {Vainer, Boris G.},
+  date = {2023-02-06},
+  journaltitle = {Physiological Measurement},
+  shortjournal = {Physiol Meas},
+  volume = {44},
+  number = {1},
+  eprint = {36657177},
+  eprinttype = {pubmed},
+  issn = {1361-6579},
+  doi = {10.1088/1361-6579/acb4dd},
+  abstract = {Objective. Pulse wave velocity (PWV) is a key diagnostic parameter of the cardiovascular system's state. However, approaches aimed at PWV characterization often suffer from inevitable drawbacks. Statistical results demonstrating how closely PWV in the radial artery (RA) and the respiration phase correlate, as well as RA PWV evolution during breath-holding (BH), have not yet been presented in the literature. The aims of this study are (a) to propose a simple robust technique for measuring RA PWV, (b) to reveal the phase relation between the RA PWV and spontaneous breathing, and (c) to disclose the influence of BH on the RA PWV.Approach.The high-resolution remote breathing monitoring method Sorption-Enhanced Infrared Thermography (SEIRT) and the new technique aimed at measuring RA PWV described in this paper were used synchronously, and their measurement data were processed simultaneously.Main results. Spontaneous breathing leaves a synchronous 'trace' on the RA PWV. The close linear correlation of the respiration phase and the phase of concomitant RA PWV changes is statistically confirmed in five tested people (Pearson's r is of the order of 0.5-0.8, P {$<$} 0.05). The BH appreciably affects the RA PWV. A phenomenon showing that the RA PWV is not indifferent to hypoxia is observed for the first time.Significance.The proposed technique for RA PWV characterization has high prospects in biomedical diagnostics. The presented pilot study deserves attention in the context of the mutual interplay between respiratory and cardiovascular systems. It may also be useful in cases where peripheral pulse wave propagation helps assess respiratory function.},
+  langid = {english},
+  keywords = {Blood Flow Velocity,breath-holding,Humans,Pilot Projects,Pulse Wave Analysis,pulse wave velocity (PWV),PWV–breathing correlation,RA PWV measurement technique,Radial Artery,radial artery (RA),respiratory phase,sorption-enhanced infrared thermography (SEIRT)}
 }
 
 @article{valvanoAccelerating4DFlow2017,
@@ -4114,6 +4657,24 @@
   file = {/Users/txn009/Zotero/storage/3UAHRQQK/Vasanawala et al. - 2016 - Safety and technique of ferumoxytol administration for MRI.pdf}
 }
 
+@article{vassauxEffectsHyperinflationOxygen2008,
+  title = {Effects of Hyperinflation on the Oxygen Pulse as a Marker of Cardiac Performance in {{COPD}}},
+  author = {Vassaux, C. and Torre-Bouscoulet, L. and Zeineldine, S. and Cortopassi, F. and Paz-Díaz, H. and Celli, B. R. and Pinto-Plata, V. M.},
+  date = {2008-11},
+  journaltitle = {The European Respiratory Journal},
+  shortjournal = {Eur Respir J},
+  volume = {32},
+  number = {5},
+  eprint = {18550609},
+  eprinttype = {pubmed},
+  pages = {1275--1282},
+  issn = {1399-3003},
+  doi = {10.1183/09031936.00151707},
+  abstract = {A decreased inspiratory capacity (IC)/total lung capacity (TLC) ratio is associated with dynamic hyperinflation and decreased exercise capacity. The present authors hypothesised that static (low IC/TLC) and dynamic hyperinflation impair cardiac function as assessed by oxygen pulse at rest and during cardiopulmonary exercise testing (CPET). Lung function, body mass index, hand grip strength and CPET parameters were measured (oxygen uptake (mL x kg(-1) x min(-1)) and oxygen pulse (mL x beat(-1))) in 87 chronic obstructive pulmonary disease (COPD) patients (American Thoracic Society/European Respiratory Society/Global Initiative for Chronic Obstructive Lung Disease stage 3-4) and 46 controls. The patients were divided into those with IC/TLC {$>$} 25\% or {$<$} or = 25\%. The IC/TLC ratio at rest and at peak exercise was associated significantly with oxygen pulse. Patients with IC/TLC {$<$} or = 25\% (n = 45) had significantly lower exercise capacity, peak oxygen pulse, peak minus baseline oxygen pulse, peak IC, peak IC/TLC ratio and \% change from baseline to peak IC/TLC ratio compared with patients with IC/TLC {$>$} 25\% and controls. During CPET, the oxygen pulse was lower at iso-work in patients with IC/TLC {$<$} or = 25\% than in those with IC/TLC {$>$} 25\%. Resting hyperinflation (inspiratory capacity/total lung capacity) is associated with lower oxygen pulse, peak exercise inspiratory capacity/total lung capacity and exercise capacity in patients with severe chronic obstructive pulmonary disease. The present results support an interaction between hyperinflation and decreased cardiac function that may contribute to exercise limitation in these patients.},
+  langid = {english},
+  keywords = {Adult,Aged,Body Mass Index,Case-Control Studies,Exercise,Female,Forced Expiratory Volume,Humans,Lung,Male,Middle Aged,Multivariate Analysis,Oxygen,Pulmonary Disease Chronic Obstructive,Respiratory Function Tests}
+}
+
 @article{vatnerVascularStiffnessAging2021,
   title = {Vascular {{Stiffness}} in {{Aging}} and {{Disease}}},
   author = {Vatner, Stephen F. and Zhang, Jie and Vyzas, Christina and Mishra, Kalee and Graham, Robert M. and Vatner, Dorothy E.},
@@ -4188,6 +4749,24 @@
   file = {/Users/txn009/Zotero/storage/7FT7B5A8/Voges et al. - 2012 - Normal values of aortic dimensions, distensibility, and pulse wave velocity in children and young ad.pdf}
 }
 
+@article{vuComparisonEndExpirationEndInspiration2019,
+  title = {Comparison of {{End-Expiration Versus End-Inspiration Breath-Holds With Respect}} to {{Respiratory Motion Artifacts}} on {{T1-Weighted Abdominal MRI}}},
+  author = {Vu, Kim-Nhien and Haldipur, Anshul G. and Roh, Albert Tae-Hun and Lindholm, Peter and Loening, Andreas Markus},
+  date = {2019-05},
+  journaltitle = {AJR. American journal of roentgenology},
+  shortjournal = {AJR Am J Roentgenol},
+  volume = {212},
+  number = {5},
+  eprint = {30835515},
+  eprinttype = {pubmed},
+  pages = {1024--1029},
+  issn = {1546-3141},
+  doi = {10.2214/AJR.18.20239},
+  abstract = {OBJECTIVE. The purpose of this study was to compare respiratory motion artifact and diagnostic image quality between end-inspiration and end-expiration breath-holding techniques on unenhanced and contrast-enhanced axial T1-weighted MRI of the liver. MATERIALS AND METHODS. This retrospective observational study included 50 consecutive subjects undergoing axial T1-weighted liver MRI, with unenhanced images acquired with both end-inspiration and end-expiration breath-holding techniques, and with contrast-enhanced images acquired for 47 of the subjects with either the end-inspiration or the end-expiration breath-holding technique. Three radiologists performed blinded independent evaluations of each unenhanced sequence, contrast-enhanced sequence, and subtraction (contrast-enhanced minus unenhanced) image, using a scale ranging from 1 point (denoting nondiagnostic imaging) to 5 points (denoting no artifacts). Blinded side-by-side assessment of each pair of unenhanced sequences was also performed. Two-tailed Wilcoxon signed rank and Wilcoxon rank sum tests were used to assess statistical significance. RESULTS. A significant improvement in motion scores was noted for sequences acquired in end-expiration, compared with those acquired in end-inspiration, for unenhanced sequences (mean, 3.35 vs 2.80; p {$<$} 0.00001), contrast-enhanced sequences (mean, 4.02 vs 3.46; p = 0.0003), and subtraction images (mean, 3.67 vs 2.41; p {$<$} 0.00001). Severe degradation of image quality or nondiagnostic image quality was noted for 15\% of unenhanced images (23/150), 0\% of contrast-enhanced images, and 8\% (5/63) of subtraction images acquired on end-expiration, whereas it was noted for 36\% (54/150) of unenhanced images, 13\% (10/78) of contrast-enhanced images, and 59\% (46/78) of subtraction images acquired on end-inspiration. When side-by-side assessment of paired unenhanced sequences was performed, images acquired in end-expiration were significantly favored in 59\% of paired sequences (88/150) (p {$<$} 0.00001), and no difference between images acquired with both breath-hold techniques was noted for 21\% (32/150) of paired sequences. CONCLUSION. The end-expiration breath-holding technique leads to significant decreases in respiratory motion artifacts, compared with the end-inspiration technique, on unenhanced and contrast-enhanced T1-weighted liver MRI.},
+  langid = {english},
+  keywords = {breath-hold imaging,expiration,image quality,inspiration,MRI}
+}
+
 @article{vulliemozEstimationLocalAortic2002,
   title = {Estimation of Local Aortic Elastic Properties with {{MRI}}},
   author = {Vulliémoz, Serge and Stergiopulos, Nikos and Meuli, Reto},
@@ -4224,6 +4803,24 @@
   abstract = {Purpose: To develop a single-shot multi-slice T1 mapping method by combing simultaneous multi-slice (SMS) excitations, single-shot inversion-recovery (IR) radial fast low-angle shot (FLASH) and a nonlinear model-based reconstruction method. Methods: SMS excitations are combined with a single-shot IR radial FLASH sequence for data acquisition. A previously developed single-slice calibrationless model-based reconstruction is extended to SMS, formulating the estimation of parameter maps and coil sensitivities from all slices as a single nonlinear inverse problem. Joint-sparsity constraints are further applied to the parameter maps to improve T1 precision. Validations of the proposed method are performed for a phantom and for the human brain and liver in six healthy adult subjects. Results: Phantom results confirm good T1 accuracy and precision of the simultaneously acquired multi-slice T1 maps in comparison to single-slice references. In-vivo human brain studies demonstrate the better performance of SMS acquisitions compared to the conventional spoke-interleaved multi-slice acquisition using model-based reconstruction. Apart from good accuracy and precision, the results of six healthy subjects in both brain and abdominal studies confirm good repeatability between scan and re-scans. The proposed method can simultaneously acquire T1 maps for five slices of a human brain (0.75 × 0.75 × 5 mm3) or three slices of the abdomen (1.25 × 1.25 × 6 mm3) within four seconds. Conclusion: The IR SMS radial FLASH acquisition together with a non-linear model-based reconstruction enable rapid high-resolution multi-slice T1 mapping with good accuracy, precision, and repeatability.},
   pmcid = {PMC10409492},
   file = {/Users/txn009/Zotero/storage/3STTY4GW/Wang et al. - 2021 - Model-Based Reconstruction for Simultaneous Multi-Slice T1 Mapping using Single-Shot Inversion-Recov.pdf}
+}
+
+@article{wangMotionAnalysisCardiac2025,
+  title = {A Motion Analysis of Cardiac Substructures for Guiding Stereotactic Arrhythmia Radiotherapy Motion Management},
+  author = {Wang, Yuhao and McKeown, Trevor and Hao, Yao and An, Hongyu and Gach, H Michael and Robinson, Clifford G. and Cuculich, Phillip S. and Yang, Deshan},
+  date = {2025},
+  journaltitle = {Medical Physics},
+  volume = {52},
+  number = {9},
+  pages = {e18115},
+  issn = {2473-4209},
+  doi = {10.1002/mp.18115},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mp.18115},
+  urldate = {2026-03-18},
+  abstract = {Background Stereotactic arrhythmia radiotherapy (STAR) has recently emerged as a novel noninvasive treatment option for critically ill and drug-refractory VT patients who cannot be treated or re-treated by catheter ablation. However, STAR requires precise management of cardiorespiratory motion to minimize radiation toxicity to the healthy heart and nearby organs-at-risk (OARs) and to ensure the radiation precision to deliver the prescribed dose to the VT target. Purpose To investigate the characteristics of cardiac motion of VT patients to facilitate cardiac motion management for STAR treatments. Methods Breath-hold cardiac 4DCTs (c4DCT) of 18 patients previously treated with STAR were analyzed retrospectively. Each c4DCT contained ten 3DCTs corresponding to 10 phases of an entire cardiac motion cycle. For each c4DCT, a group-wise deformable image registration (DIR) method was used to register all ten 3DCTs, resulting in ten 3D deformation vector fields (DVFs) and an average position 3DCT. The DVFs were computed from each phase to the average position 3DCT instead of between pairs of phases. Metal artifacts caused by the Implantable Cardioverter-Defibrillator (ICD) leads were reduced using a diffusion procedure before DIR. The heart chambers were segmented on the average position 3DCT using an AI segmentation tool, followed by manual evaluation and correction. Cardiac motion characteristics (magnitude and direction) were investigated temporally over the 10 cardiac phases and spatially for the outer myocardium walls of the heart and per chamber, AV (atrium-ventricle) valves, septa (the muscular walls dividing the chambers), and STAR targets. Results The motion magnitude maximum over cardiac phases was computed by taking each voxel's maximum motion magnitude in 10 phases, referring to the average position. The cardiac motion magnitudes were found to be strongly patient-specific. The maximum, 99th percentile, and 95th percentile of the motion maximum for the myocardium wall among patients ranged from 8.7 to 17.8 mm, 4.9 to 11.9 mm, and 2.9 to 8.9 mm, respectively. The same metrics for STAR target motion ranged from 2.9 to 11.6 mm, 2.6 to 6.4 mm, and 2.4 to 6.0 mm, respectively. Z-tests showed a significant difference between the maximum motion magnitude of the myocardium and the STAR target, while there was no significant difference between the mean motion magnitude of the myocardium and the STAR target. The 95th percentiles of the myocardium motion magnitudes were {$<$} 5 mm for 16 out of 18 patients. The largest motion appeared near the ventricle-atrium (AV) valves. All cardiac structures have their largest displacements from the average position at the end of systole and diastole. Conclusions The cardiac motion characteristics (magnitude, direction, and spatial distribution) of STAR patients provided in this study would further facilitate cardiac motion management.},
+  langid = {english},
+  keywords = {4DCT,medical image analysis,motion management,stereotactic arrhythmia radiotherapy},
+  file = {/Users/txn009/Zotero/storage/A5D5LRP4/Wang et al. - 2025 - A motion analysis of cardiac substructures for guiding stereotactic arrhythmia radiotherapy motion m.pdf;/Users/txn009/Zotero/storage/MIDRBLXZ/mp.html}
 }
 
 @article{wangRadialSimultaneousMultislice2016b,
@@ -4346,6 +4943,24 @@
   abstract = {Atherosclerosis is the leading cause of cardiovascular disease (CVD) in the Western world. In the early development of atherosclerosis, vessel walls remodel outwardly such that the vessel luminal diameter is minimally affected by early plaque development. Only in the late stages of the disease does the vessel lumen begin to narrow—leading to stenoses. As a result, angiographic techniques are not useful for diagnosing early atherosclerosis. Given the absence of stenoses in the early stages of atherosclerosis, CVD remains subclinical for decades. Thus, methods of diagnosing atherosclerosis early in the disease process are needed so that affected patients can receive the necessary interventions to prevent further disease progression. Pulse wave velocity (PWV) is a biomarker directly related to vessel stiffness that has the potential to provide information on early atherosclerotic disease burden. A number of clinical methods are available for evaluating global PWV, including applanation tonometry and ultrasound. However, these methods only provide a gross global measurement of PWV—from the carotid to femoral arteries—and may mitigate regional stiffness within the vasculature. Additionally, the distance measurements used in the PWV calculation with these methods can be highly inaccurate. Faster and more robust magnetic resonance imaging (MRI) sequences have facilitated increased interest in MRI-based PWV measurements. This review provides an overview of the state-of-theart in MRI-based PWV measurements. In addition, both gold standard and clinical standard methods of computing PWV are discussed.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/HW7Z32CC/Wentland et al. - 2014 - Review of MRI-based measurements of pulse wave velocity a biomarker of arterial stiffness.pdf}
+}
+
+@article{wernzFeasibilityRepeatabilityCorrelation2024,
+  title = {Feasibility, {{Repeatability}}, and {{Correlation}} to {{Lung Function}} of {{Phase-Resolved Functional Lung}} ({{PREFUL}}) {{MRI-derived Pulmonary Artery Pulse Wave Velocity Measurements}}},
+  author = {Wernz, Marius M. and Voskrebenzev, Andreas and Müller, Robin A. and Zubke, Maximilian and Klimeš, Filip and Glandorf, Julian and Czerner, Christoph and Wacker, Frank and Olsson, Karen M. and Hoeper, Marius M. and Hohlfeld, Jens M. and Vogel-Claussen, Jens},
+  date = {2024},
+  journaltitle = {Journal of Magnetic Resonance Imaging},
+  volume = {60},
+  number = {5},
+  pages = {2216--2228},
+  issn = {1522-2586},
+  doi = {10.1002/jmri.29337},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jmri.29337},
+  urldate = {2026-03-23},
+  abstract = {Background Pulse wave velocity (PWV) in the pulmonary arteries (PA) is a marker of vascular stiffening. Currently, only phase-contrast (PC) MRI-based options exist to measure PA-PWV. Purpose To test feasibility, repeatability, and correlation to clinical data of Phase-Resolved Functional Lung (PREFUL) MRI-based calculation of PA-PWV. Study Type Retrospective. Subjects 79 (26 female) healthy subjects (age range 19–78), 58 (24 female) patients with chronic obstructive pulmonary disease (COPD, age range 40–77), 60 (33 female) patients with suspected pulmonary hypertension (PH, age range 28–85). Sequence 2D spoiled gradient echo, 1.5T. Assessment PA-PWV was measured from PREFUL-derived cardiac cycles based on the determination of temporal and spatial distance between lung vasculature voxels using a simplified (sPWV) method and a more comprehensive (cPWV) method including more elaborate distance calculation. For 135 individuals, PC MRI-based PWV (PWV-QA) was measured. Statistical Tests Intraclass-correlation-coefficient (ICC) and coefficient of variation (CoV) were used to test repeatability. Nonparametric tests were used to compare cohorts. Correlation of sPWV/cPWV, PWV-QA, forced expiratory volume in 1 sec (FEV1) \%predicted, residual volume (RV) \%predicted, age, and right heart catheterization (RHC) data were tested. Significance level α = 0.05 was used. Results sPWV and cPWV showed no significant differences between repeated measurements (P-range 0.10–0.92). CoV was generally lower than 15\%. COPD and PH patients had significantly higher sPWV and cPWV than healthy subjects. Significant correlation was found between sPWV or cPWV and FEV1\%pred. (R = −0.36 and R = −0.44), but not with RHC (P-range −0.11 − 0.91) or age (P-range 0.23–0.89). Correlation to RV\%pred. was significant for cPWV (R = 0.42) but not for sPWV (R = 0.34, P = 0.055). For all cohorts, sPWV and cPWV were significantly correlated with PWV-QA (R = −0.41 and R = 0.48). Data Conclusion PREFUL-derived PWV is feasible and repeatable. PWV is increased in COPD and PH patients and correlates to airway obstruction and hyperinflation. Level of Evidence 3 Technical Efficacy Stage 2},
+  langid = {english},
+  keywords = {COPD,lung,pulmonary circulation,pulmonary hypertension,pulse wave velocity},
+  file = {/Users/txn009/Zotero/storage/Q8LPPBJ9/Wernz et al. - 2024 - Feasibility, Repeatability, and Correlation to Lung Function of Phase-Resolved Functional Lung (PREF.pdf;/Users/txn009/Zotero/storage/QVKF4AFA/jmri.html}
 }
 
 @article{westenbergBramwellHillModelingLocal2012,

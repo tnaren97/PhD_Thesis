@@ -1,4 +1,4 @@
-\section{Background}
+
 This chapter discusses the fundamentals of Magnetic Resonance Imaging (MRI) and its applications to cardiovascular imaging, particularly the use of phase contrast sequences. Additionally, techniques for improving and accelerating image acquisition are discussed.
 \section{Magnetic Resonance Imaging}\label{sec:mri}
 Magnetic resonance imaging (MRI) is a noninvasive imaging technique that produces detailed images of internal structures by exploiting the magnetic properties of atomic nuclei. All elementary particles have an intrinsic property known as spin that is restricted to discrete values of positive or negative half-integers. When subatomic particles combine to form nuclei, conservation of angular momentum mandates that the resulting nuclei have a spin equal to the sum of the spins of the component particles. If the resulting spin is non-zero, then the nuclei will have a net magnetic moment. In the absence of an external magnetic field, the magnetic moments of individual nuclei will be randomly oriented resulting in an overall magnetically neutral state. However, when a magnetic field $B_0$ is applied, the magnetic moments partially align with or against the field creating a net magnetization, $M_0$ in the direction of $B_0$. This causes the individual magnetic moments, and thus the net magnetic moment vector, to precess around the direction of $B_0$ at the Larmor frequency $\omega_0$:
@@ -10,7 +10,7 @@ where $\gamma$ is the gyromagnetic ratio. The gyromagnetic ratio is specific to 
 
 To generate a measurable signal, MRI systems apply a radiofrequency (RF) pulse, $B_1$, at the Larmor frequency for hydrogen which perturbs the net magnetization vector $M_0$ and tips it away from the direction of the $B_0$ field. The degree to which $M_0$ is tipped is known as the flip angle $\alpha$. After excitation, the individual magnetic moments begin to precess coherently in the transverse plane which induces a voltage in receiver coils that can be readout as the MR signal. After the RF pulse ends, $M_0$ attempts to return to equilibrium through multiple decay mechanisms, namely longitudinal and transverse relaxation. Longitudinal relaxation represents the transfer of energy from the precessing spins to the external environment over time which results in the parallel component of $M_0$, $M_z$, decaying according to Equation~\ref{eq:T1} where $T1$ is a time constant that reflects the time it takes for this energy transfer to occur for a specific material.
 \begin{equation}
-    M_z(t)=M_0(1-e^\frac{-t}{T_1})
+    M_z(t)=M_0\left(1-e^\frac{-t}{T_1}\right)
     \label{eq:T1}
 \end{equation}
 
@@ -31,16 +31,34 @@ Once a signal has been generated, the next step is spatial encoding, which enabl
 
 The output of the signal from each frequency and phase encoding step is a complex number representing a specific frequency. This is most easily represented through a formalism known as Fourier space (k-space) which maps frequencies to real space through the Fourier transform. By filling k-space with repeated frequency and phase encoding steps, a Fourier transform can be applied to reconstruct the real space image. The resulting image is also complex valued with a magnitude and phase, though the phase image is often discarded.
 
-\subsubsection{Radial Acquisitions}\label{sec:radial}
+\subsection{Radial Acquisitions}\label{sec:radial}
 During acquisition, the order and direction in which k-spaced is sampled can be chosen arbitrarily. The most common method of sampling k-space is the Cartesian approach where k-space is sampled line-by-line in a rectilinear fashion. This approach has many benefits, one of which is that the data is conveniently organized in an evenly spaced grid-like format that is easy for computers to process and apply the 2D Fast Fourier Transform (FFT). However, there are alternative acquisition trajectories that carry various pros and cons compared to Cartesian sampling. Radial sampling is one of these methods.
 
 With radial sampling, frequency encoding is applied simultaneously along every axis such that k-space is traversed along spokes that pass through the center of k-space. Each spoke represents a projection of the object at a different angle, and successive spokes are rotated to achieve full k-space coverage. Because the center of k-space is sampled repeatedly, radial acquisitions inherently emphasize low spatial frequency information, which governs overall image contrast and signal intensity. 
 
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=1, width=\textwidth]{Other_figures.pdf}
+
+    \caption[Cartesian vs radial sampling]{A. Cartesian sampling of k-space. Frequency encode direction is left to right while phase encode direction is top to bottom. B. Radial sampling of k-space. Frequency and phase encoding directions are rotated simultaneously to acquire projections through the origin. C. Radial sampling in 3D}\label{fig:sampling}
+    \vspace{0.25cm}
+\end{figure}
+
 One of the primary advantages of radial sampling is its resilience to motion. In Cartesian imaging, motion typically results in coherent ghosting artifacts along the phase-encoding direction. In contrast, motion in radial acquisitions leads to more diffuse, incoherent streaking artifacts. As such, radial sampling is particularly well suited for applications involving respiratory or cardiac motion. This in turn also enables better support for constrained reconstruction techniques (see Section~\ref{sec:constrained}) as the incoherent motion artifacts enable improved sparsity constraints. Radial sampling also allows for greater flexibility in how data are sorted during reconstruction compared to Cartesian imaging. If projections are acquired in pseudo-random order, such as with a golden angle or bit-reversed view ordering~\cite{fengGoldenAngleRadialMRI2022,chanInfluenceRadialUndersampling2012} projections can be arbitrarily grouped into dynamic frames with reasonable coverage of k-space and reconstructed as images. This allows arbitrary gating based on physiological signals (see Section~\ref{sec:gating}), as well as retrospective subsampling of full datasets to simulate shorter scan times or to remove projections compromised by bulk motion. 
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=2, width=\textwidth]{Other_figures.pdf}
+    
+    \caption[Motion artifacts]{Breath-hold and free-breathing acquisitions with Cartesian and radial sampling. Free-breathing results in motion artifacts that manifest as ghosting artifacts in the Cartesian acquisition and an almost imperceptible increase in pseudo-noise all across the image in the radial acquisition}\label{fig:motion_artifacts}
+    \vspace{0.25cm}
+\end{figure}
 
 Despite these advantages, radial sampling also presents some technical challenges. The non-uniform sampling density—characterized by oversampling at the center of k-space and undersampling at higher spatial frequencies—requires the use of density compensation during reconstruction. Furthermore, radial data cannot be directly reconstructed using a standard FFT and instead requires interpolation (gridding) onto a Cartesian grid which increases computational complexity and thus reconstruction time. Streaking artifacts may also become prominent in cases of severe undersampling or in the presence of high-contrast structures. 
 
-\subsubsection{Parallel Imaging}
+\subsection{Parallel Imaging}
 Parallel imaging (PI) is an advanced acquisition strategy that accelerates data collection by exploiting the spatial sensitivity profiles of multi-channel RF receiver coils. Typically, full sampling of k-space according to the Nyquist criterion is required to reconstruct an image without aliasing artifacts, which can result in relatively long acquisition times. PI addresses this limitation by utilizing multiple receiver coils in parallel, each of which sees a different portion of the full FOV\@. This means that k-space can be undersampled and the missing spatial information can be recovered by combining information from each coil. 
 
 Two widely used PI techniques are Sensitivity Encoding (SENSE) and Generalized Autocalibrating Partially Parallel Acquisitions (GRAPPA)~\cite{pruessmann2001}. In SENSE-based approaches, image reconstruction is performed in the image domain by solving a system of equations that relate the aliased pixel intensities to coil sensitivity maps. This requires accurate estimation of coil sensitivities, which are typically obtained through separate calibration scans or by reconstructing low-pass filtered, low-resolution images such that the contributions from each coil is spread out. In contrast, GRAPPA operates in k-space by synthesizing missing data points from acquired neighboring samples using calibration data, thereby avoiding the need for explicit sensitivity maps during reconstruction. Both approaches enable substantial reductions in scan time, depending on the number of coils and the geometry of the acquisition.
@@ -50,14 +68,23 @@ While PI is highly useful for accelerating acquisitions, it also has a few drawb
 Another application of PI is in simultaneous multi-slice (SMS) acquisitions. Rather than sequentially acquiring individual slices, SMS techniques apply a composite RF pulse that excites several slices simultaneously. As a result, the measured signal represents a superposition of signals originating from every slice. If reconstructed normally, all the slices would appear to be aliased on top of each other. However, by using the coil sensitivities from the multi-channel receiver coil, the images can be separated during reconstruction similar to regular PI\@. The most common way of doing this is the Controlled Aliasing in Parallel Imaging Results in Higher Acceleration (CAIPIRINHA) method. Named for a Brazilian cocktail, this method is performed by adding a slice dependent phase modulation to the composite RF pulse. This phase modulation shifts the slices in the phase encoding direction relative to each other such that the slices can then be recovered by applying the conjugate of the phase shift during reconstruction. This was further improved upon with the application of blipped-CAIPI, which utilizes blipped rewinder gradients to ensure phase accumulation stays within the range of $\pm$ 180$^\circ$\cite{setsompopBlippedControlledAliasingParallel2012a}.
 
 
-\subsection{Physiological Motion}\label{sec:gating}
+\section{Physiological Motion}\label{sec:gating}
 As discussed previously, motion during acquisition can result in artifacts. While bulk motion can be avoided by instructing the subject not to move, other types of motion, such as physiological motion, are unavoidable for imaging certain anatomy. Respiratory motion is the most common type of physiological motion encountered in thoracic and abdominal imaging. It is most commonly managed via breath holding, however this places an upper limit on the acquisition time. Most sequences have to be accelerated to fit within the time span of an average breath hold. Multiple sequential breath holds are used for longer multi-slice 2D scans with increased volumetric coverage, but breath hold inconsistencies can result in slice misalignment~\cite{chandlerCorrectionMisalignedSlices2008}. However, breath hold length varies between subjects and can even be impossible in certain populations with breathing difficulties.
 
-The other common type of physiological motion is cardiac motion and comes into play when imaging the heart and vascular system. Unlike respiratory motion, cardiac motion can not be suspended even temporarily. MR is a relatively slow modality and most types of acquisitions do not have the temporal resolution necessary to generate full images in the space of a single RR cycle. As such, alternate methods of acquiring data without motion artifacts must be utilized.
+The other common type of physiological motion is cardiac motion and comes into play when imaging the heart and vascular system. Unlike respiratory motion, cardiac motion can not be suspended even temporarily. MR is a relatively slow modality and most types of acquisitions do not have the temporal resolution necessary to generate full images in the space of a single R-R interval. As such, alternate methods of acquiring data without motion artifacts must be utilized.
 
 The most common method is physiological gating, which utilizes a physiological waveform to control the acquisition~\cite{jangDesignECGPPG2007}. In the case of cardiac imaging, an electrocardiogram (ECG) or photoplethysmogram (PPG) can be utilized for obtaining a cardiac signal; for respiratory motion, abdominal bellows and 1D navigator acquisitions have been used to acquire a respiratory signal~\cite{santelliRespiratoryBellowsRevisited2011}. Gating an acquisition can be performed two ways: prospectively, where the acquisition waits on triggers from the physiological waveform to acquire data during the desired phase of motion, or retrospectively, where data is acquired continuously alongside the physiological signal and then sorted during image reconstruction~\cite{heijmanComparisonProspectiveRetrospective2007}. Prospectively gated acquisitions have the advantage of improved data efficiency during reconstruction, however, they can only acquire data during a single predefined phase of a physiological cycle and significant amounts of time are spent not acquiring data. On the other hand, retrospectively-gated reconstructions can have poorer data efficiency if only a single phase is desired (respiratory gated acquisitions are often reconstructed only in end-exhale) and are more sensitive to irregular rhythms such as arrhythmias, but acquire data for all phases of a physiological cycle and offer increased flexibility for reconstruction.
 
-\subsection{Constrained Reconstruction}\label{sec:constrained}
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=3, width=\textwidth]{Other_figures.pdf}
+    
+    \caption[Physiological gating]{Top. A cardiac waveform over time. Each individual R-R interval can be binned into separate phases and then combined to reconstruct an averaged R-R interval. Bottom. A respiratory waveform over time where the peaks are end-inhale and troughs are end-exhale. Shaded region indicates a threshold operation such that only data below the threshold is used during reconstruction.}\label{fig:physiological_gating}
+    \vspace{0.25cm}
+\end{figure}
+
+\section{Constrained Reconstruction}\label{sec:constrained}
 Traditional MR acquisitions are limited by the Nyquist sampling criterion, i.e., if insufficient k-space samples are acquired to cover the whole FOV, undersampling artifacts will occur. However, full sampling, especially for 3D acquisitions, would require infeasibly long scan times. The solution to this challenge is in the application of constrained reconstruction techniques, which apply the use of a priori knowledge of image sparsity to reconstruct images at sub-Nyquist sampling rates.
 
 More explicitly, a constrained reconstruction takes the form of the inverse problem 
@@ -69,7 +96,7 @@ where $F$ is the nonuniform Fourier transform, $S$ are coil sensitivity maps, $x
 
 One example of a constrained reconstruction technique is compressed sensing (CS)~\cite{lustigSparseMRIApplication2007}. In CS, the constraint is that the data is sparse in some transformed domain and redundancies can be exploited to recover the original image, i.e., $R(m)=\|\Psi m\|_1$ where $\Psi$ is a sparsifying transform (e.g., wavelets)~\cite{lustigSparseMRIApplication2007}. Another type of constrained reconstruction is a local low-rank (LLR) approximation, which exploits the rank of the acquired dataset~\cite{haldarLowrankApproximationsDynamic2011,leeLLORMALocalLowRank}. For an LLR reconstruction, the assumption is that there are spatial and temporal redundancies across local patches of the dataset, which can be approximated as the product of lower-rank matrices, thereby reducing the complexity of the original matrix and approximating a solution, i.e., $R(m)=\sum_p \|\mathrm{Mat}(m_p)\|_*$ where $\mathrm{Mat}$ is a tensor unfolding operation along either a spatial or temporal dimension and $*$ is the nuclear norm. With either method, an iterative reconstruction can be utilized to solve Equation~\ref{eq:constrained_recon} and recover a higher-quality image from an undersampled dataset well below the Nyquist criterion, reducing the amount of data needed to be acquired and the time taken to acquire it~\cite{haldarChapter5Early2022}. However, the trade-off is that the reconstruction times for these iterative methods can be significantly longer than the traditional FFT based reconstructions.
 
-\subsection{Phase Contrast MRI}\label{sec:phase_contrast}
+\section{Phase Contrast MRI}\label{sec:phase_contrast}
 Phase contrast MRI (PC) is a well-established technique for the quantitative assessment of blood flow and velocity. As mentioned previously, the phase of the images is often discarded as it doesn't typically contain useful physiological information. However, PC imaging is an exception as it utilizes bipolar gradient pulses to encode motion information into the phase of the complex signal. 
 
 The phase accumulated by a spin due to a time-varying gradient $\vec{G}(t)$ is given by
@@ -77,7 +104,7 @@ The phase accumulated by a spin due to a time-varying gradient $\vec{G}(t)$ is g
     \phi(\vec{r}, t) = \int_{0}^{\text{TE}} \gamma \Delta B\, dt + \int_{0}^{\text{TE}} \gamma \vec{G}(t) \cdot \vec{r}(t)\, dt
     \label{eq:gradient}
 \end{equation}
-where $\phi(\vec{r}, t)$ is the phase, TE is the echo time, $\Delta B$ is the contribution of the local magnetic field inhomogeneities, and $\vec{r}(t)$ is the position of the spin as a function of time. The first term is a constant and can be simplified to $\gamma \Delta B \text{TE}$. This is the background phase $\phi_0$. For the second term, the position function can be expanded with a Taylor series expansion 
+where $\phi(\vec{r}, t)$ is the phase, TE is the echo time, $\Delta B$ is the contribution of local magnetic field inhomogeneities, and $\vec{r}(t)$ is the position of the spin as a function of time. The first term evaluates to a constant that can be described as the background phase $\phi_0$. For the second term, the position function can be expanded with a Taylor series expansion 
 \begin{equation}
     \vec{r}(t) = \vec{r}_0 + \vec{v}t + \dots
     \label{eq:taylor_exp}
@@ -87,7 +114,7 @@ where the ellipsis are higher order terms that can be neglected due to minimal e
     \phi(\vec{r}, t) = \phi_0 + \gamma\vec{r}_0\int_{0}^{\text{TE}} \vec{G}(t)\,dt + \gamma\vec{v}\int_{0}^{\text{TE}} \vec{G}(t) t \,dt
     \label{eq:expanded_gradients}
 \end{equation}
-The second and third terms of Equation~\ref{eq:expanded_gradients} represent the 0\textsuperscript{th} and  1\textsuperscript{st} moments of the gradient represented as $M_0$ and $M_1$. If the gradient is designed such that total area under the curve is 0, then $M_0$ is nulled which eliminates position dependence. The phase then becomes sensitive only to velocity via the first gradient moment $M_1$:
+The second and third terms of Equation~\ref{eq:expanded_gradients} represent the 0\textsuperscript{th} and  1\textsuperscript{st} moments of the gradient represented as $M_0$ and $M_1$. If the gradient is designed such that total area under the curve is 0, i.e., a bipolar gradient with equal but oppposite lobes, then $M_0$ is nulled which eliminates position dependence. The phase then becomes sensitive only to velocity via the first gradient moment $M_1$:
 \begin{equation}
     \phi(\vec{r}, t) = \phi_0 + \gamma \vec{v} M_1
     \label{eq:phase}
@@ -103,14 +130,24 @@ Solving for velocity gives
     \label{eq:velocity}
 \end{equation}
 
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=4, width=\textwidth]{Other_figures.pdf}
+    
+    \caption[Bipolar gradients]{Top illustrates the design of a time-varying bipolar gradient for phase contrast imaging. Middle shows the phase over time, $\phi$, for a static spin. As the gradient has equal but opposite order, the net phase $\Delta \phi$ is 0. Bottom shows phase accrual for a moving spin. The magnitude of phase gained is different for spins moving with or against the gradient, resulting in a net phase gain which is proportional to velocity.}\label{fig:bipolar_gradient}
+    \vspace{0.25cm}
+\end{figure}
+
+
 The value of $\Delta M_1$ functions as a controllable parameter that scales the value of the phase to the velocity. More specifically, the maximum velocity that can be encoded in the phase, $v_{enc}$, is 
 \begin{equation}
     v_{enc} = \frac{\pi}{\gamma \Delta M_1}
 \end{equation}
 
-However, since phases are constrained to values of $[-\pi, \pi]$, if the measured velocities are higher than the set $v_{enc}$, the phase will wrap around to the minimum velocity. This is known as phase aliasing. The simplest solution to this problem is to set the $v_{enc}$ higher than the maximum potential velocity. However, this is typically not known a priori and if the $v_{enc}$ is overestimated, then the dynamic range of the velocities is too high and there is a reduction in the velocity-to-noise ratio (VNR). 
+However, since phases are constrained to values of $[-\pi, \pi]$, if the measured velocities are higher than the set $v_{enc}$, the phase will wrap around to the minimum velocity. This is known as velocity aliasing. The simplest solution to this problem is to set the $v_{enc}$ higher than the maximum potential velocity. However, this is typically not known a priori and if the $v_{enc}$ is overestimated, then the dynamic range of the velocities is too high and there is a reduction in the velocity-to-noise ratio (VNR). 
 
-\subsubsection{2D Phase Contrast Imaging}
+\subsection{2D Phase Contrast Imaging}
 The method described previously for generating velocity encoded images is known as 2-point encoding and is primarily used for 2D PC imaging. Through-plane velocities are acquired with retrospective cardiac gating, producing time-resolved cine images. Both magnitude and phase images are reconstructed: magnitude images provide the anatomical context and are often used for segmentation, while phase images encode the velocity information. Additionally, complex difference images or angiograms are often derived from the magnitude and phase images according to Equation~\ref{eq:complex_diff}
 \begin{equation}
     CD = M\left|\sin\left(\frac{\Delta \phi}{2}\right)\right|
@@ -118,8 +155,16 @@ The method described previously for generating velocity encoded images is known 
 \end{equation}
 where $CD$ and $M$ are the complex difference and magnitude images, respectively. This produces an image where non-moving tissue is suppressed and only the vessels are visible which is very useful for segmentation. Once the vessel lumen is segmented, velocity waveforms can be extracted across time, and volumetric flow rates can be calculated by integrating velocity over the cross-sectional area. 
 
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=5, width=\textwidth]{Other_figures.pdf}
+    
+    \caption[Phase contrast images]{Top. Magnitude (left), phase (middle), and complex difference (right) images from a time-resolved 2D phase contrast acquisition. Pixel intensity of the phase image indicates velocity, where dark pixels are motion into the image and bright pixels are motion out of the image. Bottom. Flow curves can be generated by integrating velocity over the area of the cross-section. Ascending aorta is segmented in blue and the measured flow curve is plotted.}\label{fig:phase_contrast_images}
+    \vspace{0.25cm}
+\end{figure}
 
-\subsubsection{4D Flow Imaging}\label{sec:4dflow}
+\subsection{4D Flow Imaging}\label{sec:4dflow}
 Four-dimensional flow magnetic resonance imaging (4D flow MRI) is an extension of phase-contrast MRI that enables comprehensive, three-dimensional assessment of blood flow. In this technique, velocity is encoded in all three spatial directions in one acquisition through the use of multiple bipolar gradients repeated across each encoding direction to reconstruct full velocity vectors. A flow compensated reference encoding must also be acquired, but there are alternate encoding schemes that do not require flow compensation in each individual direction such as 4-point balanced encoding and 5-point encoding~\cite{markl4DFlowMRI2012}.
 
 A key advantage of 4D flow MRI is its ability to characterize complex hemodynamics that cannot be adequately captured with single-plane techniques. Because the entire volume is acquired, flow can be retrospectively analyzed at any location without the need for precise slice prescription during scanning. This enables detailed visualization of multidirectional flow phenomena such as vortices, helices, and turbulent jets. In addition to qualitative visualization, the technique supports quantitative analysis of a wide range of hemodynamic parameters, including volumetric flow rates, peak velocities, wall shear stress, vorticity, and pulse wave velocity.

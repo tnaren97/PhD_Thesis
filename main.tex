@@ -20,7 +20,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{14pt}
 
-\graphicspath{ {./chapter02/images/}{./chapter03/images/}{./chapter04/images/}{./chapter05/images/}{./chapter06/images/}{./chapter07/images/}{./chapter08/images/}}
+\graphicspath{{figures/}}
 
 \titleformat{\chapter}[block]
 {\normalfont\LARGE\bfseries}
@@ -40,58 +40,57 @@
 \begin{document}
 \pagenumbering{roman} 
 
-% \input{frontmatter/titlepage}
+\input{frontmatter/titlepage}
 
-% \input{frontmatter/abstract}
+\input{frontmatter/abstract}
 
-% \chapter*{Acknowledgements}
-% \input{frontmatter/acknowledgements}
+\chapter*{Acknowledgements}
+\input{frontmatter/acknowledgements}
 
-% \tableofcontents
+\tableofcontents
 
-% \listoffigures
+\listoffigures
 
-% \listoftables
+\listoftables
 
 \doublespacing{}
 
-% \chapter{Introduction}
-% \pagenumbering{arabic} 
-% \input{chapter01/introduction}
+\chapter{Introduction}
+\pagenumbering{arabic} 
+\input{chapter01/introduction}
 
-\chapter{Background}
+\chapter{Background}\label{ch:background}
 \pagenumbering{arabic} 
 \input{chapter02/background}
 
-\chapter{Validation of Free-Breathing Radial 2D \\ Phase Contrast MRI Measured Pulse Wave Velocity with an Aortic Flow Phantom}
-\input{chapter04/PWV_phantom.tex}
-
-\chapter{Effects of Respiration on Aortic Pulse Wave Velocity Measurements with a Radial Simultaneous \\
-Multi-Slice 2D Phase Contrast Acquisition}
-\input{chapter05/PWV_respiration.tex}
+\chapter{Validation of Free-Breathing Radial 2D \\ Phase Contrast MRI for Pulse Wave Velocity Measurements in an Aortic Flow Phantom}\label{ch:phantom}
+\input{chapter03/PWV_phantom.tex}
 
 \chapter{Feasibility of Free-Breathing Radial 2D \\
-Phase Contrast MRI for Aortic Pulse Wave Velocity Measurements}
-\input{chapter03/LIFE_study.tex}
+Phase Contrast MRI for Aortic Pulse Wave Velocity Measurements}\label{ch:life}
+\input{chapter04/LIFE_study.tex}
 
+\chapter{Respiratory Effects on Aortic Pulse Wave Velocity Measurements with a Radial Simultaneous \\
+Multi-Slice 2D Phase Contrast Acquisition}\label{ch:respiration}
+\input{chapter05/PWV_respiration.tex}
 
-% \chapter{Optimizing VENC in Radial Free-Breathing 4D Flow MRI for the Portal Venous System}
+% \chapter{Optimizing VENC in Radial Free-Breathing 4D Flow MRI for the Portal Venous System}\label{ch:gevenc}
 % \input{chapter06/GEVenc.tex}
 
-% \chapter{Iterative Motion Correction for Improved Efficiency of Radial Free-Breathing 4D Flow MRI}
+% \chapter{Iterative Motion Correction for Improved Efficiency of Radial Free-Breathing 4D Flow MRI}\label{ch:imoco}
 % \input{chapter07/iMoCo.tex}
 
-% \chapter{Implementation of a Flexible 5D Cardiac MRI Reconstruction Framework for Motion Characterization in Radiation Therapy}
-% \input{chapter08/5DMRI.tex}
+\chapter{A Flexible 5D Cardiac MRI Reconstruction Framework for Motion Characterization in Radiation Therapy}\label{ch:5DMRI}
+\input{chapter08/5DMRI.tex}
 
-% \chapter{Conclusion}
-% \input{conclusion/conclusion}
+\chapter{Conclusion}\label{ch:conclusion}
+\input{conclusion/conclusion}
 
 % \appendix
 % \chapter{Appendix Title}
 % \input{appendix/appendix}
-\singlespacing{}
 
+\singlespacing{}
 \printbibliography[]
 
 \end{document}
