@@ -140,12 +140,12 @@ Solving for velocity gives
 \end{figure}
 
 
-The value of $\Delta M_1$ functions as a controllable parameter that scales the value of the phase to the velocity. More specifically, the maximum velocity that can be encoded in the phase, $v_{enc}$, is 
+The value of $\Delta M_1$ functions as a controllable parameter that scales the value of the phase to the velocity. More specifically, the maximum velocity that can be encoded in the phase, venc, is 
 \begin{equation}
-    v_{enc} = \frac{\pi}{\gamma \Delta M_1}
+    venc = \frac{\pi}{\gamma \Delta M_1}
 \end{equation}
 
-However, since phases are constrained to values of $[-\pi, \pi]$, if the measured velocities are higher than the set $v_{enc}$, the phase will wrap around to the minimum velocity. This is known as velocity aliasing. The simplest solution to this problem is to set the $v_{enc}$ higher than the maximum potential velocity. However, this is typically not known a priori and if the $v_{enc}$ is overestimated, then the dynamic range of the velocities is too high and there is a reduction in the velocity-to-noise ratio (VNR). 
+However, since phases are constrained to values of $[-\pi, \pi]$, if the measured velocities are higher than the set venc, the phase will wrap around to the minimum velocity. This is known as velocity aliasing. The simplest solution to this problem is to set the venc higher than the maximum potential velocity. However, this is typically not known a priori and if the venc is overestimated, then the dynamic range of the velocities is too high and there is a reduction in the velocity-to-noise ratio (VNR). 
 
 \subsection{2D Phase Contrast Imaging}
 The method described previously for generating velocity encoded images is known as 2-point encoding and is primarily used for 2D PC imaging. Through-plane velocities are acquired with retrospective cardiac gating, producing time-resolved cine images. Both magnitude and phase images are reconstructed: magnitude images provide the anatomical context and are often used for segmentation, while phase images encode the velocity information. Additionally, complex difference images or angiograms are often derived from the magnitude and phase images according to Equation~\ref{eq:complex_diff}

@@ -11,6 +11,7 @@
 \usepackage{titlesec}
 \usepackage{booktabs}
 \usepackage{tabularx}
+\usepackage{nameref}
 \usepackage[margin=1in]{geometry}
 \usepackage[backend=biber, style=ieee, sorting=none,citestyle=numeric-comp, giveninits=true]{biblatex}
 
@@ -27,7 +28,9 @@
 {Chapter \thechapter:}
 {1em}
 {}
+
 \titlespacing*{\chapter}{0pt}{0pt}{20pt}
+\setlength{\emergencystretch}{3em}
 
 \addbibresource{references/references.biblatex}
 
@@ -60,22 +63,19 @@
 \input{chapter01/introduction}
 
 \chapter{Background}\label{ch:background}
-\pagenumbering{arabic} 
 \input{chapter02/background}
 
-\chapter{Validation of Free-Breathing Radial 2D \\ Phase Contrast MRI for Pulse Wave Velocity Measurements in an Aortic Flow Phantom}\label{ch:phantom}
+\chapter{Validation of Free-Breathing Radial 2D Phase Contrast MRI for Pulse Wave Velocity Measurements in an Aortic Flow Phantom}\label{ch:phantom}
 \input{chapter03/PWV_phantom.tex}
 
-\chapter{Feasibility of Free-Breathing Radial 2D \\
-Phase Contrast MRI for Aortic Pulse Wave Velocity Measurements}\label{ch:life}
+\chapter{Feasibility of Free-Breathing Radial 2D Phase Contrast MRI for Aortic Pulse Wave Velocity Measurements}\label{ch:life}
 \input{chapter04/LIFE_study.tex}
 
-\chapter{Respiratory Effects on Aortic Pulse Wave Velocity Measurements with a Radial Simultaneous \\
-Multi-Slice 2D Phase Contrast Acquisition}\label{ch:respiration}
+\chapter{Respiratory Effects on Aortic Pulse Wave Velocity Measurements with a Radial Simultaneous Multi-Slice 2D Phase Contrast Acquisition}\label{ch:respiration}
 \input{chapter05/PWV_respiration.tex}
 
-% \chapter{Optimizing VENC in Radial Free-Breathing 4D Flow MRI for the Portal Venous System}\label{ch:gevenc}
-% \input{chapter06/GEVenc.tex}
+\chapter{Optimizing Venc in Radial Free-Breathing 4D Flow MRI for the Portal Venous System}\label{ch:gevenc}
+\input{chapter06/GEVenc.tex}
 
 % \chapter{Iterative Motion Correction for Improved Efficiency of Radial Free-Breathing 4D Flow MRI}\label{ch:imoco}
 % \input{chapter07/iMoCo.tex}
@@ -86,9 +86,9 @@ Multi-Slice 2D Phase Contrast Acquisition}\label{ch:respiration}
 \chapter{Conclusion}\label{ch:conclusion}
 \input{conclusion/conclusion}
 
-% \appendix
-% \chapter{Appendix Title}
-% \input{appendix/appendix}
+\appendix
+\chapter{Appendix}
+\input{appendix/appendix}
 
 \singlespacing{}
 \printbibliography[]

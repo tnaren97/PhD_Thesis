@@ -1,18 +1,188 @@
-In this chapter, I shift focus from the use of 2D phase contrast imaging in the aorta to 4D flow imaging of the liver. I apply radial free-breathing 4D flow for hemodynamic analysis of the portal vein and optimize velocity encoding settings to streamline acquisitions.
+In this chapter, I shift focus from the use of 2D phase contrast imaging in the aorta to accelerating 4D flow acquisitions in the liver. Namely, I apply radial free-breathing 4D flow for hemodynamic analysis of the portal vein and optimize velocity encoding settings to streamline acquisitions.
 
 \section{Introduction}
-Cirrhosis is a chronic condition that is currently the 11th leading cause of death in the US13. As liver disease progresses towards cirrhotic conditions, fibrosis in the tissue causes increased resistance to blood flow resulting in increased blood pressure in the portal venous system23. Peoples with portal hypertension, which is defined by a hepatic venous pressure gradient (HVPG) greater than 10 mm Hg, are at increased risk of developing gastroesophageal varices (GEVs)11,24. GEVs are a form of portosystemic collateral in which blood is shunted away from the liver to reduce pressure via reversed flow from the left gastric vein (LGV)13. This reversed flow causes the veins to dilate which makes then highly prone to rupture which can then lead to internal bleeding and eventually death11. Identification of at-risk GEVs before rupture is critical as GEVs can be treated, however, the primary method of diagnosis is a highly invasive, expensive, and uncomfortable procedure known as a esophagogastroduodenoscopy (EGD)25. Only 7\% of cirrhotic patients develop GEVs which results in EGDs having a large risk to benefit ratio14. As a result, there is a pressing need for the development of non-invasive methods for identifying and stratifying GEVs with high sensitivity and specificity.
+Portal hypertension is a condition described by elevated pressure within the portal venous system which delivers blood to the liver from the gastrointestinal tract, spleen, pancreas, and gallbladder~\cite{oechteringClinicalApplications4D2022,iwakiriPathophysiologyPortalHypertension2014}. Clinically, portal hypertension is defined by a hepatic venous pressure gradient (HVPG) exceeding 10 mm Hg and is strongly associated with the development of severe complications, including gastroesophageal varices (GEVs)~\cite{garcia-tsaoPortalHypertensiveBleeding2017,garcia-tsaoManagementVaricesVariceal2010}. GEVs are portosystemic collateral vessels that arise as a compensatory mechanism to decompress the portal venous system. In this process, blood is diverted away from the liver through alternative vascular pathways, most notably via reversed flow in the left gastric vein (LGV)\cite{sanyalPortalHypertension, gabaGastroesophagealVaricealFilling2015}. This reversal of flow leads to progressive dilation of submucosal veins in the esophagus and stomach\cite{sanyalPortalHypertension, gabaGastroesophagealVaricealFilling2015}. Due to their thin walls and elevated intraluminal pressure, these varices are highly susceptible to rupture, which can result in life-threatening gastrointestinal hemorrhage\cite{carbonellImprovedSurvivalVariceal2004}. Variceal bleeding is associated with significant morbidity and mortality, underscoring the importance of early identification and risk stratification of high-risk varices\cite{garcia-tsaoPortalHypertensiveBleeding2017,carbonellImprovedSurvivalVariceal2004}.
 
-4D flow MRI has been proposed as a potential alternative to EGDs as it is able to provide comprehensive hemodynamic information noninvasively14. However, the primary challenge with 4D flow MRI is the long scan times required to produce images with not only sufficient spatial and temporal resolution, but also minimal noise and velocity aliasing. Scan time during a clinical MRI session is at a premium so there is high interest in developing methods to accelerate the acquisition of 4D flow MRI, namely through the elimination of extraneous scans for dealing with velocity aliasing and utilization of unused data in respiratory phases that are normally discarded.
+Current clinical guidelines recommend screening for GEVs using esophagogastroduodenoscopy (EGD), an invasive endoscopic procedure that allows direct visualization of the esophageal and gastric mucosa~\cite{carbonellImprovedSurvivalVariceal2004}. While EGD is considered the gold standard for diagnosis, it is associated with several limitations, including high cost, patient discomfort, and procedural risks such as sedation-related complications and esophageal injury~\cite{jangGastrointestinalNongastrointestinalComplication2022}. Furthermore, only a limited number (approximately 7\% yearly) of cirrhotic patients develop clinically significant varices requiring intervention~\cite{garcia-tsaoManagementVaricesVariceal2010}. Consequently, routine screening of all cirrhotic patients using EGD results in a suboptimal risk-to-benefit ratio, highlighting the need for non-invasive, cost-effective diagnostic alternatives.
+
+In recent years, four-dimensional flow magnetic resonance imaging (4D flow MRI) has emerged as a promising non-invasive modality for the assessment of complex vascular hemodynamics~\cite{oechteringClinicalApplications4D2022, motosugiFourdimensionalFlowMRI2019}. This technique enables time-resolved, three-dimensional visualization and quantification of blood flow velocities within the portal venous system and its associated collateral pathways. By capturing comprehensive hemodynamic information, 4D flow MRI has the potential to identify biomarkers indicative of portal hypertension and the formation of GEVs such as reversed flow in the LGV, thereby facilitating early detection and improved patient stratification~\cite{roldan-alzateImpairedRegulationPortal2015, roldan-alzateVivoValidation4D2013}.
+
+Despite its advantages, widespread clinical adoption of 4D flow MRI is hindered by several technical challenges. One of these is acquiring sufficient velocity-to-noise ratio (VNR) for accurate hemodynamic assessment. As discussed in Section~\ref{sec:phase_contrast}, optimal setting of the velocity encoding parameter (venc) can be tricky. If the venc is set too low, the phases can wrap around leading to incorrect flow quantification. Alternatively, if the venc is set too high, the VNR is decreased which also impacts flow quantification. Typical rule of thumb for phase contrast acquisitions is to apply a venc approximately 10\% above the peak velocity~\cite{dyverfeldt4DFlowCardiovascular2015}. However, this requires knowing the peak velocity in the vessel of interest a priori. This is often solved by acquiring 2D phase contrast (2D PC) “scout scans” that are performed before the 4D flow acquisition, yet this requires additional time for prescription, scanning, and analysis and scan time is at a premium in the clinic~\cite{weiOptimizationPhasecontrastMRI2019}. Additionally, a single 2D PC scan can sometimes not be enough to fully describe complex flow dynamics in subjects with complicated or diseased vasculature; there is a risk that the venc might be set too low or high even with a scout scan.
+
+A number of methods have been proposed to solve this issue. One approach is the utilization of dual-venc methods, which apply two sets of velocity encoding gradients to acquire both low and high venc settings in a single acquisition~\cite{nettFourdimensionalPhaseContrast2012, schnellAcceleratedDualvenc4D2017}. This then allows for unwrapping of the low venc data using fully registered high venc data, however, the trade-off is a considerable increase in scan time. As an alternative, multiple post-processing techniques have been proposed to correct aliased velocity data for single-venc acquisitions. Such approaches include gradient-based methods, graph-cut-based methods, and deep learning networks.~\cite{zhangDivergenceFreeConstrainedPhase2021, nettFourdimensionalPhaseContrast2012, zhangDivergenceFreeConstrainedPhase2021}. One such proposed approach is a 4D Laplacian-based phase unwrapping method proposed by Loecher et al.\ that has demonstrated promise in resolving phase wraps by leveraging spatial and temporal continuity constraints~\cite{loecherPhaseUnwrapping4D2016}. The main advantage of this method is being a single-step algorithm with zero user-input required; this method can therefore be easily be incorporated into a reconstruction pipeline and computed with relatively little additional computational overhead.
+
+In this work, we investigate the application of this 4D Laplacian phase unwrapping approach for correcting velocity aliasing in 4D flow MRI of the portal venous system in patients with GEVs. We acquire multiple 4D flow datasets with low, medium, and high venc settings and apply phase unwrapping to identify the effectiveness of the method. Lastly, we aim to identify the lowest single venc setting that can be used with phase unwrapping to provide images conducive for GEV evaluation. 
 
 \section{Materials \& Methods}
-Free-breathing, radial 4D flow scans, with low (15 cm/s), medium (30 cm/s), and high (60 cm/s) venc, will be acquired for 19 subjects from a mixed cohort of healthy subjects and cirrhotic patients at risk for GEVs on a clinical 3T scanner (Premier, GE Healthcare). Acquisition order of each venc will be randomized between subjects to prevent influence on the analysis. Scan times will be approximately 12 minutes long and ECG and respiratory bellows signals will be recorded for retrospective gating. Time-averaged and time-resolved images will be reconstructed using an iterative CG-SENSE algorithm with a 50\% exhalation threshold42. Flow analysis will be performed in GTFlow (Gyrotools). For the flow analysis, 10 planes will be placed on the portal vein at each of the major branches: Superior Mesenteric Vein (SMV), Splenic Vein (SV) x2, Left Gastric Vein (LGV) (when present), Portal Vein (PV) x3, Left Portal Vein (LPV), Right Portal Vein (RPV), and Middle Portal Vein (MPV) (on subjects with a trifurcation). Phase unwrapping will be performed for the low and medium vencs with a dual venc unwrapping algorithm using the high venc scan written and with a single-step 4D Laplacian unwrapping algorithm26,43. To compare each of the methods, conservation of mass will be calculated at the confluence and bi/trifurcations as a measure of repeatability and correlation with the high venc will be calculated for as a measure of precision.
+\subsubsection{4D Laplacian Phase Unwrapping}
+The 4D Laplacian phase unwrapping algorithm was implemented in a C++ based reconstruction framework for radial 4D flow MRI according to Loecher et al.~\cite{loecherPhaseUnwrapping4D2016}. In this approach, the true phase $\phi(r)$ is assumed to be related to the measured phase $\phi_w(r)$ according to
+\begin{equation}
+     \phi(r) = \phi_w(r) + 2\pi n(r)
+     \label{eq:phase_wrap}
+\end{equation}
+where $n(r)$ describes the number of phase wraps of the voxel at position $r$. The Laplacian of Equation~\ref{eq:phase_wrap} is then
+\begin{equation}
+    \nabla^2 \phi(r) = \nabla^2 \left[\phi_w(r) + 2\pi n(r) \right]
+    \label{eq:laplacian}
+\end{equation}
+which has the solution
+\begin{equation}
+    n(r)=\frac{1}{2\pi}\nabla^{-2} \left[\nabla^2 \phi(r)-\nabla^2 \phi_w(r)\right]
+    \label{eq:laplacian_solution}
+\end{equation}
+where $\nabla^{2}$ and $\nabla^{-2}$ are the forward and inverse Laplacian operators, constructed via convolution with a kernel of finite difference second derivatives. The kernel is scaled by the voxel size squared in each spatial dimension as well as an additional scaling factor in the temporal dimension. As the true phase is unknown, the Laplacian of the true phase must be estimated via
+\begin{equation}
+    \nabla^2\phi(r)=-ie^{-i\phi_w(r)\nabla^2 e^{i\phi_w(r)}}
+    \label{eq:true_phase}
+\end{equation}
+which is then simplified to
+\begin{equation}
+    \nabla^2\phi(r)=\cos\left[\phi_w(r)\right]\nabla^2\sin\left[\phi_w(r)\right]-\sin\left[\phi_w(r)\right]\nabla^2\cos\left[\phi_w(r)\right]
+    \label{eq:simplified}
+\end{equation}
+
+\subsubsection{MR Imaging Protocol}
+Nineteen subjects (7M/12F, age 34--73y/mean=54y) were recruited for this HIPPA-compliant study under an IRB approved-protocol and provided written informed consent. Subjects were eligible for this study if they were: 18 years or older; had known cirrhosis; or a known GEV\@. Exclusion criteria included: contraindictions to MRI and/or contrast agent; recent treatment ($<$ 1 year) for varices with embolization, transjugular intrahepatic portosystemic shunt (TIPS), or other endovascular treatment; active GEV bleeding; known occlusive thrombus in portal vein, splenic vein, or superior mesenteric vein; or a large hepatocellular carcinoma (HCC) with known portal vein involvement. Every subject who participated in the study underwent a 5-hour fast prior to visit (to avoid meal effects on abdominal flow~\cite{roldan-alzateCharacterizationMesentericPortal2022, roldan-alzateImpairedRegulationPortal2015}), MRI safety screening, height and weight measurements, and intravenous administration of Ferumoxytol MRI contrast agent (4 mg/kg, off-label use)\cite{vasanawalaSafetyTechniqueFerumoxytol2016}. Additionally, all cirrhotic subjects underwent an EGD and were graded based on presence/rupture risk of GEVs (1=no varices to 3=large varices). This cohort included 14 subjects with grade 1 varices and 5 with grade 3 varices. 
+
+Three 4D flow scans, with low (15 cm/s), medium (30 cm/s), and high (60 cm/s) venc settings, were acquired for all 19 subjects on a clinical 3T scanner (Premier, GE Healthcare) with a 30-channel chest coil and 40-channel posterior table coil. All 4D flow scans were acquired with a radial, free-breathing 4D flow sequence (PCVIPR) with 5 point flow encoding and Inner Volume Excitation (IVE) to enable fat suppression in obese subjects~\cite{johnsonImprovedSNRPhase2010, shamimFatMitigationStrategies2023}. Different vencs naturally resulted in differing values of TE and TR which in turn led to different scan times. As such the number of acquired radial projections were adjusted for each acquisition to match scan times. Scan parameters are described in detail in Table~\ref{tab:gevenc_params}. Acquisition order of each venc was randomized between subjects to prevent influence on the analysis. Electrocardiogram (ECG) and respiratory bellows signals were acquired during the scans for retrospective gating. 
+
+\begin{table}[ht]
+    \centering
+    \caption[Study acquisition parameters]{Acquisition parameters for radial, free-breathing 4D flow acquisitions with multiple velocity encoding parameters}\label{tab:gevenc_params}
+    \small
+    \begin{tabular}{lccc}
+    \toprule
+    Acquisition & Low Venc & Medium Venc & High Venc \\
+    \toprule
+    Venc (cm/s) & 15 & 30 & 60 \\
+    \midrule
+    TE (ms) & 3.2 & 2.6 & 2.2 \\
+    \midrule
+    TR (ms) & 8.6 & 8.0 & 7.6 \\
+    \midrule
+    Flip angle & 14$^\circ$ & 14$^\circ$ & 14$^\circ$ \\
+    \midrule
+    Acquired Field of View (\qty{}{cm^3}) & 48 $\times$ 48 $\times$ 24 & 48 $\times$ 48 $\times$ 24 & 48 $\times$ 48 $\times$ 24 \\
+    \midrule
+    Acquired spatial resolution (mm isotropic) & 1.25 & 1.25 & 1.25 \\
+    \midrule
+    Scan time (s) & 718.9 & 716.8 & 718.4 \\
+    \midrule
+    Radial projections & 16800 & 18000 & 19000 \\
+    \midrule
+    Velocity encoding & 5 point & 5 point & 5 point \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+4D flow datasets were reconstructed for each of the 3 venc settings using an iterative CG-SENSE algorithm for 20 iterations with gradient non-linearity and background phase corrections~\cite{pruessmann2001}. Data were reconstructed with a 50\% respiratory threshold (end-exhalation) to produce time-averaged and time-resolved outputs (14 cardiac frames, temporal resolution = 40\-50 ms depending on heart rate). For each dataset, three velocity images for x, y, and z were produced, plus magnitude and a complex difference angiogram. A second reconstruction was performed for the low and medium venc datasets with identical parameters using the 4D Laplacian phase unwrapping. The high venc dataset was not reconstructed with phase unwrapping as it was assumed there would be no phase wraps and served as reference with the true velocity values.
+
+\subsubsection{Analysis}
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=1, width=\textwidth]{Liver_figures.pdf}
+
+    \caption[Portal vein contour placement]{Locations of cross-sectional flow analysis plane placement in the portal vein. Planes were placed at the following locations: Superior Mesenteric Vein (SMV), Splenic Vein (SV) x2, Left Gastric Vein (LGV) (when present), Portal Vein (PV) x3, Left Portal Vein (LPV), Right Portal Vein (RPV). }\label{fig:contours}
+    \vspace{0.25cm}
+\end{figure}
+
+Flow analysis and hemodynamic visualization was performed in GTFlow (Gyrotools, Zurich, Switz\-erland). Time-averaged datasets were imported for the medium venc dataset and segmentation of the portal vein was performed on the complex difference angiogram. Additionally, 10 cross-sectional flow analysis planes were placed at each of the major branches of the portal vein according to Figure~\ref{fig:contours}: Superior Mesenteric Vein (SMV), Splenic Vein (SV) x 2, Left Gastric Vein (LGV) (when present), Portal Vein (PV) x 3, Left Portal Vein (LPV), and Right Portal Vein (RPV). Segmentations and plane placements were performed by a single observer (T. Naren with 5 years experience in 4D flow MRI analysis) blinded to clinical information and were verified by a cardiovascular radiologist with 6+ years of experience. Vessel segmentations and analysis plane locations were saved to reuse on the time-resolved data for the low, medium, and high venc datasets. In the case where subjects had considerable bulk motion between different acquisitions, affine image registration using Advanced Normalization Tools (ANTs) was used to register the low and high venc datasets to the medium venc dataset~\cite{tustisonANTsXEcosystemQuantitative2021}. For minor motion or shifting of vessels, contours were simply adjusted manually when reapplying to a new dataset.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=2, width=\textwidth]{Liver_figures.pdf}
+
+    \caption[Unwrapped phase images]{A. Axial and B. Sagittal views of reconstructed images for an example subject. Complex difference (CD) images provide anatomical visualization. LV = Low Venc (15 cm/s), LVU = Low Venc Unwrapped, MV = Medium Venc (30 cm/s), MVU = Medium Venc Unwrapped, HV = High Venc (60 cm/s). Yellow arrows indicate locations where 4D Laplacian algorithm successfully unwrapped aliased velocities. Red arrows indicate locations failed to unwrap aliased velocities.}\label{fig:unwrapped_images}
+    \vspace{0.25cm}
+\end{figure}
+
+
+Time-averaged streamlines and time-resolved vector fields were generated for each analyzed dataset. Flow and velocity measures including net flow, peak flow, max velocity, etc.\ were generated for each plane. Internal consistency of flow measurements was assessed by calculating conservation of mass at both confluence and bifurcation of the portal vein. This was done by summing the net flow $Q$ into and out of each branch point according to 
+\begin{equation}
+    \begin{split}
+        \text{PV Confluence}: Q_{SV}+Q_{SMV}=Q_{PV1} \\
+        \text{PV Bifurcation}: Q_{PV3}=Q_{LPV}+Q_{RPV} \\
+    \end{split}
+    \label{eq:mass_conservation}
+\end{equation}
+Linear regression, Pearson correlation ($r^2$), and Bland-Altman analysis was performed to evaluate conservation of mass at both branch points and sum of squares error (SSE) was calculated to assess agreement of the results.
+
+To evaluate voxel-wise velocity agreements with the reference high venc datasets, the low, medium, unwrapped low, and unwrapped medium venc datasets were normalized by venc and linear regression against the high venc datasets were plotted for each direction (x, y, z). Pearson correlation coefficients were calculated for each plot.
+
 
 \section{Results}
-Low, medium, and high venc 4D flow scans were acquired for 19 subjects. Scan parameters include: TE/TR = 3.2 ms/8.6 ms, flip angle = 14$^\circ$, spatial resolution = 1.25 mm isotropic, scan time = 12 min, number of radial projections = 16,800, reconstructed cardiac frames = 14. Time-averaged and time-resolved images were reconstructed using an iterative CG-SENSE algorithm with a 50\% exhalation threshold. Segmentation and placement of analysis planes for calculation of flow parameters were accomplished in GTFlow (Gyrotools) using the time-averaged medium venc angiograms and then propagating planes to the time-resolved datasets for all vencs. Ten analysis planes were placed on the portal vein at each of the major branches: SMV, SV1, SV2, LGV, PV1, PV2, PV3, LPV, RPV, and MPV\@. Phase unwrapping was performed for the low and medium vencs with a dual venc unwrapping algorithm using the high venc scan written in MATLAB (Mathworks)43. 
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=4, width=\textwidth]{Liver_figures.pdf}
 
-Of the 19 subjects scanned, 7 were analyzed with the dual-venc method. The unwrapped medium venc dataset demonstrated the best agreement in conservation of mass and the best correlation with the high venc dataset while preserving a superior VNR (Figure 6). The unwrapped low venc dataset showed less correlation with the high venc dataset, possibly due to intravoxel velocity distribution
+    \caption[Aliased voxels visualizations]{Three-dimensional visualizations of aliased voxels in A. a subject with minimal gastroesophageal varices (GEVs) and B. a subject with large GEVs. Blue circles indicate voxels with phase wrapping while orange circles indicate voxels with phase wrapping still present after 4D Laplacian phase unwrapping.}\label{fig:aliased_voxels}
+    \vspace{0.25cm}
+\end{figure}
+
+Data were successfully acquired for 18 out of 19 subjects. Poor coil signal during acquisition for one subject necessitated excluding the data from analysis. The 4D Laplacian phase unwrapping algorithm was successfully applied to all low (15 cm/s) and medium (30 cm/s) venc datasets. Qualitative assessment demonstrated that the algorithm effectively corrected a substantial portion of aliased voxels, as illustrated in Figure~\ref{fig:unwrapped_images}. However, residual aliasing persisted in other regions, especially near vessel edges and regions with collateral vessels (Figure~\ref{fig:aliased_voxels}).
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=3, width=\textwidth]{Liver_figures.pdf}
+
+    \caption[Phase unwrapped streamlines]{Time-averaged streamlines for an example subject computed in GTFlow (Gyrotools, Zurich, Switzerland). Streamlines were generated for low (15 cm/s), medium (30 cm/s), and high (60 cm/s) venc datasets along with 4D Laplacian unwrapped datasets for low and medium. Yellow arrow indicates region with aliased voxels that was successfully unwrapped.}\label{fig:streamlines}
+    \vspace{0.25cm}
+\end{figure}
+
+Flow analysis showed improved streamline calculations for unwrapped low venc datasets compared to low venc datasets (Figure~\ref{fig:streamlines}). Notably, the medium and unwrapped medium venc datasets demonstrated streamline patterns closely resembling those observed in the high venc reference datasets, likely indicating true velocities were below the medium venc. 
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=5, width=\textwidth]{Liver_figures.pdf}
+
+    \caption[Linear regression plots for each venc setting]{Linear regression plots indicating agreement in conservation of mass for the portal vein (PV) confluence and bifurcation for all subjects. Conservation of mass is calculated as $Q_{inflow}=Q_{outflow}$. For the confluence, $Q_{splenic vein}+Q_{superior mesenteric vein}=Q_{portal vein}$ and for the bifurcation, $Q_{portal vein}=Q_{left portal vein}+Q_{right portal}$. There is strong correlation and agreement between the high, medium, and medium unwrapped vencs, but less so from the low and unwrapped low vencs.}\label{fig:venc_correlation}
+    \vspace{0.25cm}
+\end{figure}
+
+Quantitative evaluation using conservation of mass demonstrated strong agreement between inflow and outflow measurements at both the portal vein confluence and bifurcation for the medium, unwrapped medium, and high venc datasets with high correlation ($r^2 = 0.94$, $0.93$, and $0.93$, respectively) and low dispersion (SSE = 76 mL/s, 88 mL/s, and 76 mL/s) indicating reliable flow quantification (Figure~\ref{fig:venc_correlation}). Conversely, both the low venc and unwrapped low venc datasets exhibited reduced correlation ($r^2 = 0.70$ and $0.64$) and greater dispersion (SSE = 500 mL/s and 640 mL/s, respectively), suggesting persistent inaccuracies in flow estimation.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=6, width=\textwidth]{Liver_figures.pdf}
+
+    \caption[Bland-Altman plots for each venc setting]{Bland-Altman plots indicating agreement in conservation of mass for the portal vein (PV) confluence and bifurcation for all subjects. Conservation of mass is calculated as $Q_{inflow}=Q_{outflow}$. For the confluence, $Q_{splenic vein}+Q_{superior mesenteric vein}=Q_{portal vein}$ and for the bifurcation, $Q_{portal vein}=Q_{left portal vein}+Q_{right portal}$. The medium, unwrapped medium, and high venc datasets show low standard deviations (SD), close limits of agreement (LOA), and low coefficients of variation (CV) between the high, medium, and medium unwrapped venc datasets.Both low and unwrapped low vencs show poorer agreement.}\label{fig:venc_bland}
+    \vspace{0.25cm}
+\end{figure}
+
+Bland-Altman analysis further supported these findings (Figure~\ref{fig:venc_bland}). The medium, unwrapped medium, and high venc datasets demonstrated low standard deviation (SD = 1.5 mL/s, 1.6 mL/s, and 1.5 mL/s), narrow limits of agreement (LOA = 2.9 mL/s, 3.1 mL/s, and 2.9 mL/s), and low coefficients of variation (CV = 9.9\%, 11\%, and 10\%), indicating strong agreement in flow conservation. In contrast, the low and unwrapped low venc datasets showed increased standard deviation (SD = 3.8 mL/s and 4.6 mL/s), wider LOA (LOA = 7.4 mL/s and 9.1 mL/s), and higher CV (CV = 32\% and 43\%), reflecting reduced reliability.
+
+\begin{figure}[ht]
+    \vspace{0.25cm}
+    \centering
+    \includegraphics[page=7, width=\textwidth]{Liver_figures.pdf}
+
+    \caption[Voxel-wise velocity correlation plots]{Correlation plots for an example subject indicating voxel-wise correlations between (from left to right) low (15 cm/s), phase unwrapped low (15 cm/s), medium (30 cm/s), and phase unwrapped medium venc (30 cm/s) datasets with the ground truth high venc (60 cm/s) dataset. Medium venc data }\label{fig:high_venc_corr}
+    \vspace{0.25cm}
+\end{figure}
+
+Voxel-wise velocity comparisons with the high venc reference dataset demonstrated that the medium venc dataset exhibited strong linear correlation across all velocity components for the example dataset ($r_x^2 = 0.929$, $r_y^2 = 0.888$, $r_z^2 = 0.900$). The unwrapped medium venc meanwhile showed close agreement as well ($r_x^2 = 0.896$, $r_y^2 = 0.506$, $r_z^2 = 0.900$). Phase unwrapping provided marginal improvements in regions affected by aliasing. In contrast, the low venc dataset showed poorer correlation prior to unwrapping ($r_x^2 = 0.878$, $r_y^2 = 0.803$, $r_z^2 = 0.844$), with moderate improvement following unwrapping; however, discrepancies remained, particularly at higher velocity ranges.
 
 \section{Discussion}
+In this study, we evaluated the performance of a 4D Laplacian-based phase unwrapping method for correcting velocity aliasing in 4D flow MRI of the portal venous system in patients with gastroesophageal varices. Qualitative and quantitative results showed that the medium venc dataset (30 cm/s), with and without phase unwrapping, had very close agreement with the high venc datasets (60 cm/s) which were assumed to have the true unwrapped velocities. These results indicate that the medium venc setting is sufficient to capture the majority of physiologic velocities within the portal venous system in this cohort. Furthermore, the close agreement between the unwrapped and non-unwrapped medium venc datasets suggests that aliasing at this venc is relatively limited. No velocities above 30 cm/s were observed in this cohort which agrees with other studies that utilized venc settings of 25-35 cm/s~\cite{hyodo4DFlowMRI2022, motosugiFourdimensionalFlowMRI2019}. However,
+
+In contrast to the medium venc, the low venc (15 cm/s) datasets demonstrated significantly reduced accuracy, even after phase unwrapping. Although partial correction of aliased regions was observed, quantitative metrics continued to show discrepancies. Conservation of mass analysis showed substantially lower correlation and markedly higher error, while Bland-Altman results indicated increased variability and wider limits of agreement. Voxel-wise velocity comparisons These findings may imply that the degree of aliasing present in the low venc datasets exceeds the capability of the Laplacian-based method to reliably recover the true velocity field. One reason for this may be due to the size of vessels of interest. As noted in Figure~\ref{fig:unwrapped_images}, the 4D Laplacian method successfully unwrapped a large aliased region in the center of the portal vein, but failed to unwrap a smaller region near the edge. Additionally, the 4D Laplacian also performed some phase unwrapping in the inferior vena cava as indicated by the red arrow, though it failed overall as the medium venc images reveal it was double wrapped. As noted in the original paper, the 4D Laplacian method relies on the Laplacian kernel to detect the edges of aliased region~\cite{loecherPhaseUnwrapping4D2016}. If the wrapping fills whole regions of the vessel, as it did in some low venc datasets (Figure~\ref{fig:aliased_voxels}B), then the Laplacian kernel will fail to detect the aliased regions. Alternatively, if there are partially wrapped voxels near vessel boundaries due to partial volume effects, as was apparent in some collateral vessels, the Laplacian kernel may again fail to unwrap them~\cite{loecherPhaseUnwrapping4D2016}.
+
+As mentioned previously, there are alternative methods to the 4D Laplacian-based phase unwrapping. One such promising method is the graph-cut method proposed by Justice et al.\ which leverages the max-flow min-cut theorem to unwrap voxels in an iterative method~\cite{justicePhaseUnwrapping4Dflow2018}. The authors reported marginally superior performance to the 4D Laplacian method in lower SNR conditions, but also noted their method was more computationally expensive. Another alternative is the application of physics-driven neural networks which can utilize the strength of deep learning approaches in solving complex problems~\cite{zhangDivergenceFreeConstrainedPhase2021, renISMRM2025Unsupervised}. However, this approach would require a considerable amount of training data and computational resources to implement. The 4D Laplacian method by contrast is quick to implement and run and computationally cheap.
+
+From a practical perspective, our results suggest that a single-venc acquisition at an intermediate venc around 30 cm/s with 4D Laplacian phase unwrapping provides a favorable balance between minimizing aliasing and mitigating the need for dual-venc approaches or individualized venc investigation for every subject. While a more aggressive venc of 15-20 cm/s would provide improved VNR, the risk of increased aliasing goes up and the ability of the 4D Laplacian method to compensate for them decreases. As such, the 4D Laplacian might function best as a safeguard method, to catch aliasing in edge case subjects where velocities might exceed a standard, moderate venc setting for an entire cohort.
+
+Several limitations of this study should be acknowledged. First, the multiple venc scans were not acquired in a single acquisition as they might be in a dual or multi-venc acquisition. Thus, there was room for bulk motion between scans and a considerable number of subjects exhibited this issue. As such, images were not perfectly registered to each other which required application of image-registration methods and manually adjustment. However, image-registration methods are imperfect and may not result in a perfect alignment. For that reason, a full voxel-to-voxel comparison of the low and medium venc datasets to the reference high venc dataset was infeasible and there was some motion correction bias to the correlation plots (Figure~\ref{fig:high_venc_corr}). Additionally, the imperfect registration meant that applying dual-venc unwrapping algorithms to determine the true ground truth velocity values in the lower venc datasets was impossible. Lastly, the scan time of even a single venc acquisition, at 12-minutes, is prohibitively long for a standard clinical session. For that reason, future work will aim to reduce scan time so that these 4D flow acquisitions can be fit into routine clinical screening practice.
+
 
 \section{Conclusion}
+In conclusion, the 4D Laplacian phase unwrapping method provides effective correction of moderate velocity aliasing in 4D flow MRI of the portal venous system. A medium venc setting (30 cm/s) combined with phase unwrapping yields accurate and internally consistent flow measurements, whereas excessively low venc settings result in persistent errors that limit quantitative reliability. These findings support the use of post-processing based correction as a practical approach for improving the efficiency and robustness of 4D flow MRI in the assessment of portal hypertension.
+
+\subsubsection{Acknowledgements}
+A special thank you to Kevin Johnson and Thekla Oechtering for their help on this project.

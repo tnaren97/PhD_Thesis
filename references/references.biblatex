@@ -552,6 +552,26 @@
   file = {/Users/txn009/Zotero/storage/52V7P3J6/S0958394708001246.html}
 }
 
+@article{carbonellImprovedSurvivalVariceal2004,
+  title = {Improved Survival after Variceal Bleeding in Patients with Cirrhosis over the Past Two Decades},
+  author = {Carbonell, Nicolas and Pauwels, Arnaud and Serfaty, Lawrence and Fourdan, Olivier and Lévy, Victor George and Poupon, Raoul},
+  date = {2004-09},
+  journaltitle = {Hepatology},
+  shortjournal = {Hepatology},
+  volume = {40},
+  number = {3},
+  eprint = {15349904},
+  eprinttype = {pubmed},
+  pages = {652--659},
+  location = {Baltimore, Md.},
+  issn = {0270-9139},
+  doi = {10.1002/hep.20339},
+  abstract = {Over the past two decades, new treatment modalities have been introduced for the management of variceal bleeding. The aim of this retrospective study in a single center was to assess whether these treatments have improved the prognosis for cirrhotic patients with variceal bleeding. We reviewed the clinical records of all patients with cirrhosis admitted to our Liver Intensive Care Unit due to variceal bleeding during the years 1980, 1985, 1990, 1995, and 2000. Whereas balloon tamponade was still the first-line treatment in 1980, patients treated in 2000 received a vasoactive agent, an endoscopic treatment, and an antibiotic prophylaxis in, respectively, 90\%, 100\%, and 94\% of cases. The in-hospital mortality rate steadily decreased over the study period: 42.6\%, 29.9\%, 25\%, 16.2\%, and 14.5\% in 1980, 1985, 1990, 1995, and 2000, respectively (P {$<$} .05). Mortality decreased from 9\% in 1980 to 0\% in 2000 in Child-Turcotte-Pugh class A patients, from 46\% to 0\% in class B patients, and from 70\% to 32\% in class C patients. This improved survival was associated with a decrease of rebleeding (from 47\% in 1980 to 13\% in 2000) and bacterial infection rates (from 38\% to 14\%). On multivariable analysis, endoscopic therapy and antibiotic prophylaxis were independent predictors of survival. In conclusion, in-hospital mortality of patients with cirrhosis and variceal bleeding decreased threefold over the past two decades, in concurrence with an early and combined use of pharmacological and endoscopic therapies and short-term antibiotic prophylaxis.},
+  langid = {english},
+  keywords = {Adult,Aged,Bacterial Infections,Esophageal and Gastric Varices,Female,Gastrointestinal Hemorrhage,Humans,Liver Cirrhosis,Male,Middle Aged,Recurrence,Survival Rate,Time Factors},
+  file = {/Users/txn009/Zotero/storage/UCHFCWUP/Carbonell et al. - 2004 - Improved survival after variceal bleeding in patients with cirrhosis over the past two decades.pdf}
+}
+
 @online{CardiorespiratoryFitnessModifies,
   title = {Cardiorespiratory Fitness Modifies the Relationship between Arterial Stiffness and Cerebral Blood Flow Independent of Physical Activity - {{Breidenbach}} - 2025 - {{Alzheimer}}'s \& {{Dementia}}: {{Translational Research}} \& {{Clinical Interventions}} - {{Wiley Online Library}}},
   url = {https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/trc2.70130},
@@ -1061,6 +1081,26 @@
   file = {/Users/txn009/Zotero/storage/GU5SCYX2/Doupis et al. - 2016 - Pulse Wave Analysis by Applanation Tonometry for the Measurement of Arterial Stiffness.pdf}
 }
 
+@article{dyverfeldt4DFlowCardiovascular2015,
+  title = {{{4D}} Flow Cardiovascular Magnetic Resonance Consensus Statement},
+  author = {Dyverfeldt, Petter and Bissell, Malenka and Barker, Alex J. and Bolger, Ann F. and Carlhäll, Carl-Johan and Ebbers, Tino and Francios, Christopher J. and Frydrychowicz, Alex and Geiger, Julia and Giese, Daniel and Hope, Michael D. and Kilner, Philip J. and Kozerke, Sebastian and Myerson, Saul and Neubauer, Stefan and Wieben, Oliver and Markl, Michael},
+  date = {2015-08-10},
+  journaltitle = {Journal of Cardiovascular Magnetic Resonance: Official Journal of the Society for Cardiovascular Magnetic Resonance},
+  shortjournal = {J Cardiovasc Magn Reson},
+  volume = {17},
+  number = {1},
+  eprint = {26257141},
+  eprinttype = {pubmed},
+  pages = {72},
+  issn = {1532-429X},
+  doi = {10.1186/s12968-015-0174-5},
+  abstract = {Pulsatile blood flow through the cavities of the heart and great vessels is time-varying and multidirectional. Access to all regions, phases and directions of cardiovascular flows has formerly been limited. Four-dimensional (4D) flow cardiovascular magnetic resonance (CMR) has enabled more comprehensive access to such flows, with typical spatial resolution of 1.5×1.5×1.5 - 3×3×3 mm(3), typical temporal resolution of 30-40~ms, and acquisition times in the order of 5 to 25~min. This consensus paper is the work of physicists, physicians and biomedical engineers, active in the development and implementation of 4D Flow CMR, who have repeatedly met to share experience and ideas. The paper aims to assist understanding of acquisition and analysis methods, and their potential clinical applications with a focus on the heart and greater vessels. We describe that 4D Flow CMR can be clinically advantageous because placement of a single acquisition volume is straightforward and enables flow through any plane across it to be calculated retrospectively and with good accuracy. We also specify research and development goals that have yet to be satisfactorily achieved. Derived flow parameters, generally needing further development or validation for clinical use, include measurements of wall shear stress, pressure difference, turbulent kinetic energy, and intracardiac flow components. The dependence of measurement accuracy on acquisition parameters is considered, as are the uses of different visualization strategies for appropriate representation of time-varying multidirectional flow fields. Finally, we offer suggestions for more consistent, user-friendly implementation of 4D Flow CMR acquisition and data handling with a view to multicenter studies and more widespread adoption of the approach in routine clinical investigations.},
+  langid = {english},
+  pmcid = {PMC4530492},
+  keywords = {Aorta,Blood Flow Velocity,Cardiovascular Diseases,Cardiovascular System,Coronary Circulation,Humans,Image Interpretation Computer-Assisted,Magnetic Resonance Angiography,Myocardial Perfusion Imaging,Predictive Value of Tests,Pulsatile Flow,Time Factors},
+  file = {/Users/txn009/Zotero/storage/WKGHERPU/Dyverfeldt et al. - 2015 - 4D flow cardiovascular magnetic resonance consensus statement.pdf}
+}
+
 @article{dyverfeldtPulseWaveVelocity2014,
   title = {Pulse Wave Velocity with {{4D}} Flow {{MRI}}: Systematic Differences and Age-Related Regional Vascular Stiffness},
   shorttitle = {Pulse Wave Velocity with {{4D}} Flow {{MRI}}},
@@ -1287,6 +1327,24 @@
   file = {/Users/txn009/Zotero/storage/6MB3E9RF/Fortier et al. - 2017 - Aortic-Brachial Pulse Wave Velocity Ratio A Measure of Arterial Stiffness Gradient Not Affected by.pdf;/Users/txn009/Zotero/storage/EH8AYID7/Fortier et al. - 2017 - Aortic-Brachial Pulse Wave Velocity Ratio A Measure of Arterial Stiffness Gradient Not Affected by.pdf}
 }
 
+@article{gabaGastroesophagealVaricealFilling2015,
+  title = {Gastroesophageal {{Variceal Filling}} and {{Drainage Pathways}}: {{An Angiographic Description}} of {{Afferent}} and {{Efferent Venous Anatomic Patterns}}},
+  shorttitle = {Gastroesophageal {{Variceal Filling}} and {{Drainage Pathways}}},
+  author = {Gaba, Ron C. and Couture, Patrick M. and Lakhoo, Janesh},
+  date = {2015-11-30},
+  journaltitle = {Journal of Clinical Imaging Science},
+  shortjournal = {J Clin Imaging Sci},
+  volume = {5},
+  publisher = {Medknow Publications \& Media Pvt Ltd},
+  issn = {2156-7514},
+  doi = {10.4103/2156-7514.170730},
+  url = {https://clinicalimagingscience.org/gastroesophageal-variceal-filling-and-drainage-pathways-an-angiographic-description-of-afferent-and-efferent-venous-anatomic-patterns/},
+  urldate = {2026-03-25},
+  abstract = {Varices commonly occur in liver cirrhosis patients and are classified as esophageal (EV), gastroesophageal (GEV), or isolated gastric (IGV) varices. These vessels may be supplied and drained by several different afferent and efferent pathways. A working knowledge of variceal anatomy is imperative for Interventional Radiologists performing transjugular intrahepatic portosystemic shunt and embolization/obliteration procedures. This pictorial essay characterizes the angiographic anatomy of varices in terms of type and frequency of venous filling and drainage, showing that different varices have distinct vascular anatomy. EVs typically show left gastric vein filling and “uphill” drainage, and GEVs and IGVs exhibit additional posterior/short gastric vein contribution and “downhill” outflow. An understanding of these variceal filling and drainage pathways can facilitate successful portal decompression and embolization/obliteration procedures.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/TJEQKZKP/Gaba et al. - 2015 - Gastroesophageal Variceal Filling and Drainage Pathways An Angiographic Description of Afferent and.pdf}
+}
+
 @article{gaddumBeattobeatVariationPulse2014a,
   title = {Beat-to-Beat Variation in Pulse Wave Velocity during Breathing Maneuvers},
   author = {Gaddum, Nicholas R. and Schaeffter, Tobias and Bührer, Martin and Rutten, Marcel and Smith, Lorna and Chowienczyk, Philip J. and Beerbaum, Philipp B. J.},
@@ -1326,6 +1384,23 @@
   file = {/Users/txn009/Zotero/storage/D7HBERFN/Gale et al. - 2019 - Aortic Pulse Wave Velocity as a Measure of Cardiovascular Risk in Chronic Obstructive Pulmonary Dise.pdf}
 }
 
+@article{garcia-tsaoManagementVaricesVariceal2010,
+  title = {Management of {{Varices}} and {{Variceal Hemorrhage}} in {{Cirrhosis}}},
+  author = {Garcia-Tsao, Guadalupe and Bosch, Jaime},
+  date = {2010-03-04},
+  journaltitle = {New England Journal of Medicine},
+  volume = {362},
+  number = {9},
+  pages = {823--832},
+  publisher = {Massachusetts Medical Society},
+  issn = {0028-4793},
+  doi = {10.1056/NEJMra0901512},
+  url = {https://www.nejm.org/doi/full/10.1056/NEJMra0901512},
+  urldate = {2026-03-25},
+  abstract = {Gastroesophageal varices are present at diagnosis in almost half of patients with cirrhosis, and variceal hemorrhage continues to be a lethal complication of cirrhosis. This review explains the three main challenges in clinical management: primary prophylaxis to prevent a first episode of hemorrhage, the treatment of acute bleeding episodes, and secondary prophylaxis to prevent recurrence of variceal hemorrhage. This review explains the three main challenges in clinical management: primary prophylaxis to prevent a first episode of hemorrhage, the treatment of acute bleeding episodes, and secondary prophylaxis to prevent recurrence of variceal hemorrhage. Variceal hemorrhage is a lethal complication of cirrhosis, particularly in patients in whom clinical decompensation (i.e., ascites, encephalopathy, a previous episode of hemorrhage, or jaundice) has already developed. Practice guidelines for the management of varices and variceal hemorrhage1 in cirrhosis are mostly based on evidence in the literature that has been summarized and prioritized at consensus conferences.2,3 There are three main areas of management: primary prophylaxis to prevent a first episode of variceal hemorrhage, treatment of the acute bleeding episode, and secondary prophylaxis (prevention of recurrent variceal hemorrhage). Natural History and Epidemiology Gastroesophageal varices are present in almost half .~.~.},
+  file = {/Users/txn009/Zotero/storage/T36VNCCF/Garcia-Tsao and Bosch - 2010 - Management of Varices and Variceal Hemorrhage in Cirrhosis.pdf}
+}
+
 @article{garcia-tsaoPortalHypertensiveBleeding2017,
   title = {Portal Hypertensive Bleeding in Cirrhosis: {{Risk}} Stratification, Diagnosis, and Management: 2016 Practice Guidance by the {{American Association}} for the Study of Liver Diseases},
   shorttitle = {Portal Hypertensive Bleeding in Cirrhosis},
@@ -1342,6 +1417,24 @@
   langid = {english},
   keywords = {hypertension,portal},
   file = {/Users/txn009/Zotero/storage/6JB5V6SS/Garcia-Tsao et al. - 2017 - Portal hypertensive bleeding in cirrhosis Risk stratification, diagnosis, and management 2016 prac.pdf;/Users/txn009/Zotero/storage/APFIRH4M/hep.html}
+}
+
+@article{garcia-tsaoPortalHypertensiveBleeding2017a,
+  title = {Portal Hypertensive Bleeding in Cirrhosis: {{Risk}} Stratification, Diagnosis, and Management: 2016 Practice Guidance by the {{American Association}} for the Study of Liver Diseases},
+  shorttitle = {Portal Hypertensive Bleeding in Cirrhosis},
+  author = {Garcia‐Tsao, Guadalupe and Abraldes, Juan G. and Berzigotti, Annalisa and Bosch, Jaime},
+  date = {2017-01},
+  journaltitle = {Hepatology},
+  volume = {65},
+  number = {1},
+  pages = {310},
+  issn = {0270-9139},
+  doi = {10.1002/hep.28906},
+  url = {https://journals.lww.com/hep/fulltext/2017/01000/portal_hypertensive_bleeding_in_cirrhosis__risk.32.aspx},
+  urldate = {2026-03-25},
+  abstract = {An abstract is unavailable.},
+  langid = {american},
+  file = {/Users/txn009/Zotero/storage/GMVEHNDL/portal_hypertensive_bleeding_in_cirrhosis__risk.32.html}
 }
 
 @article{gloverProjectionReconstructionTechniques1992,
@@ -1749,6 +1842,27 @@
   file = {/Users/txn009/Zotero/storage/SMIGGPAW/197758.html}
 }
 
+@article{hyodo4DFlowMRI2022,
+  title = {{{4D Flow MRI}} in the Portal Venous System: Imaging and Analysis Methods, and Clinical Applications},
+  shorttitle = {{{4D Flow MRI}} in the Portal Venous System},
+  author = {Hyodo, Ryota and Takehara, Yasuo and Naganawa, Shinji},
+  date = {2022},
+  journaltitle = {La Radiologia Medica},
+  shortjournal = {Radiol Med},
+  volume = {127},
+  number = {11},
+  eprint = {36123520},
+  eprinttype = {pubmed},
+  pages = {1181--1198},
+  issn = {0033-8362},
+  doi = {10.1007/s11547-022-01553-x},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC9587937/},
+  urldate = {2026-03-25},
+  abstract = {Thus far, ultrasound, CT, and 2D cine phase-contrast MRI has been adopted to evaluate blood flow and vascular morphology in the portal venous system; however, all these techniques have some shortcomings, such as limited field of view and difficulty in accurately evaluating blood flow. A new imaging technique, namely 3D cine phase-contrast (4D Flow) MRI, can acquire blood flow data of the entire abdomen at once and in a time-resolved manner, allowing visual, quantitative, and comprehensive assessment of blood flow in the portal venous system. In addition, a retrospective blood flow analysis, i.e., "retrospective flowmetry," is possible. Although the development of 4D Flow MRI for the portal system has been delayed compared to that for the arterial system owing to the lower flow velocity of the portal venous system and the presence of respiratory artifacts, several useful reports have recently been published as the technology has advanced. In the first part of this narrative review article, technical considerations of image acquisition and analysis methods of 4D Flow MRI for the portal venous system and the validations of their results are described. In the second part, the current clinical application of 4D Flow MRI for the portal venous system is reviewed.},
+  pmcid = {PMC9587937},
+  file = {/Users/txn009/Zotero/storage/H99SWNQ2/Hyodo et al. - 2022 - 4D Flow MRI in the portal venous system imaging and analysis methods, and clinical applications.pdf}
+}
+
 @article{hyodoFourdimensionalFlowMRI2023,
   title = {Four-Dimensional {{Flow MRI Assessment}} of {{Portal Hemodynamics}} and                     {{Hepatic Regeneration}} after {{Portal Vein Embolization}}},
   author = {Hyodo, Ryota and Takehara, Yasuo and Mizuno, Takashi and Ichikawa, Kazushige and Horiguchi, Ryota and Kawakatsu, Shoji and Mizuno, Takashi and Ebata, Tomoki and Naganawa, Shinji and Jin, Ning and Ichiba, Yoshito},
@@ -1764,6 +1878,23 @@
   urldate = {2024-11-05},
   abstract = {Background Percutaneous transhepatic portal vein (PV) embolization (PVE) is a standard preoperative procedure for advanced biliary cancer when the future liver remnant (FLR) is insufficient, yet the effect of this procedure on portal hemodynamics is still unclear. Purpose To assess whether four-dimensional (4D) MRI flowmetry can be used to estimate FLR volume and to identify the optimal time for this measurement. Materials and Methods This prospective single-center study enrolled consecutive adult patients with biliary cancer who underwent percutaneous transhepatic PVE for the right liver between June 2020 and November 2022. Portal hemodynamics were assessed using 4D flow MRI before PVE and within 1 day (0-day group) or 3–4 days (3-day group) after PVE. FLR volume was measured using CT before PVE and after PVE but before surgery. Blood flow changes were analyzed with the Wilcoxon signed rank test, and correlations with Spearman rank correlation. Results The 0-day group included 24 participants (median age, 72 years [IQR, 69–77 years]; 17 male participants), and the 3-day group included 13 participants (median age, 71 years [IQR, 68–78 years]; eight male participants). Both groups showed increased left PV (LPV) flow rate after PVE (0-day group: from median 3.72 mL/sec [IQR, 2.83–4.55 mL/sec] to 9.48 mL/sec [IQR, 8.12–10.7 mL/sec], P {$<$} .001; 3-day group: from median 3.65 mL/sec [IQR, 2.14–3.79 mL/sec] to 8.16 mL/sec [IQR, 6.82–8.98 mL/sec], P {$<$} .001). LPV flow change correlated with FLR volume change relative to the number of days from PVE to presurgery CT only in the 3-day group (ρ = 0.62, P = .02; 0-day group, P = .11). The output of the regression equation for estimating presurgery FLR volume correlated with CT-measured volume (ρ = 0.78; P = .002). Conclusion Four-dimensional flow MRI demonstrated increased blood flow in residual portal branches 3–4 days after PVE, offering insights for estimating presurgery FLR volume. Published under a CC BY 4.0 license. Supplemental material is available for this article. See also the editorial by Roldán-Alzate and Oechtering in this issue.},
   file = {/Users/txn009/Zotero/storage/ZA69YFQG/Hyodo et al. - 2023 - Four-dimensional Flow MRI Assessment of Portal Hemodynamics and                     Hepatic Regenera.pdf}
+}
+
+@article{hyodoFourdimensionalFlowMRI2023a,
+  title = {Four-Dimensional {{Flow MRI Assessment}} of {{Portal Hemodynamics}} and                     {{Hepatic Regeneration}} after {{Portal Vein Embolization}}},
+  author = {Hyodo, Ryota and Takehara, Yasuo and Mizuno, Takashi and Ichikawa, Kazushige and Horiguchi, Ryota and Kawakatsu, Shoji and Mizuno, Takashi and Ebata, Tomoki and Naganawa, Shinji and Jin, Ning and Ichiba, Yoshito},
+  date = {2023-09},
+  journaltitle = {Radiology},
+  volume = {308},
+  number = {3},
+  pages = {e230709},
+  publisher = {Radiological Society of North America},
+  issn = {0033-8419},
+  doi = {10.1148/radiol.230709},
+  url = {https://pubs.rsna.org/doi/full/10.1148/radiol.230709},
+  urldate = {2026-03-26},
+  abstract = {Background Percutaneous transhepatic portal vein (PV) embolization (PVE) is a standard preoperative procedure for advanced biliary cancer when the future liver remnant (FLR) is insufficient, yet the effect of this procedure on portal hemodynamics is still unclear. Purpose To assess whether four-dimensional (4D) MRI flowmetry can be used to estimate FLR volume and to identify the optimal time for this measurement. Materials and Methods This prospective single-center study enrolled consecutive adult patients with biliary cancer who underwent percutaneous transhepatic PVE for the right liver between June 2020 and November 2022. Portal hemodynamics were assessed using 4D flow MRI before PVE and within 1 day (0-day group) or 3–4 days (3-day group) after PVE. FLR volume was measured using CT before PVE and after PVE but before surgery. Blood flow changes were analyzed with the Wilcoxon signed rank test, and correlations with Spearman rank correlation. Results The 0-day group included 24 participants (median age, 72 years [IQR, 69–77 years]; 17 male participants), and the 3-day group included 13 participants (median age, 71 years [IQR, 68–78 years]; eight male participants). Both groups showed increased left PV (LPV) flow rate after PVE (0-day group: from median 3.72 mL/sec [IQR, 2.83–4.55 mL/sec] to 9.48 mL/sec [IQR, 8.12–10.7 mL/sec], P {$<$} .001; 3-day group: from median 3.65 mL/sec [IQR, 2.14–3.79 mL/sec] to 8.16 mL/sec [IQR, 6.82–8.98 mL/sec], P {$<$} .001). LPV flow change correlated with FLR volume change relative to the number of days from PVE to presurgery CT only in the 3-day group (ρ = 0.62, P = .02; 0-day group, P = .11). The output of the regression equation for estimating presurgery FLR volume correlated with CT-measured volume (ρ = 0.78; P = .002). Conclusion Four-dimensional flow MRI demonstrated increased blood flow in residual portal branches 3–4 days after PVE, offering insights for estimating presurgery FLR volume. © The Author(s) 2023. Published by the Radiological Society of North America under a CC BY 4.0 license. Supplemental material is available for this article. See also the editorial by Roldán-Alzate and Oechtering in this issue.},
+  file = {/Users/txn009/Zotero/storage/B3R5VAMR/Hyodo et al. - 2023 - Four-dimensional Flow MRI Assessment of Portal Hemodynamics and                     Hepatic Regenera.pdf}
 }
 
 @article{ibrahimAssessmentPulmonaryArterial2015,
@@ -1968,6 +2099,26 @@
   file = {/Users/txn009/Zotero/storage/6XKJDHSH/Jang et al. - 2007 - Design of ECGPPG Gating System in MRI Environment.pdf}
 }
 
+@article{jangGastrointestinalNongastrointestinalComplication2022,
+  title = {Gastrointestinal and Non-Gastrointestinal Complication Rates Associated with Diagnostic Esophagogastroduodenoscopy under Sedation},
+  author = {Jang, Ji Min and Park, Su Bee and Yoon, Jin Young and Kwak, Min Seob and Cha, Jae Myung},
+  date = {2022-05-20},
+  journaltitle = {Medicine},
+  shortjournal = {Medicine (Baltimore)},
+  volume = {101},
+  number = {19},
+  eprint = {35583537},
+  eprinttype = {pubmed},
+  pages = {e29266},
+  issn = {0025-7974},
+  doi = {10.1097/MD.0000000000029266},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC9276211/},
+  urldate = {2026-03-25},
+  abstract = {Esophagogastroduodenoscopy (EGD) under sedation may result in gastrointestinal (GI) and non-GI complications. However, no previous studies have reported 30-day GI and non-GI complications after diagnostic EGD under sedation., We conducted a retrospective, observational study of 30-day GI and non-GI complication rates after outpatient diagnostic EGD under sedation in subjects ≥18{$\mkern1mu$}years between January 2012 and December 2017 based on a common data model database. Thirty-day complication rates were compared with EGD under sedation or not, type of sedation drugs (midazolam only vs midazolam/propofol) and age groups (18-64{$\mkern1mu$}year vs ≥65{$\mkern1mu$}year) for GI (bleeding and perforation) and non-GI complications (pneumonia, acute myocardial infarction, congestive heart failure and cerebral stroke)., In total, 39,910 were performed with sedation (midazolam only, n{$\mkern1mu$}={$\mkern1mu$}16,033 and midazolam/propofol, n{$\mkern1mu$}={$\mkern1mu$}23,864) and 22,894 were performed without sedation. Elderly patients significantly favored EGD without sedation (P{$\mkern1mu<\mkern1mu$}.01). GI and non-GI complication rates were similar between EGD under sedation and without sedation (all P{$\mkern1mu>\mkern1mu$}.1) except for acute myocardial infarction rate, which was significantly higher in EGD without sedation than EGD under sedation (1.7/10,000 vs 0.3/10,000 persons, P{$\mkern1mu$}={$\mkern1mu$}.043). All GI and non-GI complications were also similar between the midazolam/propofol and midazolam only groups as well as between young and old patients (all P{$\mkern1mu>\mkern1mu$}.1)., Outpatient diagnostic EGD under sedation has an excellent safety profile. In addition, it can be safely performed with midazolam only or midazolam/propofol and in young and old patients.},
+  pmcid = {PMC9276211},
+  file = {/Users/txn009/Zotero/storage/3HIX4WWH/Jang et al. - 2022 - Gastrointestinal and non-gastrointestinal complication rates associated with diagnostic esophagogast.pdf}
+}
+
 @article{janiDeepLearningbasedAutomated2022,
   title = {Deep {{Learning-based Automated Aortic Area}} and {{Distensibility Assessment}}: The {{Multi-Ethnic Study}} of {{Atherosclerosis}} ({{MESA}})},
   shorttitle = {Deep {{Learning-based Automated Aortic Area}} and {{Distensibility Assessment}}},
@@ -2061,6 +2212,24 @@
   file = {/Users/txn009/Zotero/storage/UM8JTHTJ/Johnson et al. - 2012 - Improved least squares MR image reconstruction using estimates of k-Space data consistency.pdf;/Users/txn009/Zotero/storage/VBYYBADD/mrm.html}
 }
 
+@article{johnsonImprovedSNRPhase2010,
+  title = {Improved {{SNR}} in Phase Contrast Velocimetry with Five-Point Balanced Flow Encoding},
+  author = {Johnson, Kevin M. and Markl, Michael},
+  date = {2010},
+  journaltitle = {Magnetic Resonance in Medicine},
+  volume = {63},
+  number = {2},
+  pages = {349--355},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.22202},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.22202},
+  urldate = {2026-03-25},
+  abstract = {Phase contrast velocimetry can be utilized to measure complex flow for both quantitative and qualitative assessment of vascular hemodynamics. However, phase contrast requires that a maximum measurable velocity be set that balances noise and phase aliasing. To efficiently reduce noise in phase contrast images, several investigators have proposed extended velocity encoding schemes that use extra encodings to unwrap phase aliasing; however, existing techniques can lead to significant increases in echo and scan time, limiting their clinical benefits. In this work, we have developed a novel five-point velocity encoding scheme that efficiently reduces noise with minimal increases in scan and echo time. Investigations were performed in phantoms, demonstrating a 63\% increase in velocity-to-noise ratio compared to standard four-point encoding schemes. Aortic velocity measurements were performed in healthy volunteers, showing similar velocity-to-noise ratio improvements. In those volunteers, it was also demonstrated that, without sacrificing accuracy, low-resolution images can be used for the fifth encoding point, reducing the scan time penalty from 25\% down to less than 1\%. Magn Reson Med, 2010. © 2010 Wiley-Liss, Inc.},
+  langid = {english},
+  keywords = {flow quantification,phase contrast,signal to noise (SNR),vascular hemodynamics,velocity mapping},
+  file = {/Users/txn009/Zotero/storage/4FGQYDUV/Johnson and Markl - 2010 - Improved SNR in phase contrast velocimetry with five-point balanced flow encoding.pdf;/Users/txn009/Zotero/storage/TKMKD35D/mrm.html}
+}
+
 @article{jozwiakHeartLungsInteractions2024,
   title = {Heart–{{Lungs}} Interactions: The Basics and Clinical Implications},
   shorttitle = {Heart–{{Lungs}} Interactions},
@@ -2078,6 +2247,18 @@
   abstract = {Heart–lungs interactions are related to the interplay between the cardiovascular and the respiratory system. They result from the respiratory-induced changes in intrathoracic pressure, which are transmitted to the cardiac cavities and to the changes in alveolar pressure, which may impact the lung microvessels. In spontaneously breathing patients, consequences of heart–lungs interactions are during inspiration an increase in right ventricular preload and afterload, a decrease in left ventricular preload and an increase in left ventricular afterload. In mechanically ventilated patients, consequences of heart–lungs interactions are during mechanical insufflation a decrease in right ventricular preload, an increase in right ventricular afterload, an increase in left ventricular preload and a decrease in left ventricular afterload. Physiologically and during normal breathing, heart–lungs interactions do not lead to significant hemodynamic consequences. Nevertheless, in some clinical settings such as acute exacerbation of chronic obstructive pulmonary disease, acute left heart failure or acute respiratory distress syndrome, heart–lungs interactions may lead to significant hemodynamic consequences. These are linked to complex pathophysiological mechanisms, including a marked inspiratory negativity of intrathoracic pressure, a marked inspiratory increase in transpulmonary pressure and an increase in intra-abdominal pressure. The most recent application of heart–lungs interactions is the prediction of fluid responsiveness in mechanically ventilated patients. The first test to be developed using heart–lungs interactions was the respiratory variation of  pulse pressure. Subsequently, many other dynamic fluid responsiveness tests using heart–lungs interactions have been developed, such as the respiratory variations of pulse contour-based stroke volume or the respiratory variations of the inferior or superior vena cava diameters. All these tests share the same limitations, the most frequent being low tidal volume ventilation, persistent spontaneous breathing activity and cardiac arrhythmia. Nevertheless, when their main limitations are properly addressed, all these tests can help intensivists in the decision-making process regarding fluid administration and fluid removal in critically ill patients.},
   keywords = {Cardiac loading conditions,Fluid responsiveness,Intrathoracic pressure,Transpulmonary pressure},
   file = {/Users/txn009/Zotero/storage/C2QD9C4Z/Jozwiak and Teboul - 2024 - Heart–Lungs interactions the basics and clinical implications.pdf;/Users/txn009/Zotero/storage/A5LKTARL/s13613-024-01356-5.html}
+}
+
+@thesis{justicePhaseUnwrapping4Dflow2018,
+  title = {Phase Unwrapping of {{4D-flow MRI}} Data with Graph Cuts.},
+  author = {Justice, Andrew},
+  date = {2018},
+  institution = {University of Louisville},
+  doi = {10.18297/etd/2889},
+  url = {https://ir.library.louisville.edu/etd/2889},
+  urldate = {2026-03-26},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/9NFIKZZG/Justice - 2018 - Phase unwrapping of 4D-flow MRI data with graph cuts..pdf}
 }
 
 @article{kageyamaVisualizationFlowDynamics2021,
@@ -2432,6 +2613,14 @@
   file = {/Users/txn009/Zotero/storage/XH5F8JYH/Liu et al. - 2024 - Influence of Blood Pressure and Heart Rate on PWV Measurement Assessment Under Real-Time Blood Pres.pdf}
 }
 
+@article{loecher4DGradientBased,
+  title = {{{4D Gradient Based Phase Unwrapping}} for {{PC-MR Flow Data}}},
+  author = {Loecher, M and Johnson, K and Landgraf, B and Wieben, O},
+  abstract = {Introduction: 4D PC MRI has emerged as a promising approach for hemodynamic evaluation of larger vascular territories. One of the major problems associated with volumetric phase contrast MRI is the large dynamic range of velocities of interest and the potential risk of velocity aliasing in areas of higher velocities. While correcting a wrapped voxel is easily accomplished by adding or subtracting multiples of 2π, determining which voxels are wrapped is challenging. There is a large body of research on the phase unwrapping problem, spanning many different imaging modalities and generally following a path-based or least-squares cost function based algorithm [1]. Many of the path-following methods are challenged with regular PC MR data that contain noise, sharp jumps at vessel walls between static and moving spins, or undersampling artefacts in accelerated acquisitions. The vast majority of phase unwrapping algorithms operate in 2 dimensions, with some approaches for processing in 3 dimensions [2], or in the temporal dimension [3], or a combination of 2D and temporal dimension [4]. Here we demonstrate a novel phase unwrapping method that utilizes a gradient approach in 4 dimensions, space and time. Algorithm: Blood flow through a vessel is inherently continuous in space and time, so as voxel size and temporal resolution approach zero, the gradient between voxels in these directions also approach zero. As voxel size and temporal resolution increase, the gradients involved become larger and the process of differentiating normal flow patterns from those with wrapped phase values becomes more challenging. The algorithm calculates the probability P 0 that a voxel p 0 is wrapped: ܲ ଴ ൌ ∑ ௪ ೔ ሾ ሺ௣ ׎ ೔ ሻି׎ሺ௣ బ ሻ ሿ ଶగ ∑ ௪ ೔ , where w i is a weighting factor to be described later, and p i is the set of neighboring voxels. The probability function also contains information on the direction (positive or negative) that the voxel is wrapped. In this work, p i is the set of 8 immediate neighboring voxels, two in each x, y, z, and t. If P 0 exceeds an empirically selected threshold, then the voxel phase is unwrapped. This process is repeated for a predetermined number of iterations which grows with the size of the wrapped areas. Additional modifications to this algorithm were implemented for improved performance: Dual Threshold: A common problem with a gradient method in phase contrast unwrapping is that voxels in a large wrap area will not be readily identified as wrapped voxels. Even on the edge of the wrapped area, many of the neighboring voxels are also wrapped, thereby lowering the probability value (P). Hence, a low threshold is used to ‘break up’ wrapped areas, and in a successive path, a high threshold is used to unwrap the data that are now contained in multiple smaller wrapped regions. This is preferable to a single threshold, which if too low will cause errors and remaining checker patterns, and if too high will not detect enough voxels as wrapped. Masking: The image volume is masked beforehand based on a complex difference image in order to reduce computational time by including vascular voxels only. In addition, the removal of voxels just outside of the vessel wall benefits the phase unwrapping procedure because these voxels would lower P 0 for wrapped voxels if they were included. Temporal Weighting: Often the algorithm can be improved by increasing the weighting factor w i when calculating the difference along the temporal dimension. Assuming that there are no large jumps in phase throughout the cardiac cycle for a given voxel is generally a safe assumption at the temporal resolution we are working with. Methods: Images were acquired on clinical 1.5T and 3T systems (GE Healthcare, Waukesha, WI) after obtaining IRB approval and written informed consent from all subjects. For proper 4D gradient phase unwrapping, 4D PC MR data of high spatial and temporal resolution are required. A 3D radially undersampled trajectory (PC VIPR) [5] was used for acquisitions in various vascular territories including the chest, abdomen, and head. Typical scan parameters were: 0.7-1.3 mm3 isotropic spatial resolution, cubic field of view: (20-32 cm) 3 , 15-20 cardiac phases reconstructed with temporal filtering, scan time 5-6 min (10-11 min with respiratory gating), VENC = 40-100 cm/s. The algorithm was implemented using MevisLab (MeVis Medical Solutions AG and Fraunhofer MEVIS, Bremen, Germany) to provide a fast and user friendly interactive platform. Thresholds, time weighting, and the number of iterations as well as reslicing, window leveling and zooming could be performed on the fly. Images were analyzed qualitatively for the areas that could be unwrapped and the nature of unwrapping failures. In particular challenging situations where residual phase wraps remained, manual corrections were performed interactively. The control of both the gradient unwrapping and the manual corrections is handled in a single GUI seen in Figure 1. Results: The algorithm was successfully used in all vascular territories. Fig. 2 shows unwrapping results for a cranial and a renal case. Optimal parameters for robust performance were found to be: low threshold = 0.32, high threshold = 0.75, temporal weighting = 2.5, number of iterations = 100. The automated unwrapping algorithm failed when (i) the highest velocity exceeded twice the venc, (ii) when the wrapped area took up the entire vessel and (iii) when temporal gradients were compromised by phase wraps between the first and second cardiac phase. Another area of failure was seen along vessel walls, where partial volume effects decrease the local gradient for those wrapped voxels. In those regions, manual phase unwrapping was performed from the same platform. The algorithm was not seen to make any wrapped areas worse. Conclusion: Our study shows that the gradient based method to enforce a continuous flow field in four dimensions allows for reliable phase unwrapping of PC-VIPR data sets. Currently, user interaction is required to define thresholds and the temporal gradient weighting based on vascular territory and noise level. While ideally no user interaction would be required, we believe that a human confirmation and potential manual intervention for wrap-free velocity data will be part of a clinically usable 4D PC MR analysis platform for years to come. Overall, this algorithm performed well for mild to moderate wrapping, and failed for cases with extreme, whole vessel wrapping. Such wraps occurred in cases where the acquisition was optimized for generating non-contrast enhanced MR Angiography (NCE MRA) data and should not occur in acquisitions targeted for hemodynamic analysis. The availability of this phase unwrapping platform allows us to (i) correct for unexpected high velocity regions such as jets, (ii) reduce the acquisition venc to subpeak velocities to provide flow data with higher velocity-to-noise ratios (VNR), and to (iii) generate better quality NCE MRAs with an increased SNR.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/7UUVJI5P/Loecher et al. - 4D Gradient Based Phase Unwrapping for PC-MR Flow Data.pdf}
+}
+
 @article{loecherPhaseUnwrapping4D2016,
   title = {Phase Unwrapping in {{4D MR}} Flow with a {{4D}} Single-Step Laplacian Algorithm},
   author = {Loecher, Michael and Schrauben, Eric and Johnson, Kevin M. and Wieben, Oliver},
@@ -2488,6 +2677,26 @@
   pmcid = {PMC9489561},
   keywords = {Adolescent,Adolescents,Aorta,Blood Flow Velocity,CMR,Humans,Infant Newborn,Magnetic Resonance Imaging,Neonates,Predictive Value of Tests,Pulse Wave Analysis,Pulse wave velocity,Reproducibility of Results,Standardization,Vascular Stiffness},
   file = {/Users/txn009/Zotero/storage/C4TG39UZ/Lundström et al. - 2022 - Pulse Wave Velocity Measurements by Magnetic Resonance Imaging in Neonates and Adolescents Methodol.pdf}
+}
+
+@article{lunovaPortalHypertensionMain2021,
+  title = {Portal {{Hypertension Is}} the {{Main Driver}} of {{Liver Stiffness}} in {{Advanced Liver Cirrhosis}}},
+  author = {LUNOVA, Mariia and FRANKOVA, Sona and GOTTFRIEDOVA, Halima and SENKERIKOVA, Renata and NEROLDOVA, Magdalena and KOVAC, Jozef and KIESLICHOVA, Eva and LANSKA, Vera and STICOVA, Eva and SPICAK, Julius and JIRSA, Milan and SPERL, Jan},
+  date = {2021-06-02},
+  journaltitle = {Physiological Research},
+  shortjournal = {Physiol Res},
+  volume = {70},
+  number = {4},
+  eprint = {34062072},
+  eprinttype = {pubmed},
+  pages = {563--577},
+  issn = {0862-8408},
+  doi = {10.33549/physiolres.934626},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC8820545/},
+  urldate = {2026-03-25},
+  abstract = {Liver stiffness (LS) is a novel non-invasive parameter widely used in clinical hepatology. LS correlates with liver fibrosis stage in non-cirrhotic patients. In cirrhotic patients it also shows good correlation with Hepatic Venous Pressure Gradient (HVPG). Our aim was to assess the contribution of liver fibrosis and portal hypertension to LS in patients with advanced liver cirrhosis. Eighty-one liver transplant candidates with liver cirrhosis of various aetiologies underwent direct HVPG and LS measurement by 2D shear-wave elastography (Aixplorer Multiwave, Supersonic Imagine, France). Liver collagen content was assessed in the explanted liver as collagen proportionate area (CPA) and hydroxyproline content (HP). The studied cohort included predominantly patients with Child-Pugh class B and C (63/81, 77.8 \%), minority of patients were Child-Pugh A (18/81, 22.2 \%). LS showed the best correlation with HVPG (r=0.719, p{$<$}0.001), correlation of LS with CPA (r=0.441, p{$<$}0.001) and HP/Amino Acids (r=0.414, p{$<$} 0.001) was weaker. Both variables expressing liver collagen content showed good correlation with each other (r=0.574, p{$<$}0.001). Multiple linear regression identified the strongest association between LS and HVPG (p{$<$}0.0001) and weaker association of LS with CPA (p = 0.01883). Stepwise modelling showed minimal increase in r2 after addition of CPA to HVPG (0.5073 vs. 0.5513). The derived formula expressing LS value formation is: LS=2.48 + (1.29 × HVPG) + (0.26 × CPA). We conclude that LS is determined predominantly by HVPG in patients with advanced liver cirrhosis whereas contribution of liver collagen content is relatively low.},
+  pmcid = {PMC8820545},
+  file = {/Users/txn009/Zotero/storage/ZZUJTRLY/LUNOVA et al. - 2021 - Portal Hypertension Is the Main Driver of Liver Stiffness in Advanced Liver Cirrhosis.pdf}
 }
 
 @article{lustigSparseMRIApplication2007,
@@ -2990,6 +3199,24 @@
   file = {/Users/txn009/Zotero/storage/94CBNX6Q/Nethononda et al. - 2015 - Gender specific patterns of age-related decline in aortic stiffness a cardiovascular magnetic reson.pdf}
 }
 
+@article{nettFourdimensionalPhaseContrast2012,
+  title = {Four-Dimensional Phase Contrast {{MRI}} with Accelerated Dual Velocity Encoding},
+  author = {Nett, Elizabeth J. and Johnson, Kevin M. and Frydrychowicz, Alex and Del Rio, Alejandro Munoz and Schrauben, Eric and Francois, Christopher J. and Wieben, Oliver},
+  date = {2012},
+  journaltitle = {Journal of Magnetic Resonance Imaging},
+  volume = {35},
+  number = {6},
+  pages = {1462--1471},
+  issn = {1522-2586},
+  doi = {10.1002/jmri.23588},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jmri.23588},
+  urldate = {2026-03-26},
+  abstract = {Purpose: To validate a novel approach for accelerated four-dimensional phase contrast MR imaging (4D PC-MRI) with an extended range of velocity sensitivity. Materials and Methods: 4D PC-MRI data were acquired with a radially undersampled trajectory (PC-VIPR). A dual Venc (dVenc) processing algorithm was implemented to investigate the potential for scan time savings while providing an improved velocity-to-noise ratio. Flow and velocity measurements were compared with a flow pump, conventional 2D PC MR, and single Venc 4D PC-MRI in the chest of 10 volunteers. Results: Phantom measurements showed excellent agreement between accelerated dVenc 4D PC-MRI and the pump flow rate (R2 ≥ 0.97) with a three-fold increase in measured velocity-to-noise ratio (VNR) and a 5\% increase in scan time. In volunteers, reasonable agreement was found when combining 100\% of data acquired with Venc = 80 cm/s and 25\% of the high Venc data, providing the VNR of a 80 cm/s acquisition with a wider velocity range of 160 cm/s at the expense of a 25\% longer scan. Conclusion: Accelerated dual Venc 4D PC-MRI was demonstrated in vitro and in vivo. This acquisition scheme is well suited for vascular territories with wide ranges of flow velocities such as congenital heart disease, the hepatic vasculature, and others. J. Magn. Reson. Imaging 2012;35:1462–1471. © 2012 Wiley Periodicals, Inc.},
+  langid = {english},
+  keywords = {flow quantification,phase contrast,rapid imaging,vascular hemodynamics,velocity mapping},
+  file = {/Users/txn009/Zotero/storage/HDKYWCRU/Nett et al. - 2012 - Four-dimensional phase contrast MRI with accelerated dual velocity encoding.pdf;/Users/txn009/Zotero/storage/SIHTEMJY/jmri.html}
+}
+
 @incollection{newmanValidityMoensKortewegEquation1978,
   title = {Validity of the {{Moens-Korteweg Equation}}},
   booktitle = {The {{Arterial System}}: {{Dynamics}}, {{Control Theory}} and {{Regulation}}},
@@ -3170,6 +3397,25 @@
   pmcid = {PMC9135957},
   keywords = {Abdomen,Aorta,Blood Flow Velocity,Hemodynamics,Humans,Imaging Three-Dimensional,Magnetic Resonance Angiography,Magnetic resonance imaging,Magnetic Resonance Imaging,Phase-contrast MRI,Portal venous system},
   file = {/Users/txn009/Zotero/storage/I3SUJLEJ/Oechtering et al. - 2022 - Abdominal applications of quantitative 4D flow MRI.pdf}
+}
+
+@article{oechteringAbdominalApplicationsQuantitative2022a,
+  title = {Abdominal Applications of Quantitative {{4D}} Flow {{MRI}}},
+  author = {Oechtering, Thekla H. and Roberts, Grant S. and Panagiotopoulos, Nikolaos and Wieben, Oliver and Roldán-Alzate, Alejandro and Reeder, Scott B.},
+  date = {2022-09-01},
+  journaltitle = {Abdominal Radiology},
+  shortjournal = {Abdom Radiol},
+  volume = {47},
+  number = {9},
+  pages = {3229--3250},
+  issn = {2366-0058},
+  doi = {10.1007/s00261-021-03352-w},
+  url = {https://doi.org/10.1007/s00261-021-03352-w},
+  urldate = {2026-03-25},
+  abstract = {4D flow MRI is a quantitative MRI technique that allows the comprehensive assessment of time-resolved hemodynamics and vascular anatomy over a 3-dimensional imaging volume. It effectively combines several advantages of invasive and non-invasive imaging modalities like ultrasound, angiography, and computed tomography in a single MRI acquisition and provides an unprecedented characterization of velocity fields acquired non-invasively in vivo. Functional and morphological imaging of the abdominal vasculature is especially challenging due to its complex and variable anatomy with a wide range of vessel calibers and flow velocities and the need for large volumetric coverage. Despite these challenges, 4D flow MRI is a promising diagnostic and prognostic tool as many pathologies in the abdomen are associated with changes of either hemodynamics or morphology of arteries, veins, or the portal venous system. In this review article, we will discuss technical aspects of the implementation of abdominal 4D flow MRI ranging from patient preparation and acquisition protocol over post-processing and quality control to final data analysis. In recent years, the range of applications for 4D flow in the abdomen has increased profoundly. Therefore, we will review potential clinical applications and address their clinical importance, relevant quantitative and qualitative parameters, and unmet challenges.},
+  langid = {english},
+  keywords = {Abdomen,Aorta,Hemodynamics,Magnetic resonance imaging,Phase-contrast MRI,Portal venous system},
+  file = {/Users/txn009/Zotero/storage/Z8DH6HKR/Oechtering et al. - 2022 - Abdominal applications of quantitative 4D flow MRI.pdf}
 }
 
 @article{oechteringClinicalApplications4D2022,
@@ -3608,6 +3854,14 @@
   file = {/Users/txn009/Zotero/storage/44WCH7GE/Reitz and Mayeux - 2014 - Alzheimer disease Epidemiology, diagnostic criteria, risk factors and biomarkers.pdf}
 }
 
+@online{renISMRM2025Unsupervised,
+  title = {({{ISMRM}} 2025) {{Unsupervised}} Phase Unwrapping for Aortic {{4D}} Flow {{MRI}} Using Deep Image Prior},
+  author = {Ren, Yuyang},
+  url = {https://archive.ismrm.org/2025/4277_2zRJNkQlL.html},
+  urldate = {2026-03-26},
+  file = {/Users/txn009/Zotero/storage/TTPIGBLN/4277_2zRJNkQlL.html}
+}
+
 @article{reuszReferenceValuesPulse2010,
   title = {Reference {{Values}} of {{Pulse Wave Velocity}} in {{Healthy Children}} and {{Teenagers}}},
   author = {Reusz, George S. and Cseprekal, Orsolya and Temmar, Mohamed and Kis, Éva and Cherif, Abdelghani Bachir and Thaleb, Abddelhalim and Fekete, Andrea and Szabó, Attila J. and Benetos, Athanase and Salvi, Paolo},
@@ -3717,6 +3971,42 @@
   file = {/Users/txn009/Zotero/storage/ZRV7TD54/Rogers et al. - 2001 - Age-associated changes in regional aortic pulse wave velocity.pdf}
 }
 
+@article{roldan-alzateCharacterizationMesentericPortal2022,
+  title = {Characterization of Mesenteric and Portal Hemodynamics Using {{4D}} Flow {{MRI}}: The Effects of Meals and Diurnal Variation},
+  shorttitle = {Characterization of Mesenteric and Portal Hemodynamics Using {{4D}} Flow {{MRI}}},
+  author = {Roldán-Alzate, Alejandro and Campo, Camilo A. and Mao, Lu and Said, Adnan and Wieben, Oliver and Reeder, Scott B.},
+  date = {2022-06},
+  journaltitle = {Abdominal Radiology},
+  shortjournal = {Abdom Radiol},
+  volume = {47},
+  number = {6},
+  pages = {2106--2114},
+  issn = {2366-0058},
+  doi = {10.1007/s00261-022-03513-5},
+  url = {https://link.springer.com/10.1007/s00261-022-03513-5},
+  urldate = {2026-03-25},
+  abstract = {Purpose To determine the variability of blood flow measurements using 4D flow MRI in the portal and mesenteric circulations and to characterize the effects of meal ingestion, time of day, and between-day (diurnal) variations on portal and mesenteric hemodynamics. Methods In this IRB-approved and HIPAA-compliant study, 7 healthy and 7 portal hypertension patients imaged. MRI exams were conducted at 3 T using a 32-channel body coil with large volumetric coverage and 1.25-mm isotropic true spatial resolution. Blood flow was quantified (L/min) in the hepatic and splanchnic vasculature. The first MR scan was performed after at least 8 h of fasting. Subsequently, subjects ingested 574 mL EnSure Plus® orally. A second acquisition was started 20 min after the meal ingestion. A third scan was performed before lunch and a fourth acquisition took place 20 min after lunch. A fifth scan was performed around 4 pm. Finally, subjects returned one week later for a repeat morning visit, with identical conditions as the first visit. Results In healthy controls significant increase in blood flow was seen in the PV, SMV, SMA, HA, and SCAo in response to breakfast but only the SCAo, SMA, SMV, and PV had a significant response to lunch. In general, patients with cirrhosis showed reduced response to meals compared to that in healthy controls. Additionally, PV flow in patients had the highest value in the afternoon. Conclusion Effects of meal ingestion, time of day, and between-day variations were characterized using Radial 4D flow MRI in patients with cirrhosis and healthy controls.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/SP9BYUEV/Roldán-Alzate et al. - 2022 - Characterization of mesenteric and portal hemodynamics using 4D flow MRI the effects of meals and d.pdf}
+}
+
+@article{roldan-alzateEmergingApplicationsAbdominal2016,
+  title = {Emerging {{Applications}} of {{Abdominal 4D Flow MRI}}},
+  author = {Roldán-Alzate, Alejandro and Francois, Christopher J. and Wieben, Oliver and Reeder, Scott B.},
+  date = {2016-07},
+  journaltitle = {American Journal of Roentgenology},
+  volume = {207},
+  number = {1},
+  pages = {58--66},
+  publisher = {American Roentgen Ray Society},
+  issn = {0361-803X},
+  doi = {10.2214/AJR.15.15995},
+  url = {https://www.ajronline.org/doi/10.2214/AJR.15.15995},
+  urldate = {2026-03-25},
+  abstract = {OBJECTIVE. Comprehensive assessment of abdominal hemodynamics is crucial for many clinical diagnoses but is challenged by a tremendous complexity of anatomy, normal physiology, and a wide variety of pathologic abnormalities. This article introduces 4D flow MRI as a powerful technique for noninvasive assessment of the hemodynamics of abdominal vascular territories. CONCLUSION. Four-dimensional flow MRI provides clinicians with a more extensive and straightforward approach to evaluate disorders that affect blood flow in the abdomen. This review presents a series of clinical cases to illustrate the utility of 4D flow MRI in the comprehensive assessment of the abdominal circulation.},
+  file = {/Users/txn009/Zotero/storage/HNHMNQH4/Roldán-Alzate et al. - 2016 - Emerging Applications of Abdominal 4D Flow MRI.pdf}
+}
+
 @article{roldan-alzateImpairedRegulationPortal2015,
   title = {Impaired {{Regulation}} of {{Portal Venous Flow}} in {{Response}} to a {{Meal Challenge}} as {{Quantified}} by {{4D Flow MRI}}},
   author = {Roldán-Alzate, A. and Frydrychowicz, A. and Said, A. and Johnson, K. M. and Francois, C. J. and Wieben, O. and Reeder, S. B.},
@@ -3733,6 +4023,26 @@
   abstract = {Portal and mesenteric hemodynamics is greatly altered in portal hypertension patients. This study utilizes four-dimensional flow MRI to visualize and quantify changes in abdominal hemodynamics in patients with portal hypertension undergoing meal ...},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/5EUNX2J6/Roldán-Alzate et al. - 2015 - Impaired Regulation of Portal Venous Flow in Response to a Meal Challenge as Quantified by 4D Flow M.pdf}
+}
+
+@article{roldan-alzateVivoValidation4D2013,
+  title = {In Vivo Validation of {{4D}} Flow {{MRI}} for Assessing the Hemodynamics of Portal Hypertension},
+  author = {Roldán-Alzate, Alejandro and Frydrychowicz, Alex and Niespodzany, Eric and Landgraf, Ben R. and Johnson, Kevin M. and Wieben, Oliver and Reeder, Scott B.},
+  date = {2013-05},
+  journaltitle = {Journal of magnetic resonance imaging: JMRI},
+  shortjournal = {J Magn Reson Imaging},
+  volume = {37},
+  number = {5},
+  eprint = {23148034},
+  eprinttype = {pubmed},
+  pages = {1100--1108},
+  issn = {1522-2586},
+  doi = {10.1002/jmri.23906},
+  abstract = {PURPOSE: To implement and validate in vivo radial 4D flow MRI for quantification of blood flow in the hepatic arterial, portal venous, and splanchnic vasculature of healthy volunteers and patients with portal hypertension. MATERIALS AND METHODS: Seventeen patients with portal hypertension and seven subjects with no liver disease were included in this Health Insurance Portability and Accountability Act (HIPAA)-compliant and Institutional Review Board (IRB)-approved study. Exams were conducted at 3T using a 32-channel body coil with large volumetric coverage and 1.4 mm isotropic true spatial resolution. Using postprocessing software, cut-planes orthogonal to vessels were used to quantify flow (L/min) in the hepatic and splanchnic vasculature. RESULTS: Flow quantification was successful in all cases. Portal vein and supraceliac aorta flow demonstrated high variability among patients. Measurements were validated indirectly using internal consistency at three different locations within the portal vein (error = 4.2 ± 3.9\%) and conservation of mass at the portal confluence (error = 5.9 ± 2.5\%) and portal bifurcation (error = 5.8 ± 3.1\%). CONCLUSION: This work demonstrates the feasibility of radial 4D flow MRI to quantify flow in the hepatic and splanchnic vasculature. Flow results agreed well with data reported in the literature, and conservation of mass provided indirect validation of flow quantification. Flow in patients with portal hypertensions demonstrated high variability, with patterns and magnitude consistent with the hyperdynamic state that commonly occurs in portal hypertension.},
+  langid = {english},
+  pmcid = {PMC4000737},
+  keywords = {Aged 80 and over,Algorithms,Blood Flow Velocity,Female,Humans,Hypertension Portal,Image Enhancement,Image Interpretation Computer-Assisted,Imaging Three-Dimensional,Liver Circulation,Liver Cirrhosis,Magnetic Resonance Angiography,Male,Middle Aged,Reproducibility of Results,Sensitivity and Specificity},
+  file = {/Users/txn009/Zotero/storage/EEVX5T6K/Roldán-Alzate et al. - 2013 - In vivo validation of 4D flow MRI for assessing the hemodynamics of portal hypertension.pdf}
 }
 
 @article{rosenzweigSimultaneousMultisliceMRI2018a,
@@ -3859,6 +4169,32 @@
   abstract = {For many cardiac MR applications, respiratory bellows-gating is attractive because it is widely available and not disruptive to or dependent on imaging. However, its use is uncommon in cardiac MR, because its accuracy has not been fully studied. Here, in 10 healthy subjects, the bellows and respiratory navigator (NAV) the displacement of the diaphragm and heart were simultaneously monitored, during single-shot imaging. Furthermore, bellows-gated and NAV-gated coronary MRI were compared, using a retrospective reconstruction at identical efficiency. There was a strong linear relationship for both the NAV and the abdominal bellows with the diaphragm (R=0.90±0.05 bellows, R=0.98±0.01 NAV, p{$<$}0.001) and the heart (R=0.89±0.06 bellows, R= 0.96±0.02 NAV, p=0.004); thoracic bellows correlated less strongly. The image quality of bellows-gated coronary MRI was similar to NAV-gated, and superior to no-gating (p{$<$}0.01). In conclusion, bellows provides a respiratory monitor which is highly correlated with the NAV, and suitable for respiratory-compensation in selected cardiac MR applications.},
   pmcid = {PMC3126878},
   file = {/Users/txn009/Zotero/storage/WEMUG4E9/Santelli et al. - 2011 - Respiratory bellows revisited for motion compensation preliminary experience for cardiovascular MR.pdf}
+}
+
+@book{sanyalPortalHypertension,
+  title = {Portal Hypertension Pathobiology, Evaluation, and Treatment},
+  author = {Sanyal, Arun and Shah, Vijay},
+  origdate = {2005},
+  publisher = {Humana Press},
+  location = {Totowa, N.J.}
+}
+
+@article{schnellAcceleratedDualvenc4D2017,
+  title = {Accelerated Dual-Venc {{4D}} Flow {{MRI}} for Neurovascular Applications},
+  author = {Schnell, Susanne and Ansari, Sameer A. and Wu, Can and Garcia, Julio and Murphy, Ian G. and Rahman, Ozair A. and Rahsepar, Amir A. and Aristova, Maria and Collins, Jeremy D. and Carr, James C. and Markl, Michael},
+  date = {2017},
+  journaltitle = {Journal of Magnetic Resonance Imaging},
+  volume = {46},
+  number = {1},
+  pages = {102--114},
+  issn = {1522-2586},
+  doi = {10.1002/jmri.25595},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jmri.25595},
+  urldate = {2026-03-26},
+  abstract = {Purpose To improve velocity-to-noise ratio (VNR) and dynamic velocity range of 4D flow magnetic resonance imaging (MRI) by using dual-velocity encoding (dual-venc) with k-t generalized autocalibrating partially parallel acquisition (GRAPPA) acceleration. Materials and Methods A dual-venc 4D flow MRI sequence with k-t GRAPPA acceleration was developed using a shared reference scan followed by three-directional low- and high-venc scans (repetition time / echo time / flip angle = 6.1 msec / 3.4 msec / 15°, temporal/spatial resolution = 43.0 msec/1.2 × 1.2 × 1.2 mm3). The high-venc data were used to correct for aliasing in the low-venc data, resulting in a single dataset with the favorable VNR of the low-venc but without velocity aliasing. The sequence was validated with a 3T MRI scanner in phantom experiments and applied in 16 volunteers to investigate its feasibility for assessing intracranial hemodynamics (net flow and peak velocity) at the major intracranial vessels. In addition, image quality and image noise were assessed in the in vivo acquisitions. Results All 4D flow MRI scans were acquired successfully with an acquisition time of 20 ± 4 minutes. The shared reference scan reduced the total acquisition time by 12.5\% compared to two separate scans. Phantom experiments showed 51.4\% reduced noise for dual-venc compared to high-venc and an excellent agreement of velocities (ρ = 0.8, P {$<$} 0.001). The volunteer data showed decreased noise in dual-venc data (54.6\% lower) compared to high-venc, and improved image quality, as graded by two observers: fewer artifacts (P {$<$} 0.0001), improved vessel conspicuity (P {$<$} 0.0001), and reduced noise (P {$<$} 0.0001). Conclusion Dual-venc 4D flow MRI exhibits the superior VNR of the low-venc acquisition and reliably incorporates low- and high-velocity fields simultaneously. In vitro and in vivo data demonstrate improved flow visualization, image quality, and image noise. Level of Evidence: 2 Technical Efficacy: Stage 1 J. MAGN. RESON. IMAGING 2017;46:102–114},
+  langid = {english},
+  keywords = {4D flow MRI,dual venc,intracranial 4D flow MRI,k-t GRAPPA,PC-MRI},
+  file = {/Users/txn009/Zotero/storage/JZT2P3ZH/Schnell et al. - 2017 - Accelerated dual-venc 4D flow MRI for neurovascular applications.pdf;/Users/txn009/Zotero/storage/VJPJBKZR/jmri.html}
 }
 
 @article{schraubenRespiratoryinducedVenousBlood2015,
@@ -4116,6 +4452,26 @@
   abstract = {Background Net cerebrospinal fluid (CSF) flow through the cerebral aqueduct may serve as a marker of CSF production in the lateral ventricles, and changes that occur with aging and in disease. Purpose To investigate the confounding influence of the respiratory cycle on net CSF flow and stroke volume measurements. Study Type Cross‐sectional study. Subjects Twelve young, healthy subjects (seven male, age range 19–39 years, average age 28.3 years). Field Strength/Sequence Phase contrast MRI (PC‐MRI) measurements were performed at 7T, with and without respiratory gating on expiration and on inspiration. All measurements were repeated. Assessment Net CSF flow and stroke volume in the aqueduct, over the cardiac cycle, was determined. Statistical Tests Repeatability was determined using the intraclass correlation coefficient (ICC) and linear regression analysis between the repeated measurements. Repeated measures analysis of variance (ANOVA) was performed to compare the measurements during inspiration/expiration/no gating. Linear regression analysis was performed between the net CSF flow difference (inspiration minus expiration) and stroke volume. Results Net CSF flow (average ± standard deviation) was 0.64 ± 0.32 mL/min (caudal) during expiration, 0.12 ± 0.49 mL/min (cranial) during inspiration, and 0.31 ± 0.18 mL/min (caudal) without respiratory gating. Respiratory gating did not affect stroke volume measurements (41 ± 18, 42 ± 19, 42 ± 19 μL/cycle for expiration, no respiratory gating and inspiration, respectively). Repeatability was best during inspiration (ICC = 0.88/0.56/–0.31 for gating on inspiration/expiration/no gating). A positive association was found between average stroke volume and net flow difference between inspiration and expiration (R = 0.678/0.605, P = 0.015/0.037 for the first/second repeated measurement). Data Conclusion Measured net CSF flow is confounded by respiration effects. Therefore, net CSF flow measurements with PC‐MRI cannot in isolation be directly linked to CSF production.,  Level of Evidence: 1,  Technical Efficacy: Stage 2, J. Magn. Reson. Imaging 2019;49:433–444.},
   pmcid = {PMC6519345},
   file = {/Users/txn009/Zotero/storage/ZFWTKZKD/Spijkerman et al. - 2019 - Phase contrast MRI measurements of net cerebrospinal fluid flow through the cerebral aqueduct are co.pdf}
+}
+
+@article{srinivasDeepLearningPhase2023,
+  title = {Deep Learning Phase Error Correction for Cerebrovascular {{4D}} Flow {{MRI}}},
+  author = {Srinivas, Shanmukha and Masutani, Evan and Norbash, Alexander and Hsiao, Albert},
+  date = {2023-06-05},
+  journaltitle = {Scientific Reports},
+  shortjournal = {Sci Rep},
+  volume = {13},
+  number = {1},
+  pages = {9095},
+  publisher = {Nature Publishing Group},
+  issn = {2045-2322},
+  doi = {10.1038/s41598-023-36061-z},
+  url = {https://www.nature.com/articles/s41598-023-36061-z},
+  urldate = {2026-03-26},
+  abstract = {Background phase errors in 4D Flow MRI may negatively impact blood flow quantification. In this study, we assessed their impact on cerebrovascular flow volume measurements, evaluated the benefit of manual image-based correction, and assessed the potential of a convolutional neural network (CNN), a form of deep learning, to directly infer the correction vector field. With IRB waiver of informed consent, we retrospectively identified 96 MRI exams from 48 patients who underwent cerebrovascular 4D Flow MRI from October 2015 to 2020. Flow measurements of the anterior, posterior, and venous circulation were performed to assess inflow-outflow error and the benefit of manual image-based phase error correction. A CNN was then trained to directly infer the phase-error correction field, without segmentation, from 4D Flow volumes to automate correction, reserving from 23 exams for testing. Statistical analyses included Spearman correlation, Bland–Altman, Wilcoxon-signed rank (WSR) and F-tests. Prior to correction, there was strong correlation between inflow and outflow (ρ\,=\,0.833–0.947) measurements with the largest discrepancy in the venous circulation. Manual phase error correction improved inflow-outflow correlation (ρ\,=\,0.945–0.981) and decreased variance (p\,{$<$}\,0.001, F-test). Fully automated CNN correction was non-inferior to manual correction with no significant differences in correlation (ρ\,=\,0.971 vs ρ\,=\,0.982) or bias (p\,=\,0.82, Wilcoxon-Signed Rank test) of inflow and outflow measurements. Residual background phase error can impair inflow-outflow consistency of cerebrovascular flow volume measurements. A CNN can be used to directly infer the phase-error vector field to fully automate phase error correction.},
+  langid = {english},
+  keywords = {Brain,Machine learning,Magnetic resonance imaging,Translational research},
+  file = {/Users/txn009/Zotero/storage/D5I3RRF7/Srinivas et al. - 2023 - Deep learning phase error correction for cerebrovascular 4D flow MRI.pdf}
 }
 
 @incollection{srivastavValsalvaManeuver2025a,
@@ -4446,6 +4802,26 @@
   abstract = {In many clinical MRI applications, not one but a series of images is acquired. Techniques that promote intra- and inter-image sparsity have recently emerged as powerful strategies for accelerating MRI applications; however, sparsity alone cannot always describe the complex relationships that exist between images in these series. In this paper, we will discuss the modeling of higher-dimensional MRI signals as matrices and tensors, and why promoting these signals to be low-rank (and, specifically, locally low-rank) can effectively identify and exploit these complex relationships. Example applications including training-free dynamic and calibrationless parallel MRI will be demonstrated.},
   eventtitle = {Wavelets and {{Sparsity XV}}},
   file = {/Users/txn009/Zotero/storage/QRESSPEX/Trzasko - 2013 - Exploiting local low-rank structure in higher-dimensional MRI applications.pdf}
+}
+
+@article{tustisonANTsXEcosystemQuantitative2021,
+  title = {The {{ANTsX}} Ecosystem for Quantitative Biological and Medical Imaging},
+  author = {Tustison, Nicholas J. and Cook, Philip A. and Holbrook, Andrew J. and Johnson, Hans J. and Muschelli, John and Devenyi, Gabriel A. and Duda, Jeffrey T. and Das, Sandhitsu R. and Cullen, Nicholas C. and Gillen, Daniel L. and Yassa, Michael A. and Stone, James R. and Gee, James C. and Avants, Brian B.},
+  date = {2021-04-27},
+  journaltitle = {Scientific Reports},
+  shortjournal = {Sci Rep},
+  volume = {11},
+  number = {1},
+  pages = {9068},
+  publisher = {Nature Publishing Group},
+  issn = {2045-2322},
+  doi = {10.1038/s41598-021-87564-6},
+  url = {https://www.nature.com/articles/s41598-021-87564-6},
+  urldate = {2026-03-26},
+  abstract = {The Advanced Normalizations Tools ecosystem, known as ANTsX, consists of multiple open-source software libraries which house top-performing algorithms used worldwide by scientific and research communities for processing and analyzing biological and medical imaging data. The base software library, ANTs, is built upon, and contributes to, the NIH-sponsored Insight Toolkit. Founded in 2008 with the highly regarded Symmetric Normalization image registration framework, the ANTs library has since grown to include additional functionality. Recent enhancements include statistical, visualization, and deep learning capabilities through interfacing with both the R statistical project (ANTsR) and Python (ANTsPy). Additionally, the corresponding deep learning extensions ANTsRNet and ANTsPyNet (built on the popular TensorFlow/Keras libraries) contain several popular network architectures and trained models for specific applications. One such comprehensive application is a deep learning analog for generating cortical thickness data from structural T1-weighted brain MRI, both cross-sectionally and longitudinally. These pipelines significantly improve computational efficiency and provide comparable-to-superior accuracy over multiple criteria relative to the existing ANTs workflows and simultaneously illustrate the importance of the comprehensive ANTsX approach as a framework for medical image analysis.},
+  langid = {english},
+  keywords = {Biomarkers,Computational neuroscience},
+  file = {/Users/txn009/Zotero/storage/ZMB57A87/Tustison et al. - 2021 - The ANTsX ecosystem for quantitative biological and medical imaging.pdf}
 }
 
 @article{tzaniDynamicHyperinflationAssociated2011,
@@ -4877,6 +5253,26 @@
   keywords = {bias,confounding factors,PDFF,precision,quantitative,T1}
 }
 
+@article{weiOptimizationPhasecontrastMRI2019,
+  title = {Optimization of {{Phase-contrast MRI}} for the {{Estimation}} of {{Global Cerebral Blood Flow}} of {{Mice}} at 11.{{7T}}},
+  author = {Wei, Zhiliang and Chen, Lin and Lin, Zixuan and Jiang, Dengrong and Xu, Jiadi and Liu, Peiying and family=Zijl, given=Peter C.M., prefix=van, useprefix=true and Lu, Hanzhang},
+  date = {2019-04},
+  journaltitle = {Magnetic resonance in medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {81},
+  number = {4},
+  eprint = {30393888},
+  eprinttype = {pubmed},
+  pages = {2566--2575},
+  issn = {0740-3194},
+  doi = {10.1002/mrm.27592},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC6372341/},
+  urldate = {2026-03-26},
+  abstract = {Purpose: To optimize phase-contrast (PC) MRI for the measurement of global cerebral blood flow (CBF) in mouse at 11.7T. Methods: We determined proper encoding velocity (VENC) for internal carotid arteries (ICAs) and vertebral arteries (VAs). Next, we optimized spatial resolution of the sequence. To shorten scan time without compromising data quality, we further optimized repetition time and developed a reduced FOV scheme for ICA and VA PC MRI. Whole-brain volume was determined with T2-weighted image to obtain unit-volume CBF. Results: Peak flow velocities were 13.8±1.7, 14.4±0.6, 6.5±1.7, and 6.7±1.3 cm/s for left ICA, right ICA, left VA, and right VA, respectively. Thus, VENC values of 20 cm/s and 10 cm/s were chosen for ICA and VA PC MRI, respectively. An in-plane spatial resolution of 50×50 μm2 was found to provide a reasonable tradeoff between reducing partial-volume effects and maintaining signal-to-noise ratio. Due to the fact that saturated spins in the imaging slice are rapidly replaced by fresh spins, TR of the sequence can be decreased to as short as 15 ms without reducing signal intensity, thereby substantially lowering scan time. Moreover, reduced FOV along the phase-encoding direction was able to shorten scan time by 33.3\% while maintaining measurement accuracy. With these optimizations, it took 96 sec to evaluate CBF with a test-retest variability of approximately 5\% and an inter-rater correlation of {$>$}0.95. Global unit-volume CBF was found to be 279.5±11.1 ml blood/100 ml tissue/min. Conclusion: We have optimized PC MRI for non-invasive quantification of blood flow in mice at 11.7T.},
+  pmcid = {PMC6372341},
+  file = {/Users/txn009/Zotero/storage/XSG9RKHV/Wei et al. - 2019 - Optimization of Phase-contrast MRI for the Estimation of Global Cerebral Blood Flow of Mice at 11.7T.pdf}
+}
+
 @article{wentlandAorticPulseWave2013,
   title = {Aortic Pulse Wave Velocity Measurements with Undersampled {{4D}} Flow‐sensitive {{MRI}}: Comparison with {{2D}} and Algorithm Determination},
   shorttitle = {Aortic Pulse Wave Velocity Measurements with Undersampled {{4D}} Flow‐sensitive {{MRI}}},
@@ -5183,6 +5579,26 @@
   abstract = {Excessive pulsatile flow caused by aortic stiffness is thought to be a contributing factor for several cerebrovascular diseases. The main purpose of this study was to describe the dampening of the pulsatile flow from the proximal to the distal cerebral arteries, the effect of aging and sex, and its correlation to aortic stiffness. Forty-five healthy elderly (mean age 71 years) and 49 healthy young (mean age 25 years) were included. Phase-contrast magnetic resonance imaging was used for measuring blood flow pulsatility index and dampening factor (proximal artery pulsatility index/distal artery pulsatility index) in 21 cerebral and extra-cerebral arteries. Aortic stiffness was measured as aortic pulse wave velocity. Cerebral arterial pulsatility index increased due to aging and this was more pronounced in distal segments of cerebral arteries. There was no difference in pulsatility index between women and men. Dampening of pulsatility index was observed in all cerebral arteries in both age groups but was significantly higher in young subjects than in elderly. Pulse wave velocity was not correlated with cerebral arterial pulsatility index. The increased pulsatile flow in elderly together with reduced dampening supports the pulse wave encephalopathy theory, since it implies that a higher pulsatile flow is reaching distal arterial segments in older subjects.},
   pmcid = {PMC5012521},
   file = {/Users/txn009/Zotero/storage/PIQTWUXZ/Zarrinkoob et al. - 2016 - Aging alters the dampening of pulsatile blood flow in cerebral arteries.pdf}
+}
+
+@article{zhangDivergenceFreeConstrainedPhase2021,
+  title = {Divergence-{{Free Constrained Phase Unwrapping}} and {{Denoising}} for {{4D Flow MRI Using Weighted Least-Squares}}},
+  author = {Zhang, Jiacheng and Rothenberger, Sean M. and Brindise, Melissa C. and Scott, Michael B. and Berhane, Haben and Baraboo, Justin J. and Markl, Michael and Rayz, Vitaliy L. and family=Vlachos, given=Pavlos. P., given-i={{Pavlos}}P},
+  date = {2021-12},
+  journaltitle = {IEEE transactions on medical imaging},
+  shortjournal = {IEEE Trans Med Imaging},
+  volume = {40},
+  number = {12},
+  eprint = {34086567},
+  eprinttype = {pubmed},
+  pages = {3389--3399},
+  issn = {0278-0062},
+  doi = {10.1109/TMI.2021.3086331},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC8714458/},
+  urldate = {2026-03-26},
+  abstract = {A novel divergence-free constrained phase unwrapping method was proposed and evaluated for 4D flow MRI. The unwrapped phase field was obtained by integrating the phase variations estimated from the wrapped phase data using weighted least-squares. The divergence-free constraint for incompressible blood flow was incorporated to regulate and denoise the resulting phase field. The proposed method was tested on synthetic phase data of left ventricular flow and in vitro 4D flow measurement of Poiseuille flow. The method was additionally applied to in vivo 4D flow measurements in the thoracic aorta from 30 human subjects. The performance of the proposed method was compared to the state-of-the-art 4D single-step Laplacian algorithm. The synthetic phase data were completely unwrapped by the proposed method for all the cases with velocity encoding (venc) as low as 20\% of the maximum velocity and signal-to-noise ratio as low as 5. The in vitro Poiseuille flow data were completely unwrapped with a 60\% increase in the velocity-to-noise ratio. For the in-vivo aortic datasets with venc ratio less than 0.4, the proposed method significantly improved the success rate by as much as 40\% and reduced the velocity error levels by a factor of 10 compared to the state-of-the-art method. The divergence-free constrained method exhibits reliability and robustness on phase unwrapping and shows improved accuracy of velocity and hemodynamic quantities by unwrapping the low-venc 4D flow MRI data.},
+  pmcid = {PMC8714458},
+  file = {/Users/txn009/Zotero/storage/ZAQWBRVB/Zhang et al. - 2021 - Divergence-Free Constrained Phase Unwrapping and Denoising for 4D Flow MRI Using Weighted Least-Squa.pdf}
 }
 
 @article{zhangImportanceHeartDose2019,
