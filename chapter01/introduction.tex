@@ -1,13 +1,12 @@
 \section{Motivation}\label{sec:motivation}
 
-Magnetic Resonance Imaging (MRI) is a highly flexible and capable tool for non-invasively acquiring diagnostic information that can be used to guide medical decision-making and treatment. However, there are a number of technical challenges remaining in the application of MRI, including the management of respiration in cardiovascular MRI. Cardiovascular MRI acquisitions are often time-resolved and typically require the collection of data over multiple cardiac and respiratory cycles. As a result, periodic motion of the diaphragm and lungs introduces complex, non-rigid displacement of thoracic and abdominal structures, including the heart, aorta, and liver. These motion effects manifest as blurring, ghosting, and loss of spatial fidelity, ultimately compromising both qualitative visualization and quantitative measurements derived from MRI data.
+Magnetic Resonance Imaging (MRI) is a highly flexible tool for non-invasively acquiring diagnostic information that can be used to guide medical decision-making and treatment. However, there are a number of technical challenges to solve in the application of MRI, including the management of respiration in cardiovascular MRI\@. Cardiovascular MR acquisitions are often time-resolved and typically require the collection of data over multiple cardiac and respiratory cycles. As a result, periodic motion of the diaphragm and lungs introduces complex, non-rigid displacement of thoracic and abdominal structures, including the heart, aorta, and liver. These motion effects manifest as blurring, ghosting, and loss of spatial fidelity, ultimately compromising both qualitative visualization and quantitative measurements derived from MRI data.
 
 Traditional approaches to mitigate respiratory motion have largely relied on breath-holding techniques or respiratory gating. While breath-holding can effectively eliminate motion artifacts in short acquisitions, it is fundamentally limited by scan duration and patient compliance. Many advanced cardiovascular MRI techniques, such as 4D flow MRI, require acquisition times that exceed practical breath-hold durations. This limitation is further exacerbated in patient populations with compromised respiratory function. Retrospective gating strategies offer an effective alternative, but have their own trade-offs in terms of scan time and data efficiency.
 
 However, respiration is not merely a source of artifacts to be suppressed; it is a physiologically meaningful process that influences cardiovascular dynamics. Rather than solely attempting to eliminate respiration-induced artifacts, there is growing interest in investigating dynamics affected by respiratory motion. Achieving this requires advanced acquisition and reconstruction strategies capable of capturing motion-resolved information.
 
-The overarching motivation of this thesis is three-fold. First, to optimize and implement MRI acquisition and reconstruction techniques that mitigate effects of respiratory motion through free-breathing acquisitions, enabling imaging in scenarios where traditional approaches may not be feasible. Second, to improve and accelerate acquisitions by increasing data efficiency in respiratory gating. Third, to enable respiratory-resolved imaging for 
-
+The overarching motivation of this dissertation is three-fold. First, to optimize and implement MRI acquisition and reconstruction techniques that mitigate effects of respiratory motion through free-breathing acquisitions, enabling imaging in scenarios where traditional approaches may not be feasible. Second, to improve and accelerate acquisitions by increasing data efficiency in respiratory gating. Third, to enable respiratory-resolved imaging for investigating respiration-induced motion.
 
 \section{Chapter Summary}
 The chapters of this dissertation are organized as follows:
@@ -15,7 +14,7 @@ The chapters of this dissertation are organized as follows:
     \item \textbf{Chapter~\ref{ch:background}: \nameref{ch:background}} 
     
     The fundamentals of MRI and its applications to cardiovascular imaging are discussed. This includes the basics of MR acquisitions, reconstructions, and MR-based angiography with phase contrast imaging.
-    
+
     \item \textbf{Chapter~\ref{ch:phantom}: \nameref{ch:phantom}}
     
     Validation of a developed method for assessing aortic pulse wave velocity via radial, free-breathing 2D PC acquisitions is performed in a physiologically realistic flow phantom. An improved radial, free-breathing simultaneous multi-slice (SMS) acquisition is also tested in the phantom.

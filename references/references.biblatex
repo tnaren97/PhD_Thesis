@@ -59,12 +59,51 @@
   file = {/Users/txn009/Zotero/storage/2ENY993Q/Agusti and Soriano - 2007 - Dynamic hyperinflation and pulmonary inflammation a potentially relevant relationship.pdf}
 }
 
+@article{akcakayaFreebreathingPhaseContrast2014,
+  title = {Free-Breathing Phase Contrast {{MRI}} with near 100\% Respiratory Navigator Efficiency Using k-Space-Dependent Respiratory Gating},
+  author = {Akçakaya, Mehmet and Gulaka, Praveen and Basha, Tamer A. and Ngo, Long H. and Manning, Warren J. and Nezafat, Reza},
+  date = {2014-06},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {71},
+  number = {6},
+  eprint = {23900942},
+  eprinttype = {pubmed},
+  pages = {2172--2179},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.24874},
+  abstract = {PURPOSE: To investigate the efficacy of a novel respiratory motion scheme, where only the center of k-space is gated using respiratory navigators, versus a fully respiratory-gated acquisition for three-dimensional flow imaging. METHODS: Three-dimensional flow images were acquired axially using a gradient echo sequence in a volume, covering the ascending and descending aorta, and the pulmonary artery bifurcation in 12 healthy subjects (33.2\,±\,15.8 years; five men). For respiratory motion compensation, two gating and tracking strategies were used with a 7-mm gating window: (1) All of k-space acquired within the gating window (fully gated) and (2) central k-space acquired within the gating window, and the remainder of k-space acquired without any gating (center gated). Each scan was repeated twice. Stroke volume, mean flow, peak velocity, and signal-to-noise-ratio measurements were performed both on the ascending and on the descending aorta for all acquisitions, which were compared using a linear mixed-effects model and Bland-Altman analysis. RESULTS: There were no statistical differences between the fully gated and the center-gated strategies for the quantification of stroke volume, peak velocity, and mean flow, as well as the signal-to-noise-ratio measurements. Furthermore, the proposed center-gated strategy had significantly shorter acquisition time compared to the fully gated strategy (13:19\,±\,3:02 vs. 19:35\,±\,5:02, P\,{$<$}\,0.001). CONCLUSIONS: The proposed novel center-gated strategy for three-dimensional flow MRI allows for markedly shorter acquisition time without any systematic variation in quantitative flow measurements in this small group of healthy volunteers.},
+  langid = {english},
+  pmcid = {PMC3870033},
+  keywords = {3D flow,Adult,Aorta Thoracic,blood flow assessment,Blood Flow Velocity,cardiac MR,Female,gating efficiency,Healthy Volunteers,Humans,Image Processing Computer-Assisted,Imaging Three-Dimensional,intra-scan variability,Magnetic Resonance Imaging,Male,mean flow,Motion,phase contrast MR,Pulmonary Artery,Respiration,respiratory navigators,Signal-To-Noise Ratio,stroke volume,Time Factors}
+}
+
 @book{americansocietyofradiationoncologyGuideRadiationOncology2010,
   title = {Guide to {{Radiation Oncology Coding}}},
   author = {American Society of Radiation Oncology and American College of Radiology},
   date = {2010},
   publisher = {American Society for Radiation Oncology},
   location = {Farifax, VA}
+}
+
+@article{andersenImprovementDiagnosticQuality2019,
+  title = {Improvement in Diagnostic Quality of Structural and Angiographic {{MRI}} of the Brain Using Motion Correction with Interleaved, Volumetric Navigators},
+  author = {Andersen, Mads and Björkman-Burtscher, Isabella M. and Marsman, Anouk and Petersen, Esben Thade and Boer, Vincent Oltman},
+  date = {2019-05-17},
+  journaltitle = {PLOS ONE},
+  shortjournal = {PLOS ONE},
+  volume = {14},
+  number = {5},
+  pages = {e0217145},
+  publisher = {Public Library of Science},
+  issn = {1932-6203},
+  doi = {10.1371/journal.pone.0217145},
+  url = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0217145},
+  urldate = {2026-03-29},
+  abstract = {Introduction Subject movements lead to severe artifacts in magnetic resonance (MR) brain imaging. In this study we evaluate the diagnostic image quality in T1-weighted, T2-weighted, and time-of-flight angiographic MR sequences when using a flexible, navigator-based prospective motion correction system (iMOCO). Methods Five healthy volunteers were scanned during different movement scenarios with and without (+/-) iMOCO activated. An experienced neuroradiologist graded images for image quality criteria (grey-white-matter discrimination, basal ganglia, and small structure and vessel delineation), and general image quality on a four-grade scale. Results In scans with deliberate motion, there was a significant improvement in the image quality with iMOCO compared to the scans without iMOCO in both general image impression (T1 p{$<$}0.01, T2 p{$<$}0.01, TOF p = 0.03) and in anatomical grading (T1 p{$<$}0.01, T2 p{$<$}0.01, TOF p = 0.01). Subjective image quality was considered non-diagnostic in 91\% of the scans with motion -iMOCO, but only in 4\% of the scans with motion +iMOCO. iMOCO performed best in the T1-weighted sequence and least well in the angiography sequence. iMOCO was not shown to have any negative effect on diagnostic image quality, as no significant difference in diagnostic quality was seen between scans -iMOCO and +iMOCO with no deliberate movement. Conclusion The evaluation showed that iMOCO enables substantial improvements in image quality in scans affected by subject movement, recovering important diagnostic information in an otherwise unusable scan.},
+  langid = {english},
+  keywords = {Angiography,Carotid arteries,Cerebral arteries,Cranial nerves,Head,Imaging techniques,Magnetic resonance,Magnetic resonance imaging},
+  file = {/Users/txn009/Zotero/storage/RRGFZM7N/Andersen et al. - 2019 - Improvement in diagnostic quality of structural and angiographic MRI of the brain using motion corre.pdf}
 }
 
 @article{angoffAorticStiffnessEpidemiology2021,
@@ -197,6 +236,24 @@
   file = {/Users/txn009/Zotero/storage/8LVKYW6L/Baskar et al. - 2012 - Cancer and Radiation Therapy Current Advances and Future Directions.pdf}
 }
 
+@article{batchelorMatrixDescriptionGeneral2005,
+  title = {Matrix Description of General Motion Correction Applied to Multishot Images},
+  author = {Batchelor, P. G. and Atkinson, D. and Irarrazaval, P. and Hill, D. L. G. and Hajnal, J. and Larkman, D.},
+  date = {2005-11},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {54},
+  number = {5},
+  eprint = {16155887},
+  eprinttype = {pubmed},
+  pages = {1273--1280},
+  issn = {0740-3194},
+  doi = {10.1002/mrm.20656},
+  abstract = {Motion of an object degrades MR images, as the acquisition is time-dependent, and thus k-space is inconsistently sampled. This causes ghosts. Current motion correction methods make restrictive assumptions on the type of motions, for example, that it is a translation or rotation, and use special properties of k-space for these transformations. Such methods, however, cannot be generalized easily to nonrigid types of motions, and even rotations in multiple shots can be a problem. Here, a method is presented that can handle general nonrigid motion models. A general matrix equation gives the corrupted image from the ideal object. Thus, inversion of this system allows us to get the ideal image from the corrupted one. This inversion is possible by efficient methods mixing Fourier transforms with the conjugate gradient method. A faster but empirical inversion is discussed as well as methods to determine the motion. Simulated three-dimensional affine data and two-dimensional pulsation data and in vivo nonrigid data are used for demonstration. All examples are multishot images where the object moves between shots. The results indicate that it is now possible to correct for nonrigid types of motion that are representative of many types of patient motion, although computation times remain an issue.},
+  langid = {english},
+  keywords = {Algorithms,Brain,Humans,Image Enhancement,Image Interpretation Computer-Assisted,Imaging Three-Dimensional,Leg,Magnetic Resonance Imaging,Movement,Phantoms Imaging,Reproducibility of Results,Sensitivity and Specificity,Subtraction Technique}
+}
+
 @article{batemanPulseWaveEncephalopathy2004,
   title = {Pulse Wave Encephalopathy: A Spectrum Hypothesis Incorporating {{Alzheimer}}'s Disease, Vascular Dementia and Normal Pressure Hydrocephalus},
   shorttitle = {Pulse Wave Encephalopathy},
@@ -321,21 +378,6 @@
   abstract = {A single episode of breath-holding (BH) is known to elevate the blood pressure, and regular breathing exercise lowers the blood pressure. This prompted us to investigate how a series of BH epochs would affect the cardiovascular system. To observe arterial blood pressure (ABP) and heart rate (HR) changes associated with a series of “BH epochs” following maximum inspiration and maximum expiration and find the underlying mechanisms for the change by autonomic activity. Thirty-five healthy young adults were instructed to hold their breath repetitively, for 5 minutes, in two patterns, one following maximum inspiration and other following maximum expiration. ABP and ECG (for Heart Rate Variability) were continuously recorded at rest and during both the maneuvers. Capillary blood gases (BG) were zanalyzed at baseline and at the breakpoint of the last epoch of BH. ABP rose significantly at the breakpoint during both the maneuvers. No change in HR was observed. There was significant fall in PO2 from 94.7 (4.1) mmHg at baseline to 79.1 (9.0) mmHg during inspiratory and 76.90 (12.1) mmHg during expiratory BH. Similarly, SPO2 decreased from 96.3 (1.9) \% at baseline to 95.4 (1.5) \% and 94.5 (2.7) \% during inspiratory and expiratory BH, respectively. Rise in PCO2 from 39.5(3.1) mmHg at baseline to 42.9 (2.7) mmHg and 42.1 (2.8) mmHg during inspiratory and expiratory BH respectively was observed. There was no significant correlation between blood gases and arterial blood pressure. Among HRV parameters, a significant decrease in SDNN, RMSSD, HFnu, total power and SD1/SD2 and the significant increase in LFnu, LF/HF and SD2 were observed during both BH patterns. Rhythmic BH patterns affect the cardiovascular system in similar way as a single episode of BH. Sympathetic overactivity could be the postulated mechanism for the same.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/QLH2U98P/Bhandari et al. - 2020 - Rhythmic Breath Holding and Its Effect on Arterial Blood Pressure and Its Correlation With Blood Gas.pdf}
-}
-
-@article{bhandariRhythmicBreathHolding2020a,
-  title = {Rhythmic {{Breath Holding}} and {{Its Effect}} on {{Arterial Blood Pressure}} and {{Its Correlation With Blood Gases}}},
-  author = {Bhandari, Bharti and Mavai, Manisha and Singh, Yogendra Raj and Mehta, Bharati and Bhagat, Omlata},
-  date = {2020-02-22},
-  journaltitle = {ACTA MEDICA IRANICA},
-  shortjournal = {ACTA},
-  issn = {1735-9694, 0044-6025},
-  doi = {10.18502/acta.v57i8.2425},
-  url = {https://publish.kne-publishing.com/index.php/ACTA/article/view/2425},
-  urldate = {2026-03-22},
-  abstract = {A single episode of breath-holding (BH) is known to elevate the blood pressure, and regular breathing exercise lowers the blood pressure. This prompted us to investigate how a series of BH epochs would affect the cardiovascular system. To observe arterial blood pressure (ABP) and heart rate (HR) changes associated with a series of “BH epochs” following maximum inspiration and maximum expiration and find the underlying mechanisms for the change by autonomic activity. Thirty-five healthy young adults were instructed to hold their breath repetitively, for 5 minutes, in two patterns, one following maximum inspiration and other following maximum expiration. ABP and ECG (for Heart Rate Variability) were continuously recorded at rest and during both the maneuvers. Capillary blood gases (BG) were zanalyzed at baseline and at the breakpoint of the last epoch of BH. ABP rose significantly at the breakpoint during both the maneuvers. No change in HR was observed. There was significant fall in PO2 from 94.7 (4.1) mmHg at baseline to 79.1 (9.0) mmHg during inspiratory and 76.90 (12.1) mmHg during expiratory BH. Similarly, SPO2 decreased from 96.3 (1.9) \% at baseline to 95.4 (1.5) \% and 94.5 (2.7) \% during inspiratory and expiratory BH, respectively. Rise in PCO2 from 39.5(3.1) mmHg at baseline to 42.9 (2.7) mmHg and 42.1 (2.8) mmHg during inspiratory and expiratory BH respectively was observed. There was no significant correlation between blood gases and arterial blood pressure. Among HRV parameters, a significant decrease in SDNN, RMSSD, HFnu, total power and SD1/SD2 and the significant increase in LFnu, LF/HF and SD2 were observed during both BH patterns. Rhythmic BH patterns affect the cardiovascular system in similar way as a single episode of BH. Sympathetic overactivity could be the postulated mechanism for the same.},
-  langid = {english},
-  file = {/Users/txn009/Zotero/storage/B7JK27S4/Bhandari et al. - 2020 - Rhythmic Breath Holding and Its Effect on Arterial Blood Pressure and Its Correlation With Blood Gas.pdf}
 }
 
 @article{bieriFundamentalsBalancedSteady2013,
@@ -699,8 +741,8 @@
   url = {https://onlinelibrary.wiley.com/doi/10.1002/jmri.25106},
   urldate = {2024-08-21},
   abstract = {Purpose To develop and evaluate motion-compensation and compressed-sensing techniques in 4D flow MRI for anatomical assessment in a comprehensive ferumoxytol-enhanced congenital heart disease (CHD) exam. Materials and Methods A Cartesian 4D flow sequence was developed to enable intrinsic navigation and two variable-density sampling schemes: VDPoisson and VDRad. Four compressed-sensing methods were developed: A) VDPoisson scan reconstructed using spatial wavelets; B) added temporal total variation to A; C) VDRad scan using the same reconstruction as in B; and D) added motion compensation to C. With Institutional Review Board (IRB) approval and Health Insurance Portability and Accountability Act (HIPAA) compliance, 23 consecutive patients (eight females, mean 6.3 years) referred for ferumoxytol-enhanced CHD 3T MRI were recruited. Images were acquired and reconstructed using methods A?D. Two cardiovascular radiologists independently scored the images on a 5-point scale. These readers performed a paired wall motion and functional assessment between method D and 2D balanced steady-state free precession (bSSFP) CINE for 16 cases. Results Method D had higher diagnostic image quality for most anatomical features (mean 3.8?4.8) compared to A (2.0?3.6), B (2.2?3.7), and C (2.9?3.9) with P {$<$} 0.05 with good interobserver agreement (? ≥ 0.49). Method D had similar or better assessment of myocardial borders and cardiac motion compared to 2D bSSFP (P {$<$} 0.05, ? ≥ 0.77). All methods had good internal agreement in comparing aortic with pulmonic flow (BA mean {$<$} 0.02\%, r {$>$} 0.85) and compared to method A (BA mean {$<$} 0.13\%, r {$>$} 0.84) with P {$<$} 0.01. Conclusion Flow, functional, and anatomical assessment in CHD with ferumoxytol-enhanced 4D flow is feasible and can be significantly improved using motion compensation and compressed sensing. J. Magn. Reson. Imaging 2016;43:1355?1368.},
-  keywords = {4D flow,compressed sensing,congenital heart disease,motion,soft-gating},
-  file = {/Users/txn009/Zotero/storage/LHNB93SP/Cheng et al. - 2016 - Comprehensive motion-compensated highly accelerated 4D flow MRI with ferumoxytol enhancement for ped.pdf}
+  keywords = {4D flow,Adolescent,Artifacts,Blood Flow Velocity,Cardiac-Gated Imaging Techniques,Child,Child Preschool,compressed sensing,congenital heart disease,Contrast Media,Coronary Circulation,Female,Ferrosoferric Oxide,Heart Defects Congenital,Humans,Image Enhancement,Image Interpretation Computer-Assisted,Imaging Three-Dimensional,Infant,Infant Newborn,Magnetic Resonance Angiography,Magnetic Resonance Imaging Cine,Male,motion,Motion,Reproducibility of Results,Sensitivity and Specificity,soft-gating,Young Adult},
+  file = {/Users/txn009/Zotero/storage/LHNB93SP/Cheng et al. - 2016 - Comprehensive motion-compensated highly accelerated 4D flow MRI with ferumoxytol enhancement for ped.pdf;/Users/txn009/Zotero/storage/RHADHARM/Cheng et al. - 2016 - Comprehensive motion-compensated highly accelerated 4D flow MRI with ferumoxytol enhancement for ped.pdf}
 }
 
 @article{chengFreeBreathingPediatricMRI2015,
@@ -856,6 +898,26 @@
   langid = {english},
   keywords = {Female,Humans,Kidney Failure Chronic,Male,Pulse Wave Analysis,Renal Dialysis,Vascular Stiffness},
   file = {/Users/txn009/Zotero/storage/SDAMPFQX/Covic and Siriopol - 2015 - Pulse wave velocity ratio the new gold standard for measuring arterial stiffness.pdf}
+}
+
+@article{cruzAcceleratedMotionCorrected2016,
+  title = {Accelerated Motion Corrected Three-Dimensional Abdominal {{MRI}} Using Total Variation Regularized {{SENSE}} Reconstruction},
+  author = {Cruz, Gastao and Atkinson, David and Buerger, Christian and Schaeffter, Tobias and Prieto, Claudia},
+  date = {2016-04},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {75},
+  number = {4},
+  eprint = {25996443},
+  eprinttype = {pubmed},
+  pages = {1484--1498},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.25708},
+  abstract = {PURPOSE: Develop a nonrigid motion corrected reconstruction for highly accelerated free-breathing three-dimensional (3D) abdominal images without external sensors or additional scans. METHODS: The proposed method accelerates the acquisition by undersampling and performs motion correction directly in the reconstruction using a general matrix description of the acquisition. Data are acquired using a self-gated 3D golden radial phase encoding trajectory, enabling a two stage reconstruction to estimate and then correct motion of the same data. In the first stage total variation regularized iterative SENSE is used to reconstruct highly undersampled respiratory resolved images. A nonrigid registration of these images is performed to estimate the complex motion in the abdomen. In the second stage, the estimated motion fields are incorporated in a general matrix reconstruction, which uses total variation regularization and incorporates k-space data from multiple respiratory positions. The proposed approach was tested on nine healthy volunteers and compared against a standard gated reconstruction using measures of liver sharpness, gradient entropy, visual assessment of image sharpness and overall image quality by two experts. RESULTS: The proposed method achieves similar quality to the gated reconstruction with nonsignificant differences for liver sharpness (1.18 and 1.00, respectively), gradient entropy (1.00 and 1.00), visual score of image sharpness (2.22 and 2.44), and visual rank of image quality (3.33 and 3.39). An average reduction of the acquisition time from 102 s to 39 s could be achieved with the proposed method. CONCLUSION: In vivo results demonstrate the feasibility of the proposed method showing similar image quality to the standard gated reconstruction while using data corresponding to a significantly reduced acquisition time. Magnetic Resonance in Medicine published by Wiley Periodicals, Inc. on behalf of International Society for Magnetic Resonance.},
+  langid = {english},
+  pmcid = {PMC4979665},
+  keywords = {Abdomen,abdominal MRI,Algorithms,Humans,Imaging Three-Dimensional,Magnetic Resonance Imaging,motion correction,nonrigid motion,Respiratory Mechanics,Time Factors,total variation,undersampling},
+  file = {/Users/txn009/Zotero/storage/BL6QKEW3/Cruz et al. - 2016 - Accelerated motion corrected three-dimensional abdominal MRI using total variation regularized SENSE.pdf}
 }
 
 @article{curtisPrimerHistoricalReview2022,
@@ -1099,6 +1161,26 @@
   pmcid = {PMC4530492},
   keywords = {Aorta,Blood Flow Velocity,Cardiovascular Diseases,Cardiovascular System,Coronary Circulation,Humans,Image Interpretation Computer-Assisted,Magnetic Resonance Angiography,Myocardial Perfusion Imaging,Predictive Value of Tests,Pulsatile Flow,Time Factors},
   file = {/Users/txn009/Zotero/storage/WKGHERPU/Dyverfeldt et al. - 2015 - 4D flow cardiovascular magnetic resonance consensus statement.pdf}
+}
+
+@article{dyverfeldtComparisonRespiratoryMotion2017,
+  title = {Comparison of Respiratory Motion Suppression Techniques for {{4D}} Flow {{MRI}}},
+  author = {Dyverfeldt, Petter and Ebbers, Tino},
+  date = {2017-11},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {78},
+  number = {5},
+  eprint = {28074541},
+  eprinttype = {pubmed},
+  pages = {1877--1882},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.26574},
+  abstract = {PURPOSE: The purpose of this work was to assess the impact of respiratory motion and to compare methods for suppression of respiratory motion artifacts in 4D Flow MRI. METHODS: A numerical 3D aorta phantom was designed based on an aorta velocity field obtained by computational fluid mechanics. Motion-distorted 4D Flow MRI measurements were simulated and several different motion-suppression techniques were evaluated: Gating with fixed acceptance window size, gating with different window sizes in inner and outer k-space, and k-space reordering. Additionally, different spatial resolutions were simulated. RESULTS: Respiratory motion reduced the image quality. All motion-suppression techniques improved the data quality. Flow rate errors of up to 30\% without gating could be reduced to less than 2.5\% with the most successful motion suppression methods. Weighted gating and gating combined with k-space reordering were advantageous compared with conventional fixed-window gating. Spatial resolutions finer than the amount of accepted motion did not lead to improved results. CONCLUSION: Respiratory motion affects 4D Flow MRI data. Several different motion suppression techniques exist that are capable of reducing the errors associated with respiratory motion. Spatial resolutions finer than the degree of accepted respiratory motion do not result in improved data quality. Magn Reson Med 78:1877-1882, 2017. © 2017 International Society for Magnetic Resonance in Medicine.},
+  langid = {english},
+  pmcid = {PMC6084364},
+  keywords = {4D flow MRI,Aorta,artifacts,Humans,image quality,Imaging Three-Dimensional,Magnetic Resonance Imaging,Models Biological,motion suppression,Movement,MR flow imaging,navigator gating,Phantoms Imaging,Respiratory-Gated Imaging Techniques},
+  file = {/Users/txn009/Zotero/storage/AXHFRKFC/Dyverfeldt and Ebbers - 2017 - Comparison of respiratory motion suppression techniques for 4D flow MRI.pdf}
 }
 
 @article{dyverfeldtPulseWaveVelocity2014,
@@ -1416,25 +1498,7 @@
   urldate = {2024-09-03},
   langid = {english},
   keywords = {hypertension,portal},
-  file = {/Users/txn009/Zotero/storage/6JB5V6SS/Garcia-Tsao et al. - 2017 - Portal hypertensive bleeding in cirrhosis Risk stratification, diagnosis, and management 2016 prac.pdf;/Users/txn009/Zotero/storage/APFIRH4M/hep.html}
-}
-
-@article{garcia-tsaoPortalHypertensiveBleeding2017a,
-  title = {Portal Hypertensive Bleeding in Cirrhosis: {{Risk}} Stratification, Diagnosis, and Management: 2016 Practice Guidance by the {{American Association}} for the Study of Liver Diseases},
-  shorttitle = {Portal Hypertensive Bleeding in Cirrhosis},
-  author = {Garcia‐Tsao, Guadalupe and Abraldes, Juan G. and Berzigotti, Annalisa and Bosch, Jaime},
-  date = {2017-01},
-  journaltitle = {Hepatology},
-  volume = {65},
-  number = {1},
-  pages = {310},
-  issn = {0270-9139},
-  doi = {10.1002/hep.28906},
-  url = {https://journals.lww.com/hep/fulltext/2017/01000/portal_hypertensive_bleeding_in_cirrhosis__risk.32.aspx},
-  urldate = {2026-03-25},
-  abstract = {An abstract is unavailable.},
-  langid = {american},
-  file = {/Users/txn009/Zotero/storage/GMVEHNDL/portal_hypertensive_bleeding_in_cirrhosis__risk.32.html}
+  file = {/Users/txn009/Zotero/storage/6JB5V6SS/Garcia-Tsao et al. - 2017 - Portal hypertensive bleeding in cirrhosis Risk stratification, diagnosis, and management 2016 prac.pdf;/Users/txn009/Zotero/storage/APFIRH4M/hep.html;/Users/txn009/Zotero/storage/GMVEHNDL/portal_hypertensive_bleeding_in_cirrhosis__risk.32.html}
 }
 
 @article{gloverProjectionReconstructionTechniques1992,
@@ -1711,6 +1775,19 @@
   file = {/Users/txn009/Zotero/storage/58HYVH3W/Heijman et al. - 2007 - Comparison between prospective and retrospective triggering for mouse cardiac MRI.pdf;/Users/txn009/Zotero/storage/GDIC5JJE/nbm.html}
 }
 
+@online{hemidiIMMoCoSelfsupervised2024,
+  title = {{{IM-MoCo}}: {{Self-supervised MRI Motion Correction}} Using {{Motion-Guided Implicit Neural Representations}}},
+  shorttitle = {{{IM-MoCo}}},
+  author = {Hemidi, Ziad Al-Haj and Weihsbach, Christian and Heinrich, Mattias P.},
+  date = {2024-07-03},
+  url = {https://arxiv.org/abs/2407.02974v1},
+  urldate = {2026-03-29},
+  abstract = {Motion artifacts in Magnetic Resonance Imaging (MRI) arise due to relatively long acquisition times and can compromise the clinical utility of acquired images. Traditional motion correction methods often fail to address severe motion, leading to distorted and unreliable results. Deep Learning (DL) alleviated such pitfalls through generalization with the cost of vanishing structures and hallucinations, making it challenging to apply in the medical field where hallucinated structures can tremendously impact the diagnostic outcome. In this work, we present an instance-wise motion correction pipeline that leverages motion-guided Implicit Neural Representations (INRs) to mitigate the impact of motion artifacts while retaining anatomical structure. Our method is evaluated using the NYU fastMRI dataset with different degrees of simulated motion severity. For the correction alone, we can improve over state-of-the-art image reconstruction methods by \$+5\textbackslash\%\$ SSIM, \$+5\textbackslash :db\$ PSNR, and \$+14\textbackslash\%\$ HaarPSI. Clinical relevance is demonstrated by a subsequent experiment, where our method improves classification outcomes by at least \$+1.5\$ accuracy percentage points compared to motion-corrupted images.},
+  langid = {english},
+  organization = {arXiv.org},
+  file = {/Users/txn009/Zotero/storage/QRMJWUA3/Hemidi et al. - 2024 - IM-MoCo Self-supervised MRI Motion Correction using Motion-Guided Implicit Neural Representations.pdf}
+}
+
 @article{hermentAutomatedSegmentationAorta2010,
   title = {Automated Segmentation of the Aorta from Phase Contrast {{MR}} Images: {{Validation}} against Expert Tracing in Healthy Volunteers and in Patients with a Dilated Aorta},
   shorttitle = {Automated Segmentation of the Aorta from Phase Contrast {{MR}} Images},
@@ -1877,24 +1954,7 @@
   url = {https://pubs.rsna.org/doi/full/10.1148/radiol.230709},
   urldate = {2024-11-05},
   abstract = {Background Percutaneous transhepatic portal vein (PV) embolization (PVE) is a standard preoperative procedure for advanced biliary cancer when the future liver remnant (FLR) is insufficient, yet the effect of this procedure on portal hemodynamics is still unclear. Purpose To assess whether four-dimensional (4D) MRI flowmetry can be used to estimate FLR volume and to identify the optimal time for this measurement. Materials and Methods This prospective single-center study enrolled consecutive adult patients with biliary cancer who underwent percutaneous transhepatic PVE for the right liver between June 2020 and November 2022. Portal hemodynamics were assessed using 4D flow MRI before PVE and within 1 day (0-day group) or 3–4 days (3-day group) after PVE. FLR volume was measured using CT before PVE and after PVE but before surgery. Blood flow changes were analyzed with the Wilcoxon signed rank test, and correlations with Spearman rank correlation. Results The 0-day group included 24 participants (median age, 72 years [IQR, 69–77 years]; 17 male participants), and the 3-day group included 13 participants (median age, 71 years [IQR, 68–78 years]; eight male participants). Both groups showed increased left PV (LPV) flow rate after PVE (0-day group: from median 3.72 mL/sec [IQR, 2.83–4.55 mL/sec] to 9.48 mL/sec [IQR, 8.12–10.7 mL/sec], P {$<$} .001; 3-day group: from median 3.65 mL/sec [IQR, 2.14–3.79 mL/sec] to 8.16 mL/sec [IQR, 6.82–8.98 mL/sec], P {$<$} .001). LPV flow change correlated with FLR volume change relative to the number of days from PVE to presurgery CT only in the 3-day group (ρ = 0.62, P = .02; 0-day group, P = .11). The output of the regression equation for estimating presurgery FLR volume correlated with CT-measured volume (ρ = 0.78; P = .002). Conclusion Four-dimensional flow MRI demonstrated increased blood flow in residual portal branches 3–4 days after PVE, offering insights for estimating presurgery FLR volume. Published under a CC BY 4.0 license. Supplemental material is available for this article. See also the editorial by Roldán-Alzate and Oechtering in this issue.},
-  file = {/Users/txn009/Zotero/storage/ZA69YFQG/Hyodo et al. - 2023 - Four-dimensional Flow MRI Assessment of Portal Hemodynamics and                     Hepatic Regenera.pdf}
-}
-
-@article{hyodoFourdimensionalFlowMRI2023a,
-  title = {Four-Dimensional {{Flow MRI Assessment}} of {{Portal Hemodynamics}} and                     {{Hepatic Regeneration}} after {{Portal Vein Embolization}}},
-  author = {Hyodo, Ryota and Takehara, Yasuo and Mizuno, Takashi and Ichikawa, Kazushige and Horiguchi, Ryota and Kawakatsu, Shoji and Mizuno, Takashi and Ebata, Tomoki and Naganawa, Shinji and Jin, Ning and Ichiba, Yoshito},
-  date = {2023-09},
-  journaltitle = {Radiology},
-  volume = {308},
-  number = {3},
-  pages = {e230709},
-  publisher = {Radiological Society of North America},
-  issn = {0033-8419},
-  doi = {10.1148/radiol.230709},
-  url = {https://pubs.rsna.org/doi/full/10.1148/radiol.230709},
-  urldate = {2026-03-26},
-  abstract = {Background Percutaneous transhepatic portal vein (PV) embolization (PVE) is a standard preoperative procedure for advanced biliary cancer when the future liver remnant (FLR) is insufficient, yet the effect of this procedure on portal hemodynamics is still unclear. Purpose To assess whether four-dimensional (4D) MRI flowmetry can be used to estimate FLR volume and to identify the optimal time for this measurement. Materials and Methods This prospective single-center study enrolled consecutive adult patients with biliary cancer who underwent percutaneous transhepatic PVE for the right liver between June 2020 and November 2022. Portal hemodynamics were assessed using 4D flow MRI before PVE and within 1 day (0-day group) or 3–4 days (3-day group) after PVE. FLR volume was measured using CT before PVE and after PVE but before surgery. Blood flow changes were analyzed with the Wilcoxon signed rank test, and correlations with Spearman rank correlation. Results The 0-day group included 24 participants (median age, 72 years [IQR, 69–77 years]; 17 male participants), and the 3-day group included 13 participants (median age, 71 years [IQR, 68–78 years]; eight male participants). Both groups showed increased left PV (LPV) flow rate after PVE (0-day group: from median 3.72 mL/sec [IQR, 2.83–4.55 mL/sec] to 9.48 mL/sec [IQR, 8.12–10.7 mL/sec], P {$<$} .001; 3-day group: from median 3.65 mL/sec [IQR, 2.14–3.79 mL/sec] to 8.16 mL/sec [IQR, 6.82–8.98 mL/sec], P {$<$} .001). LPV flow change correlated with FLR volume change relative to the number of days from PVE to presurgery CT only in the 3-day group (ρ = 0.62, P = .02; 0-day group, P = .11). The output of the regression equation for estimating presurgery FLR volume correlated with CT-measured volume (ρ = 0.78; P = .002). Conclusion Four-dimensional flow MRI demonstrated increased blood flow in residual portal branches 3–4 days after PVE, offering insights for estimating presurgery FLR volume. © The Author(s) 2023. Published by the Radiological Society of North America under a CC BY 4.0 license. Supplemental material is available for this article. See also the editorial by Roldán-Alzate and Oechtering in this issue.},
-  file = {/Users/txn009/Zotero/storage/B3R5VAMR/Hyodo et al. - 2023 - Four-dimensional Flow MRI Assessment of Portal Hemodynamics and                     Hepatic Regenera.pdf}
+  file = {/Users/txn009/Zotero/storage/B3R5VAMR/Hyodo et al. - 2023 - Four-dimensional Flow MRI Assessment of Portal Hemodynamics and                     Hepatic Regenera.pdf;/Users/txn009/Zotero/storage/ZA69YFQG/Hyodo et al. - 2023 - Four-dimensional Flow MRI Assessment of Portal Hemodynamics and                     Hepatic Regenera.pdf}
 }
 
 @article{ibrahimAssessmentPulmonaryArterial2015,
@@ -1981,12 +2041,6 @@
   file = {/Users/txn009/Zotero/storage/5HTFQ92J/3648.html}
 }
 
-@online{ISMRM20245D,
-  title = {({{ISMRM}} 2024) {{A 5D MRI Framework}} for {{Cardiac Motion Characterization}} in {{Radiation Therapy}}},
-  url = {https://archive.ismrm.org/2024/3526_5RcTChQpL.html},
-  urldate = {2026-03-23}
-}
-
 @online{ISMRM2024Feasibility,
   title = {({{ISMRM}} 2024) {{Feasibility}} of a {{2D Radial Simultaneous Multi-Slice Phase Contrast MRI}} Sequence for {{Aortic Pulse Wave Velocity Measurements}}},
   url = {https://archive.ismrm.org/2024/3381_4lRsviQZb.html},
@@ -2061,6 +2115,25 @@
   abstract = {Biomarkers have become an essential component of Alzheimer disease (AD) research and because of the pervasiveness of AD pathology in the elderly, the same biomarkers are used in cognitive aging research. A number of current issues suggest that an unbiased descriptive classification scheme for these biomarkers would be useful. We propose the “A/T/N” system in which 7 major AD biomarkers are divided into 3 binary categories based on the nature of the pathophysiology that each measures. “A” refers to the value of a β-amyloid biomarker (amyloid PET or CSF Aβ42); “T,” the value of a tau biomarker (CSF phospho tau, or tau PET); and “N,” biomarkers of neurodegeneration or neuronal injury ([18F]-fluorodeoxyglucose–PET, structural MRI, or CSF total tau). Each biomarker category is rated as positive or negative. An individual score might appear as A+/T+/N−, or A+/T−/N−, etc. The A/T/N system includes the new modality tau PET. It is agnostic to the temporal ordering of mechanisms underlying AD pathogenesis. It includes all individuals in any population regardless of the mix of biomarker findings and therefore is suited to population studies of cognitive aging. It does not specify disease labels and thus is not a diagnostic classification system. It is a descriptive system for categorizing multidomain biomarker findings at the individual person level in a format that is easy to understand and use. Given the present lack of consensus among AD specialists on terminology across the clinically normal to dementia spectrum, a biomarker classification scheme will have broadest acceptance if it is independent from any one clinically defined diagnostic scheme.},
   pmcid = {PMC4970664},
   file = {/Users/txn009/Zotero/storage/FBU5NSVZ/Jack et al. - 2016 - ATN An unbiased descriptive classification scheme for Alzheimer disease biomarkers.pdf}
+}
+
+@article{jacobsFlowMRINetGeneralizableSelfsupervised2025,
+  title = {{{FlowMRI-Net}}: {{A}} Generalizable Self-Supervised {{4D}} Flow {{MRI}} Reconstruction Network},
+  shorttitle = {{{FlowMRI-Net}}},
+  author = {Jacobs, Luuk and Piccirelli, Marco and Vishnevskiy, Valery and Kozerke, Sebastian},
+  date = {2025-12-01},
+  journaltitle = {Journal of Cardiovascular Magnetic Resonance},
+  shortjournal = {Journal of Cardiovascular Magnetic Resonance},
+  volume = {27},
+  number = {2},
+  pages = {101913},
+  issn = {1097-6647},
+  doi = {10.1016/j.jocmr.2025.101913},
+  url = {https://www.sciencedirect.com/science/article/pii/S1097664725000754},
+  urldate = {2026-03-29},
+  abstract = {Background Image reconstruction from highly undersampled four-dimensional (4D) flow magnetic resonance imaging (MRI) data can be very time-consuming and may result in significant underestimation of velocities depending on regularization, thereby limiting the applicability of the method. The objective of the present work was to develop a generalizable self-supervised deep learning-based framework for fast and accurate reconstruction of highly undersampled 4D flow MRI and to demonstrate the utility of the framework for aortic and cerebrovascular applications. Methods The proposed deep-learning-based framework, called FlowMRI-Net, employs physics-driven unrolled optimization using a complex-valued convolutional recurrent neural network and is trained in a self-supervised manner. The generalizability of the framework is evaluated using aortic and cerebrovascular 4D flow MRI acquisitions acquired on systems from two different vendors for various undersampling factors (R = 8, 16, 24) and compared to compressed sensing locally low rank (CS-LLR) reconstructions. Evaluation includes an ablation study and a qualitative and quantitative analysis of image and velocity magnitudes. Results FlowMRI-Net outperforms CS-LLR for aortic 4D flow MRI reconstruction, resulting in significantly lower vectorial normalized root mean square error and mean directional errors for velocities in the thoracic aorta. Furthermore, the feasibility of FlowMRI-Net’s generalizability is demonstrated for cerebrovascular 4D flow MRI reconstruction. Reconstruction times ranged from 3 to 7~min on commodity central processing unit/graphical processing unit hardware. Conclusion FlowMRI-Net enables fast and accurate reconstruction of highly undersampled aortic and cerebrovascular 4D flow MRI, with possible applications to other vascular territories.},
+  keywords = {4D flow MRI,Aorta,Cerebrovasculature,Deep learning,Reconstruction},
+  file = {/Users/txn009/Zotero/storage/P2CFM8JK/Jacobs et al. - 2025 - FlowMRI-Net A generalizable self-supervised 4D flow MRI reconstruction network.pdf;/Users/txn009/Zotero/storage/TJNLTQKF/S1097664725000754.html}
 }
 
 @article{jagsiRespiratoryMotionHeart2007,
@@ -2154,6 +2227,24 @@
   urldate = {2024-09-19},
   pmcid = {PMC1557872},
   file = {/Users/txn009/Zotero/storage/QXKUQTLE/Jellinek - 2006 - The Valsalva manoeuvre and Antonio Valsalva (1666-1723).pdf}
+}
+
+@article{jiangMotionRobustHigh2018,
+  title = {Motion Robust High Resolution {{3D}} Free-Breathing Pulmonary {{MRI}} Using Dynamic {{3D}} Image Self-Navigator},
+  author = {Jiang, Wenwen and Ong, Frank and Johnson, Kevin M. and Nagle, Scott K. and Hope, Thomas A. and Lustig, Michael and Larson, Peder E.Z.},
+  date = {2018},
+  journaltitle = {Magnetic Resonance in Medicine},
+  volume = {79},
+  number = {6},
+  pages = {2954--2967},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.26958},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.26958},
+  urldate = {2026-03-29},
+  abstract = {Purpose To achieve motion robust high resolution 3D free-breathing pulmonary MRI utilizing a novel dynamic 3D image navigator derived directly from imaging data. Methods Five-minute free-breathing scans were acquired with a 3D ultrashort echo time (UTE) sequence with 1.25 mm isotropic resolution. From this data, dynamic 3D self-navigating images were reconstructed under locally low rank (LLR) constraints and used for motion compensation with one of two methods: a soft-gating technique to penalize the respiratory motion induced data inconsistency, and a respiratory motion-resolved technique to provide images of all respiratory motion states. Results Respiratory motion estimation derived from the proposed dynamic 3D self-navigator of 7.5 mm isotropic reconstruction resolution and a temporal resolution of 300 ms was successful for estimating complex respiratory motion patterns. This estimation improved image quality compared to respiratory belt and DC-based navigators. Respiratory motion compensation with soft-gating and respiratory motion-resolved techniques provided good image quality from highly undersampled data in volunteers and clinical patients. Conclusion An optimized 3D UTE sequence combined with the proposed reconstruction methods can provide high-resolution motion robust pulmonary MRI. Feasibility was shown in patients who had irregular breathing patterns in which our approach could depict clinically relevant pulmonary pathologies. Magn Reson Med 79:2954–2967, 2018. © 2017 International Society for Magnetic Resonance in Medicine.},
+  langid = {english},
+  keywords = {3D self-navigator,free-breathing,pulmonary imaging,respiratory motion-resolved,soft-gating,UTE},
+  file = {/Users/txn009/Zotero/storage/IKIRQKT3/Jiang et al. - 2018 - Motion robust high resolution 3D free-breathing pulmonary MRI using dynamic 3D image self-navigator.pdf;/Users/txn009/Zotero/storage/PTFM7R7X/mrm.html}
 }
 
 @article{jimenezFeasibilityHighSpatiotemporal2018,
@@ -2279,6 +2370,25 @@
   langid = {english},
   keywords = {Four-dimensional computed tomography,Hypertension (portal),Medical Imaging,Multidetector computed tomography,Portal vein,Portasystemic shunt},
   file = {/Users/txn009/Zotero/storage/DP5ZFY52/Kageyama et al. - 2021 - Visualization of flow dynamics in the portal circulation using 320-detector-row computed tomography.pdf}
+}
+
+@article{kanskiWholeheartFourdimensionalFlow2015,
+  title = {Whole-Heart Four-Dimensional Flow Can Be Acquired with Preserved Quality without Respiratory Gating, Facilitating Clinical Use: A Head-to-Head Comparison},
+  shorttitle = {Whole-Heart Four-Dimensional Flow Can Be Acquired with Preserved Quality without Respiratory Gating, Facilitating Clinical Use},
+  author = {Kanski, Mikael and Töger, Johannes and Steding-Ehrenborg, Katarina and Xanthis, Christos and Bloch, Karin Markenroth and Heiberg, Einar and Carlsson, Marcus and Arheden, Håkan},
+  date = {2015-12},
+  journaltitle = {BMC Medical Imaging},
+  shortjournal = {BMC Med Imaging},
+  volume = {15},
+  number = {1},
+  pages = {20},
+  issn = {1471-2342},
+  doi = {10.1186/s12880-015-0061-4},
+  url = {https://bmcmedimaging.biomedcentral.com/articles/10.1186/s12880-015-0061-4},
+  urldate = {2026-03-29},
+  abstract = {Background: Respiratory gating is often used in 4D-flow acquisition to reduce motion artifacts. However, gating increases scan time. The aim of this study was to investigate if respiratory gating can be excluded from 4D flow acquisitions without affecting quantitative intracardiac parameters. Methods: Eight volunteers underwent CMR at 1.5 T with a 5-channel coil (5ch). Imaging included 2D flow measurements and whole-heart 4D flow with and without respiratory gating (Resp(+), Resp(−)). Stroke volume (SV), particle-trace volumes, kinetic energy, and vortex-ring volume were obtained from 4D flow-data. These parameters were compared between 5ch Resp(+) and 5ch Resp(−). In addition, 20 patients with heart failure were scanned using a 32-channel coil (32ch), and particle-trace volumes were compared to planimetric SV. Paired comparisons were performed using Wilcoxon’s test and correlation analysis using Pearson r. Agreement was assessed as bias ± SD. Results: Stroke volume from 4D flow was lower compared to 2D flow both with and without respiratory gating (5ch Resp(+) 88 ± 18 vs 97 ± 24.0, p = 0.001; 5ch Resp(−) 86 ± 16 vs 97.1 ± 22.7, p {$<$} 0.01). There was a good correlation between Resp(+) and Resp(−) for particle-trace derived volumes (R2 = 0.82, 0.2 ± 9.4 ml), mean kinetic energy (R2 = 0.86, 0.07 ± 0.21 mJ), peak kinetic energy (R2 = 0.88, 0.14 ± 0.77 mJ), and vortex-ring volume (R2 = 0.70, −2.5 ± 9.4 ml). Furthermore, good correlation was found between particle-trace volume and planimetric SV in patients for 32ch Resp(−) (R2 = 0.62, −4.2 ± 17.6 ml) and in healthy volunteers for 5ch Resp(+) (R2 = 0.89, −11 ± 7 ml), and 5ch Resp(−) (R2 = 0.93, −7.5 ± 5.4 ml), Average scan duration for Resp(−) was shorter compared to Resp(+) (27 ± 9 min vs 61 ± 19 min, p {$<$} 0.05). Conclusions: Whole-heart 4D flow can be acquired with preserved quantitative results without respiratory gating, facilitating clinical use.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/I3AGYTNI/Kanski et al. - 2015 - Whole-heart four-dimensional flow can be acquired with preserved quality without respiratory gating,.pdf}
 }
 
 @article{katariaQuantificationCoronaryArtery2016,
@@ -2881,6 +2991,26 @@
   file = {/Users/txn009/Zotero/storage/2ARIE3LZ/Miller et al. - 2021 - Characterizing Sensitive Cardiac Substructure Excursion Due to Respiration.pdf}
 }
 
+@article{millerMotionCompensatedSelf2023,
+  title = {Motion {{Compensated Self Supervised Deep Learning}} for {{Highly Accelerated 3D Ultrashort Echo Time Pulmonary MRI}}},
+  author = {Miller, Zachary and Johnson, Kevin M.},
+  date = {2023-06},
+  journaltitle = {Magnetic resonance in medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {89},
+  number = {6},
+  eprint = {36744745},
+  eprinttype = {pubmed},
+  pages = {2361--2375},
+  issn = {0740-3194},
+  doi = {10.1002/mrm.29586},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC10590257/},
+  urldate = {2026-03-29},
+  abstract = {Purpose: To investigate motion compensated, self-supervised, model based deep learning (MBDL) as a method to reconstruct free breathing, 3D Pulmonary ultrashort echo time (UTE) acquisitions. Theory and Methods: A self-supervised eXtra Dimension MBDL architecture (XD-MBDL) was developed that combined respiratory states to reconstruct a single high-quality 3D image. Non-rigid, GPU based motion fields were incorporated into this architecture by estimating motion fields from a lower resolution motion resolved (XD-GRASP) iterative reconstruction. Motion Compensated XD-MBDL was evaluated on lung UTE datasets with and without contrast and was compared to constrained reconstructions and variants of self-supervised MBDL that do not account for dynamic respiratory states or leverage motion correction. Results: Images reconstructed using XD-MBDL demonstrate improved image quality as measured by apparent SNR, CNR and visual assessment relative to self-supervised MBDL approaches that do not account for dynamic respiratory states, XD-GRASP and a recently proposed motion compensated iterative reconstruction strategy (iMoCo). Additionally, XD-MBDL reduced reconstruction time relative to both XD-GRASP and iMoCo. Conclusion: A method was developed to allow self-supervised MBDL to combine multiple respiratory states to reconstruct a single image. This method was combined with GPU-based image registration to further improve reconstruction quality. This approach showed promising results reconstructing a user-selected respiratory phase from free breathing 3D pulmonary UTE acquisitions.},
+  pmcid = {PMC10590257},
+  file = {/Users/txn009/Zotero/storage/APWZ2QKP/Miller and Johnson - 2023 - Motion Compensated Self Supervised Deep Learning for Highly Accelerated 3D Ultrashort Echo Time Pulm.pdf}
+}
+
 @article{mitchellArterialStiffnessCardiovascular2010,
   title = {Arterial Stiffness and Cardiovascular Events: The {{Framingham Heart Study}}},
   shorttitle = {Arterial Stiffness and Cardiovascular Events},
@@ -3128,6 +3258,14 @@
   abstract = {All cardiac magnetic resonance (CMR) techniques aim to create still depictions of a dynamic and ever-adapting organ. Most CMR methods rely on cardiac gating to capture information during fleeting periods of relative cardiac quiescence, at end diastole or end systole, or to acquire partial images throughout the cardiac cycle and average these signals over several heart beats. Since the inception of clinical CMR in the early 1980s, priority has been given to improving methods for image gating. The aim of this work is to provide a basic understanding of the ECG acquisition, demonstrate common ECG-related artifacts and to provide practical methods for overcoming these issues. Meticulous ECG preparation is essential for optimal CMR acquisition and these techniques must be adaptable to the individual patient.},
   pmcid = {PMC3476721},
   file = {/Users/txn009/Zotero/storage/HAPMVZ4M/Nacif et al. - 2012 - Cardiac magnetic resonance imaging and its electrocardiographs (ECG) tips and tricks.pdf}
+}
+
+@online{naren5DMRIFramework,
+  title = {({{ISMRM}} 2024) {{A 5D MRI Framework}} for {{Cardiac Motion Characterization}} in {{Radiation Therapy}}},
+  author = {Naren, Tarun},
+  url = {https://archive.ismrm.org/2024/3526.html},
+  urldate = {2026-03-27},
+  file = {/Users/txn009/Zotero/storage/B8JEYD2K/3526.html}
 }
 
 @article{narenComparingRobustnessRespiratoryresolved2024,
@@ -3396,26 +3534,7 @@
   langid = {english},
   pmcid = {PMC9135957},
   keywords = {Abdomen,Aorta,Blood Flow Velocity,Hemodynamics,Humans,Imaging Three-Dimensional,Magnetic Resonance Angiography,Magnetic resonance imaging,Magnetic Resonance Imaging,Phase-contrast MRI,Portal venous system},
-  file = {/Users/txn009/Zotero/storage/I3SUJLEJ/Oechtering et al. - 2022 - Abdominal applications of quantitative 4D flow MRI.pdf}
-}
-
-@article{oechteringAbdominalApplicationsQuantitative2022a,
-  title = {Abdominal Applications of Quantitative {{4D}} Flow {{MRI}}},
-  author = {Oechtering, Thekla H. and Roberts, Grant S. and Panagiotopoulos, Nikolaos and Wieben, Oliver and Roldán-Alzate, Alejandro and Reeder, Scott B.},
-  date = {2022-09-01},
-  journaltitle = {Abdominal Radiology},
-  shortjournal = {Abdom Radiol},
-  volume = {47},
-  number = {9},
-  pages = {3229--3250},
-  issn = {2366-0058},
-  doi = {10.1007/s00261-021-03352-w},
-  url = {https://doi.org/10.1007/s00261-021-03352-w},
-  urldate = {2026-03-25},
-  abstract = {4D flow MRI is a quantitative MRI technique that allows the comprehensive assessment of time-resolved hemodynamics and vascular anatomy over a 3-dimensional imaging volume. It effectively combines several advantages of invasive and non-invasive imaging modalities like ultrasound, angiography, and computed tomography in a single MRI acquisition and provides an unprecedented characterization of velocity fields acquired non-invasively in vivo. Functional and morphological imaging of the abdominal vasculature is especially challenging due to its complex and variable anatomy with a wide range of vessel calibers and flow velocities and the need for large volumetric coverage. Despite these challenges, 4D flow MRI is a promising diagnostic and prognostic tool as many pathologies in the abdomen are associated with changes of either hemodynamics or morphology of arteries, veins, or the portal venous system. In this review article, we will discuss technical aspects of the implementation of abdominal 4D flow MRI ranging from patient preparation and acquisition protocol over post-processing and quality control to final data analysis. In recent years, the range of applications for 4D flow in the abdomen has increased profoundly. Therefore, we will review potential clinical applications and address their clinical importance, relevant quantitative and qualitative parameters, and unmet challenges.},
-  langid = {english},
-  keywords = {Abdomen,Aorta,Hemodynamics,Magnetic resonance imaging,Phase-contrast MRI,Portal venous system},
-  file = {/Users/txn009/Zotero/storage/Z8DH6HKR/Oechtering et al. - 2022 - Abdominal applications of quantitative 4D flow MRI.pdf}
+  file = {/Users/txn009/Zotero/storage/I3SUJLEJ/Oechtering et al. - 2022 - Abdominal applications of quantitative 4D flow MRI.pdf;/Users/txn009/Zotero/storage/Z8DH6HKR/Oechtering et al. - 2022 - Abdominal applications of quantitative 4D flow MRI.pdf}
 }
 
 @article{oechteringClinicalApplications4D2022,
@@ -3538,6 +3657,25 @@
   abstract = {Purpose/objective(s) To study the heart motion using cardiac gated computed tomographies (CGCT) to provide guidance on treatment planning margins during cardiac stereotactic body radiation therapy (SBRT). Materials/methods Ten patients were selected for this study, who received CGCT scans that were acquired with intravenous contrast under a voluntary breath‐hold using a dual source CT scanner. For each patient, CGCT images were reconstructed in multiple phases (10\%–90\%) of the cardiac cycle and the left ventricle (LV), right ventricle (RV), ascending aorta (AAo), ostia of the right coronary artery (O‐RCA), left coronary artery (O‐LCA), and left anterior descending artery (LAD) were contoured at each phase. For these contours, the centroid displacements from their corresponding average positions were measured at each phase in the superior–inferior (SI), medial–lateral (ML), and anterior–posterior (AP). The average volumes as well as the maximum to minimum ratios were analyzed for the LV and RV. Results For the six contoured substructures, more than 90\% of the measured displacements were {$<$}5~mm. For these patients, the average volumes ranged from 191.25 to 429.51~cc for LV and from 91.76 to 286.88~cc for RV. For each patient, the ratios of maximum to minimum volumes within a cardiac cycle ranged from 1.15 to 1.54 for LV and from 1.34 to 1.84 for RV. Conclusion Based on this study, cardiac motion is variable depending on the specific substructure of the heart but is mostly within 5~mm. Depending on the location (central or peripheral) of the treatment target and treatment purposes, the treatment planning margins for targets and risk volumes should be adjusted accordingly. In the future, we will further assess heart motion and its dosimetric impact.},
   pmcid = {PMC7592981},
   file = {/Users/txn009/Zotero/storage/YTNGT43R/Ouyang et al. - 2020 - Analysis of cardiac motion without respiratory motion for cardiac stereotactic body radiation therap.pdf}
+}
+
+@article{pangHighEfficiencyCoronary2016,
+  title = {High Efficiency Coronary {{MR}} Angiography with Nonrigid Cardiac Motion Correction},
+  author = {Pang, Jianing and Chen, Yuhua and Fan, Zhaoyang and Nguyen, Christopher and Yang, Qi and Xie, Yibin and Li, Debiao},
+  date = {2016-11},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {76},
+  number = {5},
+  eprint = {27455164},
+  eprinttype = {pubmed},
+  pages = {1345--1353},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.26332},
+  abstract = {PURPOSE: To improve the coronary visualization quality of four-dimensional (4D) coronary MR angiography (MRA) through cardiac motion correction and iterative reconstruction. METHODS: A contrast-enhanced, spoiled gradient echo sequence with 3D radial trajectory and self-gating was used for 4D coronary MRA data acquisition at 3 Tesla. A whole-heart 16-phase cine series was reconstructed with respiratory motion correction. Nonrigid registration was performed between the identified quiescent phases and a reference. The motion information of all included phases was then used along with the corresponding k-space data to iteratively reconstruct the final image. Healthy volunteer studies (N\,=\,13) were conducted to compare the proposed method with the conventional strategy, which accepts data from a single, contiguous window out of the original 16-phase data. Apparent signal-to-noise ratio (aSNR) and coronary sharpness were used as the image quality metrics. RESULTS: The proposed method significantly improved aSNR (11.89\,±\,3.76 to 13.97\,±\,5.21; P\,=\,0.005) and scan efficiency (18.8\%\,±\,6.0\% to 40.9\%\,±\,9.7\%; P\,{$<$}\,0.001), compared with the conventional strategy. Sharpness of left main (P\,=\,0.002), proximal (P\,=\,0.04), and middle (P\,=\,0.02) right coronary artery, and proximal left anterior descending (P\,=\,0.04) was also significantly improved. CONCLUSION: The proposed cardiac motion-corrected reconstruction significantly improved the achievable quality of coronary visualization from 4D coronary MRA. Magn Reson Med 76:1345-1353, 2016. © 2016 International Society for Magnetic Resonance in Medicine.},
+  langid = {english},
+  pmcid = {PMC5067183},
+  keywords = {3D radial imaging,Algorithms,Artifacts,Cardiac-Gated Imaging Techniques,Coronary Angiography,coronary MRA,Coronary Vessels,Humans,Image Enhancement,Image Interpretation Computer-Assisted,Imaging Three-Dimensional,Magnetic Resonance Angiography,Motion,motion correction,Pattern Recognition Automated,Reproducibility of Results,self-navigation,Sensitivity and Specificity,Subtraction Technique}
 }
 
 @article{parikhMeasurementPulseWave2016,
@@ -3688,6 +3826,25 @@
   file = {/Users/txn009/Zotero/storage/UCRGMHX4/Polio and Groszmann - 1986 - Hemodynamic Factors Involved in the Development and Rupture of Esophageal Varices A Pathophysiologi.pdf}
 }
 
+@article{prietoHighlyEfficientRespiratory2015,
+  title = {Highly Efficient Respiratory Motion Compensated Free-Breathing Coronary {{MRA}} Using Golden-Step {{Cartesian}} Acquisition},
+  author = {Prieto, Claudia and Doneva, Mariya and Usman, Muhammad and Henningsson, Markus and Greil, Gerald and Schaeffter, Tobias and Botnar, Rene M.},
+  date = {2015-03},
+  journaltitle = {Journal of magnetic resonance imaging: JMRI},
+  shortjournal = {J Magn Reson Imaging},
+  volume = {41},
+  number = {3},
+  eprint = {24573992},
+  eprinttype = {pubmed},
+  pages = {738--746},
+  issn = {1522-2586},
+  doi = {10.1002/jmri.24602},
+  abstract = {PURPOSE: To develop an efficient 3D affine respiratory motion compensation framework for Cartesian whole-heart coronary magnetic resonance angiography (MRA). MATERIALS AND METHODS: The proposed method achieves 100\% scan efficiency by estimating the affine respiratory motion from the data itself and correcting the acquired data in the reconstruction process. For this, a golden-step Cartesian sampling with spiral profile ordering was performed to enable reconstruction of respiratory resolved images at any breathing position and with different respiratory window size. Affine motion parameters were estimated from image-based registration of 3D undersampled respiratory resolved images reconstructed with iterative SENSE and motion correction was performed directly in the reconstruction using a multiple-coils generalized matrix formulation method. This approach was tested on healthy volunteers and compared against a conventional diaphragmatic navigator-gated acquisition using quantitative and qualitative image quality assessment. RESULTS: The proposed approach achieved 47 ± 12\% and 59 ± 6\% vessel sharpness for the right (RCA) and left (LAD) coronary arteries, respectively. Also, good quality visual scores of 2.4 ± 0.74 and 2.44 ± 0.86 were observed for the RCA and LAD (scores from 0, no to 4, excellent coronary vessel delineation). A not statically significant difference (P = 0.05) was found between the proposed method and an 8-mm navigator-gated and tracked scan, although scan efficiency increased from 61 ± 10\% to 100\%. CONCLUSION: We demonstrate the feasibility of a new 3D affine respiratory motion correction technique for Cartesian whole-heart CMRA that achieves 100\% scan efficiency and therefore a predictable acquisition time. This approach yields image quality comparable to that of an 8-mm navigator-gated acquisition with lower scan efficiency. Further evaluation of this technique in patients is now warranted to determine its clinical use.},
+  langid = {english},
+  keywords = {Adult,Artifacts,coronary MRI,Coronary Vessels,Feasibility Studies,Humans,image navigator,Image Processing Computer-Assisted,Imaging Three-Dimensional,Magnetic Resonance Angiography,Male,Motion,Reference Values,Reproducibility of Results,Respiration,respiratory motion correction,Respiratory-Gated Imaging Techniques,undersampling},
+  file = {/Users/txn009/Zotero/storage/9V9H7F3J/Prieto et al. - 2015 - Highly efficient respiratory motion compensated free-breathing coronary MRA using golden-step Cartes.pdf}
+}
+
 @article{pruessmann2001,
   author = {Pruessmann, Klaas P. and Weiger, Markus and Börnert, Peter and Boesiger, Peter},
   date = {2001},
@@ -3703,6 +3860,26 @@
   langid = {english},
   keywords = {iterative reconstruction,k-space trajectories,SENSE,sensitivity encoding,spiral imaging},
   file = {/Users/txn009/Zotero/storage/D5SGH8ST/Pruessmann et al. - 2001 - Advances in sensitivity encoding with arbitrary k-space trajectories.pdf;/Users/txn009/Zotero/storage/GRLG6Y2G/mrm.html}
+}
+
+@article{pruittFullySelfgatedWholeheart2021,
+  title = {Fully Self-Gated Whole-Heart {{4D}} Flow Imaging from a 5-Minute Scan},
+  author = {Pruitt, Aaron and Rich, Adam and Liu, Yingmin and Jin, Ning and Potter, Lee and Tong, Matthew and Rajpal, Saurabh and Simonetti, Orlando and Ahmad, Rizwan},
+  date = {2021-03},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {85},
+  number = {3},
+  eprint = {32996625},
+  eprinttype = {pubmed},
+  pages = {1222--1236},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.28491},
+  abstract = {PURPOSE: To develop and validate an acquisition and processing technique that enables fully self-gated 4D flow imaging with whole-heart coverage in a fixed 5-minute scan. THEORY AND METHODS: The data are acquired continuously using Cartesian sampling and sorted into respiratory and cardiac bins using the self-gating signal. The reconstruction is performed using a recently proposed Bayesian method called ReVEAL4D. ReVEAL4D is validated using data from 8 healthy volunteers and 2 patients and compared with compressed sensing technique, L1-SENSE. RESULTS: Healthy subjects-Compared with 2D phase-contrast MRI (2D-PC), flow quantification from ReVEAL4D shows no significant bias. In contrast, the peak velocity and peak flow rate for L1-SENSE are significantly underestimated. Compared with traditional parallel MRI-based 4D flow imaging, ReVEAL4D demonstrates small but significant biases in net flow and peak flow rate, with no significant bias in peak velocity. All 3 indices are significantly and more markedly underestimated by L1-SENSE. Patients-Flow quantification from ReVEAL4D agrees well with the 2D-PC reference. In contrast, L1-SENSE markedly underestimated peak velocity. CONCLUSIONS: The combination of highly accelerated 5-minute Cartesian acquisition, self-gating, and ReVEAL4D enables whole-heart 4D flow imaging with accurate flow quantification.},
+  langid = {english},
+  pmcid = {PMC7718421},
+  keywords = {4D flow,Bayes Theorem,Bayesian,Blood Flow Velocity,Cartesian,CMR,Heart,Humans,Image Interpretation Computer-Assisted,Imaging Three-Dimensional,Magnetic Resonance Imaging,phase-contrast,Radionuclide Imaging,self-gating},
+  file = {/Users/txn009/Zotero/storage/C46XJ4KI/Pruitt et al. - 2021 - Fully self-gated whole-heart 4D flow imaging from a 5-minute scan.pdf}
 }
 
 @article{pstrasValsalvaManoeuvrePhysiology2016b,
@@ -3816,6 +3993,45 @@
   file = {/Users/txn009/Zotero/storage/IPPHDQBE/Ramasawmy et al. - 2026 - Isotropic 3D cardiac cine imaging at 0.55 T using stack-of-spiral sampling and four-dimensional iter.pdf;/Users/txn009/Zotero/storage/9QJK5ABF/S1097664726000165.html}
 }
 
+@article{rank4DRespiratoryMotioncompensated2017,
+  title = {{{4D}} Respiratory Motion-Compensated Image Reconstruction of Free-Breathing Radial {{MR}} Data with Very High Undersampling},
+  author = {Rank, Christopher M. and Heußer, Thorsten and Buzan, Maria T. A. and Wetscherek, Andreas and Freitag, Martin T. and Dinkel, Julien and Kachelrieß, Marc},
+  date = {2017-03},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {77},
+  number = {3},
+  eprint = {26991911},
+  eprinttype = {pubmed},
+  pages = {1170--1183},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.26206},
+  abstract = {PURPOSE: To develop four-dimensional (4D) respiratory time-resolved MRI based on free-breathing acquisition of radial MR data with very high undersampling. METHODS: We propose the 4D joint motion-compensated high-dimensional total variation (4D joint MoCo-HDTV) algorithm, which alternates between motion-compensated image reconstruction and artifact-robust motion estimation at multiple resolution levels. The algorithm is applied to radial MR data of the thorax and upper abdomen of 12 free-breathing subjects with acquisition times between 37 and 41 s and undersampling factors of 16.8. Resulting images are compared with compressed sensing-based 4D motion-adaptive spatio-temporal regularization (MASTeR) and 4D high-dimensional total variation (HDTV) reconstructions. RESULTS: For all subjects, 4D joint MoCo-HDTV achieves higher similarity in terms of normalized mutual information and cross-correlation than 4D MASTeR and 4D HDTV when compared with reference 4D gated gridding reconstructions with 8.4 ± 1.1 times longer acquisition times. In a qualitative assessment of artifact level and image sharpness by two radiologists, 4D joint MoCo-HDTV reveals higher scores (P {$<$} 0.05) than 4D HDTV and 4D MASTeR at the same undersampling factor and the reference 4D gated gridding reconstructions, respectively. CONCLUSIONS: 4D joint MoCo-HDTV enables time-resolved image reconstruction of free-breathing radial MR data with undersampling factors of 16.8 while achieving low-streak artifact levels and high image sharpness. Magn Reson Med 77:1170-1183, 2017. © 2016 International Society for Magnetic Resonance in Medicine.},
+  langid = {english},
+  keywords = {4D MRI,Adult,Aged,Algorithms,Artifacts,Female,Humans,Image Enhancement,Image Interpretation Computer-Assisted,Imaging Three-Dimensional,joint estimation,Magnetic Resonance Imaging,Male,Middle Aged,Motion,Pulmonary Fibrosis,radial sampling,Reproducibility of Results,Respiratory Mechanics,respiratory motion compensation,Respiratory-Gated Imaging Techniques,Sample Size,Sensitivity and Specificity,undersampling},
+  file = {/Users/txn009/Zotero/storage/7QUFZJCC/Rank et al. - 2017 - 4D respiratory motion-compensated image reconstruction of free-breathing radial MR data with very hi.pdf}
+}
+
+@article{rastegarjooybariHighlyAccelerated4D2025,
+  title = {Highly Accelerated {{4D}} Flow {{MRI}} with Respiratory Compensation and Cardiac View Sharing: A Cross-Sectional Study of Flow in the Great Vessels of Pediatric Congenital Heart Disease},
+  shorttitle = {Highly Accelerated {{4D}} Flow {{MRI}} with Respiratory Compensation and Cardiac View Sharing},
+  author = {Rastegar Jooybari, Fatemeh and Huynh, Christopher and Portnoy, Sharon and Voutsas, Jonathan and Balmer-Minnes, Diana and Saprungruang, Ankavipar and Yoo, Shi-Joon and Lam, Christopher Z. and Macgowan, Christopher K.},
+  date = {2025-05-01},
+  journaltitle = {Pediatric Radiology},
+  shortjournal = {Pediatr Radiol},
+  volume = {55},
+  number = {6},
+  pages = {1223--1234},
+  issn = {1432-1998},
+  doi = {10.1007/s00247-025-06226-1},
+  url = {https://doi.org/10.1007/s00247-025-06226-1},
+  urldate = {2026-03-29},
+  abstract = {Conventional four-dimensional (4D) flow magnetic resonance imaging (MRI) is limited by long scan times, particularly in pediatric congenital heart disease (CHD) patients.},
+  langid = {english},
+  keywords = {4D flow magnetic resonance imaging,Cardiovascular,Compressed sensing,Congenital heart disease,Flow quantifications,Magnetic resonance imaging,Pediatrics},
+  file = {/Users/txn009/Zotero/storage/LQLCNCRT/Rastegar Jooybari et al. - 2025 - Highly accelerated 4D flow MRI with respiratory compensation and cardiac view sharing a cross-secti.pdf}
+}
+
 @article{redheuilReducedAscendingAortic2010,
   title = {Reduced {{Ascending Aortic Strain}} and {{Distensibility}}: {{Earliest Manifestations}} of {{Vascular Aging}} in {{Humans}}},
   shorttitle = {Reduced {{Ascending Aortic Strain}} and {{Distensibility}}},
@@ -3896,6 +4112,23 @@
   pmcid = {PMC8370001},
   keywords = {4D flow MRI,Aged,Alzheimer Disease,Alzheimer’s disease,arterial stiffness,Blood Flow Velocity,Carotid Artery Internal,Female,hemodynamics,Hemodynamics,Humans,Magnetic Resonance Imaging,Male,Pulse Wave Analysis,PWV,Retrospective Studies,Vascular Stiffness},
   file = {/Users/txn009/Zotero/storage/7T779B7Q/Rivera-Rivera et al. - 2021 - Assessment of vascular stiffness in the internal carotid artery proximal to the carotid canal in Alz.pdf}
+}
+
+@article{rivera-riveraMotioncorrected4DFlowMRI2022,
+  title = {Motion-Corrected {{4D-Flow MRI}} for Neurovascular Applications},
+  author = {Rivera-Rivera, Leonardo A. and Kecskemeti, Steve and Jen, Mu-Lan and Miller, Zachary and Johnson, Sterling C. and Eisenmenger, Laura and Johnson, Kevin M.},
+  date = {2022-12-01},
+  journaltitle = {NeuroImage},
+  shortjournal = {NeuroImage},
+  volume = {264},
+  pages = {119711},
+  issn = {1053-8119},
+  doi = {10.1016/j.neuroimage.2022.119711},
+  url = {https://www.sciencedirect.com/science/article/pii/S1053811922008321},
+  urldate = {2026-03-29},
+  abstract = {Neurovascular 4D-Flow MRI has emerged as a powerful tool for comprehensive cerebrovascular hemodynamic characterization. Clinical studies in at risk populations such as aging adults indicate hemodynamic markers can be confounded by motion-induced bias. This study develops and characterizes a high fidelity 3D self-navigation approach for retrospective rigid motion correction of neurovascular 4D-Flow data. A 3D radial trajectory with pseudorandom ordering was combined with a multi-resolution low rank regularization approach to enable high spatiotemporal resolution self-navigators from extremely undersampled data. Phantom and volunteer experiments were performed at 3.0T to evaluate the ability to correct for different amounts of induced motions. In addition, the approach was applied to clinical-research exams from ongoing aging studies to characterize performance in the clinical setting. Simulations, phantom and volunteer experiments with motion correction produced images with increased vessel conspicuity, reduced image blurring, and decreased variability in quantitative measures. Clinical exams revealed significant changes in hemodynamic parameters including blood flow rates, flow pulsatility index, and lumen areas after motion correction in probed cerebral arteries (Flow: P{$<$}0.001 Lt ICA, P=0.002 Rt ICA, P=0.004 Lt MCA, P=0.004 Rt MCA; Area: P{$<$}0.001 Lt ICA, P{$<$}0.001 Rt ICA, P=0.004 Lt MCA, P=0.004 Rt MCA; flow pulsatility index: P=0.042 Rt ICA, P=0.002 Lt MCA). Motion induced bias can lead to significant overestimation of hemodynamic markers in cerebral arteries. The proposed method reduces measurement bias from rigid motion in neurovascular 4D-Flow MRI in challenging populations such as aging adults.},
+  keywords = {4D Flow MRI,Angiography,Bias,Head motion,Motion correction,Quality control},
+  file = {/Users/txn009/Zotero/storage/ID93EA9T/Rivera-Rivera et al. - 2022 - Motion-corrected 4D-Flow MRI for neurovascular applications.pdf;/Users/txn009/Zotero/storage/SITCK67S/S1053811922008321.html}
 }
 
 @software{roberts2DPhaseContrast,
@@ -4148,6 +4381,25 @@
   abstract = {Purpose:  Cardiotoxicity is a devastating complication of thoracic cancer treat...},
   eventtitle = {{{AAPM}} 65th {{Annual Meeting}} \& {{Exhibition}}},
   file = {/Users/txn009/Zotero/storage/L7GY3F7U/4705.html}
+}
+
+@article{santelliAccelerating4DFlow2016,
+  title = {Accelerating {{4D}} Flow {{MRI}} by Exploiting Vector Field Divergence Regularization},
+  author = {Santelli, Claudio and Loecher, Michael and Busch, Julia and Wieben, Oliver and Schaeffter, Tobias and Kozerke, Sebastian},
+  date = {2016-01},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {75},
+  number = {1},
+  eprint = {25684112},
+  eprinttype = {pubmed},
+  pages = {115--125},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.25563},
+  abstract = {PURPOSE: To improve velocity vector field reconstruction from undersampled four-dimensional (4D) flow MRI by penalizing divergence of the measured flow field. THEORY AND METHODS: Iterative image reconstruction in which magnitude and phase are regularized separately in alternating iterations was implemented. The approach allows incorporating prior knowledge of the flow field being imaged. In the present work, velocity data were regularized to reduce divergence, using either divergence-free wavelets (DFW) or a finite difference (FD) method using the ℓ1-norm of divergence and curl. The reconstruction methods were tested on a numerical phantom and in vivo data. Results of the DFW and FD approaches were compared with data obtained with standard compressed sensing (CS) reconstruction. RESULTS: Relative to standard CS, directional errors of vector fields and divergence were reduced by 55-60\% and 38-48\% for three- and six-fold undersampled data with the DFW and FD methods. Velocity vector displays of the numerical phantom and in vivo data were found to be improved upon DFW or FD reconstruction. CONCLUSION: Regularization of vector field divergence in image reconstruction from undersampled 4D flow data is a valuable approach to improve reconstruction accuracy of velocity vector fields.},
+  langid = {english},
+  keywords = {4D flow,Algorithms,Aorta,Blood Flow Velocity,compressed sensing,Female,flow quantification,Humans,Image Enhancement,Image Interpretation Computer-Assisted,Magnetic Resonance Angiography,Male,phase regularization,Reproducibility of Results,Sensitivity and Specificity,undersampling,vector field divergence},
+  file = {/Users/txn009/Zotero/storage/UZXDA753/Santelli et al. - 2016 - Accelerating 4D flow MRI by exploiting vector field divergence regularization.pdf}
 }
 
 @article{santelliRespiratoryBellowsRevisited2011,
@@ -4844,26 +5096,6 @@
   file = {/Users/txn009/Zotero/storage/WBDPT2WX/Tzani et al. - 2011 - Dynamic hyperinflation is associated with a poor cardiovascular response to exercise in COPD patient.pdf}
 }
 
-@article{tzaniDynamicHyperinflationAssociated2011a,
-  title = {Dynamic Hyperinflation Is Associated with a Poor Cardiovascular Response to Exercise in {{COPD}} Patients},
-  author = {Tzani, Panagiota and Aiello, Marina and Elia, Davide and Boracchia, Luca and Marangio, Emilio and Olivieri, Dario and Clini, Enrico and Chetta, Alfredo},
-  date = {2011},
-  journaltitle = {Respiratory Research},
-  shortjournal = {Respir Res},
-  volume = {12},
-  number = {1},
-  eprint = {22074289},
-  eprinttype = {pubmed},
-  pages = {150},
-  issn = {1465-9921},
-  doi = {10.1186/1465-9921-12-150},
-  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC3225311/},
-  urldate = {2026-03-23},
-  abstract = {Background Pulmonary hyperinflation has the potential for significant adverse effects on cardiovascular function in COPD. The aim of this study was to investigate the relationship between dynamic hyperinflation and cardiovascular response to maximal exercise in COPD patients. Methods We studied 48 patients (16F; age 68 yrs ± 8; BMI 26 ± 4) with COPD. All patients performed spirometry, plethysmography, lung diffusion capacity for carbon monoxide (TLco) measurement, and symptom-limited cardiopulmonary exercise test (CPET). The end-expiratory lung volume (EELV) was evaluated during the CPET. Cardiovascular response was assessed by change during exercise in oxygen pulse (ΔO2Pulse) and double product, i.e. the product of systolic blood pressure and heart rate (DP reserve), and by the oxygen uptake efficiency slope (OUES), i.e. the relation between oxygen uptake and ventilation. Results Patients with a peak exercise EELV (\%TLC) ≥ 75\% had a significantly lower resting FEV1/VC, FEF50/FIF50 ratio and IC/TLC ratio, when compared to patients with a peak exercise EELV (\%TLC) {$<$} 75\%. Dynamic hyperinflation was strictly associated to a poor cardiovascular response to exercise: EELV (\%TLC) showed a negative correlation with ΔO2Pulse (r = - 0.476, p = 0.001), OUES (r = - 0.452, p = 0.001) and DP reserve (r = - 0.425, p = 0.004). Furthermore, according to the ROC curve method, ΔO2Pulse and DP reserve cut-off points which maximized sensitivity and specificity, with respect to a EELV (\% TLC) value ≥ 75\% as a threshold value, were ≤ 5.5 mL/bpm (0.640 sensitivity and 0.696 specificity) and ≤ 10,000 Hg · bpm (0.720 sensitivity and 0.783 specificity), respectively. Conclusion The present study shows that COPD patients with dynamic hyperinflation have a poor cardiovascular response to exercise. This finding supports the view that in COPD patients, dynamic hyperinflation may affect exercise performance not only by affecting ventilation, but also cardiac function.},
-  pmcid = {PMC3225311},
-  file = {/Users/txn009/Zotero/storage/XP7A3IIU/Tzani et al. - 2011 - Dynamic hyperinflation is associated with a poor cardiovascular response to exercise in COPD patient.pdf}
-}
-
 @article{ueckerESPIRiTEigenvalueApproach2014,
   title = {{{ESPIRiT}}—an Eigenvalue Approach to Autocalibrating Parallel {{MRI}}: {{Where SENSE}} Meets {{GRAPPA}}},
   shorttitle = {{{ESPIRiT}}—an Eigenvalue Approach to Autocalibrating Parallel {{MRI}}},
@@ -4900,25 +5132,8 @@
   urldate = {2024-09-19},
   abstract = {Objective. Pulse wave velocity (PWV) is a key diagnostic parameter of the cardiovascular system’s state. However, approaches aimed at PWV characterization often suffer from inevitable drawbacks. Statistical results demonstrating how closely PWV in the radial artery (RA) and the respiration phase correlate, as well as RA PWV evolution during breath-holding (BH), have not yet been presented in the literature. The aims of this study are (a) to propose a simple robust technique for measuring RA PWV, (b) to reveal the phase relation between the RA PWV and spontaneous breathing, and (c) to disclose the influence of BH on the RA PWV. Approach. The high-resolution remote breathing monitoring method Sorption-Enhanced Infrared Thermography (SEIRT) and the new technique aimed at measuring RA PWV described in this paper were used synchronously, and their measurement data were processed simultaneously. Main results. Spontaneous breathing leaves a synchronous ‘trace’ on the RA PWV. The close linear correlation of the respiration phase and the phase of concomitant RA PWV changes is statistically confirmed in five tested people (Pearson’s r is of the order of 0.5–0.8, P {$<$} 0.05). The BH appreciably affects the RA PWV. A phenomenon showing that the RA PWV is not indifferent to hypoxia is observed for the first time. Significance. The proposed technique for RA PWV characterization has high prospects in biomedical diagnostics. The presented pilot study deserves attention in the context of the mutual interplay between respiratory and cardiovascular systems. It may also be useful in cases where peripheral pulse wave propagation helps assess respiratory function.},
   langid = {english},
+  keywords = {Blood Flow Velocity,breath-holding,Humans,Pilot Projects,Pulse Wave Analysis,pulse wave velocity (PWV),PWV–breathing correlation,RA PWV measurement technique,Radial Artery,radial artery (RA),respiratory phase,sorption-enhanced infrared thermography (SEIRT)},
   file = {/Users/txn009/Zotero/storage/XIMACUCT/Vainer - 2023 - Radial artery pulse wave velocity a new characterization technique and the instabilities associated.pdf}
-}
-
-@article{vainerRadialArteryPulse2023a,
-  title = {Radial Artery Pulse Wave Velocity: A New Characterization Technique and the Instabilities Associated with the Respiratory Phase and Breath-Holding},
-  shorttitle = {Radial Artery Pulse Wave Velocity},
-  author = {Vainer, Boris G.},
-  date = {2023-02-06},
-  journaltitle = {Physiological Measurement},
-  shortjournal = {Physiol Meas},
-  volume = {44},
-  number = {1},
-  eprint = {36657177},
-  eprinttype = {pubmed},
-  issn = {1361-6579},
-  doi = {10.1088/1361-6579/acb4dd},
-  abstract = {Objective. Pulse wave velocity (PWV) is a key diagnostic parameter of the cardiovascular system's state. However, approaches aimed at PWV characterization often suffer from inevitable drawbacks. Statistical results demonstrating how closely PWV in the radial artery (RA) and the respiration phase correlate, as well as RA PWV evolution during breath-holding (BH), have not yet been presented in the literature. The aims of this study are (a) to propose a simple robust technique for measuring RA PWV, (b) to reveal the phase relation between the RA PWV and spontaneous breathing, and (c) to disclose the influence of BH on the RA PWV.Approach.The high-resolution remote breathing monitoring method Sorption-Enhanced Infrared Thermography (SEIRT) and the new technique aimed at measuring RA PWV described in this paper were used synchronously, and their measurement data were processed simultaneously.Main results. Spontaneous breathing leaves a synchronous 'trace' on the RA PWV. The close linear correlation of the respiration phase and the phase of concomitant RA PWV changes is statistically confirmed in five tested people (Pearson's r is of the order of 0.5-0.8, P {$<$} 0.05). The BH appreciably affects the RA PWV. A phenomenon showing that the RA PWV is not indifferent to hypoxia is observed for the first time.Significance.The proposed technique for RA PWV characterization has high prospects in biomedical diagnostics. The presented pilot study deserves attention in the context of the mutual interplay between respiratory and cardiovascular systems. It may also be useful in cases where peripheral pulse wave propagation helps assess respiratory function.},
-  langid = {english},
-  keywords = {Blood Flow Velocity,breath-holding,Humans,Pilot Projects,Pulse Wave Analysis,pulse wave velocity (PWV),PWV–breathing correlation,RA PWV measurement technique,Radial Artery,radial artery (RA),respiratory phase,sorption-enhanced infrared thermography (SEIRT)}
 }
 
 @article{valvanoAccelerating4DFlow2017,
@@ -4936,7 +5151,29 @@
   doi = {10.1002/mrm.26508},
   abstract = {PURPOSE: To develop accelerated 4D flow MRI by exploiting low-rank matrix structure and Hadamard sparsity. THEORY AND METHODS: 4D flow MRI data can be represented as the sum of a low-rank and a sparse component. To optimize the sparse representation of the data, it is proposed to incorporate a Hadamard transform of the velocity-encoding segments. Retrospectively and prospectively, undersampled data of the aorta of healthy subjects are used to assess the reconstruction accuracy of the proposed method relative to k-t SPARSE-SENSE reconstruction. Image reconstruction from eight-fold prospective undersampling is demonstrated and compared with conventional SENSE imaging. RESULTS: Simulation results revealed consistently lower errors in velocity estimation when compared with k-t SPARSE-SENSE. In vivo data yielded reduced error of peak flow with the proposed method relative to k-t SPARSE-SENSE when compared with two-fold SENSE ( 2.5±4.6\% versus 10.2±8.5\% in the ascending aorta, 3.6±8.4\% versus 9.2±9.0\% in the descending aorta). Streamline visualization showed more consistent flow fields with the proposed technique relative to the benchmark methods. CONCLUSION: Image reconstruction by exploiting low-rank structure and Hadamard sparsity of 4D flow MRI data improves the reconstruction accuracy relative to current state-of-the-art methods and holds promise to reduce the long scan times of 4D flow MRI. Magn Reson Med 78:1330-1341, 2017. © 2016 International Society for Magnetic Resonance in Medicine.},
   langid = {english},
-  keywords = {4D flow MRI,Algorithms,Aorta,complex differences,compressed sensing,Computer Simulation,Hadamard transform,Humans,Imaging Three-Dimensional,low-rank and sparse decomposition,Magnetic Resonance Angiography,Regional Blood Flow}
+  keywords = {4D flow MRI,Algorithms,Aorta,complex differences,compressed sensing,Computer Simulation,Hadamard transform,Humans,Imaging Three-Dimensional,low-rank and sparse decomposition,Magnetic Resonance Angiography,Regional Blood Flow},
+  file = {/Users/txn009/Zotero/storage/BERZLIEX/Valvano et al. - 2017 - Accelerating 4D flow MRI by exploiting low-rank matrix structure and hadamard sparsity.pdf;/Users/txn009/Zotero/storage/TBKNQ8X7/mrm.html}
+}
+
+@article{valverdeSystemictopulmonaryCollateralFlow2012,
+  title = {Systemic-to-Pulmonary Collateral Flow in Patients with Palliated Univentricular Heart Physiology: Measurement Using Cardiovascular Magnetic Resonance {{4D}} Velocity Acquisition},
+  shorttitle = {Systemic-to-Pulmonary Collateral Flow in Patients with Palliated Univentricular Heart Physiology},
+  author = {Valverde, Israel and Nordmeyer, Sarah and Uribe, Sergio and Greil, Gerald and Berger, Felix and Kuehne, Titus and Beerbaum, Philipp},
+  date = {2012-04-27},
+  journaltitle = {Journal of Cardiovascular Magnetic Resonance: Official Journal of the Society for Cardiovascular Magnetic Resonance},
+  shortjournal = {J Cardiovasc Magn Reson},
+  volume = {14},
+  number = {1},
+  eprint = {22541134},
+  eprinttype = {pubmed},
+  pages = {25},
+  issn = {1532-429X},
+  doi = {10.1186/1532-429X-14-25},
+  abstract = {BACKGROUND: Systemic-to-pulmonary collateral flow (SPCF) may constitute a risk factor for increased morbidity and mortality in patients with single-ventricle physiology (SV). However, clinical research is limited by the complexity of multi-vessel two-dimensional (2D) cardiovascular magnetic resonance (CMR) flow measurements. We sought to validate four-dimensional (4D) velocity acquisition sequence for concise quantification of SPCF and flow distribution in patients with SV. METHODS: 29 patients with SV physiology prospectively underwent CMR (1.5\,T) (n\,=\,14 bidirectional cavopulmonary connection [BCPC], age 2.9 ±\,1.3\,years; and n\,=\,15 Fontan, 14.4\,±\,5.9\,years) and 20 healthy volunteers (age, 28.7\,±\,13.1\,years) served as controls. A single whole-heart 4D velocity acquisition and five 2D flow acquisitions were performed in the aorta, superior/inferior caval veins, right/left pulmonary arteries to serve as gold-standard. The five 2D velocity acquisition measurements were compared with 4D velocity acquisition for validation of individual vessel flow quantification and time efficiency. The SPCF was calculated by evaluating the disparity between systemic (aortic minus caval vein flows) and pulmonary flows (arterial and venour return). The pulmonary right to left and the systemic lower to upper body flow distribution were also calculated. RESULTS: The comparison between 4D velocity and 2D flow acquisitions showed good Bland-Altman agreement for all individual vessels (mean bias, 0.05 ± 0.24\,l/min/m2), calculated SPCF (-0.02 ± 0.18\,l/min/m2) and significantly shorter 4D velocity acquisition-time (12:34\,min/17:28\,min,p\,{$<$}\,0.01). 4D velocity acquisition in patients versus controls revealed (1) good agreement between systemic versus pulmonary estimator for SPFC; (2) significant SPCF in patients (BCPC 0.79 ± 0.45\,l/min/m2; Fontan 0.62 ± 0.82\,l/min/m2) and not in controls (0.01\,+\,0.16\,l/min/m2), (3) inverse relation of right/left pulmonary artery perfusion and right/left SPCF (Pearson\,=\,-0.47,p\,=\,0.01) and (4) upper to lower body flow distribution trend related to the weight (r\,=\,0.742, p\,{$<$}\,0.001) similar to the controls. CONCLUSIONS: 4D velocity acquisition is reliable, operator-independent and more time-efficient than 2D flow acquisition to quantify SPCF. There is considerable SPCF in BCPC and Fontan patients. SPCF was more pronounced towards the respective lung with less pulmonary arterial flow suggesting more collateral flow where less anterograde branch pulmonary artery perfusion.},
+  langid = {english},
+  pmcid = {PMC3438058},
+  keywords = {Adolescent,Adult,Blood Flow Velocity,Child,Child Preschool,Collateral Circulation,Female,Follow-Up Studies,Fontan Procedure,Heart Defects Congenital,Heart Ventricles,Humans,Image Processing Computer-Assisted,Magnetic Resonance Imaging Cine,Male,Prospective Studies,Pulmonary Artery,Pulmonary Circulation,Reproducibility of Results,Young Adult},
+  file = {/Users/txn009/Zotero/storage/3I3V54HK/Valverde et al. - 2012 - Systemic-to-pulmonary collateral flow in patients with palliated univentricular heart physiology me.pdf}
 }
 
 @article{vandermeerMagneticResonanceAssessment2007,
@@ -5216,6 +5453,25 @@
   langid = {english},
   keywords = {Algorithms,Animals,CAIPIRINHA,Compressed sensing,Computer Simulation,Coronary Vessels,Dogs,Heart,Humans,Image Interpretation Computer-Assisted,Image Processing Computer-Assisted,Myocardial perfusion,Non-Cartesian,Phantoms Imaging,Simultaneous multi-slice},
   file = {/Users/txn009/Zotero/storage/TBAQK3SH/S0730725X16300947.html}
+}
+
+@article{wangRespiratoryMotionHeart1995,
+  title = {Respiratory {{Motion}} of the {{Heart}}: {{Kinematics}} and the {{Implications}} for the {{Spatial Resolution}} in {{Coronary Imaging}}},
+  shorttitle = {Respiratory {{Motion}} of the {{Heart}}},
+  author = {Wang, Yi and Riederer, Stephen J. and Ehman, Richard L.},
+  date = {1995},
+  journaltitle = {Magnetic Resonance in Medicine},
+  volume = {33},
+  number = {5},
+  pages = {713--719},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.1910330517},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.1910330517},
+  urldate = {2026-03-29},
+  abstract = {Respiratory motion is a major limiting factor in improving image resolution and signal-to-noise ratio in MR coronary imaging. In this work the effects of respiration on the cardiac position were studied quantitively by imaging the heart during diastole at various positions of tidal respiration with a breath-hold segmented fast gradient echo technique. It was found that during tidal breathing the movement of the heart due to respiration is dominated by superior-inferior (SI) motion, which is linearly related to the SI motion of the diaphragm. The motion of the heart due to respiration is approximately a global translation. These results provide motivation for employing adaptive motion correction techniques to reduce image blurring in nonbreath-hold coronary MR imaging.},
+  langid = {english},
+  keywords = {cardiac imaging,coronary magnetic resonance angiography,image artifacts,respiratory motion},
+  file = {/Users/txn009/Zotero/storage/Y2S95XJC/Wang et al. - 1995 - Respiratory Motion of the Heart Kinematics and the Implications for the Spatial Resolution in Coron.pdf;/Users/txn009/Zotero/storage/2BY9W6PZ/mrm.html}
 }
 
 @article{wechCompressedSensingAccelerated2019,
