@@ -33,8 +33,10 @@
   file = {/Users/txn009/Zotero/storage/L538IKP7/Abo Seada et al. - 2017 - Optimized amplitude modulated multiband RF pulse design.pdf;/Users/txn009/Zotero/storage/QGT3VACE/Abo Seada et al. - 2017 - Optimized amplitude modulated multiband RF pulse design.pdf;/Users/txn009/Zotero/storage/MC3JPN8B/mrm.html;/Users/txn009/Zotero/storage/N27PY4SZ/mrm.html}
 }
 
-@online{AdvancingFunctionalAssessment,
-  title = {‎ {{Advancing Functional Assessment}} with {{Flow-Sensitive Magnetic Resonance Imaging}} - {{UWDC}} - {{UW-Madison Libraries}}},
+@thesis{AdvancingFunctionalAssessment,
+  title = {‎{{Advancing Functional Assessment}} with {{Flow-Sensitive Magnetic Resonance Imaging}}},
+  author = {Roberts, Grant S},
+  institution = {University of Wisconsin-Madison},
   url = {https://search.library.wisc.edu/digital/AWFJKMS3AJYMFW9C},
   urldate = {2026-01-19},
   file = {/Users/txn009/Zotero/storage/R72B28LN/AWFJKMS3AJYMFW9C.html}
@@ -365,6 +367,17 @@
   keywords = {Artifacts,Feasibility Studies,Humans,Image Processing Computer-Assisted,Magnetic Resonance Angiography,Phantoms Imaging}
 }
 
+@book{bernsteinHandbookMRIPulse2004,
+  title = {Handbook of {{MRI Pulse Sequences}}},
+  author = {Bernstein, Matt A. and King, Kevin F. and Zhou, Xiaohong Joe},
+  date = {2004-09-07},
+  edition = {1},
+  publisher = {Elsevier Inc.},
+  doi = {10.1016/B978-0-12-092861-3.X5000-6},
+  abstract = {Magnetic Resonance Imaging (MRI) is among the most important medical imaging techniques available today. There is an installed base of approximately 15,000 MRI scanners worldwide. Each of these scanners is capable of running many different "pulse sequences", which are governed by physics and engineering principles, and implemented by software programs that control the MRI hardware. To utilize an MRI scanner to the fullest extent, a conceptual understanding of its pulse sequences is crucial. This book offers a complete guide that can help the scientists, engineers, clinicians, and technologists in the field of MRI understand and better employ their scanner. • Explains pulse sequences, their components, and the associated image reconstruction methods commonly used in MRI • Provides self-contained sections for individual techniques • Can be used as a quick reference guide or as a resource for deeper study • Includes both non-mathematical and mathematical descriptions • Contains numerous figures, tables, references, and worked example problems.},
+  isbn = {978-0-12-092861-3}
+}
+
 @article{bhandariRhythmicBreathHolding2020,
   title = {Rhythmic {{Breath Holding}} and {{Its Effect}} on {{Arterial Blood Pressure}} and {{Its Correlation With Blood Gases}}},
   author = {Bhandari, Bharti and Mavai, Manisha and Singh, Yogendra Raj and Mehta, Bharati and Bhagat, Omlata},
@@ -398,15 +411,40 @@
   file = {/Users/txn009/Zotero/storage/7E4LLYK7/Bieri and Scheffler - 2013 - Fundamentals of balanced steady state free precession MRI.pdf;/Users/txn009/Zotero/storage/DLQK9EWV/jmri.html}
 }
 
-@article{bloomfieldComparisonSpontaneousVsa,
-  title = {Comparison of Spontaneous vs. Metronome-Guided Breathing on Assessment of Vagal Modulation Using {{RR}} Variability | {{American Journal}} of {{Physiology-Heart}} and {{Circulatory Physiology}} | {{American Physiological Society}}},
-  author = {Bloomfield, Daniel},
-  journaltitle = {American Journal of Physiology-Heart and Circulatory Physiology},
-  url = {https://journals.physiology.org/doi/10.1152/ajpheart.2001.280.3.H1145},
-  urldate = {2026-03-23},
-  abstract = {R-R interval variability (RR variability) is increasingly being used as an index of autonomic activity. High-frequency (HF) power reflects vagal modulation of the sinus node. Since vagal modulation occurs at the respiratory frequency, some investigators have suggested that HF power cannot be interpreted unless the breathing rate is controlled. We hypothesized that HF power during spontaneous breathing would not differ significantly from HF power during metronome-guided breathing. We measured HF power during spontaneous breathing in 20 healthy subjects and 19 patients with heart disease. Each subject's spontaneous breathing rate was determined, and the calculation of HF power was repeated with a metronome set to his or her average spontaneous breathing rate. There was no significant difference between the logarithm of HF power measured during spontaneous and metronome-guided breathing [4.88 ± 0.29 vs. 5.29 ± 0.30 ln(ms2), P = 0.32] in the group as a whole and when patients and healthy subjects were examined separately. We did observe a small (9.9\%) decrease in HF power with increasing metronome-guided breathing rates (from 9 to 20 breaths/min). These data indicate that HF power during spontaneous and metronome-guided breathing differs at most by very small amounts. This variability is several logarithmic units less than the wide discrepancies observed between healthy subjects and cardiac patients with a heterogeneous group of cardiovascular disorders. In addition, HF power is relatively constant across the range of typical breathing rates. These data indicate that there is no need to control breathing rate to interpret HF power when RR variability (and specifically HF power) is used to identify high-risk cardiac patients.},
+@article{blaimerSMASHSENSEPILS2004,
+  title = {{{SMASH}}, {{SENSE}}, {{PILS}}, {{GRAPPA}}: {{How}} to {{Choose}} the {{Optimal Method}}},
+  shorttitle = {{{SMASH}}, {{SENSE}}, {{PILS}}, {{GRAPPA}}},
+  author = {Blaimer, Martin and Breuer, Felix and Mueller, Matthias and Heidemann, Robin M and Griswold, Mark A and Jakob, Peter M},
+  date = {2004-08},
+  journaltitle = {Topics in Magnetic Resonance Imaging},
+  volume = {15},
+  number = {4},
+  pages = {223--236},
+  issn = {0899-3459},
+  doi = {10.1097/01.rmr.0000136558.09801.dd},
+  url = {https://journals.lww.com/00002142-200408000-00002},
+  urldate = {2025-03-02},
+  abstract = {Fast imaging methods and the availability of required hardware for magnetic resonance tomography (MRT) have significantly reduced acquisition times from about an hour down to several minutes or seconds. With this development over the last 20 years, magnetic resonance imaging (MRI) has become one of the most important instruments in clinical diagnosis. In recent years, the greatest progress in further increasing imaging speed has been the development of parallel MRI (pMRI). Within the last 3 years, parallel imaging methods have become commercially available, and therefore are now available for a broad clinical use. The basic feature of pMRI is a scan time reduction, applicable to nearly any available MRI method, while maintaining the contrast behavior without requiring higher gradient system performance. Because of its faster image acquisition, pMRI can in some cases even significantly improve image quality. In the last 10 years of pMRI development, several different pMRI reconstruction methods have been set up which partially differ in their philosophy, in the mode of reconstruction as well in their advantages and drawbacks with regard to a successful image reconstruction. In this review, a brief overview is given on the advantages and disadvantages of present pMRI methods in clinical applications, and examples from different daily clinical applications are shown.},
   langid = {english},
-  file = {/Users/txn009/Zotero/storage/4LVUVXHX/ajpheart.2001.280.3.html}
+  keywords = {Artifacts,Calibration,Humans,Image Processing Computer-Assisted,Magnetic Resonance Imaging,Sensitivity and Specificity},
+  file = {/Users/txn009/Zotero/storage/GN8WWFWD/Blaimer et al. - 2004 - SMASH, SENSE, PILS, GRAPPA How to Choose the Optimal Method.pdf}
+}
+
+@article{bloomfieldComparisonSpontaneousVs2001,
+  title = {Comparison of Spontaneous vs. Metronome-Guided Breathing on Assessment of Vagal Modulation Using {{RR}} Variability},
+  author = {Bloomfield, Daniel M. and Magnano, Anthony and Bigger, J. Thomas and Rivadeneira, Harold and Parides, Michael and Steinman, Richard C.},
+  date = {2001-03},
+  journaltitle = {American Journal of Physiology-Heart and Circulatory Physiology},
+  volume = {280},
+  number = {3},
+  pages = {H1145-H1150},
+  publisher = {American Physiological Society},
+  issn = {0363-6135},
+  doi = {10.1152/ajpheart.2001.280.3.H1145},
+  url = {https://journals.physiology.org/doi/full/10.1152/ajpheart.2001.280.3.H1145},
+  urldate = {2026-03-30},
+  abstract = {R-R interval variability (RR variability) is increasingly being used as an index of autonomic activity. High-frequency (HF) power reflects vagal modulation of the sinus node. Since vagal modulation occurs at the respiratory frequency, some investigators have suggested that HF power cannot be interpreted unless the breathing rate is controlled. We hypothesized that HF power during spontaneous breathing would not differ significantly from HF power during metronome-guided breathing. We measured HF power during spontaneous breathing in 20 healthy subjects and 19 patients with heart disease. Each subject's spontaneous breathing rate was determined, and the calculation of HF power was repeated with a metronome set to his or her average spontaneous breathing rate. There was no significant difference between the logarithm of HF power measured during spontaneous and metronome-guided breathing [4.88 ± 0.29 vs. 5.29 ± 0.30 ln(ms2), P = 0.32] in the group as a whole and when patients and healthy subjects were examined separately. We did observe a small (9.9\%) decrease in HF power with increasing metronome-guided breathing rates (from 9 to 20 breaths/min). These data indicate that HF power during spontaneous and metronome-guided breathing differs at most by very small amounts. This variability is several logarithmic units less than the wide discrepancies observed between healthy subjects and cardiac patients with a heterogeneous group of cardiovascular disorders. In addition, HF power is relatively constant across the range of typical breathing rates. These data indicate that there is no need to control breathing rate to interpret HF power when RR variability (and specifically HF power) is used to identify high-risk cardiac patients.},
+  file = {/Users/txn009/Zotero/storage/TDUUMB5L/Bloomfield et al. - 2001 - Comparison of spontaneous vs. metronome-guided breathing on assessment of vagal modulation using RR.pdf}
 }
 
 @article{bochnakovaHepaticVenousPressure2021,
@@ -465,6 +503,25 @@
   file = {/Users/txn009/Zotero/storage/7QTPYZLE/Bolster et al. - 1998 - Accuracy of arterial pulse‐wave velocity measurement using MR.pdf}
 }
 
+@article{bradleyBloodFlowMagnetic1985,
+  title = {Blood Flow: Magnetic Resonance Imaging},
+  shorttitle = {Blood Flow},
+  author = {Bradley, W. G. and Waluch, V.},
+  date = {1985-02},
+  journaltitle = {Radiology},
+  shortjournal = {Radiology},
+  volume = {154},
+  number = {2},
+  eprint = {3966131},
+  eprinttype = {pubmed},
+  pages = {443--450},
+  issn = {0033-8419},
+  doi = {10.1148/radiology.154.2.3966131},
+  abstract = {The appearance of flowing fluid has been evaluated in several clinical situations using a flow phantom, computer simulation, and clinical magnetic resonance (MR) images. Unsaturated protons just entering the imaging volume can emit a strong signal relative to the partially saturated adjacent tissue ("flow-related enhancement"). Slow laminar flow in veins can be distinguished on the basis of a stronger second echo due to rephasing effects ("even echo rephasing"). Synchronization of the cardiac cycle and the MR pulsing sequence produces increased signal in sections acquired during diastole ("diastolic pseudogating"). Intraluminal signal is shown to decrease as velocity is increased ("high velocity signal loss"). Onset of turbulence causes further loss of signal. Direction of flow oblique to the imaging plane can be predicted on the basis of decreased upstream and increased downstream signal.},
+  langid = {english},
+  keywords = {Biophysical Phenomena,Biophysics,Blood Circulation,Blood Flow Velocity,Humans,Magnetic Resonance Spectroscopy,Models Structural}
+}
+
 @article{brayGlobalCancerStatistics2024,
   title = {Global Cancer Statistics 2022: {{GLOBOCAN}} Estimates of Incidence and Mortality Worldwide for 36 Cancers in 185 Countries},
   shorttitle = {Global Cancer Statistics 2022},
@@ -482,6 +539,26 @@
   langid = {english},
   keywords = {cancer burden,cancer control,epidemiology,incidence,mortality},
   file = {/Users/txn009/Zotero/storage/7SYNAAJJ/Bray et al. - 2024 - Global cancer statistics 2022 GLOBOCAN estimates of incidence and mortality worldwide for 36 cancer.pdf;/Users/txn009/Zotero/storage/3LYY75C5/caac.html}
+}
+
+@article{breidenbachCardiorespiratoryFitnessModifies2025,
+  title = {Cardiorespiratory Fitness Modifies the Relationship between Arterial Stiffness and Cerebral Blood Flow Independent of Physical Activity},
+  author = {Breidenbach, Brianne M. and Driscoll, Ira and Glittenberg, Matthew P. and Paulsen, Adam J. and Fernandes‐Taylor, Sara and Naren, Tarun and Roberts, Grant S. and Brach, Talia L. and Jarchow, Mackenzie M. and Symanski, Leah E. and Gaul, Anna Y. and Lose, Sarah R. and Rivera‐Rivera, Leonardo A. and Johnson, Sterling C. and Asthana, Sanjay and Christian, Bradley T. and Cook, Dane B. and Wieben, Oliver and Okonkwo, Ozioma C.},
+  date = {2025-07-14},
+  journaltitle = {Alzheimer's \& Dementia : Translational Research \& Clinical Interventions},
+  shortjournal = {Alzheimers Dement (N Y)},
+  volume = {11},
+  number = {3},
+  eprint = {40666707},
+  eprinttype = {pubmed},
+  pages = {e70130},
+  issn = {2352-8737},
+  doi = {10.1002/trc2.70130},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC12260121/},
+  urldate = {2026-03-30},
+  abstract = {INTRODUCTION Central arterial stiffness and cerebral blood flow (CBF) are inversely related. Poor cardiorespiratory fitness (CRF) and low physical activity (PA) are related to both higher arterial stiffness and lower CBF. The present study examined (i) whether CRF or PA moderate the relationship between arterial stiffness and CBF, and (ii) whether the intensity or the type of PA needs to be considered. METHODS Participants (N~=~78, MeanAGE = 64.2±6.14, 72\% female) from the Wisconsin Registry for Alzheimer's Prevention and the Wisconsin Alzheimer's Disease Research Center were categorized into low, average, and high fitness groups based on maximal graded exercise treadmill test performance. PA was assessed using the CHAMPS (Community Health Activities Model Program for Seniors) questionnaire. Based on hours/week, participants were classified as meeting the recommended 2.5~h of moderate intensity PA per week (PA Rec Met). Weekly hours of moderate and low intensity PA were calculated as activities of {$>$} 3 or {$<$} 3 metabolic equivalents, respectively. Activity type was categorized as exercise‐, sports/leisure‐ and work‐related. Arterial stiffness was measured as aortic pulse wave velocity (aoPWV) by 2D phase contrast magnetic resonance imaging (MRI). CBF was assessed by 4D flow MRI in the internal carotid arteries (ICAs), cavernous ICAs, middle cerebral arteries (MCAs), and via two composite measures of total and global flow. RESULTS The association between aoPWV and CBF differed by fitness levels, with a negative relationship in the low fitness group and positive relationships in the average and high fitness groups (all Ps{$<$}0.05). Significant moderating effects on the relationships between aoPWV and CBF were also observed for PA Rec Met (all Ps{$<$}0.05), moderate intensity (p~=~0.05), and exercise‐related (all p’s~{$<~$}0.02) PA. DISCUSSION Average or high fitness, meeting the PA guidelines, and more specifically, moderate intensity and exercise‐related PA seem to attenuate the negative relationship between aoPWV on CBF. Highlights Higher cardiorespiratory fitness (CRF) reduces the negative impact of aortic pulse wave velocity (aoPWV) on cerebral blood flow (CBF)150~min of moderate physical activity (PA) also mitigates this impact, depending on activity typeInnovative methods: use of cardiac magnetic resonance imaging (MRI) for aoPWV assessmentInnovative methods: use of free‐breathing acquisition during cardiac MRIInnovative methods: use of cranial 4D flow MRI for CBF assessment},
+  pmcid = {PMC12260121},
+  file = {/Users/txn009/Zotero/storage/4N58IGPY/Breidenbach et al. - 2025 - Cardiorespiratory fitness modifies the relationship between arterial stiffness and cerebral blood fl.pdf}
 }
 
 @article{breuerControlledAliasingParallel2005,
@@ -614,20 +691,6 @@
   file = {/Users/txn009/Zotero/storage/UCHFCWUP/Carbonell et al. - 2004 - Improved survival after variceal bleeding in patients with cirrhosis over the past two decades.pdf}
 }
 
-@online{CardiorespiratoryFitnessModifies,
-  title = {Cardiorespiratory Fitness Modifies the Relationship between Arterial Stiffness and Cerebral Blood Flow Independent of Physical Activity - {{Breidenbach}} - 2025 - {{Alzheimer}}'s \& {{Dementia}}: {{Translational Research}} \& {{Clinical Interventions}} - {{Wiley Online Library}}},
-  url = {https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/trc2.70130},
-  urldate = {2026-03-23},
-  file = {/Users/txn009/Zotero/storage/EW368JLA/trc2.html}
-}
-
-@online{CardiovascularMagneticResonance,
-  title = {Cardiovascular Magnetic Resonance Phase Contrast Imaging - {{ClinicalKey}}},
-  url = {https://www.clinicalkey.com/#!/content/playContent/1-s2.0-S1097664723008967?returnurl=https:%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1097664723008967%3Fshowall%3Dtrue&referrer=https:%2F%2Fpubmed.ncbi.nlm.nih.gov%2F},
-  urldate = {2026-03-23},
-  file = {/Users/txn009/Zotero/storage/NSX3ZIJ8/www.clinicalkey.com.html}
-}
-
 @article{carreirasMultifactorialNatureAlzheimers2013,
   title = {The Multifactorial Nature of {{Alzheimer}}'s Disease for Developing Potential Therapeutics},
   author = {Carreiras, M. Carmo and Mendes, Eduarda and Perry, M. Jesus and Francisco, Ana Paula and Marco-Contelles, J.},
@@ -684,6 +747,7 @@
 
 @online{CdsismrmorgProtected18MProceedings,
   title = {Cds.Ismrm.Org/Protected/{{18MProceedings}}/{{PDFfiles}}/3326.Html},
+  author = {Naren, Tarun},
   url = {https://cds.ismrm.org/protected/18MProceedings/PDFfiles/3326.html},
   urldate = {2025-04-03},
   file = {/Users/txn009/Zotero/storage/AL5V49PI/3326.html}
@@ -817,16 +881,6 @@
   urldate = {2024-09-05},
   pmcid = {PMC6448749},
   file = {/Users/txn009/Zotero/storage/J7G49JIK/Christian et al. - 2014 - Upper endoscopy in liver disease.pdf}
-}
-
-@article{ComparisonSpontaneousVs,
-  title = {Comparison of Spontaneous vs. Metronome-Guided Breathing on Assessment of Vagal Modulation Using {{RR}} Variability | {{American Journal}} of {{Physiology-Heart}} and {{Circulatory Physiology}} | {{American Physiological Society}}},
-  journaltitle = {American Journal of Physiology-Heart and Circulatory Physiology},
-  url = {https://journals.physiology.org/doi/10.1152/ajpheart.2001.280.3.H1145},
-  urldate = {2026-03-20},
-  abstract = {R-R interval variability (RR variability) is increasingly being used as an index of autonomic activity. High-frequency (HF) power reflects vagal modulation of the sinus node. Since vagal modulation occurs at the respiratory frequency, some investigators have suggested that HF power cannot be interpreted unless the breathing rate is controlled. We hypothesized that HF power during spontaneous breathing would not differ significantly from HF power during metronome-guided breathing. We measured HF power during spontaneous breathing in 20 healthy subjects and 19 patients with heart disease. Each subject's spontaneous breathing rate was determined, and the calculation of HF power was repeated with a metronome set to his or her average spontaneous breathing rate. There was no significant difference between the logarithm of HF power measured during spontaneous and metronome-guided breathing [4.88 ± 0.29 vs. 5.29 ± 0.30 ln(ms2), P = 0.32] in the group as a whole and when patients and healthy subjects were examined separately. We did observe a small (9.9\%) decrease in HF power with increasing metronome-guided breathing rates (from 9 to 20 breaths/min). These data indicate that HF power during spontaneous and metronome-guided breathing differs at most by very small amounts. This variability is several logarithmic units less than the wide discrepancies observed between healthy subjects and cardiac patients with a heterogeneous group of cardiovascular disorders. In addition, HF power is relatively constant across the range of typical breathing rates. These data indicate that there is no need to control breathing rate to interpret HF power when RR variability (and specifically HF power) is used to identify high-risk cardiac patients.},
-  langid = {english},
-  file = {/Users/txn009/Zotero/storage/2YHNAXS3/ajpheart.2001.280.3.html}
 }
 
 @article{conollyVariablerateSelectiveExcitation1988,
@@ -978,17 +1032,6 @@
   author = {Davies, Justine Ina and Struthers, Allan D},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/8SFVHHJI/Davies and Struthers - Pulse wave analysis and pulse wave velocity a critical review of their strengths and weaknesses.pdf}
-}
-
-@online{DecouplingCardiorespiratoryMotion,
-  title = {Decoupling {{Cardiorespiratory Motion}} of {{Cardiac}}... : {{Medical Physics}}},
-  shorttitle = {Decoupling {{Cardiorespiratory Motion}} of {{Cardiac}}...},
-  url = {https://www.ovid.com/journals/medph/fulltext/00005706-202510000-01539~decoupling-cardiorespiratory-motion-of-cardiac-substructures},
-  urldate = {2026-03-23},
-  abstract = {Abstract was not provided for this article.},
-  langid = {english},
-  organization = {Ovid},
-  file = {/Users/txn009/Zotero/storage/2TDHNQ5A/00005706-202510000-01539~decoupling-cardiorespiratory-motion-of-cardiac-substructures.html}
 }
 
 @article{deroosMagneticResonanceImaging2017,
@@ -1318,6 +1361,23 @@
   file = {/Users/txn009/Zotero/storage/QF7JZM48/Feng et al. - 2016 - XD-GRASP Golden-angle radial MRI with reconstruction of extra motion-state dimensions using compres.pdf;/Users/txn009/Zotero/storage/8KQJUKPC/mrm.html}
 }
 
+@article{fesslerNonuniformFastFourier2003,
+  title = {Nonuniform Fast {{Fourier}} Transforms Using Min-Max Interpolation},
+  author = {Fessler, J.A. and Sutton, B.P.},
+  date = {2003-02},
+  journaltitle = {IEEE Transactions on Signal Processing},
+  volume = {51},
+  number = {2},
+  pages = {560--574},
+  issn = {1941-0476},
+  doi = {10.1109/TSP.2002.807005},
+  url = {https://ieeexplore.ieee.org/document/1166689/},
+  urldate = {2026-03-30},
+  abstract = {The fast Fourier transform (FFT) is used widely in signal processing for efficient computation of the FT of finite-length signals over a set of uniformly spaced frequency locations. However, in many applications, one requires nonuniform sampling in the frequency domain, i.e., a nonuniform FT. Several papers have described fast approximations for the nonuniform FT based on interpolating an oversampled FFT. This paper presents an interpolation method for the nonuniform FT that is optimal in the min-max sense of minimizing the worst-case approximation error over all signals of unit norm. The proposed method easily generalizes to multidimensional signals. Numerical results show that the min-max approach provides substantially lower approximation errors than conventional interpolation methods. The min-max criterion is also useful for optimizing the parameters of interpolation kernels such as the Kaiser-Bessel function.},
+  keywords = {Approximation error,Fast Fourier transforms,Frequency domain analysis,Image reconstruction,Interpolation,Iterative methods,Magnetic resonance imaging,Multidimensional signal processing,Multidimensional systems,Nonuniform sampling},
+  file = {/Users/txn009/Zotero/storage/DKBD4JUD/Fessler and Sutton - 2003 - Nonuniform fast Fourier transforms using min-max interpolation.pdf}
+}
+
 @article{ficoImpactAgingAssociation2022,
   title = {The {{Impact}} of {{Aging}} on the {{Association Between Aortic Stiffness}} and {{Cerebral Pulsatility Index}}},
   author = {Fico, Brandon G. and Miller, Kathleen B. and Rivera-Rivera, Leonardo A. and Corkery, Adam T. and Pearson, Andrew G. and Eisenmann, Nicole A. and Howery, Anna J. and Rowley, Howard A. and Johnson, Kevin M. and Johnson, Sterling C. and Wieben, Oliver and Barnes, Jill N.},
@@ -1501,6 +1561,25 @@
   file = {/Users/txn009/Zotero/storage/6JB5V6SS/Garcia-Tsao et al. - 2017 - Portal hypertensive bleeding in cirrhosis Risk stratification, diagnosis, and management 2016 prac.pdf;/Users/txn009/Zotero/storage/APFIRH4M/hep.html;/Users/txn009/Zotero/storage/GMVEHNDL/portal_hypertensive_bleeding_in_cirrhosis__risk.32.html}
 }
 
+@article{gloverMotionArtifactsFMRI1995,
+  title = {Motion {{Artifacts}} in {{fMRI}}: {{Comparison}} of {{2DFT}} with {{PR}} and {{Spiral Scan Methods}}},
+  shorttitle = {Motion {{Artifacts}} in {{fMRI}}},
+  author = {Glover, Gary H. and Lee, Adrian T.},
+  date = {1995},
+  journaltitle = {Magnetic Resonance in Medicine},
+  volume = {33},
+  number = {5},
+  pages = {624--635},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.1910330507},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.1910330507},
+  urldate = {2026-03-30},
+  abstract = {Activation signals based on BOLD contrast changes consequent to neuronal stimulation typically produce cortical intensity differences of {$<$} 10\% at 1.5T. Hemodynamically driven pulsation of the brain can cause highly pulsatile phase shifts, which in turn result in motion artifacts whose intensity is larger than the activation signals in 2DFT scan methods. This paper presents a theoretical and experimental comparison of the magnitude of such artifacts for 2DFT and two other methods using non-Cartesian k-space trajectories. It is shown that artifacts increase with TR for 2DFT methods, and that projection reconstruction (PR) and spiral methods have significantly reduced artifact intensities, because these trajectories collect low spatial frequencies with every view. The spiral technique is found to be superior in terms of efficiency and motion insensitivity.},
+  langid = {english},
+  keywords = {brain activation,functional brain imaging,magnetic resonance imaging,motion artifacts},
+  file = {/Users/txn009/Zotero/storage/92CGAILE/Glover and Lee - 1995 - Motion Artifacts in fMRI Comparison of 2DFT with PR and Spiral Scan Methods.pdf;/Users/txn009/Zotero/storage/ASI9794Q/mrm.html}
+}
+
 @article{gloverProjectionReconstructionTechniques1992,
   title = {Projection Reconstruction Techniques for Reduction of Motion Effects in {{MRI}}},
   author = {Glover, G. H. and Pauly, J. M.},
@@ -1647,6 +1726,24 @@
   file = {/Users/txn009/Zotero/storage/A6MEJKWE/Grotenhuis et al. - 2009 - Validation and reproducibility of aortic pulse wave velocity as assessed with velocity‐encoded MRI.pdf}
 }
 
+@article{grunovasCardiovascularResponseBreathHolding00,
+  title = {Cardiovascular {{Response}} to {{Breath-Holding Explained}} by {{Changes}} of the {{Indices}} and Their {{Dynamic Interactions}}},
+  author = {Grunovas, Albinas and Trinkunas, Eugenijus and Buliuolis, Alfonsas and Venskaityte, Eurelija and Poderys, Jonas and Poderiene, Kristina},
+  date = {0000},
+  journaltitle = {Biological Systems: Open Access},
+  volume = {5},
+  number = {1},
+  pages = {1--8},
+  publisher = {International Online Medical Council (IOMC)},
+  issn = {2329-6577},
+  doi = {10.4172/2329-6577.1000152},
+  url = {https://www.iomcworld.com/},
+  urldate = {2026-03-30},
+  abstract = {Background: Endogenous triggers such as voluntary breath-holding induce various cardiovascular responses typically including modification of blood CO2. During dynamic exercise these responses may have a negative impact on performance or may associate with cardiovascular risk subjects. Therefore, we hypothesized that voluntary breathing tests induce changes in cardiovascular (CV) oxygenation that lead to cardiovascular-functional changes, measured by a complex of integrated cardiovascular parameters and their interactions. So the aim of the study was to determine the impact of the voluntary breath-holding on changes and interplay of cardiac and peripheral parameters. Method: 18 girls (average age: 23.4 ± 1.3 years) performed 2 voluntary breath-holdings to failure, with a 5 min rest. Cardiac functional parameters were recorded using the electrocardiogram (ECG) analysis system “Kaunas-load”. The blood flow in the calf was determined by venous occlusion plethysmography. Near-infrared spectroscopy (NIRS) was used for non-invasive monitoring of oxygen saturation in tissues (StO2). Results: Throughout the first breath-holding, heart rate (HR) increased from 89.5 ± 3.9 bpm to 107.6 ± 4.2 bpm (P{$<$}0.05). The ECG JT interval decreased at the onset of breath-holdings, the intervals ratio (JT/RR) increased (P{$<$}0.05), and the ST-segment depression was not altered significantly. Arterial blood flow (ABF) was reduced from 3.5 ± 0.47 mL/100 mL/min to 1.64 ± 0.38 mL/100 mL/min (P{$<$}0.05) at the end of the first breath-holding. The StO2 of the calf muscles decreased during both breath-holdings. Within 60 s of recovery time, StO2 exceeded baseline 9.5\% (P{$<$}0.05). Conclusion: Breath-holding impact changes in the systemic (central) circulation and caused significant peripheral changes, i.e., decrease in arterial blood flow and oxygen saturation. The most essential alteration occurred between the HR and arterial blood pressure (ABP) parameters. The strongest interaction observed between HR and ABP, and in calf muscles - between ABF and StO2. details summary \{ cursor: pointer; color: \#f8f9fa; \} a \{ font-size: 11px; opacity: 0.5; \}References Casino Sites in Morocco Blog | Car Insurance in Nevada Casino Sites in Nigeria Blog - Find Lawyer in Ohio Casino Sites in Romania Casino Sites in Turkey Blog | Auto Insurance in Canada Blog | Car Insurance in Arkansas Casino Sites in USA Casino Sites in Venezuela Auto Insurance in California Blog | Best Betting Sites in Netherlands Auto Insurance in USA Blog | Best Betting Sites in Morocco Car Insurance in Australia Blog - Find Lawyer in Tennessee Blog | Best Betting Sites in Romania Best Betting Sites in Bangladesh Best Betting Sites in Belgium Blog | Best Betting Sites in Germany},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/6C6ZNS8J/Grunovas et al. - Cardiovascular Response to Breath-Holding Explained by Changes of the Indices and their Dynamic Inte.pdf}
+}
+
 @article{guPCVIPRHighspeed2005,
   title = {{{PC VIPR}}: A High-Speed {{3D}} Phase-Contrast Method for Flow Quantification and High-Resolution Angiography},
   shorttitle = {{{PC VIPR}}},
@@ -1739,6 +1836,24 @@
   file = {/Users/txn009/Zotero/storage/5Q834YG3/Hashimoto and Ito - 2009 - Some mechanical aspects of arterial aging physiological overview based on pulse wave analysis.pdf}
 }
 
+@inproceedings{hassanEffectNormalBreathing2021a,
+  title = {Effect of {{Normal Breathing}} and {{Breath Holding}} on {{Seismocardiographic Signals}} and {{Heart Rate}}},
+  booktitle = {2021 {{IEEE Signal Processing}} in {{Medicine}} and {{Biology Symposium}} ({{SPMB}})},
+  author = {Hassan, T. and Rahman, B. and Sandler, R. H. and Mansy, H. A.},
+  date = {2021-12-04},
+  pages = {1--6},
+  publisher = {IEEE},
+  location = {Philadelphia, PA, USA},
+  doi = {10.1109/SPMB52430.2021.9672283},
+  url = {https://ieeexplore.ieee.org/document/9672283/},
+  urldate = {2026-03-30},
+  abstract = {Seismocardiography signals (SCG) are acoustic vibrations generated by heart activity and measured noninvasively on the surface of the chest. SCG may be used to diagnose and monitor cardiovascular conditions. The signal variability may limit the potentially high SCG clinical utility. It is known that breathing can cause variability, yet it is not well understood. The objective of this study is to quantify SCG and heart rate changes during normal breathing and breath holding (BH). Seismocardiography (SCG), electrocardiography (ECG), and airflow signals were recorded in eight healthy subjects during normal breathing and breath holding (at end inspiration and end expiration). The SCG events were detected and segmented. The heart rate was calculated using the R peak of ECG. Unsupervised machine learning (K-medoid clustering) was implemented using a dynamic time warping (DTW) distance to separate normal breathing SCG waveforms into two clusters. The SCG intra-group variability was calculated in the time domain. Normalized SCG energy in the 0-20 Hz range was also investigated. Results showed that the SCG average intra-cluster variability was 32\% lower during breath holding compared to normal breathing. In addition, the average heart rate was 8\% lower and normalized SCG energy was 9\% lower in breath holding than normal breathing. Variable airflow and lung volume during normal breathing may cause these findings. SCG waveforms during breath holding can be more accurate due to the decreased variability. Hence, it may be useful to collect SCG during breath holding. The results of this study need to be verified with further investigation on a larger number of subjects.},
+  eventtitle = {2021 {{IEEE Signal Processing}} in {{Medicine}} and {{Biology Symposium}} ({{SPMB}})},
+  isbn = {978-1-6654-2897-2},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/57GZQ5US/Hassan et al. - 2021 - Effect of Normal Breathing and Breath Holding on Seismocardiographic Signals and Heart Rate.pdf}
+}
+
 @article{heckmanCardiovascularAgingExercise2008,
   title = {Cardiovascular Aging and Exercise in Healthy Older Adults},
   author = {Heckman, George A. and McKelvie, Robert S.},
@@ -1825,11 +1940,22 @@
   file = {/Users/txn009/Zotero/storage/ASTR6TD3/Herold et al. - 2009 - In vivo measurement of local aortic pulse‐wave velocity in mice with MR microscopy at 17.6 tesla.pdf}
 }
 
-@online{HighSpatialTemporal,
-  title = {High {{Spatial}} and {{Temporal Resolution Cardiac Cine MRI}} from {{Retrospective Reconstruction}} of {{Data Acquired}} in {{Real-time}} Using {{Motion Correction}} and {{Re-Sorting}} - {{PMC}}},
-  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC4137913/},
-  urldate = {2025-06-23},
-  file = {/Users/txn009/Zotero/storage/CF6LIDSD/PMC4137913.html}
+@article{hicksonRelationshipAgeRegional2010,
+  title = {The {{Relationship}} of {{Age With Regional Aortic Stiffness}} and {{Diameter}}},
+  author = {Hickson, Stacey S. and Butlin, Mark and Graves, Martin and Taviani, Valentina and Avolio, Alberto P. and McEniery, Carmel M. and Wilkinson, Ian B.},
+  date = {2010-12-01},
+  journaltitle = {JACC: Cardiovascular Imaging},
+  shortjournal = {JACC: Cardiovascular Imaging},
+  volume = {3},
+  number = {12},
+  pages = {1247--1255},
+  issn = {1936-878X},
+  doi = {10.1016/j.jcmg.2010.09.016},
+  url = {https://www.sciencedirect.com/science/article/pii/S1936878X10006984},
+  urldate = {2026-03-30},
+  abstract = {Objectives The purpose of this study was to determine the impact of age on regional aortic pulse wave velocity (aPWV). Background aPWV is an independent predictor of cardiovascular risk and increases exponentially with age. However, it is unclear whether such changes occur uniformly along the length of the aorta or vary by region. Methods A total of 162 subjects, aged 18 to 77 years and free of cardiovascular disease and medication, were recruited from the Anglo-Cardiff Collaborative Trial. Cine phase contrast magnetic resonance imaging was performed at 5 aortic levels. Systolic diameter and average blood flow were measured at each level and regional aPWV (regional aPWV measured by cine phase contrast magnetic resonance imaging) determined in 4 aortic segments: the arch (R1), the thoracic-descending aorta (R2), mid-descending aorta (R3), and the abdominal aorta (R4) and across the entire aorta. Results Regional PWV measured by cine phase contrast magnetic resonance imaging values increased from the valve to the bifurcation in the 4 segments (PWV-R1- PWV-R4: 4.6 ± 1.5 m/s, 5.5 ± 2.0 m/s, 5.7 ± 2.3 m/s, 6.1 ± 2.9 m/s, respectively) and did not differ between genders. The greatest age-related difference in stiffness occurred in the abdominal aorta (+0.9 m/s per decade, p {$<$} 0.001) followed by the thoracic-descending region (+0.7 m/s, p {$<$} 0.001), the mid-descending region (+0.6 m/s, p {$<$} 0.001) and aortic arch (+0.4 m/s, p {$<$} 0.001). The average systolic diameters decreased moving distally (L1-5: 3.1 ± 0.4 cm, 2.3 ± 0.3 cm, 2.1 ± 0.3 cm, 1.9 ± 0.2 cm, and 1.7 ± 0.2 cm, respectively). The greatest variation in systolic diameter as a function of age occurred in the ascending region (+0.96 mm/decade, p {$<$} 0.001). Values of aPWV measured across the entire aorta were strongly correlated with PWV-tonometry (R = 0.71, p {$<$} 0.001), although they were significantly lower (mean difference 1.7 ± 1.6 m/s, p {$<$} 0.001). Conclusions The greatest difference in aortic stiffness occurs in the abdominal region, whereas the greatest difference in diameter occurs in the ascending aorta, which may help offset an increase in wall stiffness.},
+  keywords = {aging,aortic diameter,cine phase contrast magnetic resonance imaging,regional aortic pulse wave velocity},
+  file = {/Users/txn009/Zotero/storage/4UATMS6E/Hickson et al. - 2010 - The Relationship of Age With Regional Aortic Stiffness and Diameter.pdf;/Users/txn009/Zotero/storage/KIRKSJQP/S1936878X10006984.html}
 }
 
 @article{hollandDiaphragmaticCardiacMotion1998,
@@ -1866,13 +1992,6 @@
   langid = {english},
   keywords = {4D flow CMR,Aging,Aortic stiffness,Pulse wave velocity},
   file = {/Users/txn009/Zotero/storage/3LM3HRBA/Houriez–Gombaud-Saintonge et al. - 2019 - Comparison of different methods for the estimation of aortic pulse wave velocity from 4D flow cardio.pdf;/Users/txn009/Zotero/storage/LM5ZZJM5/s12968-019-0584-x.html}
-}
-
-@online{HttpsMriquestionscomUploads,
-  title = {{{https://mriquestions.com/uploads/3/4/5/7/34572113/bradley\_radiology\_blood\_flow\_1985.pdf}}},
-  url = {https://mriquestions.com/uploads/3/4/5/7/34572113/bradley_radiology_blood_flow_1985.pdf},
-  urldate = {2025-06-27},
-  file = {/Users/txn009/Zotero/storage/QMTJQJYW/bradley_radiology_blood_flow_1985.pdf}
 }
 
 @online{HttpsMriquestionscomUploadse,
@@ -2022,6 +2141,7 @@
 
 @online{ISMRM2020Feasibility,
   title = {({{ISMRM}} 2020) {{Feasibility}} of a {{Free-Breathing 2D Phase Contrast Sequence}} for {{Aortic Pulse Wave Velocity Measurements}}},
+  author = {Naren, Tarun},
   url = {https://archive.ismrm.org/2020/2262.html},
   urldate = {2024-09-03},
   file = {/Users/txn009/Zotero/storage/7VRPJ9YH/2262.html}
@@ -2029,6 +2149,7 @@
 
 @online{ISMRM2022Effect,
   title = {({{ISMRM}} 2022) {{Effect}} of {{Temporal Resolution}} on {{Flow-Area Aortic Pulse Wave Velocity Measures Using Phase Contrast}} and {{Balanced SSFP MRI}}: {{A Preliminary Study}}},
+  author = {Naren, Tarun},
   url = {https://archive.ismrm.org/2022/0796.html},
   urldate = {2026-03-23},
   file = {/Users/txn009/Zotero/storage/V4LPDSDN/0796.html}
@@ -2036,6 +2157,7 @@
 
 @online{ISMRM2023Denoising,
   title = {({{ISMRM}} 2023) {{Denoising Vastly Undersampled Radial Portal Venous 4D Flow Data}} via {{Deep Learning}}},
+  author = {Naren, Tarun},
   url = {https://archive.ismrm.org/2023/3648.html},
   urldate = {2026-03-23},
   file = {/Users/txn009/Zotero/storage/5HTFQ92J/3648.html}
@@ -2043,6 +2165,7 @@
 
 @online{ISMRM2024Feasibility,
   title = {({{ISMRM}} 2024) {{Feasibility}} of a {{2D Radial Simultaneous Multi-Slice Phase Contrast MRI}} Sequence for {{Aortic Pulse Wave Velocity Measurements}}},
+  author = {Naren, Tarun},
   url = {https://archive.ismrm.org/2024/3381_4lRsviQZb.html},
   urldate = {2026-03-23},
   file = {/Users/txn009/Zotero/storage/HQ8CZPCA/3381_4lRsviQZb.html}
@@ -2050,6 +2173,7 @@
 
 @online{ISMRM2025How,
   title = {({{ISMRM}} 2025) {{How Low}} Is {{Too Low}}? {{Optimizing VENC}} in {{4D Flow MRI}} for the {{Portal Venous System}}},
+  author = {Naren, Tarun},
   url = {https://archive.ismrm.org/2025/3668_Hhill8QMI.html},
   urldate = {2026-03-23},
   file = {/Users/txn009/Zotero/storage/W4L792VL/3668_Hhill8QMI.html}
@@ -2409,6 +2533,25 @@
   file = {/Users/txn009/Zotero/storage/IJT698I7/S0167814016312476.html}
 }
 
+@article{kellmanHighSpatialTemporal2009,
+  title = {High Spatial and Temporal Resolution Cardiac Cine {{MRI}} from Retrospective Reconstruction of Data Acquired in Real Time Using Motion Correction and Resorting},
+  author = {Kellman, Peter and Chefd'hotel, Christophe and Lorenz, Christine H. and Mancini, Christine and Arai, Andrew E. and McVeigh, Elliot R.},
+  date = {2009-12},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {62},
+  number = {6},
+  eprint = {19780155},
+  eprinttype = {pubmed},
+  pages = {1557--1564},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.22153},
+  abstract = {Cine MRI is used for assessing cardiac function and flow and is typically based on a breath-held, segmented data acquisition. Breath holding is particularly difficult for patients with congestive heart failure or in pediatric cases. Real-time imaging may be used without breath holding or ECG triggering. However, despite the use of rapid imaging sequences and accelerated parallel imaging, real-time imaging typically has compromised spatial and temporal resolution compared with gated, segmented breath-held studies. A new method is proposed that produces a cardiac cine across the full cycle, with both high spatial and temporal resolution from a retrospective reconstruction of data acquired over multiple heartbeats during free breathing. The proposed method was compared with conventional cine images in 10 subjects. The resultant image quality for the proposed method (4.2 +/- 0.4) without breath holding or gating was comparable to the conventional cine (4.4 +/- 0.5) on a five-point scale (P = n.s.). Motion-corrected averaging of real-time acquired cardiac images provides a means of attaining high-quality cine images with many of the benefits of real-time imaging, such as free-breathing acquisition and tolerance to arrhythmias.},
+  langid = {english},
+  pmcid = {PMC4137913},
+  keywords = {Algorithms,Artifacts,Cardiac-Gated Imaging Techniques,Computer Systems,Coronary Artery Disease,Humans,Image Enhancement,Image Interpretation Computer-Assisted,Magnetic Resonance Imaging Cine,Motion,Myocardial Infarction,Reproducibility of Results,Respiratory-Gated Imaging Techniques,Sensitivity and Specificity}
+}
+
 @article{kimAccelerated4DflowMRI2023,
   title = {Accelerated {{4D-flow MRI}} with 3-Point Encoding Enabled by~Machine Learning},
   author = {Kim, Dahan and Jen, Mu-Lan and Eisenmenger, Laura B. and Johnson, Kevin M.},
@@ -2749,6 +2892,25 @@
   keywords = {4D flow,Adult,Algorithms,Aorta,Aortic Coarctation,Automation,Blood Flow Velocity,Cohort Studies,Computer Simulation,Female,Fourier Analysis,Healthy Volunteers,Humans,Image Interpretation Computer-Assisted,Image Processing Computer-Assisted,Imaging Three-Dimensional,Magnetic Resonance Imaging,Male,Models Theoretical,Phantoms Imaging,phase contrast MRI,phase unwrapping,Signal-To-Noise Ratio,Software,velocity aliasing,Young Adult}
 }
 
+@article{lotzCardiovascularFlowMeasurement2002,
+  title = {Cardiovascular {{Flow Measurement}} with {{Phase-Contrast MR Imaging}}: {{Basic Facts}} and {{Implementation}}},
+  shorttitle = {Cardiovascular {{Flow Measurement}} with {{Phase-Contrast MR Imaging}}},
+  author = {Lotz, Joachim and Meier, Christian and Leppert, Andreas and Galanski, Michael},
+  date = {2002-05},
+  journaltitle = {RadioGraphics},
+  shortjournal = {RadioGraphics},
+  volume = {22},
+  number = {3},
+  pages = {651--671},
+  issn = {0271-5333, 1527-1323},
+  doi = {10.1148/radiographics.22.3.g02ma11651},
+  url = {http://pubs.rsna.org/doi/10.1148/radiographics.22.3.g02ma11651},
+  urldate = {2026-03-30},
+  langid = {english},
+  keywords = {Aorta,Blood Flow Velocity,Coronary Circulation,Heart,Humans,Magnetic Resonance Imaging,Pulmonary Artery,Venae Cavae},
+  file = {/Users/txn009/Zotero/storage/UM5BXMRY/Lotz et al. - 2002 - Cardiovascular Flow Measurement with Phase-Contrast MR Imaging Basic Facts and Implementation.pdf}
+}
+
 @article{loveCerebrovascularDiseaseAgeing2016,
   title = {Cerebrovascular Disease in Ageing and {{Alzheimer}}’s Disease},
   author = {Love, Seth and Miners, J. Scott},
@@ -2884,6 +3046,18 @@
   file = {/Users/txn009/Zotero/storage/I39HXRQA/Mahmood and Pinsky - 2018 - Heart-lung interactions during mechanical ventilation the basics.pdf}
 }
 
+@book{mamourianPracticalMRPhysics2010,
+  title = {Practical {{MR Physics}}},
+  author = {Mamourian, Alexander C.},
+  date = {2010-03-29},
+  publisher = {Oxford University Press},
+  location = {Oxford, New York},
+  abstract = {The underlying physics of magnetic resonance imaging is a topic of considerable importance since a basic understanding is necessary to accurately interpret and generate high quality MR images. Yet it can be a challenging topic in spite of the best efforts of both teachers and students of the subject. Practical MR Physics reviews the basic principles of MR using familiar language and explains the causes of common imaging artifacts and pitfalls. The book will also be a helpful guide during review of clinical cases since the reader can look up specific imaging artifacts or pitfalls in the index. Featuring over 375 high quality images, numerous case examples, and concise, clinically oriented discussion of the physics behind the images, Practical MR Physics is an ideal resource for anyone who works in the field of MR imaging.                ,                  The underlying physics of magnetic resonance imaging is a topic of considerable importance since a basic understanding is necessary to accurately interpret and generate high quality MR images. Yet it can be a challenging topic in spite of the best efforts of both teachers and students of the subject. Practical MR Physics reviews the basic principles of MR using familiar language and explains the causes of common imaging artifacts and pitfalls. The book will also be a helpful guide during review of clinical cases since the reader can look up specific imaging artifacts or pitfalls in the index. Featuring over 375 high quality images, numerous case examples, and concise, clinically oriented discussion of the physics behind the images, Practical MR Physics is an ideal resource for anyone who works in the field of MR imaging.},
+  isbn = {978-0-19-537281-6},
+  pagetotal = {320},
+  file = {/Users/txn009/Zotero/storage/8SKV6KBE/practical-mr-physics-9780195372816.html}
+}
+
 @article{markl4DFlowMRI2012,
   title = {{{4D}} Flow {{MRI}}},
   author = {Markl, Michael and Frydrychowicz, Alex and Kozerke, Sebastian and Hope, Mike and Wieben, Oliver},
@@ -2898,7 +3072,7 @@
   urldate = {2026-01-28},
   abstract = {Traditionally, magnetic resonance imaging (MRI) of flow using phase contrast (PC) methods is accomplished using methods that resolve single-directional flow in two spatial dimensions (2D) of an individual slice. More recently, three-dimensional (3D) spatial encoding combined with three-directional velocity-encoded phase contrast MRI (here termed 4D flow MRI) has drawn increased attention. 4D flow MRI offers the ability to measure and to visualize the temporal evolution of complex blood flow patterns within an acquired 3D volume. Various methodological improvements permit the acquisition of 4D flow MRI data encompassing individual vascular structures and entire vascular territories such as the heart, the adjacent aorta, the carotid arteries, abdominal, or peripheral vessels within reasonable scan times. To subsequently analyze the flow data by quantitative means and visualization of complex, three-directional blood flow patterns, various tools have been proposed. This review intends to introduce currently used 4D flow MRI methods, including Cartesian and radial data acquisition, approaches for accelerated data acquisition, cardiac gating, and respiration control. Based on these developments, an overview is provided over the potential this new imaging technique has in different parts of the body from the head to the peripheral arteries. J. Magn. Reson. Imaging 2012;36:1015–1036. © 2012 Wiley Periodicals, Inc.},
   langid = {english},
-  keywords = {4D flow MRI,aorta,blood flow,carotid bifurcation,heart,hemodynamics,hepatic arteries,intracranial arteries,PC-VIPR,peripheral arteries,phase contrast,pulmonary arteries,renal arteries,respiration control,self-gating},
+  keywords = {4D flow MRI,aorta,blood flow,Cardiac-Gated Imaging Techniques,Cardiovascular Diseases,carotid bifurcation,heart,hemodynamics,hepatic arteries,Humans,Image Enhancement,Image Interpretation Computer-Assisted,Imaging Three-Dimensional,intracranial arteries,Magnetic Resonance Angiography,Magnetic Resonance Imaging Cine,PC-VIPR,peripheral arteries,phase contrast,pulmonary arteries,renal arteries,Reproducibility of Results,respiration control,self-gating,Sensitivity and Specificity},
   file = {/Users/txn009/Zotero/storage/M6TMSJVE/Markl et al. - 2012 - 4D flow MRI.pdf;/Users/txn009/Zotero/storage/BLK65XBL/jmri.html}
 }
 
@@ -3089,6 +3263,43 @@
   abstract = {We have used magnetic resonance imaging with cine velocity mapping to measure flow wave velocity in the thoracic aorta of 20 healthy volunteers of different ages. We have also studied the relationship between propagation of flow wave velocity and regional aortic compliance. Aortic flow velocity increased linearly with age (r = 0.87), and there was a significant difference between the youngest decade [age 10–19, mean velocity 4.3 +/- 0.7 (SD) m/s] and the oldest decade studied (age 50–59, mean velocity 7.2 +/- 0.2 m/s). Flow wave velocity (m/s) was negatively correlated with ascending aortic compliance (microliter/mmHg) (r = -0.75). Magnetic resonance imaging is a noninvasive method for measurement of aortic flow wave velocity that is an important parameter in assessing arterial wall mechanics and blood flow dynamic.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/IS92TEX8/Mohiaddin et al. - 1993 - Age-related changes of human aortic flow wave velocity measured noninvasively by magnetic resonance.pdf}
+}
+
+@article{mooreReviewKeyConcepts2017,
+  title = {Review of Key Concepts in Magnetic Resonance Physics},
+  author = {Moore, Michael M. and Chung, Taylor},
+  date = {2017-05-01},
+  journaltitle = {Pediatric Radiology},
+  shortjournal = {Pediatr Radiol},
+  volume = {47},
+  number = {5},
+  pages = {497--506},
+  issn = {1432-1998},
+  doi = {10.1007/s00247-017-3791-3},
+  url = {https://doi.org/10.1007/s00247-017-3791-3},
+  urldate = {2026-03-30},
+  abstract = {MR physics can be a challenging subject for practicing pediatric radiologists. Although many excellent texts provide very comprehensive reviews of the field of MR physics at various levels of understanding, the authors of this paper explain several key concepts in MR physics that are germane to clinical practice in a non-rigorous but practical fashion. With the basic understanding of these key concepts, practicing pediatric radiologists can build on their knowledge of current clinical MR techniques and future advances in MR applications. Given the challenges of both the increased need for rapid imaging in non-sedated children and the rapid physiological cardiovascular and respiratory motion in pediatric patients, many advances in complex MR techniques are being applied to imaging these children. The key concepts are as follows: (1) structure of a pulse sequence, (2) k-space, (3) “trade-off triangle” and (4) fat suppression. This review is the first of five manuscripts in a minisymposium on pediatric MR. The authors’ goal for this review is to aid in understanding the MR techniques described in the subsequent manuscripts on brain imaging and body imaging in this minisymposium.},
+  langid = {english},
+  keywords = {Children,Fat suppression,K-space,Magnetic resonance imaging,Parallel imaging,Pulse sequences},
+  file = {/Users/txn009/Zotero/storage/7D74RXCY/Moore and Chung - 2017 - Review of key concepts in magnetic resonance physics.pdf}
+}
+
+@article{moranFlowVelocityZeugmatographic1982,
+  title = {A Flow Velocity Zeugmatographic Interlace for {{NMR}} Imaging in Humans},
+  author = {Moran, P. R.},
+  date = {1982},
+  journaltitle = {Magnetic Resonance Imaging},
+  shortjournal = {Magn Reson Imaging},
+  volume = {1},
+  number = {4},
+  eprint = {6927206},
+  eprinttype = {pubmed},
+  pages = {197--203},
+  issn = {0730-725X},
+  doi = {10.1016/0730-725x(82)90170-9},
+  abstract = {We describe a flow sensitizing zeugmatographic phase-modulation interlace for NMR-imaging which is exactly analogous to Lauterbur's spatial-location-sensitizing magnetic field gradients. The method may be implemented by minor modification of any NMR-imaging scanner without interfering with its conventional operation, and enables up to 6-D imaging of the joint (spatial-flow) density of spins delta (r,v). In a special simplification, specific-flow-density, mean value of v(r), and flow-current-specific-flow-density, rho 0(r)v, derive directly from "real' and "imaginary" parts of the image reconstruction.},
+  langid = {english},
+  keywords = {Humans,Magnetic Resonance Spectroscopy}
 }
 
 @article{moraviaVitroFlowStudy2022,
@@ -3298,6 +3509,45 @@
   langid = {english}
 }
 
+@article{nayakCardiovascularMagneticResonance2015,
+  title = {Cardiovascular Magnetic Resonance Phase Contrast Imaging},
+  author = {Nayak, Krishna S. and Nielsen, Jon-Fredrik and Bernstein, Matt A. and Markl, Michael and D Gatehouse, Peter and M Botnar, Rene and Saloner, David and Lorenz, Christine and Wen, Han and S Hu, Bob and Epstein, Frederick H. and N Oshinski, John and Raman, Subha V.},
+  date = {2015-08-09},
+  journaltitle = {Journal of Cardiovascular Magnetic Resonance: Official Journal of the Society for Cardiovascular Magnetic Resonance},
+  shortjournal = {J Cardiovasc Magn Reson},
+  volume = {17},
+  number = {1},
+  eprint = {26254979},
+  eprinttype = {pubmed},
+  pages = {71},
+  issn = {1532-429X},
+  doi = {10.1186/s12968-015-0172-7},
+  abstract = {Cardiovascular magnetic resonance (CMR) phase contrast imaging has undergone a wide range of changes with the development and availability of improved calibration procedures, visualization tools, and analysis methods. This article provides a comprehensive review of the current state-of-the-art in CMR phase contrast imaging methodology, clinical applications including summaries of past clinical performance, and emerging research and clinical applications that utilize today's latest technology.},
+  langid = {english},
+  pmcid = {PMC4529988},
+  keywords = {Artifacts,Blood Flow Velocity,Coronary Artery Disease,Coronary Circulation,Coronary Vessels,Heart Valve Diseases,Heart Valves,Humans,Image Interpretation Computer-Assisted,Magnetic Resonance Imaging,Models Cardiovascular,Myocardial Perfusion Imaging,Predictive Value of Tests,Prognosis,Reproducibility of Results,Severity of Illness Index,Time Factors},
+  file = {/Users/txn009/Zotero/storage/H5AXX7D2/Nayak et al. - 2015 - Cardiovascular magnetic resonance phase contrast imaging.pdf}
+}
+
+@article{nayakTriggeredRealtimeMRI2003,
+  title = {Triggered Real-Time {{MRI}} and Cardiac Applications},
+  author = {Nayak, Krishna S. and Hu, Bob S.},
+  date = {2003-01},
+  journaltitle = {Magnetic Resonance in Medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {49},
+  number = {1},
+  eprint = {12509837},
+  eprinttype = {pubmed},
+  pages = {188--192},
+  issn = {0740-3194},
+  doi = {10.1002/mrm.10341},
+  abstract = {Real-time interactive MRI is becoming the method of choice for many cardiac applications. One current limitation of real-time techniques is inaccurate slice registration during free-breathing. A simple "triggered real-time" imaging approach is proposed which enables the acquisition of synchronized and accurately registered real-time movie loops during short breathholds. Initial in vivo results demonstrate application to complete 4D ventricular function assessment and fully resolved flow imaging.},
+  langid = {english},
+  keywords = {Anatomy,Heart,Humans,Magnetic Resonance Imaging Cine,Myocardial Contraction,Respiration,Stroke Volume,Ventricular Function Left},
+  file = {/Users/txn009/Zotero/storage/SMFPI2K5/Nayak and Hu - 2003 - Triggered real-time MRI and cardiac applications.pdf}
+}
+
 @article{nelsonNoninvasiveMeasurementCentral2010,
   title = {Noninvasive {{Measurement}} of {{Central Vascular Pressures With Arterial Tonometry}}: {{Clinical Revival}} of the {{Pulse Pressure Waveform}}?},
   shorttitle = {Noninvasive {{Measurement}} of {{Central Vascular Pressures With Arterial Tonometry}}},
@@ -3497,6 +3747,26 @@
   abstract = {Pulse wave analysis will assist in a better understanding of hypertension as well as in establishing the extent of cardiovascular disease and for monitoring therapy.},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/K7TI98JQ/ORourke and Adji - 2005 - An updated clinical primer on large artery mechanics implications of pulse waveform analysis and ar.pdf}
+}
+
+@article{obuchowskiQuantitativeImagingBiomarkers2015,
+  title = {Quantitative Imaging Biomarkers: A Review of Statistical Methods for Computer Algorithm Comparisons},
+  shorttitle = {Quantitative Imaging Biomarkers},
+  author = {Obuchowski, Nancy A. and Reeves, Anthony P. and Huang, Erich P. and Wang, Xiao-Feng and Buckler, Andrew J. and Kim, Hyun J. Grace and Barnhart, Huiman X. and Jackson, Edward F. and Giger, Maryellen L. and Pennello, Gene and Toledano, Alicia Y. and Kalpathy-Cramer, Jayashree and Apanasovich, Tatiyana V. and Kinahan, Paul E. and Myers, Kyle J. and Goldgof, Dmitry B. and Barboriak, Daniel P. and Gillies, Robert J. and Schwartz, Lawrence H. and Sullivan, Daniel C. and {Algorithm Comparison Working Group}},
+  date = {2015-02},
+  journaltitle = {Statistical Methods in Medical Research},
+  shortjournal = {Stat Methods Med Res},
+  volume = {24},
+  number = {1},
+  eprint = {24919829},
+  eprinttype = {pubmed},
+  pages = {68--106},
+  issn = {1477-0334},
+  doi = {10.1177/0962280214537390},
+  abstract = {Quantitative biomarkers from medical images are becoming important tools for clinical diagnosis, staging, monitoring, treatment planning, and development of new therapies. While there is a rich history of the development of quantitative imaging biomarker (QIB) techniques, little attention has been paid to the validation and comparison of the computer algorithms that implement the QIB measurements. In this paper we provide a framework for QIB algorithm comparisons. We first review and compare various study designs, including designs with the true value (e.g. phantoms, digital reference images, and zero-change studies), designs with a reference standard (e.g. studies testing equivalence with a reference standard), and designs without a reference standard (e.g. agreement studies and studies of algorithm precision). The statistical methods for comparing QIB algorithms are then presented for various study types using both aggregate and disaggregate approaches. We propose a series of steps for establishing the performance of a QIB algorithm, identify limitations in the current statistical literature, and suggest future directions for research.},
+  langid = {english},
+  pmcid = {PMC4263694},
+  keywords = {agreement,Algorithms,bias,Bias,Biomarkers,Computer Simulation,Diagnostic Imaging,Humans,image metrics,imaging biomarkers,Phantoms Imaging,precision,quantitative imaging,Reference Standards,repeatability,reproducibility,Reproducibility of Results,Research Design,Statistics as Topic}
 }
 
 @article{odilleAutomaticSegmentationPropagation2011,
@@ -3717,6 +3987,24 @@
   file = {/Users/txn009/Zotero/storage/6V3HZFDX/Park et al. - 2020 - Simultaneous Multi-VENC and Simultaneous Multi-Slice Phase Contrast Magnetic Resonance Imaging.pdf}
 }
 
+@article{pelcEncodingStrategiesThreedirection1991,
+  title = {Encoding Strategies for Three-Direction Phase-Contrast {{MR}} Imaging of Flow},
+  author = {Pelc, N. J. and Bernstein, M. A. and Shimakawa, A. and Glover, G. H.},
+  date = {1991},
+  journaltitle = {Journal of magnetic resonance imaging: JMRI},
+  shortjournal = {J Magn Reson Imaging},
+  volume = {1},
+  number = {4},
+  eprint = {1790362},
+  eprinttype = {pubmed},
+  pages = {405--413},
+  issn = {1053-1807},
+  doi = {10.1002/jmri.1880010404},
+  abstract = {Three encoding strategies for the measurement of flow velocities in arbitrary directions with phase-contrast magnetic resonance imaging are presented; their noise and dynamic range performance are compared by means of theoretical analysis and computer simulation. A six-point measurement strategy is shown to be quite inefficient in terms of velocity variance per unit time. A simple four-point method exhibits equal dynamic range; its noise depends on flow direction but on average is equal to that of the six-point method. An alternate, balanced four-point method has noise that is direction independent and has, depending on implementation, possibly lower noise levels. Either four-point method is more efficient and is preferred over the six-point approach.},
+  langid = {english},
+  keywords = {Blood Flow Velocity,Blood Vessels,Computer Simulation,Humans,Image Processing Computer-Assisted,Magnetic Resonance Imaging}
+}
+
 @article{pengEstimationPulseWave2006,
   title = {Estimation of Pulse Wave Velocity in Main Pulmonary Artery with Phase Contrast {{MRI}}: {{Preliminary}} Investigation},
   shorttitle = {Estimation of Pulse Wave Velocity in Main Pulmonary Artery with Phase Contrast {{MRI}}},
@@ -3846,6 +4134,7 @@
 }
 
 @article{pruessmann2001,
+  title = {Advances in Sensitivity Encoding with Arbitrary K-Space Trajectories},
   author = {Pruessmann, Klaas P. and Weiger, Markus and Börnert, Peter and Boesiger, Peter},
   date = {2001},
   journaltitle = {Magnetic Resonance in Medicine},
@@ -3899,26 +4188,6 @@
   langid = {english},
   keywords = {autonomic function,baroreflex,blood pressure,cardiovascular homoeostasis,haemodynamics,heart rate variations},
   file = {/Users/txn009/Zotero/storage/BNBBVXWW/Pstras et al. - 2016 - The Valsalva manoeuvre physiology and clinical examples.pdf;/Users/txn009/Zotero/storage/NGHJCMVH/Pstras et al. - 2016 - The Valsalva manoeuvre physiology and clinical examples.pdf;/Users/txn009/Zotero/storage/SVBAMXFD/Pstras et al. - 2016 - The Valsalva manoeuvre physiology and clinical examples.pdf;/Users/txn009/Zotero/storage/2V4EKENF/apha.html;/Users/txn009/Zotero/storage/564Y5865/apha.html}
-}
-
-@article{QuantitativeImagingBiomarkers2015,
-  title = {Quantitative {{Imaging Biomarkers}}: {{A Review}} of {{Statistical Methods}} for {{Computer Algorithm Comparisons}}},
-  shorttitle = {Quantitative {{Imaging Biomarkers}}},
-  date = {2015-02},
-  journaltitle = {Statistical methods in medical research},
-  shortjournal = {Stat Methods Med Res},
-  volume = {24},
-  number = {1},
-  eprint = {24919829},
-  eprinttype = {pubmed},
-  pages = {68--106},
-  issn = {0962-2802},
-  doi = {10.1177/0962280214537390},
-  url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4263694/},
-  urldate = {2024-09-15},
-  abstract = {Quantitative biomarkers from medical images are becoming important tools for clinical diagnosis, staging, monitoring, treatment planning, and development of new therapies. While there is a rich history of the development of quantitative imaging biomarker (QIB) techniques, little attention has been paid to the validation and comparison of the computer algorithms that implement the QIB measurements. In this paper we provide a framework for QIB algorithm comparisons. We first review and compare various study designs, including designs with the true value (e.g. phantoms, digital reference images, and zero-change studies), designs with a reference standard (e.g. studies testing equivalence with a reference standard), and designs without a reference standard (e.g. agreement studies and studies of algorithm precision). The statistical methods for comparing QIB algorithms are then presented for various study types using both aggregate and disaggregate approaches. We propose a series of steps for establishing the performance of a QIB algorithm, identify limitations in the current statistical literature, and suggest future directions for research.},
-  pmcid = {PMC4263694},
-  file = {/Users/txn009/Zotero/storage/TYGBNSCP/2015 - Quantitative Imaging Biomarkers A Review of Statistical Methods for Computer Algorithm Comparisons.pdf}
 }
 
 @article{quistSimultaneousFatSuppression2012,
@@ -4449,6 +4718,24 @@
   file = {/Users/txn009/Zotero/storage/JZT2P3ZH/Schnell et al. - 2017 - Accelerated dual-venc 4D flow MRI for neurovascular applications.pdf;/Users/txn009/Zotero/storage/VJPJBKZR/jmri.html}
 }
 
+@article{schraubenMotionRobustRespiratoryresolved2020,
+  title = {Motion Robust Respiratory-Resolved {{3D}} Radial Flow {{MRI}} and Its Application in Neonatal Congenital Heart Disease},
+  author = {Schrauben, Eric M. and Lim, Jessie Mei and Goolaub, Datta Singh and Marini, Davide and Seed, Mike and Macgowan, Christopher K.},
+  date = {2020},
+  journaltitle = {Magnetic Resonance in Medicine},
+  volume = {83},
+  number = {2},
+  pages = {535--548},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.27945},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.27945},
+  urldate = {2026-03-30},
+  abstract = {Purpose To test and implement a motion-robust and respiratory-resolved 3D Radial Flow framework that addresses the need for rapid, high resolution imaging in neonatal patients with congenital heart disease. Methods A 4-point velocity encoding and 3D radial trajectory with double-golden angle ordering was combined with bulk motion correction (from projection center of mass) and respiration phase detection (from principal component analysis of heartbeat-averaged data) to create motion-robust 3D velocity cardiac time-averaged data. This framework was tested in a whole-chest digital phantom with simulated bulk and realistic physiological motion. In vivo imaging was performed in 20 congenital heart disease infants under feed-and-sleep with submillimeter isotropic resolution in 3 min. Flows were validated against clinical 2D PCMRI and whole-heart visualizations of blood flow were performed. Results The proposed framework resolved all simulated digital phantom motion states (mean ± standard error: rotation – azimuthal = 0.29 ± 0.02°; translation – Ty = 1.29 ± 0.12 mm, Tz = −0.27 ± 0.13 mm; rotation+translation – polar = 0.49 ± 0.16°, Tx = −2.47 ± 0.51 mm, Tz = 5.78 ± 1.33 mm). Measured timing errors of peak expiration across all signal-to-noise ratio values were 22\% of the true respiratory period (range = [404-489 ± 298-334] ms). For in vivo imaging, motion correction improved 3D Radial Flow measurements (no correction: R2 = 0.62, root mean square error = 0.80 L/min/m2, Bland-Altman bias [limits of agreement] = −0.21 [−1.40, 0.94] L/min/m2; motion corrected, expiration: R2 = 0.90, root mean square error = 0.46 L/min/m2, bias [limits of agreement] = 0.06 [−0.49, 0.62] L/min/m2). Respiratory-resolved 3D velocity visualizations were achieved in various neonatal pathologies pre- and postsurgical correction. Conclusion 3D cardiac flow may be visualized and accurately quantified in neonatal subjects using the proposed framework. This technique may enable more comprehensive hemodynamic studies in small infants.},
+  langid = {english},
+  keywords = {3D radial imaging,cardiovascular flow,congenital heart disease,motion correction},
+  file = {/Users/txn009/Zotero/storage/NUN6M553/Schrauben et al. - 2020 - Motion robust respiratory-resolved 3D radial flow MRI and its application in neonatal congenital hea.pdf;/Users/txn009/Zotero/storage/IJMFXMJC/mrm.html}
+}
+
 @article{schraubenRespiratoryinducedVenousBlood2015,
   title = {Respiratory-Induced Venous Blood Flow Effects Using Flexible Retrospective Double-Gating},
   author = {Schrauben, Eric M. and Anderson, Ashley G. and Johnson, Kevin M. and Wieben, Oliver},
@@ -4686,6 +4973,25 @@
   keywords = {Algorithms,cerebrospinal fluid,Cerebrospinal Fluid,Humans,Hydrocephalus Normal Pressure,intracranial compliance,Magnetic Resonance Imaging,Magnetic Resonance Imaging Cine,normal pressure hydrocephalus,phase-contrast MRI,Pulse Wave Analysis,pulse wave velocity,Reproducibility of Results}
 }
 
+@article{spicherInitialEvaluationProspective2016,
+  title = {Initial Evaluation of Prospective Cardiac Triggering Using Photoplethysmography Signals Recorded with a Video Camera Compared to Pulse Oximetry and Electrocardiography at {{7T MRI}}},
+  author = {Spicher, Nicolai and Kukuk, Markus and Maderwald, Stefan and Ladd, Mark E.},
+  date = {2016-11-24},
+  journaltitle = {BioMedical Engineering OnLine},
+  shortjournal = {BioMed Eng OnLine},
+  volume = {15},
+  number = {1},
+  pages = {126},
+  issn = {1475-925X},
+  doi = {10.1186/s12938-016-0245-3},
+  url = {https://doi.org/10.1186/s12938-016-0245-3},
+  urldate = {2026-03-30},
+  abstract = {Accurate synchronization between magnetic resonance imaging data acquisition and a subject’s cardiac activity (“triggering”) is essential for reducing image artifacts but conventional, contact-based methods for this task are limited by several factors, including preparation time, patient inconvenience, and susceptibility to signal degradation. The purpose of this work is to evaluate the performance of a new contact-free triggering method developed with the aim to eventually replace conventional methods in non-cardiac imaging applications. In this study, the method’s performance is evaluated in the context of 7 Tesla non-enhanced angiography of the lower extremities.},
+  langid = {english},
+  keywords = {Cardiac triggering,Contact-free methods,Electrocardiography,In-bore cameras,MRI,Pulse oximetry,Remote vital sign measurement},
+  file = {/Users/txn009/Zotero/storage/NGCRE82Y/Spicher et al. - 2016 - Initial evaluation of prospective cardiac triggering using photoplethysmography signals recorded wit.pdf}
+}
+
 @article{spijkermanPhaseContrastMRI2019,
   title = {Phase Contrast {{MRI}} Measurements of Net Cerebrospinal Fluid Flow through the Cerebral Aqueduct Are Confounded by Respiration},
   author = {Spijkerman, Jolanda M. and Geurts, Lennart J. and Siero, Jeroen C.W. and Hendrikse, Jeroen and Luijten, Peter R. and Zwanenburg, Jaco J.M.},
@@ -4919,13 +5225,6 @@
   abstract = {Purpose The aim of this study was to quantify the displacement of cardiac substructures, including the anterior myocardial territory (AMT), left ventricle, and coronary arteries during a normal cardiac cycle. Materials and methods Computed tomography (CT) images with retrospective electrocardiographic gating of 17 eligible patients were obtained. All images were reconstructed automatically for the end-diastolic and end-systolic phases. CT scanning without contrast at a random phase and a selected vertebral body were used as references to measure three-dimensionaldisplacements of the cardiac substructures. Results The displacement between the end-diastolic and end-systolic phases (Dd-s) was greater than that between the end-systolic and random phases and between the end-diastolic and random cardiac phases. The largest displacements for the heart were in the left, posterior, and inferior directions with an average Dd-s of approximately 4–6 mm. The average Dd-s for the AMT and left ventricle was 1.2–2.7 mm in the anterior and right directions, 4.3–7.8 mm in left and posterior directions, and 4.9–6.3 mm in superior and inferior directions. For the coronary arteries, the average Dd-s was 2.8–5.9 mm in the anterior-posterior direction, 3.5–6.6 mm in left-right direction, and 3.8–5.3 mm in the superior-inferior direction. Inter-observer agreement was excellent for the heart, AMT, and left ventricle (kappa coefficient, {$>$}0.75 for all) and good for most coronary arteries in three dimensions (kappa coefficient, 0.511–0.687). The Dd-s did not differ significantly between men and women. Conclusion Most average displacements of the cardiac substructures and coronary arteries were 3–8 mm in three dimensions. These findings will be useful to accurately estimate the radiation dose to cardiac substructures during thoracic radiation and to evaluate the risk of radiation-related heart disease.},
   pmcid = {PMC3789650},
   file = {/Users/txn009/Zotero/storage/9M5JDFMQ/Tan et al. - 2013 - Estimation of the displacement of cardiac substructures and the motion of the coronary arteries usin.pdf}
-}
-
-@online{TarunNarenSmra,
-  title = {Tarun Naren Smra 2023 - {{Google Search}}},
-  url = {https://www.google.com/search?q=tarun+naren+smra+2023&client=firefox-b-1-d&hs=XLuU&sca_esv=e2250487dc351849&ei=7lXBaZuBIJO7p84PjJ_ViA4&ved=0ahUKEwibsNuLpbaTAxWT3ckDHYxPFeEQ4dUDCBE&uact=5&oq=tarun+naren+smra+2023&gs_lp=Egxnd3Mtd2l6LXNlcnAiFXRhcnVuIG5hcmVuIHNtcmEgMjAyMzIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAFItRZQvQNYzRRwAXgAkAEAmAGhAaABlgaqAQMxLjW4AQPIAQD4AQGYAgagAuwFwgIIEAAYsAMY7wXCAgsQABiABBiwAxiiBMICBRAhGKsCmAMAiAYBkAYFkgcDMS41oAfhHrIHAzAuNbgH5AXCBwUwLjEuNcgHFIAIAA&sclient=gws-wiz-serp},
-  urldate = {2026-03-23},
-  file = {/Users/txn009/Zotero/storage/2ZZCGX76/search.html}
 }
 
 @article{tavianiAccuracyRepeatabilityFourier2010,
@@ -5228,7 +5527,7 @@
   urldate = {2024-08-19},
   abstract = {Aortic stiffness, assessed through pulse wave velocity (PWV), is an independent predictor for cardiovascular disease risk. However, the scarce availability of normal and reference values for cardiovascular magnetic resonance imaging (CMR) based PWV is limiting clinical implementation. The aim of this study was to determine normal and reference values for CMR assessed PWV in the general population.},
   keywords = {Arterial stiffness,Cardiovascular disease,Epidemiology,Magnetic Resonance Imaging,Pulse Wave Velocity},
-  file = {/Users/txn009/Zotero/storage/LTC5P3XU/van Hout et al. - 2021 - Normal and reference values for cardiovascular magnetic resonance-based pulse wave velocity in the m.pdf;/Users/txn009/Zotero/storage/5PAD2XF4/s12968-021-00739-y.html}
+  file = {/Users/txn009/Zotero/storage/LTC5P3XU/van Hout et al. - 2021 - Normal and reference values for cardiovascular magnetic resonance-based pulse wave velocity in the m.pdf;/Users/txn009/Zotero/storage/Y7MCDPZH/van Hout et al. - 2021 - Normal and reference values for cardiovascular magnetic resonance-based pulse wave velocity in the m.pdf;/Users/txn009/Zotero/storage/5PAD2XF4/s12968-021-00739-y.html}
 }
 
 @article{vardoulisValidationNovelExisting2013,
@@ -5247,7 +5546,7 @@
   urldate = {2024-09-09},
   abstract = {The method used for pulse transit time (PTT) estimation critically affects the accuracy and precision of regional pulse wave velocity (PWV) measurements. Several methods of PTT estimation exist, often yielding substantially different PWV values. Since there is no analytic way to determine PTT in vivo, these methods cannot be validated except by using in silico or in vitro models of known PWV and PTT values. We aimed to validate and compare the most commonly used “foot-to-foot” algorithms, namely, the “ diastole-minimum,” “tangential,” “maximum first derivative,” and “maximum second derivative” methods. Also, we propose a new “diastole-patching” method aiming to increase the accuracy and precision in PWV measurements. We simulated 2,000 cases under different hemodynamic conditions using an accurate, validated, distributed, one-dimensional arterial model. The new algorithm detects and “matches” a specific region of the pressure wave foot between the proximal and distal waveforms instead of determining characteristic points. The diastole-minimum and diastole-patching methods showed excellent agreement compared with “real” PWV values of the model, as indicated by high values of the intraclass correlation coefficient ({$>$}0.86). The diastole-patching method resulted in low bias (absolute mean difference: 0.26 m/s). In contrast, PWV estimated by the maximum first derivative, maximum second derivative, and tangentia methods presented low to moderate agreement and poor accuracy (intraclass correlation coefficient: {$<$}0.79 and bias: {$>$}0.9 m/s). The diastole-patching method yielded PWV measurements with the highest agreement, accuracy, and precision and lowest variability.},
   keywords = {aortic stiffness,arterial model,arterial pulse,pulse wave velocity,wave reflection},
-  file = {/Users/txn009/Zotero/storage/DS9PDRZB/Vardoulis et al. - 2013 - Validation of a novel and existing algorithms for the estimation of pulse transit time advancing th.pdf}
+  file = {/Users/txn009/Zotero/storage/DS9PDRZB/Vardoulis et al. - 2013 - Validation of a novel and existing algorithms for the estimation of pulse transit time advancing th.pdf;/Users/txn009/Zotero/storage/Z2B2T3YD/ajpheart.00963.html}
 }
 
 @article{vasanawalaSafetyTechniqueFerumoxytol2016,

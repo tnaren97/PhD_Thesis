@@ -9,7 +9,7 @@ In this chapter, an iMoCo framework is adapted and implemented for 4D flow MRI o
 
 \section{Materials \& Methods}\label{sec:imoco_methods}
 \subsubsection{Iterative Motion Correction Framework}
-The iMoCo method described by Zhu et al.\ was implemented into a Python-based reconstruction framework backed by the SigPy library~\cite{zhuIterativeMotioncompensationReconstruction2020,ongSigpy}. It consists of three main steps: 1.\ a respiratory-resolved reconstruction that reconstructs $R$ distinct respiratory phases, 2.\ deformable image registration of each motion phase to a reference phase to derive deformation fields, and 3.\ a motion-compensated reconstruction utilizing all acquired data and the derived deformation fields to reconstruct a single image at the reference phase.
+The iMoCo method described by Zhu et al.\ was implemented into a Python-based reconstruction framework backed by the SigPy library~\cite{zhuIterativeMotioncompensationReconstruction2020,ongSigpy}. It consists of three main steps: (1) a respiratory-resolved reconstruction that reconstructs $R$ distinct respiratory phases, (2) deformable image registration of each motion phase to a reference phase to derive deformation fields, and (3) a motion-compensated reconstruction utilizing all acquired data and the derived deformation fields to reconstruct a single image at the reference phase.
 
 In the first step, an XD-GRASP reconstruction is performed to generate $N_r$ distinct motion states based on the respiratory signal~\cite{fengXDGRASPGoldenangleRadial2016} (Figure~\ref{fig:motion_recon}). 
 

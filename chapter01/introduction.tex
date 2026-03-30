@@ -2,34 +2,34 @@
 
 Magnetic Resonance Imaging (MRI) is a highly flexible tool for non-invasively acquiring diagnostic information that can be used to guide medical decision-making and treatment. However, there are a number of technical challenges to solve in the application of MRI, including the management of respiration in cardiovascular MRI\@. Cardiovascular MR acquisitions are often time-resolved and typically require the collection of data over multiple cardiac and respiratory cycles. As a result, periodic motion of the diaphragm and lungs introduces complex, non-rigid displacement of thoracic and abdominal structures, including the heart, aorta, and liver. These motion effects manifest as blurring, ghosting, and loss of spatial fidelity, ultimately compromising both qualitative visualization and quantitative measurements derived from MRI data.
 
-Traditional approaches to mitigate respiratory motion have largely relied on breath-holding techniques or respiratory gating. While breath-holding can effectively eliminate motion artifacts in short acquisitions, it is fundamentally limited by scan duration and patient compliance. Many advanced cardiovascular MRI techniques, such as 4D flow MRI, require acquisition times that exceed practical breath-hold durations. This limitation is further exacerbated in patient populations with compromised respiratory function. Retrospective gating strategies offer an effective alternative, but have their own trade-offs in terms of scan time and data efficiency.
+Traditional approaches to mitigate respiratory motion have largely relied on breath-holding techniques or respiratory gating. While breath-holding can effectively eliminate motion artifacts in short acquisitions, it is fundamentally limited by scan duration and patient compliance. Many advanced cardiovascular MRI techniques, such as 4D flow MRI, require acquisition times that exceed practical breath-hold durations. This limitation is further exacerbated in patient populations with compromised respiratory function or inability to comprehend instructions. Retrospective gating strategies offer an effective alternative by recording a respiratory waveform throughout the acquisition and retroactively choosing only data points that fall within the desired respiratory phase (typically end-exhalation). However, retrospective gating has its own trade-offs, including increased scan time and reduced data efficiency during reconstruction.
 
-However, respiration is not merely a source of artifacts to be suppressed; it is a physiologically meaningful process that influences cardiovascular dynamics. Rather than solely attempting to eliminate respiration-induced artifacts, there is growing interest in investigating dynamics affected by respiratory motion. Achieving this requires advanced acquisition and reconstruction strategies capable of capturing motion-resolved information.
+Even then, respiration is not merely a source of artifacts to be suppressed; it is a physiologically meaningful process that influences cardiovascular dynamics. Rather than solely attempting to eliminate respiration-induced artifacts, there is growing interest in investigating dynamics affected by respiratory motion. Achieving this requires advanced acquisition and reconstruction strategies capable of capturing motion-resolved information.
 
-The overarching motivation of this dissertation is three-fold. First, to optimize and implement MRI acquisition and reconstruction techniques that mitigate effects of respiratory motion through free-breathing acquisitions, enabling imaging in scenarios where traditional approaches may not be feasible. Second, to improve and accelerate acquisitions by increasing data efficiency in respiratory gating. Third, to enable respiratory-resolved imaging for investigating respiration-induced motion.
+The overarching motivation of this dissertation is three-fold. First, to optimize and implement MRI acquisition and reconstruction techniques that mitigate effects of respiratory motion through free-breathing acquisitions, enabling imaging in scenarios where traditional approaches may not be feasible. Second, to improve and accelerate acquisitions by increasing data efficiency in respiratory gating. Third, to enable respiratory-resolved imaging for investigating respiration-induced motion and physiological effects. This will be performed in three different scientific contexts, each focusing on a different anatomical region: (1) validation of improved radial, free-breathing 2D Phase Contrast (2D PC) and simultaneous-multi slice (SMS) sequences for measuring pulse wave velocity in the aorta, (2) accelerating the acquisition of radial, free-breathing 4D flow MRI in the portal venous system with phase unwrapping and motion correction strategies, and (3) implementing a 5D MRI approach for resolving cardiac and respiratory motion of the heart in radiation therapy treatment planning.
 
 \section{Chapter Summary}
 The chapters of this dissertation are organized as follows:
 \begin{description}
     \item \textbf{Chapter~\ref{ch:background}: \nameref{ch:background}} 
     
-    The fundamentals of MRI and its applications to cardiovascular imaging are discussed. This includes the basics of MR acquisitions, reconstructions, and MR-based angiography with phase contrast imaging.
+    The fundamentals of MRI and its applications to cardiovascular imaging are reviewed. This includes the basics of MR data acquisitions and image reconstructions with velocity mapping based on phase contrast imaging.
 
     \item \textbf{Chapter~\ref{ch:phantom}: \nameref{ch:phantom}}
     
-    Validation of a developed method for assessing aortic pulse wave velocity via radial, free-breathing 2D PC acquisitions is performed in a physiologically realistic flow phantom. An improved radial, free-breathing simultaneous multi-slice (SMS) acquisition is also tested in the phantom.
+    Radially undersampled single slice and SMS 2D PC MRI is compared to standard Cartesian 2D PC and ground truth ultrasound methods for assessing PWV in a controlled flow phantom study. 
 
     \item \textbf{Chapter~\ref{ch:life}: \nameref{ch:life}}
     
-    The radial, free-breathing 2D PC sequence is applied to a Longitudinal study exploring the Impact of Fitness and Exercise (LIFE study) on cardiovascular health by assessing PWV\@ in elderly subjects at risk for Alzheimer's Disease. I perform an updated analysis of acquired data and discuss the challenges of 2D PC-based PWV measurement methods.
+    The radial, free-breathing 2D PC sequence is applied to the Longitudinal Impact of Fitness and Exercise (LIFE) study, which explores the effects of habitual fitness on cardiovascular health in elderly subjects at risk for Alzheimer's Disease, to measure PWV\@. I perform an updated analysis of acquired data and discuss the challenges of 2D PC-based PWV measurement methods.
 
     \item \textbf{Chapter~\ref{ch:respiration}: \nameref{ch:respiration}} 
     
-    A feasibility study for assessing PWV in different modes of respiration with the radial, free-breathing SMS 2D PC sequence is performed in a small cohort of healthy volunteers. PWV is measured under free-breathing exhalation and inhalation as well as under metronome-paced tachypnea.
+    A feasibility study for assessing PWV in different modes of respiration with the radial, free-breathing SMS 2D PC sequence is performed in a small cohort of healthy volunteers. PWV is assessed for the inhalation and exhalation periods of free-breathing as well as under metronome-paced tachypnea.
 
     \item \textbf{Chapter~\ref{ch:gevenc}: \nameref{ch:gevenc}}
     
-    Velocity encoding optimization strategies are explored in the application of 4D flow MRI for imaging the hepatic portal vein in subjects at risk for development of gastroesophageal varices. A 4D Laplacian method for unwrapping aliased datasets is applied.
+    Velocity encoding (venc) optimization strategies are explored in the application of 4D flow MRI for imaging the hepatic portal vein in subjects at risk for development of gastroesophageal varices. A 4D Laplacian method for unwrapping aliased velocity data is applied to multiple datasets acquired with different vencs to identify the optimal venc to use for future acquisitions.
 
     \item \textbf{Chapter~\ref{ch:5DMRI}: \nameref{ch:5DMRI}} 
     
