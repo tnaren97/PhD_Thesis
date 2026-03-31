@@ -80,11 +80,11 @@
   keywords = {3D flow,Adult,Aorta Thoracic,blood flow assessment,Blood Flow Velocity,cardiac MR,Female,gating efficiency,Healthy Volunteers,Humans,Image Processing Computer-Assisted,Imaging Three-Dimensional,intra-scan variability,Magnetic Resonance Imaging,Male,mean flow,Motion,phase contrast MR,Pulmonary Artery,Respiration,respiratory navigators,Signal-To-Noise Ratio,stroke volume,Time Factors}
 }
 
-@book{americansocietyofradiationoncologyGuideRadiationOncology2010,
+@report{americansocietyofradiationoncologyGuideRadiationOncology2010,
   title = {Guide to {{Radiation Oncology Coding}}},
-  author = {American Society of Radiation Oncology and American College of Radiology},
+  author = {American Society for Radiation Oncology},
   date = {2010},
-  publisher = {American Society for Radiation Oncology},
+  institution = {American Society for Radiation Oncology},
   location = {Farifax, VA}
 }
 
@@ -579,6 +579,42 @@
   file = {/Users/txn009/Zotero/storage/8UY9SVPK/Breuer et al. - 2005 - Controlled aliasing in parallel imaging results in higher acceleration (CAIPIRINHA) for multi-slice.pdf;/Users/txn009/Zotero/storage/HDBMY7B2/mrm.html}
 }
 
+@article{bryantMeasurementFlowNMR1984,
+  title = {Measurement of Flow with {{NMR}} Imaging Using a Gradient Pulse and Phase Difference Technique},
+  author = {Bryant, D. J. and Payne, J. A. and Firmin, D. N. and Longmore, D. B.},
+  date = {1984-08},
+  journaltitle = {Journal of Computer Assisted Tomography},
+  shortjournal = {J Comput Assist Tomogr},
+  volume = {8},
+  number = {4},
+  eprint = {6736356},
+  eprinttype = {pubmed},
+  pages = {588--593},
+  issn = {0363-8715},
+  doi = {10.1097/00004728-198408000-00002},
+  abstract = {A method for determining flow by nuclear magnetic resonance (NMR) imaging is described. A conventional spin-echo imaging sequence is employed with the addition of balanced gradient pulses on either side of the pi radiofrequency pulse. Flow velocities in the direction orthogonal to the image plane are determined by the phase shifts in the NMR image. Experimental validation of the technique in vitro was achieved with a phantom designed to give a continuous flow of water. The flow rate measured by NMR agreed well with the volume flow rate through the phantom. In vivo, NMR flow measurements on the carotid and femoral arteries of two volunteers were compared with Doppler ultrasound results. Velocity measurements were in general agreement. Rapid changes in flow are difficult to follow with the NMR method unless particular care is taken in gradient profile design. The technique can readily be used in existing NMR imaging machines and may have a useful clinical role.},
+  langid = {english},
+  keywords = {Blood Flow Velocity,Carotid Arteries,Femoral Artery,Humans,In Vitro Techniques,Jugular Veins,Magnetic Resonance Spectroscopy,Models Structural,Ultrasonography}
+}
+
+@article{buonincontriTrajectoryCorrectionFreebreathing2014,
+  title = {Trajectory Correction for Free-Breathing Radial Cine {{MRI}}},
+  author = {Buonincontri, Guido and Methner, Carmen and Krieg, Thomas and Carpenter, T. Adrian and Sawiak, Stephen J.},
+  date = {2014-09-01},
+  journaltitle = {Magnetic Resonance Imaging},
+  shortjournal = {Magnetic Resonance Imaging},
+  volume = {32},
+  number = {7},
+  pages = {961--964},
+  issn = {0730-725X},
+  doi = {10.1016/j.mri.2014.04.006},
+  url = {https://www.sciencedirect.com/science/article/pii/S0730725X14001313},
+  urldate = {2026-03-30},
+  abstract = {Radial acquisitions can suffer from trajectory errors leading to reduced image quality. Here we present a new method of trajectory correction that uses all spokes of a radial acquisition and compare it to an existing method that uses a two-spoke pre-scan calibration. For both methods, estimates of the necessary shifts were made using magnitude or phase data and the performances were compared. The additional effect of B0 correction was considered in all cases. Mouse cardiac scans were used for the comparisons and we also compared the quality of navigator signals obtained from the radial data with each technique. The proposed method gave improved image quality over the existing method, as assessed by visual inspection and quantitative evaluation of artifacts. The typical shading artifacts seen in radial scans were significantly reduced with both approaches, with phase-based corrections generally outperforming magnitude-based methods. B0 correction gave further improvements in each case. Furthermore, modulation of navigator signals due to the acquisition angle was significantly reduced with the new technique. We show that our proposed method works well to reduce artifacts seen in mouse cardiac imaging that can make faster imaging feasible.},
+  keywords = {Eddy currents,Free breathing,Radial MRI,Retrospective gating},
+  file = {/Users/txn009/Zotero/storage/JRCUS235/Buonincontri et al. - 2014 - Trajectory correction for free-breathing radial cine MRI.pdf;/Users/txn009/Zotero/storage/B2NRIA6S/S0730725X14001313.html}
+}
+
 @article{butlinP131DETERMININGPULSE2008,
   title = {P1.31 {{DETERMINING PULSE WAVE VELOCITY USING MRI}}: {{A COMPARISON AND REPEATABILITY OF RESULTS USING SEVEN TRANSIT TIME ALGORITHMS}}},
   shorttitle = {P1.31 {{DETERMINING PULSE WAVE VELOCITY USING MRI}}},
@@ -743,14 +779,6 @@
   urldate = {2024-08-19},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/SUVMLFAI/Cavalcante et al. - 2011 - Aortic Stiffness.pdf}
-}
-
-@online{CdsismrmorgProtected18MProceedings,
-  title = {Cds.Ismrm.Org/Protected/{{18MProceedings}}/{{PDFfiles}}/3326.Html},
-  author = {Naren, Tarun},
-  url = {https://cds.ismrm.org/protected/18MProceedings/PDFfiles/3326.html},
-  urldate = {2025-04-03},
-  file = {/Users/txn009/Zotero/storage/AL5V49PI/3326.html}
 }
 
 @article{chandlerCorrectionMisalignedSlices2008,
@@ -2132,9 +2160,12 @@
   file = {/Users/txn009/Zotero/storage/KXIIG89I/Ibrahim et al. - 2010 - Measuring aortic pulse wave velocity using high-field cardiovascular magnetic resonance comparison.pdf}
 }
 
-@article{iiiAdvantagesRetrospectivelyGated,
+@inproceedings{iiiAdvantagesRetrospectivelyGated,
   title = {On the {{Advantages}} of {{Retrospectively Gated Radial Acquisitions}} for {{Cine Phase Contrast Flow Imaging}}},
   author = {Anderson III, Anderson and Wentland, A L and Johnson, K M and Wieben, O},
+  date = {2011-05},
+  location = {Montreal, Canada},
+  eventtitle = {{{ISMRM}}},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/GCD92ZY2/Anderson III et al. - On the Advantages of Retrospectively Gated Radial Acquisitions for Cine Phase Contrast Flow Imaging.pdf}
 }
@@ -2147,36 +2178,15 @@
   file = {/Users/txn009/Zotero/storage/7VRPJ9YH/2262.html}
 }
 
-@online{ISMRM2022Effect,
-  title = {({{ISMRM}} 2022) {{Effect}} of {{Temporal Resolution}} on {{Flow-Area Aortic Pulse Wave Velocity Measures Using Phase Contrast}} and {{Balanced SSFP MRI}}: {{A Preliminary Study}}},
-  author = {Naren, Tarun},
-  url = {https://archive.ismrm.org/2022/0796.html},
-  urldate = {2026-03-23},
-  file = {/Users/txn009/Zotero/storage/V4LPDSDN/0796.html}
-}
-
-@online{ISMRM2023Denoising,
-  title = {({{ISMRM}} 2023) {{Denoising Vastly Undersampled Radial Portal Venous 4D Flow Data}} via {{Deep Learning}}},
-  author = {Naren, Tarun},
+@inproceedings{ISMRM2023Denoising,
+  title = {Denoising {{Vastly Undersampled Radial Portal Venous 4D Flow Data}} via {{Deep Learning}}},
+  author = {Naren, Tarun and Wieben, Oliver and Oechtering, Thekla and Reeder, Scott and Johnson, Kevin},
+  date = {2023-05},
+  location = {Toronto, Canada},
   url = {https://archive.ismrm.org/2023/3648.html},
   urldate = {2026-03-23},
+  eventtitle = {{{ISMRM}}},
   file = {/Users/txn009/Zotero/storage/5HTFQ92J/3648.html}
-}
-
-@online{ISMRM2024Feasibility,
-  title = {({{ISMRM}} 2024) {{Feasibility}} of a {{2D Radial Simultaneous Multi-Slice Phase Contrast MRI}} Sequence for {{Aortic Pulse Wave Velocity Measurements}}},
-  author = {Naren, Tarun},
-  url = {https://archive.ismrm.org/2024/3381_4lRsviQZb.html},
-  urldate = {2026-03-23},
-  file = {/Users/txn009/Zotero/storage/HQ8CZPCA/3381_4lRsviQZb.html}
-}
-
-@online{ISMRM2025How,
-  title = {({{ISMRM}} 2025) {{How Low}} Is {{Too Low}}? {{Optimizing VENC}} in {{4D Flow MRI}} for the {{Portal Venous System}}},
-  author = {Naren, Tarun},
-  url = {https://archive.ismrm.org/2025/3668_Hhill8QMI.html},
-  urldate = {2026-03-23},
-  file = {/Users/txn009/Zotero/storage/W4L792VL/3668_Hhill8QMI.html}
 }
 
 @article{iwakiriPathophysiologyPortalHypertension2014,
@@ -2740,6 +2750,24 @@
   file = {/Users/txn009/Zotero/storage/P7HJ8MKD/Laganà et al. - 2022 - Blood and cerebrospinal fluid flow oscillations measured with real-time phase-contrast MRI breathin.pdf}
 }
 
+@article{landgrafEffectTemporalResolution2014,
+  title = {Effect of Temporal Resolution on {{4D}} Flow {{MRI}} in the Portal Circulation},
+  author = {Landgraf, Benjamin R. and Johnson, Kevin M. and Roldán-Alzate, Alejandro and Francois, Christopher J. and Wieben, Oliver and Reeder, Scott B.},
+  date = {2014},
+  journaltitle = {Journal of Magnetic Resonance Imaging},
+  volume = {39},
+  number = {4},
+  pages = {819--826},
+  issn = {1522-2586},
+  doi = {10.1002/jmri.24233},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/jmri.24233},
+  urldate = {2026-03-31},
+  abstract = {Purpose To demonstrate the use of temporal averaging with radial 4D flow magnetic resonance imaging (MRI) to reduce scan time for quantification and visualization of flow in the portal circulation. This study compared phase-contrast MR angiography, 3D flow visualization, and flow quantification of portal venous hemodynamics of time-averaged vs. time-resolved reconstructions. Materials and Methods Time-resolved 3D radial (“4D”) phase contrast data were acquired from 44 subjects (15 volunteers, 29 cirrhosis patients) at 3T. Images were reconstructed as a fully sampled time-resolved reconstruction and multiple time-averaged reconstructions using a variable number of acquired projections to simulate different scan times. Images from each reconstruction were evaluated to compare the quality of anatomical and hemodynamic visualization. Results Time-averaged reconstructions outperformed time-resolved reconstructions for flow quantification (3.9 ± 3.1\% error vs. 5.2 ± 4.4\% error), average streamline length (47 ± 7 mm vs. 34 ± 15 mm), and visualization quality (average grading = 3.7 ± 0.5 vs. 2.2 ± 0.9). In addition, excellent visualization quality was achieved using fewer acquired projections. Conclusion Reductions in scan time can be achieved through time-averaging while still providing excellent visualization and quantification in the portal circulation. Scan time reduction of up to 70\%–80\% was possible for high-quality assessment, translating into a reduction in scan time from 10–12 minutes to ∼3–4 minutes. J. Magn. Reson. Imaging 2014;39:819–826. © 2013 Wiley Periodicals, Inc.},
+  langid = {english},
+  keywords = {diffuse liver disease,flow-sensitive 4D MR,hemodynamics,portal hypertension,portal venous flow,velocity mapping},
+  file = {/Users/txn009/Zotero/storage/WK8TLEHY/Landgraf et al. - 2014 - Effect of temporal resolution on 4D flow MRI in the portal circulation.pdf;/Users/txn009/Zotero/storage/Y46BREFS/jmri.html}
+}
+
 @article{langhoughkoscikValidityEvidenceResearch2021,
   title = {Validity {{Evidence}} for the {{Research Category}}, "{{Cognitively Unimpaired}} - {{Declining}}," as a {{Risk Marker}} for {{Mild Cognitive Impairment}} and {{Alzheimer}}'s {{Disease}}},
   author = {Langhough Koscik, Rebecca and Hermann, Bruce P. and Allison, Samantha and Clark, Lindsay R. and Jonaitis, Erin M. and Mueller, Kimberly D. and Betthauser, Tobey J. and Christian, Bradley T. and Du, Lianlian and Okonkwo, Ozioma and Birdsill, Alex and Chin, Nathaniel and Gleason, Carey and Johnson, Sterling C.},
@@ -2813,16 +2841,20 @@
   file = {/Users/txn009/Zotero/storage/S9E3RGHF/Lauterbur - 1973 - Image Formation by Induced Local Interactions Examples Employing Nuclear Magnetic Resonance.pdf}
 }
 
-@article{leeLLORMALocalLowRank,
-  title = {{{LLORMA}}: {{Local Low-Rank Matrix Approximation}}},
-  author = {Lee, Joonseok and Kim, Seungyeon},
-  date = {2016},
+@article{leeLLORMALocalLowrank2016,
+  title = {{{LLORMA}}: Local Low-Rank Matrix Approximation},
+  shorttitle = {{{LLORMA}}},
+  author = {Lee, Joonseok and Kim, Seungyeon and Lebanon, Guy and Singer, Yoram and Bengio, Samy},
+  date = {2016-01-01},
+  journaltitle = {J. Mach. Learn. Res.},
   volume = {17},
-  number = {15},
-  publisher = {Journal of Machine Learning Research},
+  number = {1},
+  pages = {442--465},
+  issn = {1532-4435},
+  url = {https://dl.acm.org/doi/10.5555/2946645.2946660},
+  urldate = {2026-03-31},
   abstract = {Matrix approximation is a common tool in recommendation systems, text mining, and computer vision. A prevalent assumption in constructing matrix approximations is that the partially observed matrix is low-rank. In this paper, we propose, analyze, and experiment with two procedures, one parallel and the other global, for constructing local matrix approximations. The two approaches approximate the observed matrix as a weighted sum of low-rank matrices. These matrices are limited to a local region of the observed matrix. We analyze the accuracy of the proposed local low-rank modeling. Our experiments show improvements in prediction accuracy over classical approaches for recommendation tasks.},
-  langid = {english},
-  file = {/Users/txn009/Zotero/storage/F9E4F2EL/Lee and Kim - 2016 - LLORMA Local Low-Rank Matrix Approximation.pdf}
+  file = {/Users/txn009/Zotero/storage/3HVXBWEY/Lee et al. - 2016 - LLORMA local low-rank matrix approximation.pdf;/Users/txn009/Zotero/storage/F9E4F2EL/Lee and Kim - 2016 - LLORMA Local Low-Rank Matrix Approximation.pdf}
 }
 
 @article{leszekLinksCardiovascularDiseases2021,
@@ -2864,6 +2896,24 @@
   pmcid = {PMC11835220},
   keywords = {Adult,Blood Pressure,Blood Pressure Determination,Female,Heart Rate,Humans,Male,Pulse Wave Analysis,Vascular Stiffness,Young Adult},
   file = {/Users/txn009/Zotero/storage/XH5F8JYH/Liu et al. - 2024 - Influence of Blood Pressure and Heart Rate on PWV Measurement Assessment Under Real-Time Blood Pres.pdf}
+}
+
+@article{lockeComparisonPhaseUnwrapping2023,
+  title = {A Comparison of Phase Unwrapping Methods in Velocity-Encoded {{MRI}} for Aortic Flows},
+  author = {Löcke, Miriam and Garay Labra, Jeremias Esteban and Franco, Pamela and Uribe, Sergio and Bertoglio, Cristóbal},
+  date = {2023},
+  journaltitle = {Magnetic Resonance in Medicine},
+  volume = {90},
+  number = {5},
+  pages = {2102--2115},
+  issn = {1522-2594},
+  doi = {10.1002/mrm.29767},
+  url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/mrm.29767},
+  urldate = {2026-03-31},
+  abstract = {Purpose The phase of a MRI signal is used to encode the velocity of blood flow. Phase unwrapping artifacts may appear when aiming to improve the velocity-to-noise ratio (VNR) of the measured velocity field. This study aims to compare various unwrapping algorithms on ground-truth synthetic data generated using computational fluid dynamics (CFD) simulations. Methods We compare four different phase unwrapping algorithms on two different synthetic datasets of four-dimensional flow MRI and 26 datasets of 2D PC-MRI acquisitions including the ascending and descending aorta. The synthetic datasets are constructed using CFD simulations of an aorta with a coarctation, with different levels of spatiotemporal resolutions and noise. The error of the unwrapped images was assessed by comparison against the ground truth velocity field in the synthetic data and dual-VENC reconstructions in the in vivo data. Results Using the unwrapping algorithms, we were able to remove aliased voxels in the data almost entirely, reducing the L2-error compared to the ground truth by 50\%–80\%. Results indicated that the best choice of algorithm depend on the spatiotemporal resolution and noise level of the dataset. Temporal unwrapping is most successful with a high temporal and low spatial resolution (\textbackslash{} \textbackslash delta t=30 \textbackslash{} ms, \textbackslash{} h=2.5 \textbackslash{} mm), reducing the L2-error by 70\%–85\%, while Laplacian unwrapping performs better with a lower temporal or better spatial resolution (\textbackslash{} \textbackslash delta t=60 \textbackslash{} ms, \textbackslash{} h=1.5 \textbackslash{} mm), especially for signal-to-noise ratio (SNR) 12 as opposed to SNR 15, with an error reduction of 55\%–85\% compared to the 50\%–75\% achieved by the Temporal method. The differences in performance between the methods are statistically significant. Conclusions The temporal method and spatiotemporal Laplacian method provide the best results, with the spatiotemporal Laplacian being more robust. However, single-\textbackslash{} V\_\textbackslash mathrmenc \textbackslash{} methods only situationally and not generally reach the performance of dual-\textbackslash{} V\_\textbackslash mathrmenc \textbackslash{} unwrapping methods.},
+  langid = {english},
+  keywords = {4D flow MRI,phase-contrast MRI,unwrapping methods,VENC},
+  file = {/Users/txn009/Zotero/storage/MRJ8FND2/Löcke et al. - 2023 - A comparison of phase unwrapping methods in velocity-encoded MRI for aortic flows.pdf;/Users/txn009/Zotero/storage/NX9JJA9Y/mrm.html}
 }
 
 @article{loecher4DGradientBased,
@@ -3471,42 +3521,110 @@
   file = {/Users/txn009/Zotero/storage/HAPMVZ4M/Nacif et al. - 2012 - Cardiac magnetic resonance imaging and its electrocardiographs (ECG) tips and tricks.pdf}
 }
 
-@online{naren5DMRIFramework,
-  title = {({{ISMRM}} 2024) {{A 5D MRI Framework}} for {{Cardiac Motion Characterization}} in {{Radiation Therapy}}},
-  author = {Naren, Tarun},
+@inproceedings{naren5DMRIFramework,
+  title = {A {{5D MRI Framework}} for {{Cardiac Motion Characterization}} in {{Radiation Therapy}}},
+  author = {Naren, Tarun and Ruff, Chase and Johnson, Kevin and Glide-Hurst, Carri and Wieben, Oliver},
+  date = {2024-05},
+  location = {Singapore, Singapore},
   url = {https://archive.ismrm.org/2024/3526.html},
   urldate = {2026-03-27},
+  eventtitle = {{{ISMRM}}},
   file = {/Users/txn009/Zotero/storage/B8JEYD2K/3526.html}
 }
 
-@article{narenComparingRobustnessRespiratoryresolved2024,
+@inproceedings{narenAorticPWVValsalva,
+  title = {Aortic {{Pulse Wave Velocity Measurements}} with a {{Simultaneous Multi-Slice Acquisition During Free Breathing}} and {{Valsalva}}.},
+  author = {Naren, Tarun and Roberts, Grant and Johnson, Kevin and Wieben, Oliver},
+  date = {2025},
+  location = {Madison},
+  eventtitle = {Magnetic {{Resonance}} in {{Madison}}}
+}
+
+@inproceedings{narenAorticPWVValsalvaB,
+  title = {Aortic {{Pulse Wave Velocity Measurements}} with a {{Simultaneous Multi-Slice Acquisition During Free Breathing}} and {{Valsalva}}.},
+  author = {Naren, Tarun and Roberts, Grant and Johnson, Kevin and Wieben, Oliver},
+  date = {2025},
+  location = {Budapest, Hungary},
+  eventtitle = {{{SMRA}}}
+}
+
+@inproceedings{narenComparingRobustnessRespiratoryresolved2024,
   title = {Comparing the {{Robustness}} of {{Respiratory-resolved Aortic Pulse Wave Velocity Calculation Methods}} in {{2D Phase Contrast MRI}}},
   author = {Naren, Tarun and Roberts, Grant and Breidenbach, Bri and Bernhardt, Zach and Fondakowski, Jennifer and Jarchow, Mackenzie and Lose, Sarah and Pandos, Alyssa and Johnson, Kevin and Okonkwo, Ozioma and Wieben, Oliver},
   date = {2024-03-01},
-  journaltitle = {Journal of Cardiovascular Magnetic Resonance},
-  shortjournal = {Journal of Cardiovascular Magnetic Resonance},
   volume = {26},
   publisher = {Elsevier},
+  location = {London, UK},
   issn = {1097-6647, 1532-429X},
   doi = {10.1016/j.jocmr.2024.100601},
   url = {https://www.journalofcmr.com/article/S1097-6647(24)00592-1/fulltext},
   urldate = {2026-03-23},
+  eventtitle = {Society of {{Cardiovascular Magnetic Resonance}}},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/FHNFJF64/Naren et al. - 2024 - Comparing the Robustness of Respiratory-resolved Aortic Pulse Wave Velocity Calculation Methods in 2.pdf}
+}
+
+@inproceedings{narenDualVenc,
+  title = {How {{Low}} Is {{Too Low}}? {{Dual-VENC 4D Flow}} for the {{Portal Venous System}}},
+  author = {Naren, Tarun and Oechtering, Thekla and Reeder, Scott and Johnson, Kevin and Wieben, Oliver},
+  date = {2024},
+  location = {Santiago, Chile},
+  eventtitle = {{{SMRA}}}
 }
 
 @inproceedings{narenEffectTemporalResolution,
   title = {Effect of {{Temporal Resolution}} on {{Flow-Area Aortic Pulse Wave Velocity Measures Using Phase Contrast}} and {{Balanced SSFP MRI}}: {{A Preliminary Study}}},
   shorttitle = {Effect of {{Temporal Resolution}} on {{Flow-Area Aortic Pulse Wave Velocity Measures Using Phase Contrast}} and {{Balanced SSFP MRI}}},
   author = {Naren, Tarun and Roberts, Grant and Wieben, Oliver},
+  date = {2022-05},
   pages = {0796},
   location = {London, England, UK},
   doi = {10.58530/2022/0796},
   url = {https://archive.ismrm.org/2022/0796.html},
   urldate = {2024-08-19},
   abstract = {The flow-area (QA) method is a promising phase contrast (PC) technique to assess local aortic pulse wave velocity (PWV). However, validation for reduced temporal resolutions is lacking. Data analysis and automated post-processing are compromised because of varying PC image quality throughout the cardiac cycle. In this study, we acquire PC and bSSFP data at three temporal resolutions and measure QAPWV using PC data alone and by combining PC flow measures with bSSFP areas. We found that the highest temporal resolution datasets (10ms) provide the most accurate PWV measures and the method combining bSSFP and PC was less accurate.},
-  eventtitle = {Joint {{Annual Meeting ISMRM-ESMRMB ISMRT}} 31st {{Annual Meeting}}},
+  eventtitle = {{{ISMRM}}},
   langid = {english}
+}
+
+@inproceedings{narenFeasibility,
+  title = {Feasibility of a {{2D Radial Simultaneous Multi-Slice Phase Contrast MRI}} Sequence for {{Aortic Pulse Wave Velocity Measurements}}},
+  author = {Naren, Tarun and Roberts, Grant and Johnson, Kevin and Breidenbach, Bri and Jarchow, Mackenzie and Lose, Sarah and Pandos, Alyssa and Okonkwo, Ozioma and Wieben, Oliver},
+  date = {2024-05},
+  location = {Singapore, Singapore},
+  url = {https://cds.ismrm.org/protected/18MProceedings/PDFfiles/3326.html},
+  urldate = {2025-04-03},
+  eventtitle = {{{ISMRM}}},
+  file = {/Users/txn009/Zotero/storage/AL5V49PI/3326.html}
+}
+
+@inproceedings{narenHowLow,
+  title = {How {{Low}} Is {{Too Low}}? {{Optimizing VENC}} in {{4D Flow MRI}} for the {{Portal Venous System}}},
+  author = {Naren, Tarun and Oechtering, Thekla and Johnson, Kevin and Reeder, Scott and Wieben, Oliver},
+  date = {2025-05},
+  location = {Honolulu, Hawaii},
+  url = {https://archive.ismrm.org/2025/3668_Hhill8QMI.html},
+  urldate = {2026-03-23},
+  eventtitle = {{{ISMRM}}},
+  file = {/Users/txn009/Zotero/storage/W4L792VL/3668_Hhill8QMI.html}
+}
+
+@software{narenPWV_2DPC,
+  title = {{{2D Phase Contrast MRI PWV-TT Calculation Tool}}},
+  author = {Naren, Tarun and Roberts, Grant},
+  date = {2025-12-03T18:05:12Z},
+  origdate = {2023-05-17T01:03:41Z},
+  url = {https://github.com/tnaren97/PWV_2DPC},
+  urldate = {2026-03-31},
+  abstract = {Pulse wave velocity GUI for 2DPC MRI}
+}
+
+@inproceedings{narenQuantifyingDifferences,
+  title = {Quantifying {{Differences}} in {{Aortic Pulse Wave Velocity Across}} the {{Respiratory Cycle}} with {{Retrospectively Gated Radial 2D Phase Contrast MRI}}.},
+  author = {Naren, Tarun and Roberts, Grant and Breidenbac, Bri and Bernhardt, Zach and Fondakowski, Jennifer and Jarchow, Mackenzie and Lose, Sarah and Pandos, Alyssa and Johnson, Kevin and Okonkwo, Ozioma and Wieben, Oliver},
+  date = {2023},
+  location = {Sendai, Japan},
+  eventtitle = {{{SMRA}}}
 }
 
 @article{nayakCardiovascularMagneticResonance2015,
@@ -4400,8 +4518,8 @@
   file = {/Users/txn009/Zotero/storage/ID93EA9T/Rivera-Rivera et al. - 2022 - Motion-corrected 4D-Flow MRI for neurovascular applications.pdf;/Users/txn009/Zotero/storage/SITCK67S/S1053811922008321.html}
 }
 
-@software{roberts2DPhaseContrast,
-  title = {{{2D Phase Contrast MRI PWV Calculation Tool}}},
+@software{roberts2DPhaseContrastQA,
+  title = {{{2D Phase Contrast MRI PWV-QA Calculation Tool}}},
   author = {Roberts, Grant M. and Naren, Tarun},
   url = {https://github.com/tnaren97/PWV_QA},
   organization = {University of Wisconsin - Madison}
@@ -4624,6 +4742,14 @@
   file = {/Users/txn009/Zotero/storage/5D89QDU5/Ruesink et al. - 2018 - IN-VITRO VALIDATION OF 4D FLOW MRI FOR LOCAL PULSE WAVE VELOCITY ESTIMATION.pdf}
 }
 
+@inproceedings{ruffDecoupling,
+  title = {Decoupling {{Cardiorespiratory Motion}} of {{Cardiac Substructures Via 5D-MRI}} for {{Radiotherapy}}},
+  author = {Ruff, Chase and Naren, Tarun and Johnson, Kevin and Glide-Hurst, Carri and Wieben, Oliver},
+  date = {2025},
+  location = {Houston},
+  eventtitle = {{{AAPM}} 67th {{Annual Meeting}}}
+}
+
 @online{ruffDeducingCardiorespiratoryMotion2025,
   title = {Deducing {{Cardiorespiratory Motion}} of {{Cardiac Substructures Using}} a {{Novel 5D-MRI Workflow}} for {{Radiotherapy}}},
   author = {Ruff, Chase and Naren, Tarun and Wieben, Oliver and Nagpal, Prashant and Johnson, Kevin and Zhao, Jiwei and Grist, Thomas and Glide-Hurst, Carri},
@@ -4638,6 +4764,21 @@
   pubstate = {prepublished},
   keywords = {Physics - Medical Physics},
   file = {/Users/txn009/Zotero/storage/FM8VLZBA/Ruff et al. - 2025 - Deducing Cardiorespiratory Motion of Cardiac Substructures Using a Novel 5D-MRI Workflow for Radioth.pdf;/Users/txn009/Zotero/storage/WPR6QXBV/2503.html}
+}
+
+@article{ruffDeducingCardiorespiratoryMotion2026,
+  title = {Deducing Cardiorespiratory Motion of Cardiac Substructures Using a Novel {{5D-MRI}} Workflow for Radiotherapy},
+  author = {Ruff, Chase and Naren, Tarun and Wieben, Oliver and Nagpal, Prashant and Johnson, Kevin M and Zhao, Jiwei and Grist, Thomas and Baschnagel, Andrew and Glide-Hurst, Carri K},
+  date = {2026},
+  journaltitle = {Physics in Medicine \& Biology},
+  shortjournal = {Phys. Med. Biol.},
+  issn = {0031-9155},
+  doi = {10.1088/1361-6560/ae5752},
+  url = {http://iopscience.iop.org/article/10.1088/1361-6560/ae5752},
+  urldate = {2026-03-31},
+  abstract = {Objective: Cardiotoxicity is a devastating complication of thoracic radiotherapy. However, current practice ignores radiosensitivities and complex motion trajectories of individual substructures. Current imaging protocols in radiotherapy are insufficient to decouple and quantify cardiac motion, limiting substructure-specific motion considerations in treatment planning. We propose a 5D-MRI workflow for comprehensive substructure-specific motion analysis.  Approach: Our 5D-MRI workflow was implemented in 10 healthy subjects (23-65 years) and two patients with lung cancer (67-69 years), with local low-rank iterative reconstruction at end-exhale/inhale and active-exhale/inhale for end-systole/diastole. For motion assessment, proximal coronary arteries, chambers, great vessels, and cardiac valves/nodes were contoured across all images and verified. Centroid/bounding box excursion was calculated for cardiac, respiratory, and hysteresis motion. Distance metrics were tested for statistical independence across substructure pairings. Three thoracic motion-perturbed radiotherapy plans were retrospectively analyzed using volunteer-derived IRVs.   Main Results: 5D-MRI images were successfully acquired. Cardiac motion exceeded 1 cm for right-heart substructures and was greatest for the right coronary artery. Respiratory motion was largest for the inferior vena cava/left ventricle. Respiratory hysteresis was generally {$<$}5 mm but {$>$}5 mm for some subjects. For cardiac motion, statistically significant differences were observed between coronary arteries/chambers/great vessels and between right/left-sided substructures. Respiratory motion differed significantly between the heart base/apex for the volunteer cohort. 5DMRIs for 2 thoracic cancer patients demonstrated tumor-induced changes in motion patterns relative to the volunteer cohort. Motion-perturbed treatment plans in 3 thoracic cancer patients demonstrated an increase in D0.03cc up to 21.5 Gy across volunteer-derived cardiorespiratory IRVs.   Significance: Our 5D-MRI workflow successfully decouples cardiorespiratory motion in a 5-minute free-breathing acquisition. In volunteers, cardiac motion was {$>$}5mm for coronary arteries/chambers, while respiratory motion was {$>$}5 mm for all substructures. Statistically significant differences were observed between cardiac substructures for cardiac and respiratory motion. Interplay between tumor location, motion source, and motion magnitude affected substructure doses.},
+  langid = {english},
+  file = {/Users/txn009/Zotero/storage/C65N89KX/Ruff et al. - 2026 - Deducing cardiorespiratory motion of cardiac substructures using a novel 5D-MRI workflow for radioth.pdf}
 }
 
 @inproceedings{ruffDeducingRespiratoryCardiac2023,
@@ -5225,6 +5366,26 @@
   abstract = {Purpose The aim of this study was to quantify the displacement of cardiac substructures, including the anterior myocardial territory (AMT), left ventricle, and coronary arteries during a normal cardiac cycle. Materials and methods Computed tomography (CT) images with retrospective electrocardiographic gating of 17 eligible patients were obtained. All images were reconstructed automatically for the end-diastolic and end-systolic phases. CT scanning without contrast at a random phase and a selected vertebral body were used as references to measure three-dimensionaldisplacements of the cardiac substructures. Results The displacement between the end-diastolic and end-systolic phases (Dd-s) was greater than that between the end-systolic and random phases and between the end-diastolic and random cardiac phases. The largest displacements for the heart were in the left, posterior, and inferior directions with an average Dd-s of approximately 4–6 mm. The average Dd-s for the AMT and left ventricle was 1.2–2.7 mm in the anterior and right directions, 4.3–7.8 mm in left and posterior directions, and 4.9–6.3 mm in superior and inferior directions. For the coronary arteries, the average Dd-s was 2.8–5.9 mm in the anterior-posterior direction, 3.5–6.6 mm in left-right direction, and 3.8–5.3 mm in the superior-inferior direction. Inter-observer agreement was excellent for the heart, AMT, and left ventricle (kappa coefficient, {$>$}0.75 for all) and good for most coronary arteries in three dimensions (kappa coefficient, 0.511–0.687). The Dd-s did not differ significantly between men and women. Conclusion Most average displacements of the cardiac substructures and coronary arteries were 3–8 mm in three dimensions. These findings will be useful to accurately estimate the radiation dose to cardiac substructures during thoracic radiation and to evaluate the risk of radiation-related heart disease.},
   pmcid = {PMC3789650},
   file = {/Users/txn009/Zotero/storage/9M5JDFMQ/Tan et al. - 2013 - Estimation of the displacement of cardiac substructures and the motion of the coronary arteries usin.pdf}
+}
+
+@article{tanMotionCompensatedLowRankReconstruction2023,
+  title = {Motion-{{Compensated Low-Rank Reconstruction}} ({{MoCoLoR}}) for {{Simultaneous Structural}} and {{Functional Ultrashort Echo Time}} ({{UTE}}) {{Lung MRI}}},
+  author = {Tan, Fei and Zhu, Xucheng and Chan, Marilynn and Zapala, Matthew A. and Vasanawala, Shreyas S. and Ong, Frank and Lustig, Michael and Larson, Peder E. Z.},
+  date = {2023-09},
+  journaltitle = {Magnetic resonance in medicine},
+  shortjournal = {Magn Reson Med},
+  volume = {90},
+  number = {3},
+  eprint = {37158318},
+  eprinttype = {pubmed},
+  pages = {1101--1113},
+  issn = {0740-3194},
+  doi = {10.1002/mrm.29703},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC10501714/},
+  urldate = {2026-03-31},
+  abstract = {Purpose: 3D UTE MRI has shown the ability to provide simultaneous structural and functional lung imaging, but is limited by respiratory motion and relatively low lung parenchyma SNR. The purpose of this paper is to improve this imaging by using a respiratory phase-resolved reconstruction approach, named Motion-Compensated Low-Rank (MoCoLoR), that directly incorporates motion compensation into a low-rank constrained reconstruction model for highly efficient use of the acquired data. Theory and Methods: The MoCoLoR reconstruction is formulated as an optimization problem that includes a low-rank constraint using estimated motion fields to reduce the rank, optimizing over both the motion fields and reconstructed images. The proposed reconstruction along with XD and MostMoCo methods were applied to 18 lung MRI scans of pediatric and young adult patients. The datasets were acquired under free-breathing and without sedation with 3D radial UTE sequences in approximately 5 minutes. After reconstruction, they went through ventilation analyses. Performance across reconstruction regularization and motion-states parameters were also investigated. Results: The in vivo experiments results showed that MoCoLoR made efficient use of the data, provided higher apparent SNR compared to state-of-the-art XD reconstruction and MostMoCo reconstructions, and also yielded high-quality respiratory phase-resolved images for ventilation mapping. The method was effective across the range of patients scanned. Conclusion: The motion-compensated low-rank regularized reconstruction approach makes efficient use of acquired data and can improve simultaneous structural and functional lung imaging with 3D UTE MRI. It enables the scanning of pediatric patients under free-breathing and without sedation.},
+  pmcid = {PMC10501714},
+  file = {/Users/txn009/Zotero/storage/XVUAXVRP/Tan et al. - 2023 - Motion-Compensated Low-Rank Reconstruction (MoCoLoR) for Simultaneous Structural and Functional Ultr.pdf}
 }
 
 @article{tavianiAccuracyRepeatabilityFourier2010,
@@ -5886,12 +6047,19 @@
 
 @article{wentlandReviewMRIbasedMeasurements2014,
   title = {Review of {{MRI-based}} Measurements of Pulse Wave Velocity: A Biomarker of Arterial Stiffness},
-  author = {Wentland, Andrew L and Grist, Thomas M and Wieben, Oliver},
-  date = {2014},
+  shorttitle = {Review of {{MRI-based}} Measurements of Pulse Wave Velocity},
+  author = {Wentland, Andrew L. and Grist, Thomas M. and Wieben, Oliver},
+  date = {2014-04},
   journaltitle = {Cardiovascular Diagnosis and Therapy},
   volume = {4},
   number = {2},
-  abstract = {Atherosclerosis is the leading cause of cardiovascular disease (CVD) in the Western world. In the early development of atherosclerosis, vessel walls remodel outwardly such that the vessel luminal diameter is minimally affected by early plaque development. Only in the late stages of the disease does the vessel lumen begin to narrow—leading to stenoses. As a result, angiographic techniques are not useful for diagnosing early atherosclerosis. Given the absence of stenoses in the early stages of atherosclerosis, CVD remains subclinical for decades. Thus, methods of diagnosing atherosclerosis early in the disease process are needed so that affected patients can receive the necessary interventions to prevent further disease progression. Pulse wave velocity (PWV) is a biomarker directly related to vessel stiffness that has the potential to provide information on early atherosclerotic disease burden. A number of clinical methods are available for evaluating global PWV, including applanation tonometry and ultrasound. However, these methods only provide a gross global measurement of PWV—from the carotid to femoral arteries—and may mitigate regional stiffness within the vasculature. Additionally, the distance measurements used in the PWV calculation with these methods can be highly inaccurate. Faster and more robust magnetic resonance imaging (MRI) sequences have facilitated increased interest in MRI-based PWV measurements. This review provides an overview of the state-of-theart in MRI-based PWV measurements. In addition, both gold standard and clinical standard methods of computing PWV are discussed.},
+  pages = {19306--19206},
+  publisher = {AME publishing company},
+  issn = {2223-3660, 2223-3652},
+  doi = {10.3978/j.issn.2223-3652.2014.03.04},
+  url = {https://cdt.amegroups.org/article/view/3642},
+  urldate = {2026-03-31},
+  abstract = {Review of MRI-based measurements of pulse wave velocity: a biomarker of arterial stiffness},
   langid = {english},
   file = {/Users/txn009/Zotero/storage/HW7Z32CC/Wentland et al. - 2014 - Review of MRI-based measurements of pulse wave velocity a biomarker of arterial stiffness.pdf}
 }
