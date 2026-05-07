@@ -1,10 +1,11 @@
-\documentclass[11pt]{report}
-\usepackage[utf8]{inputenc}
+% required for accessibility compliance, need to compile with LuaLaTeX
+\DocumentMetadata{tagging=on, tagging-setup={math/setup=mathml-SE}, pdfversion=2.0, pdfstandard=ua-2, lang=en-US}
+
+\documentclass[12pt]{report}
 \usepackage{graphicx}
-\usepackage{caption}
-\usepackage{subcaption}
 \usepackage{float}
 \usepackage{amsmath}
+\usepackage{unicode-math}
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{siunitx}
@@ -12,20 +13,28 @@
 \usepackage{booktabs}
 \usepackage{tabularx}
 \usepackage{nameref}
-\usepackage[symbol]{footmisc}
+\usepackage{titlesec}
 \usepackage[margin=1in]{geometry}
 \usepackage[backend=biber, style=ieee, maxbibnames=50, sorting=none,citestyle=numeric-comp, giveninits=true]{biblatex}
+\usepackage{hyperref}
 
-\pagestyle{fancyplain}% <- use fancyplain instead fancy
+% hyperlink setup that works with accessibility reqs
+\hypersetup{
+    linktoc=all,
+    hidelinks,
+    pdfencoding=auto,
+}
+
+% Title page formatting
+\pagestyle{fancyplain}
 \fancyhf{}
 \fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
-\setlength{\headheight}{14pt}
+\setlength{\headheight}{16pt}
 
-\graphicspath{{figures/}}
-
+% Adjust chapter title spacing
 \titleformat{\chapter}[block]
-{\normalfont\LARGE\bfseries}
+{\normalfont\Large\bfseries}
 {Chapter \thechapter:}
 {1em}
 {}
@@ -33,21 +42,29 @@
 \titlespacing*{\chapter}{0pt}{0pt}{20pt}
 \setlength{\emergencystretch}{3em}
 
+\titleformat{\section}
+{\fontsize{14}{16}\bfseries}
+{\thesection.}{1em}{}
+
+% Figure path
+\graphicspath{{figures/}}
+
 \addbibresource{references/references.biblatex}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title{Embracing Respiratory Motion in Cardiovascular MRI}
 \author{Tarun Naren}
 \date{09 April 2026}
 
 \begin{document}
-\pagenumbering{roman} 
 
 \input{frontmatter/titlepage}
 
+\pagenumbering{roman} 
 \input{frontmatter/abstract}
 
+\doublespacing{}
 \chapter*{Acknowledgements}
 \input{frontmatter/acknowledgements}
 
@@ -57,9 +74,7 @@
 
 \listoftables
 
-\doublespacing{}
 \pagenumbering{arabic} 
-
 \chapter{Introduction}
 \input{chapter01/introduction}
 
@@ -87,11 +102,13 @@
 \chapter{Conclusion}\label{ch:conclusion}
 \input{conclusion/conclusion}
 
-\appendix
-\chapter{Appendix}
-\input{appendix/appendix}
+% \appendix
+% \chapter{Appendix}
+% \input{appendix/appendix}
 
 \singlespacing{}
+\begin{raggedright}
 \printbibliography[]
+\end{raggedright}
 
 \end{document}

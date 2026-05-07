@@ -2189,6 +2189,24 @@
   file = {/Users/txn009/Zotero/storage/5HTFQ92J/3648.html}
 }
 
+@incollection{isselbacherEpidemiologyThoracicAortic2007,
+  title = {Epidemiology of {{Thoracic Aortic Aneurysms}}, {{Aortic Dissection}}, {{Intramural Hematoma}}, and {{Penetrating Atherosclerotic Ulcers}}},
+  booktitle = {Aortic {{Dissection}} and {{Related Syndromes}}},
+  author = {Isselbacher, Eric M.},
+  editor = {Eagle, Kim A. and Baliga, Ragavendra R. and Isselbacher, Eric M. and Nienaber, Christoph A.},
+  date = {2007},
+  pages = {3--15},
+  publisher = {Springer US},
+  location = {Boston, MA},
+  doi = {10.1007/978-0-387-36001-0_1},
+  url = {https://doi.org/10.1007/978-0-387-36001-0_1},
+  urldate = {2026-04-08},
+  abstract = {Anatomically the thoracic aorta is divided into a several distinct segments (Figure 1.1). The ascending aorta extends from the left ventricle (at the aortic annulus) and rises in the anterior mediastinum to the innominate artery. The base of the ascending aorta is referred to as the aortic root. The root is the widest aortic segment and is comprised of three coronary sinuses, which bulge outward, and serves as the support structure for the aortic valve cusps. The portion of the ascending aorta above the root is narrower and tubular in shape. Distal to the ascending aorta is the aortic arch, which moves posteriorly and to the left in the superior mediastinum, extending from the innominate artery to the ostium of the left subclavian artery. Thereafter, the descending aorta courses posteriorly, adjacent to the vertebral column, and continues to the level of the diaphragm, after which it becomes the abdominal aorta.},
+  isbn = {978-0-387-36001-0},
+  langid = {english},
+  keywords = {Acute Aortic Dissection,Aortic Dissection,Bicuspid Aortic Valve,Giant Cell Arteritis,Marfan Syndrome}
+}
+
 @article{iwakiriPathophysiologyPortalHypertension2014,
   title = {Pathophysiology of {{Portal Hypertension}}},
   author = {Iwakiri, Yasuko},
@@ -3179,6 +3197,23 @@
   file = {/Users/txn009/Zotero/storage/D34AP29D/Meaume et al. - 2001 - Aortic Pulse Wave Velocity Predicts Cardiovascular Mortality in Subjects 70 Years of Age.pdf}
 }
 
+@article{mehrhofCardiacRadiotherapyTransiently2024,
+  title = {Cardiac Radiotherapy Transiently Alters Left Ventricular Electrical Properties and Induces Cardiomyocyte-Specific Ventricular Substrate Changes in Heart Failure},
+  author = {Mehrhof, Felix and Hüttemeister, Judith and Tanacli, Radu and Bock, Matthias and Bögner, Markus and Schoenrath, Felix and Falk, Volkmar and Zips, Daniel and Hindricks, Gerhard and Gerds-Li, Jin-Hong and Hohendanner, Felix},
+  date = {2024-01-01},
+  journaltitle = {EP Europace},
+  shortjournal = {Europace},
+  volume = {26},
+  number = {1},
+  pages = {euae005},
+  issn = {1099-5129},
+  doi = {10.1093/europace/euae005},
+  url = {https://doi.org/10.1093/europace/euae005},
+  urldate = {2026-04-15},
+  abstract = {Ongoing clinical trials investigate the therapeutic value of stereotactic cardiac radioablation (cRA) in heart failure patients with ventricular tachycardia. Animal data indicate an effect on local cardiac conduction properties. However, the exact mechanism of cRA in patients remains elusive. Aim of the current study was to investigate in vivo and in vitro myocardial properties in heart failure and ventricular tachycardia upon cRA.High-density 3D electroanatomic mapping in sinus rhythm was performed in a patient with a left ventricular assist device and repeated ventricular tachycardia episodes upon several catheter-based endocardial radio-frequency ablation attempts. Subsequent to electroanatomic mapping and cRA of the left ventricular septum, two additional high-density electroanatomic maps were obtained at 2- and 4-month post-cRA. Myocardial tissue samples were collected from the left ventricular septum during 4-month post-cRA from the irradiated and borderzone regions. In addition, we performed molecular biology and mitochondrial density measurements of tissue and isolated cardiomyocytes. Local voltage was altered in the irradiated region of the left ventricular septum during follow-up. No change of local voltage was observed in the control (i.e. borderzone) region upon irradiation. Interestingly, local activation time was significantly shortened upon irradiation (2-month post-cRA), a process that was reversible (4-month post-cRA). Molecular biology unveiled an increased expression of voltage-dependent sodium channels in the irradiated region as compared with the borderzone, while Connexin43 and transforming growth factor beta were unchanged (4-month post-cRA). Moreover, mitochondrial density was decreased in the irradiated region as compared with the borderzone.Our study supports the notion of transiently altered cardiac conduction potentially related to structural and functional cellular changes as an underlying mechanism of cRA in patients with ventricular tachycardia.},
+  file = {/Users/txn009/Zotero/storage/2YKTAP2V/Mehrhof et al. - 2024 - Cardiac radiotherapy transiently alters left ventricular electrical properties and induces cardiomyo.pdf;/Users/txn009/Zotero/storage/F4YCC2UJ/euae005.html}
+}
+
 @incollection{meseehaEsophagealVarices2024,
   title = {Esophageal {{Varices}}},
   booktitle = {{{StatPearls}}},
@@ -3614,14 +3649,14 @@
   author = {Naren, Tarun and Roberts, Grant},
   date = {2025-12-03T18:05:12Z},
   origdate = {2023-05-17T01:03:41Z},
-  url = {https://github.com/tnaren97/PWV_2DPC},
+  url = {https://github.com/uwmri/PWV_2DPC},
   urldate = {2026-03-31},
   abstract = {Pulse wave velocity GUI for 2DPC MRI}
 }
 
 @inproceedings{narenQuantifyingDifferences,
   title = {Quantifying {{Differences}} in {{Aortic Pulse Wave Velocity Across}} the {{Respiratory Cycle}} with {{Retrospectively Gated Radial 2D Phase Contrast MRI}}.},
-  author = {Naren, Tarun and Roberts, Grant and Breidenbac, Bri and Bernhardt, Zach and Fondakowski, Jennifer and Jarchow, Mackenzie and Lose, Sarah and Pandos, Alyssa and Johnson, Kevin and Okonkwo, Ozioma and Wieben, Oliver},
+  author = {Naren, Tarun and Roberts, Grant and Breidenbach, Bri and Bernhardt, Zach and Fondakowski, Jennifer and Jarchow, Mackenzie and Lose, Sarah and Pandos, Alyssa and Johnson, Kevin and Okonkwo, Ozioma and Wieben, Oliver},
   date = {2023},
   location = {Sendai, Japan},
   eventtitle = {{{SMRA}}}
@@ -4457,9 +4492,12 @@
   file = {/Users/txn009/Zotero/storage/44WCH7GE/Reitz and Mayeux - 2014 - Alzheimer disease Epidemiology, diagnostic criteria, risk factors and biomarkers.pdf}
 }
 
-@online{renISMRM2025Unsupervised,
-  title = {({{ISMRM}} 2025) {{Unsupervised}} Phase Unwrapping for Aortic {{4D}} Flow {{MRI}} Using Deep Image Prior},
-  author = {Ren, Yuyang},
+@inproceedings{renUnsupervisedPhaseUnwrapping2025,
+  title = {Unsupervised Phase Unwrapping for Aortic {{4D}} Flow {{MRI}} Using Deep Image Prior},
+  author = {Ren, Yuyang and Hong, Haotian and Zhou, Zijian and Hu, Peng},
+  date = {2025-05},
+  publisher = {ISMRM},
+  location = {Honolulu, Hawaii},
   url = {https://archive.ismrm.org/2025/4277_2zRJNkQlL.html},
   urldate = {2026-03-26},
   file = {/Users/txn009/Zotero/storage/TTPIGBLN/4277_2zRJNkQlL.html}
@@ -4520,8 +4558,8 @@
 
 @software{roberts2DPhaseContrastQA,
   title = {{{2D Phase Contrast MRI PWV-QA Calculation Tool}}},
-  author = {Roberts, Grant M. and Naren, Tarun},
-  url = {https://github.com/tnaren97/PWV_QA},
+  author = {Naren, Tarun and Roberts, Grant M.},
+  url = {https://github.com/uwmri/PWV_QA},
   organization = {University of Wisconsin - Madison}
 }
 
@@ -4772,6 +4810,7 @@
   date = {2026},
   journaltitle = {Physics in Medicine \& Biology},
   shortjournal = {Phys. Med. Biol.},
+  volume = {[published online March 25, 2026]},
   issn = {0031-9155},
   doi = {10.1088/1361-6560/ae5752},
   url = {http://iopscience.iop.org/article/10.1088/1361-6560/ae5752},
@@ -4791,6 +4830,23 @@
   abstract = {Purpose:  Cardiotoxicity is a devastating complication of thoracic cancer treat...},
   eventtitle = {{{AAPM}} 65th {{Annual Meeting}} \& {{Exhibition}}},
   file = {/Users/txn009/Zotero/storage/L7GY3F7U/4705.html}
+}
+
+@article{saikiExperimentalCardiacRadiation2017,
+  title = {Experimental Cardiac Radiation Exposure Induces Ventricular Diastolic Dysfunction with Preserved Ejection Fraction},
+  author = {Saiki, Hirofumi and Moulay, Gilles and Guenzel, Adam J. and Liu, Weibin and Decklever, Teresa D. and Classic, Kelly L. and Pham, Linh and Chen, Horng H. and Burnett, John C. and Russell, Stephen J. and Redfield, Margaret M.},
+  date = {2017-08},
+  journaltitle = {American Journal of Physiology-Heart and Circulatory Physiology},
+  volume = {313},
+  number = {2},
+  pages = {H392-H407},
+  publisher = {American Physiological Society},
+  issn = {0363-6135},
+  doi = {10.1152/ajpheart.00124.2017},
+  url = {https://journals.physiology.org/doi/full/10.1152/ajpheart.00124.2017},
+  urldate = {2026-04-15},
+  abstract = {Breast cancer radiotherapy increases the risk of heart failure with preserved ejection fraction (HFpEF). Cardiomyocytes are highly radioresistant, but radiation specifically affects coronary microvascular endothelial cells, with subsequent microvascular inflammation and rarefaction. The effects of radiation on left ventricular (LV) diastolic function are poorly characterized. We hypothesized that cardiac radiation exposure may result in diastolic dysfunction without reduced EF. Global cardiac expression of the sodium-iodide symporter (NIS) was induced by cardiotropic gene (adeno-associated virus serotype 9) delivery to 5-wk-old rats. SPECT/CT (125I) measurement of cardiac iodine uptake allowed calculation of the 131I doses needed to deliver 10- or 20-Gy cardiac radiation at 10 wk of age. Radiated (Rad; 10 or 20 Gy) and control rats were studied at 30 wk of age. Body weight, blood pressure, and heart rate were similar in control and Rad rats. Compared with control rats, Rad rats had impaired exercise capacity, increased LV diastolic stiffness, impaired LV relaxation, and elevated filling pressures but similar LV volume, EF, end-systolic elastance, preload recruitable stroke work, and peak +dP/dt. Pathology revealed reduced microvascular density, mild concentric cardiomyocyte hypertrophy, and increased LV fibrosis in Rad rats compared with control rats. In the Rad myocardium, oxidative stress was increased and in vivo PKG activity was decreased. Experimental cardiac radiation exposure resulted in diastolic dysfunction without reduced EF. These data provide insight into the association between cardiac radiation exposure and HFpEF risk and lend further support for the importance of inflammation-related coronary microvascular compromise in HFpEF. NEW \& NOTEWORTHY Cardiac radiation exposure during radiotherapy increases the risk of heart failure with preserved ejection fraction. In a novel rodent model, cardiac radiation exposure resulted in coronary microvascular rarefaction, oxidative stress, impaired PKG signaling, myocardial fibrosis, mild cardiomyocyte hypertrophy, left ventricular diastolic dysfunction, and elevated left ventricular filling pressures despite preserved ejection fraction.},
+  file = {/Users/txn009/Zotero/storage/NE9ILBT6/Saiki et al. - 2017 - Experimental cardiac radiation exposure induces ventricular diastolic dysfunction with preserved eje.pdf}
 }
 
 @article{santelliAccelerating4DFlow2016,
@@ -4857,6 +4913,26 @@
   langid = {english},
   keywords = {4D flow MRI,dual venc,intracranial 4D flow MRI,k-t GRAPPA,PC-MRI},
   file = {/Users/txn009/Zotero/storage/JZT2P3ZH/Schnell et al. - 2017 - Accelerated dual-venc 4D flow MRI for neurovascular applications.pdf;/Users/txn009/Zotero/storage/VJPJBKZR/jmri.html}
+}
+
+@article{schraubenMotionMitigationTechniques2026,
+  title = {Motion {{Mitigation Techniques}} for {{Abdominal}} and {{Cardiac MR Imaging}}},
+  author = {Schrauben, Eric M. and Lima da Cruz, Gastao and Roy, Christopher W. and Küstner, Thomas},
+  date = {2026-04},
+  journaltitle = {Journal of Magnetic Resonance Imaging},
+  shortjournal = {J Magn Reson Imaging},
+  volume = {63},
+  number = {4},
+  eprint = {41456340},
+  eprinttype = {pubmed},
+  pages = {917--937},
+  issn = {1053-1807},
+  doi = {10.1002/jmri.70209},
+  url = {https://pmc.ncbi.nlm.nih.gov/articles/PMC12963815/},
+  urldate = {2026-04-09},
+  abstract = {MRI of the heart and abdominal organs provides unparalleled soft tissue contrast and quantitative biomarkers, yet remains highly susceptible to physiological motion. Contractions of the myocardium, respiratory excursions, peristalsis, vascular pulsatility, and unpredictable bulk patient movement generate artifacts that impair image quality, limit reproducibility, and may necessitate repeat scans. This review summarizes motion correction strategies in cardiac and abdominal MRI, emphasizing both clinical applications and methodological principles. Techniques to address motion can be broadly categorized into prospective and retrospective approaches. Prospective methods adjust acquisition in real time, for example through respiratory or cardiac gating, navigator echoes, or external sensors, while retrospective strategies apply corrections during or after reconstruction, using k‐space binning, image registration, or model‐based reconstructions. Rigid motion, such as translations or rotations of organs, can often be corrected efficiently, whereas non‐rigid motion including myocardial contraction or peristalsis requires more sophisticated elastic registration or motion‐compensated reconstruction. Application‐specific challenges and solutions are highlighted across cardiac cine imaging, flow quantification, tagging, and quantitative mapping, as well as abdominal imaging of the liver, kidneys, and gastrointestinal tract. In each domain, examples are provided of how motion impacts diagnostic performance and how motion correction strategies can mitigate these effects. Strengths and limitations of current approaches are reviewed, from conventional breath‐holding to advanced free‐breathing motion‐resolved imaging. Emerging trends include integration of artificial intelligence with motion‐compensated reconstruction, advanced sensor technologies for real‐time tracking, and hybrid approaches combining multiple strategies. While many methods remain research‐focused, vendor‐embedded solutions and open‐source tools are increasingly available, narrowing the gap between technical advances and routine practice. Motion correction is poised to become a core feature of clinical MRI, enabling faster, more robust, and patient‐friendly examinations that reduce repeat rates, improve diagnostic confidence, and expand access to high‐quality imaging in challenging patient populations., This review explains why motion during abdominal and cardiac MRI remains a major challenge and describes the techniques used to reduce its impact, summarizing how the heart and abdomen move during MRI. Methods to track, prevent, or correct this motion are discussed, including new advances in fast imaging and reconstruction that can improve image clarity. Better motion management can reduce repeat scans, improve diagnosis, and make MRI more comfortable for patients. This work helps guide future efforts toward more reliable, motion‐robust MRI exams.},
+  pmcid = {PMC12963815},
+  file = {/Users/txn009/Zotero/storage/UX4WKEB5/Schrauben et al. - 2026 - Motion Mitigation Techniques for Abdominal and Cardiac MR Imaging.pdf}
 }
 
 @article{schraubenMotionRobustRespiratoryresolved2020,
@@ -5459,7 +5535,7 @@
   urldate = {2025-06-23},
   abstract = {A technique for cardiac- and respiratory-resolved MRI is described. A retrospectively gated-segmented acquisition scheme similar to that used in conventional cine cardiac imaging was used to collect image data that spanned both the cardiac and respiratory cycles. Raw k-space data were regridded in a cardiorespiratory phase space to allow image reconstruction at target cardiac and respiratory phases. The approach can be applied with various k-space trajectories and pulse sequences, and was implemented in this study with both a Cartesian steady-state free precession (SSFP) sequence and a radial phase-contrast (PC) pulse sequence. Free-breathing short-axis SSFP images of the heart were reconstructed at multiple respiratory and cardiac phases to illustrate separation of cardiac and respiratory motion without artifacts. A respiratory-resolved radial PC experiment was used to quantify the volumetric flow rates in the inferior vena cava (IVC), pulmonary artery (PA), and aorta (Ao) in five free-breathing normal volunteers and a positive-pressure ventilated dog. Total flow (ml/min) in each vessel was quantified as a function of respiratory phase (peak/minimum output = 1.85 ± 0.29 (IVC), 1.36 ± 0.15 (PA), 1.24 ± 0.09 (Ao)). Peak flow occurred during inspiration for the IVC and PA, and during expiration for the Ao, and there was a complete pattern reversal for the positive-pressure ventilated dog.},
   pmcid = {PMC2041918},
-  file = {/Users/txn009/Zotero/storage/BS9CKMLV/Thompson and McVeigh - 2006 - Cardiorespiratory-Resolved Magnetic Resonance Imaging.pdf}
+  file = {/Users/txn009/Zotero/storage/BS9CKMLV/Thompson and McVeigh - 2006 - Cardiorespiratory-Resolved Magnetic Resonance Imaging.pdf;/Users/txn009/Zotero/storage/W3G8CNG4/Thompson and McVeigh - 2006 - Cardiorespiratory-Resolved Magnetic Resonance Imaging.pdf}
 }
 
 @article{tianFeasibilityMultipleviewMyocardial2019,
@@ -5573,6 +5649,17 @@
   langid = {english},
   keywords = {autocalibration,compressed sensing,GRAPPA,parallel imaging,SENSE},
   file = {/Users/txn009/Zotero/storage/KYCHPEMI/Uecker et al. - 2014 - ESPIRiT—an eigenvalue approach to autocalibrating parallel MRI Where SENSE meets GRAPPA.pdf;/Users/txn009/Zotero/storage/PLI96B97/mrm.html}
+}
+
+@software{uwmriMRI_recon2025,
+  title = {{{UW-MRI Reconstruction Toolbox}}},
+  author = {Johnson, Kevin M},
+  date = {2025-12-23T16:02:08Z},
+  origdate = {2018-09-12T13:48:22Z},
+  url = {https://github.com/uwmri/mri_recon},
+  urldate = {2026-04-15},
+  abstract = {Blitz++ based code of MRI Reconstruction},
+  organization = {University of Wisconsin-Madison}
 }
 
 @article{vainerRadialArteryPulse2023,
@@ -6341,6 +6428,23 @@
   abstract = {PURPOSE: Some recent studies have suggested a relationship between cardiac dose and mortality in non-small cell lung cancer (NSCLC), but others have reported conflicting data. The goal of this study was to conduct a systematic review and meta-analysis to provide an evidence-based estimate of the relationship between cardiac dose and mortality in these patients. METHODS AND MATERIALS: A systematic review of MEDLINE (PubMed) and Embase databases (inception to January 2018) was performed according to PRISMA guidelines. Studies that evaluated cardiac dosimetric factors in patients with NSCLC and included outcomes of cardiac events, cardiac mortality, and/or overall survival were identified. RESULTS: From 5614 patients across 22 studies, a total of 214 cardiac dosimetric parameters (94 unique) were assessed as possible predictors of cardiac toxicity or death. Assessed predictors included general (eg, mean heart dose [MHD]), threshold-based (eg, heart V5), and anatomic-based (eg, atria, ventricles) dosimetric factors. The most commonly analyzed parameters were MHD, heart V5, and V30. Most studies did not make corrections for multiplicity of testing. For overall survival, V5 was found to be significant on multivariable analysis (MVA) in 1 of 11 studies and V30 in 2 of 12 studies; MHD was not significant in any of 8 studies. For cardiac events, V5 was found to be significant on multivariable analysis in 1 of 2 studies, V30 in 1 of 3 studies, and MHD in 2 of 4 studies. A meta-analysis of the data could not be performed because most negative studies did not report effect estimates. CONCLUSIONS: Consistent heart dose-volume parameters associated with overall survival of patients with NSCLC were not identified. Multiplicity of testing is a major issue and likely inflates the overall risk of type I errors in the literature. Future studies should specify predictors a priori, correct for multiplicity of testing, and report effect estimates for nonsignificant variables.},
   langid = {english},
   keywords = {Adult,Aged,Aged 80 and over,Carcinoma Non-Small-Cell Lung,Cardiotoxicity,Female,Heart,Humans,Lung Neoplasms,Male,Middle Aged,Multivariate Analysis,Radiation Dosage,Radiation Exposure}
+}
+
+@article{zhangMRIassessedDynamicHyperinflation2025,
+  title = {{{MRI-assessed Dynamic Hyperinflation Induced}} by {{Tachypnea}} in {{Chronic}}                     {{Obstructive Pulmonary Disease}}: {{The SPIROMICS-HF Study}}},
+  shorttitle = {{{MRI-assessed Dynamic Hyperinflation Induced}} by {{Tachypnea}} in {{Chronic}}                     {{Obstructive Pulmonary Disease}}},
+  author = {Zhang, Xuzhe and Cooper, Christopher B. and Prince, Martin R. and Ambale-Venkatesh, Bharath and Agarwal, Prachi P. and Backman, Michael C. and Bluemke, David A. and Couper, David and Dashnaw, Stephen M. and Finn, John P. and Hansel, Nadia N. and Hoffman, Eric A. and Jambawalikar, Sachin and Kitzman, Dalane W. and Krishnan, Jerry A. and Lee, Yoo Jin and Lima, João A. C. and Liu, Jing and Menchaca, Martha G. and Ohar, Jill and Ortega, Victor E. and Paine, Robert and Peters, Stephen P. and Schroeder, Joyce D. and Vogel-Claussen, Jens and Woodruff, Prescott G. and Barr, R. Graham and Shen, Wei},
+  date = {2025-02},
+  journaltitle = {Radiology: Cardiothoracic Imaging},
+  volume = {7},
+  number = {1},
+  pages = {e240053},
+  publisher = {Radiological Society of North America},
+  doi = {10.1148/ryct.240053},
+  url = {https://pubs.rsna.org/doi/10.1148/ryct.240053},
+  urldate = {2026-04-06},
+  abstract = {Purpose To assess the repeatability of real-time cine pulmonary MRI measures of metronome-paced tachypnea (MPT)–induced dynamic hyperinflation and its relationship with chronic obstructive pulmonary disease (COPD) severity. Materials and Methods SubPopulations and InteRmediate Outcome Measures In COPD Study (SPIROMICS) (ClinicalTrials.gov identifier no. NCT01969344) is a multicenter prospective cohort study that recruited individuals with COPD with 20 or more pack-years smoking history and controls aged 40–80 years. SPIROMICS-HF is a cross-sectional study evaluating cardiopulmonary interactions in COPD from December 2019 to April 2024. Two-dimensional coronal real-time cine pulmonary MRI (3.2 frames/sec) was performed during MPT twice. Lung masks and lung MR images from an independent study were used for transfer learning to segment real-time cine pulmonary MR images. Dynamic hyperinflation was evaluated as the increase in end-expiratory lung volume (EELV) during tidal breathing to the end of MPT. Repeatability was assessed with intraclass correlation coefficients, and multivariable associations with COPD severity were examined. Results Of the 70 participants (mean age, 67 years ± 10 [SD]; 37 male, 33 female) included in the study, 59\% had COPD. The transfer learning model achieved high accuracy in lung segmentation (Dice similarity coefficient, 0.94 ± 0.03). There was good scan-rescan agreement for EELV and dynamic hyperinflation (intraclass correlation coefficient, 0.99 and 0.87, respectively). Dynamic hyperinflation was associated with COPD severity (P trend = .01, with a mean difference between severe COPD and controls of 0.24 L). Conclusion A transfer learning model yielded reproducible quantification of MPT-induced dynamic hyperinflation at real-time cine pulmonary MRI, with greater dynamic hyperinflation in participants with more severe COPD. Keywords: Chronic Obstructive Pulmonary Disease, MR Imaging, Pulmonary, Lung, Technology Assessment Supplemental material is available for this article. ClinicalTrials.gov identifier: NCT01969344 © RSNA, 2025},
+  file = {/Users/txn009/Zotero/storage/IIS2F3AV/Zhang et al. - 2025 - MRI-assessed Dynamic Hyperinflation Induced by Tachypnea in Chronic                     Obstructive.pdf}
 }
 
 @article{zhuFreeBreathing3DImaging2015,
