@@ -33,6 +33,7 @@ For the chest scans, ungated anatomical balanced steady state free precession (b
     \caption[LIFE study scan parameters]{Acquisition parameters for 2D Cartesian and radial 2D phase contrast scans.}\label{tab:LIFE_scan_params}
     \small
     \tagpdfsetup{table/header-rows={1}}
+    \vspace{0.25cm}
     \begin{tabular}{lccc}
     \toprule
     \textbf{Parameter} & \textbf{Cartesian 2DPC} & \textbf{Radial 2DPC} \\
@@ -56,9 +57,11 @@ Cartesian acquisitions were automatically reconstructed on the scanner post-acqu
 
 \begin{table}[ht]
     \centering
-    \caption[2D phase contrast reconstructed parameters]{Reconstruction parameters for Cartesian, radial low-res, and radial hi-res 2D phase contrast scans.}\label{tab:recon_params}
+    \caption[2D phase contrast reconstructed parameters]{Reconstruction parameters for Cartesian, radial low-res, and radial hi-res 2D phase contrast scans. PILS = Parallel Imaging with Localized Sensitivities, LLR = Local Low Rank constrained reconstruction \\
+    *Temporal resolutions are dependent on heart rate and are reported as mean $\pm$ standard deviation for the cohort.}\label{tab:recon_params}
     \small
     \tagpdfsetup{table/header-rows={1}}
+    \vspace{0.25cm}
     \begin{tabular}{lccc}
     \toprule
     \textbf{Parameter} & \textbf{Cartesian 2DPC} & \textbf{Standard Radial} & \textbf{Hi-Res Radial} \\
@@ -70,13 +73,6 @@ Cartesian acquisitions were automatically reconstructed on the scanner post-acqu
     Temporal resolution* (ms) & 26.2 $\pm$ 3.6 & 25.2 $\pm$ 3.6 & 12.5 $\pm$ 1.8  \\ 
     \bottomrule
     \end{tabular}
-    \begin{flushleft}
-        \footnotesize
-        PILS = Parallel Imaging with Localized Sensitivities\cite{griswoldPartiallyParallelImaging2000} \\
-        LLR = Local Low Rank constrained reconstruction\cite{haldarLowrankApproximationsDynamic2011} \\
-        *Temporal resolutions are dependent on heart rate and are reported as mean $\pm$ standard deviation for the cohort \\
-
-    \end{flushleft}
 \end{table}
 
 \subsubsection{Analysis}
@@ -104,9 +100,12 @@ Average $\pm$ standard deviation temporal resolutions for the Cartesian, standar
 
 \begin{table}[ht]
     \centering
-    \caption[Patient demographics]{Patient demographics for analyzed study subjects (N=45)}\label{tab:life_demo}
+    \caption[Patient demographics]{Patient demographics for analyzed study subjects (N=45). For continuous data, values are expressed as mean $\pm$ SD and data ranges are in parentheses. For categorical data, values are expressed as numerators with percentage in parentheses. \\
+    *Race was self-reported and obtained as required by federal funding agencies \\
+    **APOE4 = apolipoprotein E4}\label{tab:life_demo}
     \small
     \tagpdfsetup{table/header-rows={1}}
+    \vspace{0.25cm}
     \begin{tabular}{ll}
     \toprule
     \textbf{Variable} & \textbf{Value} \\
@@ -137,13 +136,6 @@ Average $\pm$ standard deviation temporal resolutions for the Cartesian, standar
     \quad Unknown & 1 (2.2\%) \\
     \bottomrule
     \end{tabular}
-    \begin{flushleft}
-        \footnotesize
-        For continuous data, values are expressed as mean $\pm$ SD and data ranges are in parentheses. For categorical data, values are expressed as numerators with percentage in parentheses. \\
-        *Race was self-reported and obtained as required by federal funding agencies \\
-        **APOE4 = apolipoprotein E4
-
-    \end{flushleft}
 \end{table}
 
 Friedman test results demonstrated a significant difference in PWV across acquisition methods for the TTP algorithm ($\chi^2 = 8.62$, $p = 0$.01) and the XCOR algorithm ($\chi^2 = 7.20$, $p = 0.03$), whereas no significant differences were observed for the TTF and TTU algorithms. Box plots illustrating PWV distributions by MRI acquisition method (Figure~\ref{fig:boxplots}) indicate that Cartesian-derived PWV values frequently deviate from those obtained using radial acquisitions, particularly at higher PWV ranges.
@@ -160,10 +152,11 @@ Friedman test results demonstrated a significant difference in PWV across acquis
 
 \begin{table}[ht]
     \centering
-    \caption[Aortic distances and pulse wave velocities]{Aortic path lengths and pulse wave velocities (PWVs) stratified by age group and sex for three different 2D phase contrast image types: Cartesian, standard radial (spatio-temporally matched to the Cartesian), and hi-res radial (increased spatio-temporal resolution) from four different transit time algorithms}\label{tab:life_pwvs}
+    \caption[Aortic distances and pulse wave velocities]{Aortic path lengths and pulse wave velocities (PWVs) stratified by age group and sex for three different 2D phase contrast image types: Cartesian, standard radial (Std. Radial), and high temporal resolution radial (HR Radial) from four different transit time algorithms (TTP = time-to-point; TTF = time-to-foot; TTU = time-to-upstroke; XCOR = cross-correlation). All values expressed as: mean $\pm$ standard deviation.}\label{tab:life_pwvs}
     \footnotesize
     \tagpdfsetup{table/header-rows={1}}
-    \begin{tabularx}{\textwidth}{lXXXXXX}
+    \vspace{0.25cm}
+    \begin{tabularx}{\textwidth}{lcccccc}
     \toprule
     \textbf{Parameter} & \textbf{Overall} & \textbf{50--59} & \textbf{60--69} & \textbf{70--79} & \textbf{Male} & \textbf{Female}  \\
     & (N=45) & (N=13) & (N=17) & (N=15) & (N=11) & (N=34) \\
@@ -172,7 +165,8 @@ Friedman test results demonstrated a significant difference in PWV across acquis
     Aortic Length & 258.0 $\pm$ 23.6 & 252.1 $\pm$ 21.1 & 257.5 $\pm$ 24.6 & 263.6 $\pm$ 24.7 & 275.8 $\pm$ 18.6 & 252.2 $\pm$ 22.3 \\
 
     \midrule
-    \multicolumn{7}{l}{\textbf{Cartesian}} \\
+    % \multicolumn{7}{l}{\textbf{Cartesian}} \\
+    \textbf{Cartesian} & \phantom{0} & \phantom{0} & \phantom{0} & \phantom{0} & \phantom{0} & \phantom{0} \\
 
     TTP  & $7.2 \pm  2.3$ & $6.5 \pm  1.2$ & $6.6 \pm  2.0$ & $8.4 \pm  2.7$ & $8.1 \pm  3.4$ & $6.9 \pm  1.7$ \\
     TTF  & $7.1 \pm  2.9$ & $6.0 \pm  0.9$ & $6.3 \pm  2.4$ & $9.1 \pm  3.6$ & $7.7 \pm  3.7$ & $6.9 \pm  2.6$ \\
@@ -180,7 +174,8 @@ Friedman test results demonstrated a significant difference in PWV across acquis
     XCOR & $7.3 \pm  1.8$ & $7.4 \pm  1.6$ & $6.8 \pm  2.2$ & $7.8 \pm  1.7$ & $7.8 \pm  2.3$ & $7.2 \pm  1.7$ \\
 
     \midrule
-    \multicolumn{7}{l}{\textbf{Standard Radial}} \\
+    % \multicolumn{7}{l}{\textbf{Standard Radial}} \\
+    \textbf{Std. Radial} & \phantom{0} & \phantom{0} & \phantom{0} & \phantom{0} & \phantom{0} & \phantom{0} \\
 
     TTP  & $7.6 \pm  1.4$ & $7.0 \pm  1.0$ & $7.2 \pm  1.3$ & $8.6 \pm  1.3$ & $7.4 \pm  1.4$ & $7.7 \pm  1.4$ \\
     TTF  & $7.6 \pm  1.9$ & $6.8 \pm  1.3$ & $7.0 \pm  1.6$ & $9.0 \pm  2.1$ & $7.3 \pm  2.4$ & $7.7 \pm  1.8$ \\
@@ -189,7 +184,8 @@ Friedman test results demonstrated a significant difference in PWV across acquis
 
 
     \midrule
-    \multicolumn{7}{l}{\textbf{Hi-Res Radial}} \\
+    % \multicolumn{7}{l}{\textbf{Hi-Res Radial}} \\
+    \textbf{HR Radial} & \phantom{0} & \phantom{0} & \phantom{0} & \phantom{0} & \phantom{0} & \phantom{0} \\
 
     TTP  & $7.5 \pm  1.3$ & $7.1 \pm  1.2$ & $7.1 \pm  1.2$ & $8.2 \pm  1.0$ & $7.3 \pm  1.4$ & $7.5 \pm  1.2$ \\
     TTF  & $7.3 \pm  1.6$ & $6.6 \pm  1.2$ & $6.9 \pm  1.5$ & $8.4 \pm  1.5$ & $7.1 \pm  2.0$ & $7.4 \pm  1.5$ \\
@@ -198,12 +194,6 @@ Friedman test results demonstrated a significant difference in PWV across acquis
 
     \bottomrule
     \end{tabularx}
-    \begin{flushleft}
-        \footnotesize
-        All values expressed as: mean $\pm$ standard deviation \\
-        TTP = time-to-point; TTF = time-to-foot; TTU = time-to-upstroke; XCOR = cross-correlation.
-
-    \end{flushleft}
 \end{table}
 
 

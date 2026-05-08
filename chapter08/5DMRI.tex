@@ -45,22 +45,23 @@ Datasets representing 40 motion states were successfully generated for each of t
 
 \begin{table}[ht]
     \centering
-    \caption[DICE coefficient scores of LV segmentation]{DICE coefficient scores for left ventricle (LV) segmentations at end-systole and end-exhale in multiple reconstruction schema. This preliminary analysis was performed in a representative subset of the full cohort (3 subjects) to determine an optimal reconstruction schema to use for the entire cohort for motion analysis. Eight reconstruction schemes were analyzed using the 250,000 projection Local Low Rank (LLR) reconstruction as a baseline. Compressed Sensing (CS) reconstructions show poorer agreement with the LLR reconstructions at all simulated scan times}\label{tab:dsc}
+    \caption[DICE coefficient scores of LV segmentation]{DICE coefficient scores for left ventricle (LV) segmentations at end-systole and end-exhale in multiple reconstruction schema. This preliminary analysis was performed in a representative subset of the full cohort (3 subjects) to determine an optimal reconstruction schema to use for the entire cohort for motion analysis. Eight reconstruction schemes were analyzed using the 250,000 projection Local Low Rank (LLR) reconstruction as a baseline. Compressed Sensing (CS) reconstructions show poorer agreement with the LLR reconstructions at all simulated scan times.}\label{tab:dsc}
     \footnotesize
     \tagpdfsetup{table/header-rows={1}}
+    \vspace{0.25cm}
     \begin{tabular}{lccccccc}
     \toprule
     \textbf{Reconstruction} & \textbf{Projections} & \textbf{Scan Time (min)} & \textbf{Subj. 1} & \textbf{Subj. 2} & \textbf{Subj. 3} & \textbf{Average} \\
     \midrule
     LLR & 250{,}000 & 14.8 & 1.00 & 1.00 & 1.00 & 1.00 \\
-    LLR & 120{,}000 & 7.5  & 0.99 & 0.99 & 0.99 & 0.99 \\
-    LLR & 80{,}000  & 4.7  & 0.99 & 0.98 & 0.99 & 0.99 \\
-    LLR & 40{,}000  & 2.3  & 0.95 & 0.93 & 0.94 & 0.94 \\
+    LLR & 120{,}000 &  7.5 & 0.99 & 0.99 & 0.99 & 0.99 \\
+    LLR & 80{,}000  &  4.7 & 0.99 & 0.98 & 0.99 & 0.99 \\
+    LLR & 40{,}000  &  2.3 & 0.95 & 0.93 & 0.94 & 0.94 \\
     \midrule
     CS  & 250{,}000 & 14.8 & 0.98 & 0.97 & 0.97 & 0.97 \\
-    CS  & 120{,}000 & 7.5  & 0.94 & 0.96 & 0.98 & 0.96 \\
-    CS  & 80{,}000  & 4.7  & 0.77 & 0.75 & 0.65 & 0.72 \\
-    CS  & 40{,}000  & 2.3  & 0.53 & 0.42 & 0.56 & 0.59 \\
+    CS  & 120{,}000 &  7.5 & 0.94 & 0.96 & 0.98 & 0.96 \\
+    CS  & 80{,}000  &  4.7 & 0.77 & 0.75 & 0.65 & 0.72 \\
+    CS  & 40{,}000  &  2.3 & 0.53 & 0.42 & 0.56 & 0.59 \\
     \bottomrule
     \end{tabular}
 \end{table}
@@ -76,7 +77,7 @@ Figure~\ref{fig:motion_difference} demonstrates qualitative motion assessments a
     
 \end{figure}
 
-Table~\ref{tab:displacement} shows the LV centroid displacements in each direction for each subject as well as the magnitude of the overall vector displacement for both cardiac and respiratory motion. The quantitative motion analysis revealed prominent displacement patterns across subjects, with the largest LV displacements occurring in the superior-inferior direction (cardiac: -0.5 $\pm$ 0.7 mm, respiratory: -5.7 $\pm$ 1.3 mm), followed by the anterior-posterior (cardiac: 0.0 $\pm$ 0.3, respiratory: 1.3 $\pm$ 1.2), and right-left (cardiac: 0.2 $\pm$ 0.4 mm, respiratory: 1.6 $\pm$ 1.0 mm) directions. Figure~\ref{fig:motion_trajectories} further visualizes the trajectories of LV centroid motion across the 4 respiratory states at both ESys and EDia, normalized to EEx and EDia. Respiratory trajectories and displacement magnitudes were shown to be highly subject specific.
+Tables~\ref{tab:card_displacement} and~\ref{tab:resp_displacement} show LV centroid displacements in each direction for each subject as well as the magnitude of the overall vector displacement for cardiac and respiratory motion, respectively. The quantitative motion analysis revealed prominent displacement patterns across subjects, with the largest LV displacements occurring in the superior-inferior direction (cardiac: -0.5 $\pm$ 0.7 mm, respiratory: -5.7 $\pm$ 1.3 mm), followed by the anterior-posterior (cardiac: 0.0 $\pm$ 0.3, respiratory: 1.3 $\pm$ 1.2), and right-left (cardiac: 0.2 $\pm$ 0.4 mm, respiratory: 1.6 $\pm$ 1.0 mm) directions. Figure~\ref{fig:motion_trajectories} further visualizes the trajectories of LV centroid motion across the 4 respiratory states at both ESys and EDia, normalized to EEx and EDia. Respiratory trajectories and displacement magnitudes were shown to be highly subject specific.
 
 \begin{figure}[ht]
     
@@ -89,36 +90,54 @@ Table~\ref{tab:displacement} shows the LV centroid displacements in each directi
 
 \begin{table}[ht]
     \centering
-    \caption[Cardiac and respiratory motion measurements per subject.]{Average left ventricle centroid displacements for 10 subjects for cardiac and respiratory motion in R-L, A-P, S-I directions plus the magnitude of the overall displacement vector. Most substantial displacements were seen in the superior-inferior direction, followed by the anterior-posterior direction, and the right-left direction for both cardiac and respiratory motion.}\label{tab:displacement}
+    \caption[Cardiac LV motion measurements per subject.]{Left ventricle centroid displacements for 10 subjects for cardiac motion in the R-L, A-P, S-I directions plus the magnitude of the overall displacement vector. Cardiac motion was defined as End-Exhale, End-Diastole → End-Exhale, End-Systole. Most substantial displacements were seen in the superior-inferior direction, followed by the anterior-posterior direction, and the right-left direction for both cardiac motion.}\label{tab:card_displacement}
     \small
-    \resizebox{\textwidth}{!}{%
-        \tagpdfsetup{table/header-rows={2}}
-        \begin{tabular}{ccccccccc}
+    \tagpdfsetup{table/header-rows={1}}
+    \vspace{0.25cm}
+    \begin{tabular}{ccccc}
         \toprule
-        \quad & \multicolumn{4}{c}{\textbf{Cardiac Motion (EE, ED --- EE, ES)}} 
-        & \multicolumn{4}{c}{\textbf{Respiratory Motion (EE, ED --- EI, ED)}} \\
-        \cmidrule(lr){2-5} \cmidrule(lr){6-9}
-        \textbf{Subject} 
-        & \textbf{R-L (mm)} & \textbf{A-P (mm)} & \textbf{S-I (mm)} & \textbf{Magnitude (mm)} 
-        & \textbf{R-L (mm)} & \textbf{A-P (mm)} & \textbf{S-I (mm)} & \textbf{Magnitude (mm)} \\
+        \textbf{Subject} & \textbf{R-L (mm)} & \textbf{A-P (mm)} & \textbf{S-I (mm)} & \textbf{Magnitude (mm)} \\
         \midrule
-        1  & -0.3 & -0.2 & 1.1 & 1.1 & 0.3 & 0.9 & -5.0 & 5.1 \\
-        2  & 0.0  & 0.2  & -0.6 & 0.6 & 0.3 & 0.6 & -7.5 & 7.5 \\
-        3  & -0.5 & 0.4  & -0.8 & 1.0 & 3.5 & 2.7 & -4.8 & 6.5 \\
-        4  & 0.1  & -0.1 & 0.1  & 0.2 & 3.3 & 3.7 & -7.4 & 8.9 \\
-        5  & -0.2 & -0.2 & -0.3 & 0.4 & 1.6 & 1.4 & -5.7 & 6.1 \\
-        6  & 0.1  & 0.6  & -1.0 & 1.1 & 1.2 & 2.0 & -7.0 & 7.4 \\
-        7  & -0.5 & 0.0  & -1.1 & 1.2 & 0.4 & 0.6 & -4.0 & 4.1 \\
-        8  & 0.6  & 0.0  & -0.6 & 0.8 & 0.8 & 1.5 & -4.2 & 4.5 \\
-        9  & 0.4  & 0.4  & -0.9 & 1.0 & 0.6 & 1.5 & -6.3 & 6.5 \\
-        10 & 0.1  & 0.9  & -1.1 & 1.4 & 0.9 & 1.0 & -5.3 & 5.4 \\
+        1  & -0.3 & -0.2 &  1.1 & 1.1 \\
+        2  &  0.0 &  0.2 & -0.6 & 0.6 \\
+        3  & -0.5 &  0.4 & -0.8 & 1.0 \\
+        4  &  0.1 & -0.1 &  0.1 & 0.2 \\
+        5  & -0.2 & -0.2 & -0.3 & 0.4 \\
+        6  &  0.1 &  0.6 & -1.0 & 1.1 \\
+        7  & -0.5 &  0.0 & -1.1 & 1.2 \\
+        8  &  0.6 &  0.0 & -0.6 & 0.8 \\
+        9  &  0.4 &  0.4 & -0.9 & 1.0 \\
+        10 &  0.1 &  0.9 & -1.1 & 1.4 \\
         \midrule
-        Average 
-        & $0.0 \pm 0.3$ & $0.2 \pm 0.4$ & $-0.5 \pm 0.7$ & $0.9 \pm 0.4$
-        & $1.3 \pm 1.2$ & $1.6 \pm 1.0$ & $-5.7 \pm 1.3$ & $6.2 \pm 1.5$ \\
+        Average & 0.0 $\pm$ 0.3 & 0.2 $\pm$ 0.4 & -0.5 $\pm$ 0.7 & 0.9 $\pm$ 0.4 \\
         \bottomrule
-        \end{tabular}
-    }
+    \end{tabular}
+\end{table}
+
+\begin{table}[ht]
+    \centering
+    \caption[Respiratory LV motion measurements per subject.]{Left ventricle centroid displacements for 10 subjects for respiratory motion in the R-L, A-P, S-I directions plus the magnitude of the overall displacement vector.         Respiratory motion was defined as End-Exhale, End-Diastole → End-Inhale, End-Diastole. Most substantial displacements were seen in the superior-inferior direction, followed by the anterior-posterior direction, and the right-left direction for respiratory motion.}\label{tab:resp_displacement}
+    \small
+    \tagpdfsetup{table/header-rows={1}}
+    \vspace{0.25cm}
+    \begin{tabular}{ccccc}
+    \toprule
+    \textbf{Subject} & \textbf{R-L (mm)} & \textbf{A-P (mm)} & \textbf{S-I (mm)} & \textbf{Magnitude (mm)} \\
+    \midrule
+    1  & 0.3 & 0.9 & -5.0 & 5.1 \\
+    2  & 0.3 & 0.6 & -7.5 & 7.5 \\
+    3  & 3.5 & 2.7 & -4.8 & 6.5 \\
+    4  & 3.3 & 3.7 & -7.4 & 8.9 \\
+    5  & 1.6 & 1.4 & -5.7 & 6.1 \\
+    6  & 1.2 & 2.0 & -7.0 & 7.4 \\
+    7  & 0.4 & 0.6 & -4.0 & 4.1 \\
+    8  & 0.8 & 1.5 & -4.2 & 4.5 \\
+    9  & 0.6 & 1.5 & -6.3 & 6.5 \\
+    10 & 0.9 & 1.0 & -5.3 & 5.4 \\
+    \midrule
+    Average & 1.3 $\pm$ 1.2 & 1.6 $\pm$ 1.0 & -5.7 $\pm$ 1.3 & 6.2 $\pm$ 1.5 \\
+    \bottomrule
+    \end{tabular}
 \end{table}
 
 \section{Discussion}

@@ -1,5 +1,5 @@
 % required for accessibility compliance, need to compile with LuaLaTeX
-\DocumentMetadata{tagging=on, tagging-setup={math/setup=mathml-SE}, pdfversion=2.0, pdfstandard=ua-2, lang=en-US}
+\DocumentMetadata{tagging=on, tagging-setup={math/setup=mathml-SE}, pdfversion=2.0, pdfstandard=ua-2, lang=en-US} 
 
 \documentclass[12pt]{report}
 \usepackage{graphicx}
@@ -7,7 +7,6 @@
 \usepackage{amsmath}
 \usepackage{unicode-math}
 \usepackage{fancyhdr}
-\usepackage{setspace}
 \usepackage{siunitx}
 \usepackage{titlesec}
 \usepackage{booktabs}
@@ -16,9 +15,10 @@
 \usepackage{titlesec}
 \usepackage[margin=1in]{geometry}
 \usepackage[backend=biber, style=ieee, maxbibnames=50, sorting=none,citestyle=numeric-comp, giveninits=true]{biblatex}
+\usepackage{setspace}
 \usepackage{hyperref}
 
-% hyperlink setup that works with accessibility reqs
+% hyperlink setup
 \hypersetup{
     linktoc=all,
     hidelinks,
@@ -49,6 +49,7 @@
 % Figure path
 \graphicspath{{figures/}}
 
+% references path
 \addbibresource{references/references.biblatex}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
