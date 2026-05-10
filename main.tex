@@ -5,7 +5,6 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{amsmath}
-\usepackage{unicode-math}
 \usepackage{fancyhdr}
 \usepackage{siunitx}
 \usepackage{titlesec}
@@ -13,26 +12,24 @@
 \usepackage{tabularx}
 \usepackage{nameref}
 \usepackage{titlesec}
-\usepackage[margin=1in]{geometry}
-\usepackage[backend=biber, style=ieee, maxbibnames=50, sorting=none,citestyle=numeric-comp, giveninits=true]{biblatex}
 \usepackage{setspace}
-\usepackage{hyperref}
+\usepackage{unicode-math}
+\usepackage[margin=1in]{geometry}
+\usepackage[linktoc=all, pdfencoding=auto, hyperfootnotes=false, hidelinks, pdfusetitle]{hyperref}
+\usepackage[backend=biber, style=ieee, maxbibnames=50, sorting=none,citestyle=numeric-comp, giveninits=true]{biblatex}
 
-% hyperlink setup
-\hypersetup{
-    linktoc=all,
-    hidelinks,
-    pdfencoding=auto,
-}
+% suppress error about footnote citations, caused by pdftagging but doesn't prevent compilation
+\usepackage{silence}
+\WarningFilter{biblatex}{Patching footnotes failed}
 
-% Title page formatting
+% title page formatting
 \pagestyle{fancyplain}
 \fancyhf{}
 \fancyhead[R]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{16pt}
 
-% Adjust chapter title spacing
+% chapter titles formatting
 \titleformat{\chapter}[block]
 {\normalfont\Large\bfseries}
 {Chapter \thechapter:}
@@ -42,11 +39,12 @@
 \titlespacing*{\chapter}{0pt}{0pt}{20pt}
 \setlength{\emergencystretch}{3em}
 
+% section titles formatting
 \titleformat{\section}
 {\fontsize{14}{16}\bfseries}
 {\thesection.}{1em}{}
 
-% Figure path
+% figure path
 \graphicspath{{figures/}}
 
 % references path
@@ -108,8 +106,6 @@
 % \input{appendix/appendix}
 
 \singlespacing{}
-\begin{raggedright}
 \printbibliography[]
-\end{raggedright}
 
 \end{document}

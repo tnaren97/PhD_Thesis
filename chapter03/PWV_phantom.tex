@@ -23,10 +23,10 @@ The primary motivation of this work is to validate the developed retrospectively
 \subsubsection{Simultaneous Multi-Slice Sequence}
 The radial 2D phase contrast sequence was implemented in the EPIC pulse sequence programming environment (GE Healthcare, Waukesha, WI) with support for golden-angle sampling, iterative reconstructions, and 2-point velocity encoding~\cite{fengGoldenAngleRadialMRI2022}. The radial simultaneous multi-slice sequence then extended this sequence with support for multi-slice excitations and slice-dependent phase modulation. However, in the preliminary version of this SMS sequence, the number of acquired slices, $N_s$, and slice separation distance, $d_s$, were hard coded to values of 2 and 158 mm, respectively, to simplify acquisition and reconstruction. This proved to be infeasible for more complex studies, so the sequence was updated to allow for acquiring an arbitrary $N_s$ and $d_s$, defined through the use of research control variables. The location of excited slices were arranged evenly around isocenter parallel to the direction of $B_0$ (the z-axis) according to Equation~\ref{eq:slice_position} 
 \begin{equation}
-    \begin{split}
+    \begin{aligned}
         Z(n) = n\cdot d_s - \frac{d_s}{2(N_s - 1)} \\
-        \text{for} \quad  n \in \{0, 1, \dots, N_s - 1\} \\
-    \end{split}
+        \text{for} \quad  n \in \{0, 1, \dots, N_s - 1\}\\
+    \end{aligned}
     \label{eq:slice_position}
 \end{equation}
 where $Z(n)$ is the location of slice $n$ in mm relative to isocenter. Radial CAIPI phase blipping as described by Setsompop et al.~\cite{setsompopBlippedControlledAliasingParallel2012a} was implemented with the slice-specific phase blips $\phi_n$ constructed according to Equation~\ref{eq:caipi_blips} 
@@ -120,7 +120,7 @@ Acquired ultrasound and MRI data were analyzed in MATLAB (Mathworks, Natick, MA)
     
 \end{figure}
 
-In the first step, axial and sagittal balanced steady-state free precession (bSSFP) images are loaded into the centerline tracing GUI\@. The GUI then guides users through placing fiducial points along the aorta across all slices for both axial and sagittal image sets. Next, 2DPC images of the aortic arch and abdominal aorta are imported, and additional markers are placed at the centers of the ascending, descending, and abdominal aorta corresponding to the flow measurement ROIs. All marker coordinates are transformed from image space into a physical coordinate system referenced to the scanner isocenter using DICOM header information. Sagittal and coronal projections of these coordinates are then generated, and the GUI guides users through tracing an aortic centerline passing through the fiducial points and vessel ROI locations. The resulting centerline is interpolated to 150 evenly spaced points using modified Akima interpolation, after which distances between the flow measurement ROIs are automatically calculated.
+In the first step, axial and sagittal balanced steady-state free precession (bSSFP) images are loaded into the centerline tracing GUI\@. The GUI then guides users through placing fiducial points along the aorta across all slices for both axial and sagittal image sets (see Figure~\ref{fig:centerline_tracing}). Next, 2DPC images of the aortic arch and abdominal aorta are imported, and additional markers are placed at the centers of the ascending, descending, and abdominal aorta corresponding to the flow measurement ROIs. All marker coordinates are transformed from image space into a physical coordinate system referenced to the scanner isocenter using DICOM header information. Sagittal and coronal projections of these coordinates are then generated, and the GUI guides users through tracing an aortic centerline passing through the fiducial points and vessel ROI locations. The resulting centerline is interpolated to 150 evenly spaced points using modified Akima interpolation, after which distances between the flow measurement ROIs are automatically calculated.
 
 \begin{figure}[ht]
     

@@ -96,10 +96,10 @@ Velocity aliasing was identified via manual inspection of time-resolved images b
 
 Time-averaged streamlines and time-resolved vector fields were generated for each analyzed dataset using GTFlow. Flow and velocity measures including net flow, peak flow, and max velocity were generated for each plane. Internal consistency of flow measurements was assessed by calculating conservation of mass at both confluence and bifurcation of the portal vein by summing the net flow $Q$ into and out of each branch point according to 
 \begin{equation}
-    \begin{split}
+    \begin{aligned}
         \text{PV Confluence}: Q_{SV}+Q_{SMV}=Q_{PV1} \\
         \text{PV Bifurcation}: Q_{PV3}=Q_{LPV}+Q_{RPV} \\
-    \end{split}
+    \end{aligned}
     \label{eq:mass_conservation}
 \end{equation}
 Linear regression, Pearson correlation ($r^2$), and Bland-Altman analysis was performed to evaluate conservation of mass at both branch points and sum of squares error (SSE) was calculated to assess agreement of the results.
