@@ -1,6 +1,6 @@
 # Embracing Respiration-Induced Motion in Cardiovascular MRI
 
-LaTeX files for my PhD thesis. Published manuscript available online [here](https://ezproxy.library.wisc.edu/login?url=https://www.proquest.com/pqdtglobal1/dissertations-theses/embracing-respiration-induced-motion/docview/3339779900/sem-2?accountid=465).
+LaTeX files for my PhD thesis. Published manuscript available online [here](https://digital.library.wisc.edu/1711.dl/DS37JIXEDCBSB8D).
 
 ## Abstract
 
@@ -13,10 +13,9 @@ In this thesis, I seek to implement and optimize methods for not only mitigating
 Requires installation of TexLive (2025 or later) for compilation and biber for reference management. I used the LaTeX Workshop extension in VS Code, but compilation should work standalone if TexLive is installed. Must be compiled with LuaLatex due to PDF tagging for accessibility requirements.
 
 ```bash
-# run once to generate intermediate files
+# run once to generate intermediate files for reference compilation
 lualatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder  "main.tex"
-# prepare references
 biber main
-# compile document fully
+# run again to compile document fully
 lualatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder  "main.tex"
 ```
