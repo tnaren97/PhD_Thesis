@@ -1,6 +1,6 @@
 # Embracing Respiration-Induced Motion in Cardiovascular MRI
 
-LaTeX files for my PhD thesis. Published manuscript available online [here](https://digital.library.wisc.edu/1711.dl/DS37JIXEDCBSB8D).
+LaTeX files for my PhD thesis. Published manuscript available online at the [UW Madison Library](https://digital.library.wisc.edu/1711.dl/DS37JIXEDCBSB8D).
 
 ## Abstract
 
@@ -10,12 +10,17 @@ In this thesis, I seek to implement and optimize methods for not only mitigating
 
 ## Compilation
 
-Requires installation of TexLive (2025 or later) for compilation and biber for reference management. I used the LaTeX Workshop extension in VS Code, but compilation should work standalone if TexLive is installed. Must be compiled with LuaLatex due to PDF tagging for accessibility requirements.
+Requires installation of TexLive (2025 or later) for compilation and biber for reference management. Due to accessibility requirements set by the graduate school in April 2026, all dissertations must be properly tagged PDFs to allow for accessibility tools like screen readers to work. In the preamble of the document, there is a conditional `ifFinal` defined along with two values `Finaltrue` and `Finalfalse`. To compile a final version of this document with complete PDF tagging, uncomment `Finaltrue` and compile the document with `lualatex`. However, this compilation is pretty slow, so for drafting purposes uncomment `Finalfalse` instead and compile with `pdflatex`. Note that for references to compile properly, you will need to run biber before compiling, however, biber requires intermediate outputs from the documents to run, so you will need to do something like `pdflatex main` → `biber main` → `pdflatex main` again. You generally only need to do this once while writing though, unless you are clearing your intermediate outputs often or switching between compilers.
 
 ```bash
-# run once to generate intermediate files for reference compilation
-lualatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder  "main.tex"
+# reference compilation
 biber main
-# run again to compile document fully
-lualatex  -synctex=1 -interaction=nonstopmode -file-line-error -recorder  "main.tex"
+
+# for faster draft compilation
+pdflatex -synctex=1 -interaction=nonstopmode -file-line-error -recorder  "main.tex"
+
+# for final compilation with pdf tagging
+lualatex -synctex=1 -interaction=nonstopmode -file-line-error -recorder  "main.tex"
 ```
+
+While you can compile the document standalone, I preferred using the LaTeX Workshop extension in VS Code which allows for convenient management and compilation of the document while writing. Additionally, some useful VS Code extensions I also used include LTeX for spell and grammar checking and Zotero LaTeX for reference autocompletion.

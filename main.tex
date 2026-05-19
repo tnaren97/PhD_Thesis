@@ -1,5 +1,15 @@
-% required for accessibility compliance, need to compile with LuaLaTeX
-\DocumentMetadata{tagging=on, tagging-setup={math/setup=mathml-SE}, pdfversion=2.0, pdfstandard=ua-2, lang=en-US} 
+% Sets up a conditional for compiling the document, uncomment appropriate line for the desired version
+% Finaltrue = final version with accessibility compliance, must be compiled with LuaLaTeX for tagging support
+% Finalfalse = draft version, for faster compilation while writing, can be compiled with pdflatex
+\newif\ifFinal{}
+
+\Finaltrue{} 
+% \Finalfalse{} 
+
+\ifFinal{}
+    % Document metadata for accessibility tagging
+    \DocumentMetadata{tagging=on, tagging-setup={math/setup=mathml-SE}, pdfversion=2.0, pdfstandard=ua-2, lang=en-US} 
+\fi
 
 \documentclass[12pt]{report}
 \usepackage{graphicx}
@@ -13,14 +23,17 @@
 \usepackage{nameref}
 \usepackage{titlesec}
 \usepackage{setspace}
-\usepackage{unicode-math}
 \usepackage[margin=1in]{geometry}
 \usepackage[linktoc=all, pdfencoding=auto, hyperfootnotes=false, hidelinks, pdfusetitle]{hyperref}
 \usepackage[backend=biber, style=ieee, maxbibnames=50, sorting=none,citestyle=numeric-comp, giveninits=true]{biblatex}
 
-% suppress error about footnote citations, caused by pdftagging but doesn't prevent compilation
-\usepackage{silence}
-\WarningFilter{biblatex}{Patching footnotes failed}
+\ifFinal{}
+    \usepackage{unicode-math}
+    % suppress error about footnote citations, caused by pdftagging but shouldn't case an issue
+    % unless using citation style with footnotes
+    \usepackage{silence}
+    \WarningFilter{biblatex}{Patching footnotes failed}
+\fi
 
 % title page formatting
 \pagestyle{fancyplain}
@@ -35,7 +48,6 @@
 {Chapter \thechapter:}
 {1em}
 {}
-
 \titlespacing*{\chapter}{0pt}{0pt}{20pt}
 \setlength{\emergencystretch}{3em}
 
@@ -102,7 +114,7 @@
 \input{conclusion/conclusion}
 
 % \appendix
-% \chapter{Appendix}
+% \chapter{Appendix}\label{ch:appendix}
 % \input{appendix/appendix}
 
 \singlespacing{}

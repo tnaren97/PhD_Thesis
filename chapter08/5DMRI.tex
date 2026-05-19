@@ -47,7 +47,9 @@ Datasets representing 40 motion states were successfully generated for each of t
     \centering
     \caption[DICE coefficient scores of LV segmentation]{DICE coefficient scores for left ventricle (LV) segmentations at end-systole and end-exhale in multiple reconstruction schema. This preliminary analysis was performed in a representative subset of the full cohort (3 subjects) to determine an optimal reconstruction schema to use for the entire cohort for motion analysis. Eight reconstruction schemes were analyzed using the 250,000 projection Local Low Rank (LLR) reconstruction as a baseline. Compressed Sensing (CS) reconstructions show poorer agreement with the LLR reconstructions at all simulated scan times.}\label{tab:dsc}
     \footnotesize
-    \tagpdfsetup{table/header-rows={1}}
+    \ifFinal{}
+        \tagpdfsetup{table/header-rows={1}}
+    \fi
     \vspace{0.25cm}
     \begin{tabular}{lccccccc}
     \toprule
@@ -92,7 +94,9 @@ Tables~\ref{tab:card_displacement} and~\ref{tab:resp_displacement} show LV centr
     \centering
     \caption[Cardiac LV motion measurements per subject.]{Left ventricle centroid displacements for 10 subjects for cardiac motion in the R-L, A-P, S-I directions plus the magnitude of the overall displacement vector. Cardiac motion was defined as End-Exhale, End-Diastole → End-Exhale, End-Systole. Most substantial displacements were seen in the superior-inferior direction, followed by the anterior-posterior direction, and the right-left direction for both cardiac motion.}\label{tab:card_displacement}
     \small
-    \tagpdfsetup{table/header-rows={1}}
+    \ifFinal{}
+        \tagpdfsetup{table/header-rows={1}}
+    \fi
     \vspace{0.25cm}
     \begin{tabular}{ccccc}
         \toprule
@@ -118,7 +122,9 @@ Tables~\ref{tab:card_displacement} and~\ref{tab:resp_displacement} show LV centr
     \centering
     \caption[Respiratory LV motion measurements per subject.]{Left ventricle centroid displacements for 10 subjects for respiratory motion in the R-L, A-P, S-I directions plus the magnitude of the overall displacement vector.         Respiratory motion was defined as End-Exhale, End-Diastole → End-Inhale, End-Diastole. Most substantial displacements were seen in the superior-inferior direction, followed by the anterior-posterior direction, and the right-left direction for respiratory motion.}\label{tab:resp_displacement}
     \small
-    \tagpdfsetup{table/header-rows={1}}
+    \ifFinal{}
+        \tagpdfsetup{table/header-rows={1}}
+    \fi
     \vspace{0.25cm}
     \begin{tabular}{ccccc}
     \toprule

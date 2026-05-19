@@ -83,7 +83,9 @@ After ground truth measurements were performed with the ultrasound flow probe, t
     \caption[2D phase contrast scan parameters]{Acquisition and reconstruction parameters for Cartesian, radial, and SMS 2D phase contrast scans as well as anatomical images (axial, sagittal, coronal) used for centerline tracing. \\      $^*$sagittal acquisition had slice thickness of 3.2 ms \\
     $^+$axial acquisition had reconstructed spatial resolution of $0.70 \times 0.70$ \qty{}{\mm^2}}\label{tab:scan_params}
     \footnotesize
-    \tagpdfsetup{table/header-rows={1}}
+    \ifFinal{}
+        \tagpdfsetup{table/header-rows={1}}
+    \fi
     \vspace{0.25cm}
     \begin{tabular}{lcccc}
     \toprule
@@ -165,7 +167,9 @@ Table~\ref{tab:phantom_PWVs} shows global PWV values for all combinations of hea
     \centering
     \caption[Phantom pulse wave velocities]{Pulse Wave Velocities at multiple heart rates (HR) for four acquisition types: Cartesian, radial, radial simultaneous multi-slice (SMS), and ultrasound, calculated from four different transit time algorithms (TTP = time-to-point; TTF = time-to-foot; TTU = time-to-upstroke; XCOR = cross-correlation). Average values are reported $\pm$ standard deviations. Values in parentheses indicate percent error from ground truth ultrasound values}\label{tab:phantom_PWVs}
     \small
-    \tagpdfsetup{table/header-rows={1}}
+    \ifFinal{}
+        \tagpdfsetup{table/header-rows={1}}
+    \fi
     \vspace{0.25cm}
     \begin{tabularx}{\textwidth}{lXXX}
     \toprule
